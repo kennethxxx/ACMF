@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://140.116.86.172/ServiceBroker/Service1.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfVmachine">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Vmachine" nillable="true" type="tns:Vmachine" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfVmachine" nillable="true" type="tns:ArrayOfVmachine" />
+  <xs:complexType name="Vmachine">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="equipmentList" nillable="true" type="tns:ArrayOfEquipment" />
+      <xs:element minOccurs="0" name="equipmentList1" nillable="true" type="tns:ArrayOfEquipment1" />
+      <xs:element minOccurs="0" name="vMachineId" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vMachineIp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vMachineIp1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vMachine_State" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Vmachine" nillable="true" type="tns:Vmachine" />
+  <xs:complexType name="ArrayOfEquipment">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Equipment" nillable="true" type="tns:Equipment" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEquipment" nillable="true" type="tns:ArrayOfEquipment" />
+  <xs:complexType name="Equipment">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="IPv4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IPv4SubnetMask" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equimentControllerType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equipmenNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equipmenPictureName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equipmenType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equipmentIp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equipmentLocation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equipmentPicture" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Equipment" nillable="true" type="tns:Equipment" />
+  <xs:complexType name="ArrayOfEquipment1">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Equipment1" nillable="true" type="tns:Equipment1" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEquipment1" nillable="true" type="tns:ArrayOfEquipment1" />
+  <xs:complexType name="Equipment1">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Cnc_State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IPv4" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IPv4SubnetMask" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Service_Status" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equimentControllerType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equipmenNo" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equipmenPictureName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equipmenType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equipmentIp" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equipmentLocation" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equipmentPicture" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Equipment1" nillable="true" type="tns:Equipment1" />
+  <xs:complexType name="ArrayOfEquipmentType">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EquipmentType" nillable="true" type="tns:EquipmentType" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEquipmentType" nillable="true" type="tns:ArrayOfEquipmentType" />
+  <xs:complexType name="EquipmentType">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="equipmenPictureName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equipmenType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equipmentPicture" nillable="true" type="xs:base64Binary" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EquipmentType" nillable="true" type="tns:EquipmentType" />
+  <xs:complexType name="Model">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="COMPANY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="CodeID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="G_Code" nillable="true" type="xs:string" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="IndicatorSpec_LCL" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="IndicatorSpec_LSL" nillable="true" type="q2:ArrayOfstring" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="IndicatorSpec_UCL" nillable="true" type="q3:ArrayOfstring" />
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="IndicatorSpec_USL" nillable="true" type="q4:ArrayOfstring" />
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MeasureSpec_LCL" nillable="true" type="q5:ArrayOfstring" />
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MeasureSpec_LSL" nillable="true" type="q6:ArrayOfstring" />
+      <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MeasureSpec_Target" nillable="true" type="q7:ArrayOfstring" />
+      <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MeasureSpec_UCL" nillable="true" type="q8:ArrayOfstring" />
+      <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="MeasureSpec_USL" nillable="true" type="q9:ArrayOfstring" />
+      <xs:element minOccurs="0" name="MetrologyItem" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Model_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostYType_1" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PostYType_2" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Version" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cncType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cnc_number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="createTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="createUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dataEndTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dataStartTime" type="xs:dateTime" />
+      <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="indicator" nillable="true" type="q10:ArrayOfstring" />
+      <xs:element minOccurs="0" name="indicatorEndDate" type="xs:dateTime" />
+      <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="indicatorIndexList" nillable="true" type="q11:ArrayOfstring" />
+      <xs:element minOccurs="0" name="indicatorStartDate" type="xs:dateTime" />
+      <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="matSizeList" nillable="true" type="q12:ArrayOfdouble" />
+      <xs:element minOccurs="0" name="modelCreateDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="modelCreateUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="modelID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="modelItem" nillable="true" type="tns:ArrayOfModelItem" />
+      <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="modelNameList" nillable="true" type="q13:ArrayOfstring" />
+      <xs:element minOccurs="0" name="modelSize" type="xs:double" />
+      <xs:element xmlns:q14="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="pointIndexList" nillable="true" type="q14:ArrayOfstring" />
+      <xs:element minOccurs="0" name="position" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="producttype" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="seat_number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sensor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vMachineID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vMachineName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Model" nillable="true" type="tns:Model" />
+  <xs:complexType name="ArrayOfModelItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ModelItem" nillable="true" type="tns:ModelItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfModelItem" nillable="true" type="tns:ArrayOfModelItem" />
+  <xs:complexType name="ModelItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="modelBytes" nillable="true" type="xs:base64Binary" />
+      <xs:element minOccurs="0" name="modelName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ModelItem" nillable="true" type="tns:ModelItem" />
+</xs:schema>

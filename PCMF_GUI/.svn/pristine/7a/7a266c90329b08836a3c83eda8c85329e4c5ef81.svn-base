@@ -1,0 +1,86 @@
+﻿<navigation:Page x:Class="IPS.Views.ServiceMgtModule" 
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           mc:Ignorable="d"
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"                                  
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           d:DesignWidth="1024" d:DesignHeight="768"                 
+           Title="Service Management Module Page">
+    <Grid x:Name="LayoutRoot">
+        <Border x:Name="LinksBorder" Grid.Row="0">
+            <controls:TabControl HorizontalAlignment="Left" Name="tabControl1" Margin="5" VerticalAlignment="Top" Width="800" Height="350" Background="White">
+                <controls:TabItem Header=" Service List " Name="tabServiceList" FontSize="12" FontWeight="SemiBold" GotFocus="tabServiceList_GotFocus">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="44" />
+                        </Grid.RowDefinitions>
+
+                        <sdk:DataGrid Name="dataGridService" Grid.Row="0" IsReadOnly="true" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Height="250" Width="780" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top">
+                            <sdk:DataGrid.Columns>
+                                <sdk:DataGridTextColumn Header="Service Name" Width="100" Binding="{Binding name}" />
+                                <sdk:DataGridTextColumn Header="Provider" SortMemberPath="businessname" Width="150" Binding="{Binding businessname}" />
+                                <sdk:DataGridTextColumn Header="Endpoint" Width="150" Binding="{Binding endpoint}" />
+                                <sdk:DataGridTextColumn Header="Description" Width="200" Binding="{Binding name}" />
+                            </sdk:DataGrid.Columns>
+                        </sdk:DataGrid>
+
+                        <StackPanel Grid.Row="1" VerticalAlignment="Center" Orientation="Horizontal">
+                            <Button Name="btnPublish" Margin="5" Width="90" HorizontalAlignment="Left" Click="btnPublish_Click">
+                                <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                                    <Image Height="24" Width="24" Margin="1" ToolTipService.ToolTip="Publish A Service" Source="/IPS;component/Images/Publish.png"/>
+                                    <TextBlock Text=" Publish " FontWeight="Bold" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </Button>
+                            <Button Name="btnDelete" Margin="5" Width="90" HorizontalAlignment="Left" Click="btnDelete_Click">
+                                <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                                    <Image Height="24" Width="24" Margin="1" ToolTipService.ToolTip="Delete A Service" Source="/IPS;component/Images/delete.png"/>
+                                    <TextBlock Text=" Delete " FontWeight="Bold" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </Button>
+                            <Button Name="btnUDDISetting" Margin="5" Width="109" HorizontalAlignment="Left" Click="btnUDDISetting_Click">
+                                <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                                    <Image Height="24" Width="24" Margin="1" ToolTipService.ToolTip="Setting UDDI Connection" Source="/IPS;component/Images/change.png"/>
+                                    <TextBlock Text=" Set UDDI " FontWeight="Bold" VerticalAlignment="Center" Width="76" />
+                                </StackPanel>
+                            </Button>                            
+                        </StackPanel>
+
+                    </Grid>
+                </controls:TabItem>
+                
+                <controls:TabItem Header=" Service Mapping " Name="tabServiceMapping" FontSize="12" FontWeight="SemiBold" GotFocus="tabServiceMapping_GotFocus" IsSelected="False">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="*"/>
+                            <RowDefinition Height="44" /> 
+                        </Grid.RowDefinitions>
+
+                        <sdk:DataGrid Grid.Row="0" IsReadOnly="True" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Height="250" Width="780" HorizontalAlignment="Left" Margin="5" Name="dataGridMapping" VerticalAlignment="Top">
+                            <sdk:DataGrid.Columns>
+                                <sdk:DataGridTextColumn Header="Function Name" Width="110" Binding="{Binding functionName}" />
+                                <sdk:DataGridTextColumn Header="Service Name" Width="100" Binding="{Binding svInfo.name}" />
+                                <sdk:DataGridTextColumn Header="Service Key" Width="200" Binding="{Binding svInfo.key}" />
+                                <sdk:DataGridTextColumn Header="Endpoint" Width="200" Binding="{Binding svInfo.endpoint}" />
+                                <sdk:DataGridTextColumn Header="Description" Width="200" Binding="{Binding functionName}" />
+                            </sdk:DataGrid.Columns>
+                        </sdk:DataGrid>
+
+                        <StackPanel Grid.Row="1" VerticalAlignment="Center" Orientation="Horizontal">
+                            <Button Name="btnChange" Margin="5" Width="90" HorizontalAlignment="Left" Click="btnChange_Click">
+                                <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                                    <Image Height="24" Width="24" Margin="1" ToolTipService.ToolTip="Change Mapping" Source="/IPS;component/Images/change.png"/>
+                                    <TextBlock Text=" Change " FontWeight="Bold" VerticalAlignment="Center"/>
+                                </StackPanel>
+                            </Button>
+                        </StackPanel>
+                    </Grid>
+                </controls:TabItem>
+              
+            </controls:TabControl>
+        </Border>
+    </Grid>
+</navigation:Page>

@@ -1,0 +1,31 @@
+﻿<controls:ChildWindow x:Class="IPS.ViewsSub.ModelCreationModule.ModelCreationChartViewer"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit" Style="{StaticResource ChildWindowStyle}"
+           Title="模型圖表" HorizontalAlignment="Stretch" VerticalAlignment="Stretch" mc:Ignorable="d" xmlns:d="http://schemas.microsoft.com/expression/blend/2008" xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" d:DesignHeight="880" d:DesignWidth="2320" Closed="ChildWindow_Closed">
+    <Grid x:Name="LayoutRoot" Margin="2">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="25"/>
+        </Grid.RowDefinitions>
+
+        <ScrollViewer Margin="0" Grid.ColumnSpan="2" ScrollViewer.HorizontalScrollBarVisibility="Auto">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+                <StackPanel x:Name="ChartSpace_1" HorizontalAlignment="Center" Margin="0,0,0,5" VerticalAlignment="Top"/>
+                <StackPanel x:Name="ChartSpace_2" HorizontalAlignment="Center" Margin="0,0,0,5" Grid.Row="1" VerticalAlignment="Top"/>
+                <StackPanel x:Name="ChartSpace_3" HorizontalAlignment="Center" Margin="0,0,0,5" Grid.Row="2" VerticalAlignment="Top"/>
+            </Grid>
+        </ScrollViewer>
+
+        <Button x:Name="ui_Cancel" Content="離開" Click="ui_Cancel_Click" Height="23" Margin="0" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" />
+    </Grid>
+</controls:ChildWindow>

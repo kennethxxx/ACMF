@@ -1,0 +1,140 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsdl1="http://detection.com" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:tns="http://sample.bpel.org/bpel/sample" xmlns:p="http://www.w3.org/2001/XMLSchema" xmlns:plnk="http://docs.oasis-open.org/wsbpel/2.0/plnktype" xmlns:vprop="http://docs.oasis-open.org/wsbpel/2.0/varprop" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns="http://schemas.xmlsoap.org/wsdl/" targetNamespace="http://sample.bpel.org/bpel/sample" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <p:schema xmlns="http://www.w3.org/2001/XMLSchema" xmlns:wsdl="http://mmdb.ncku.edu" attributeFormDefault="unqualified" elementFormDefault="qualified" targetNamespace="http://sample.bpel.org/bpel/sample">
+      <p:element name="WD_CAPPRequest">
+        <p:complexType>
+          <p:sequence>
+            <p:element minOccurs="0" name="UserID" type="p:string" />
+            <p:element minOccurs="0" name="FunctionCodIndicator" type="p:string" />
+            <p:element minOccurs="0" name="Data" type="p:string" />
+            <p:element minOccurs="0" name="DriverOption" type="p:string" />
+          </p:sequence>
+        </p:complexType>
+      </p:element>
+      <p:element name="WD_CAPPResponse">
+        <p:complexType>
+          <p:sequence>
+            <p:element name="result" type="p:string" />
+          </p:sequence>
+        </p:complexType>
+      </p:element>
+    </p:schema>
+    <xs:schema xmlns:xsd="http://mmdb.ncku.edu" attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://mmdb.ncku.edu" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+      <xs:element name="getITService">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="FunctionCodIndicator" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="Data" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="DriverOption" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getITServiceResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getOntologyRuleDataBase">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="FunctionCodIndicator" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="Data" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="DriverOption" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getOntologyRuleDataBaseResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getOntologyDataBase">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="FunctionCodIndicator" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="Data" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="DriverOption" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getOntologyDataBaseResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getVMTService">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="FunctionCodIndicator" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="Data" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="DriverOption" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getVMTServiceResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getRecommendedCuttingToolService">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="UserID" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="FunctionCodIndicator" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="Data" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="DriverOption" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getRecommendedCuttingToolServiceResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="WD_CAPPRequestMessage">
+    <wsdl:part name="payload" element="tns:WD_CAPPRequest" />
+  </wsdl:message>
+  <wsdl:message name="WD_CAPPResponseMessage">
+    <wsdl:part name="payload" element="tns:WD_CAPPResponse" />
+  </wsdl:message>
+  <wsdl:portType name="WD_CAPPServicePortType">
+    <wsdl:operation name="initiate">
+      <wsdl:input wsaw:Action="http://sample.bpel.org/bpel/sample/initiate" message="tns:WD_CAPPRequestMessage" />
+      <wsdl:output wsaw:Action="http://sample.bpel.org/bpel/sample/WD_CAPP/initiateResponse" message="tns:WD_CAPPResponseMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="WD_CAPPBinding" type="tns:WD_CAPPServicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="initiate">
+      <soap:operation soapAction="http://sample.bpel.org/bpel/sample/initiate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="WD_CAPPService">
+    <wsdl:port name="WD_CAPPPort" binding="tns:WD_CAPPBinding">
+      <soap:address location="http://192.168.0.82:8080/ode/processes/WD_CAPPService.WD_CAPPPort/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

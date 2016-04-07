@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://140.116.86.170/UserManagements/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://140.116.86.170/UserManagements/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://140.116.86.170/UserManagements/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/UserManagements" />
+      <xsd:import schemaLocation="http://140.116.86.170/UserManagements/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://140.116.86.170/UserManagements/Service1.svc?xsd=xsd4" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_registerCloudUser_InputMessage">
+    <wsdl:part name="parameters" element="tns:registerCloudUser" />
+  </wsdl:message>
+  <wsdl:message name="IService1_registerCloudUser_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registerCloudUserResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_validateAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:validateAccount" />
+  </wsdl:message>
+  <wsdl:message name="IService1_validateAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:validateAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_modeifyAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:modeifyAccount" />
+  </wsdl:message>
+  <wsdl:message name="IService1_modeifyAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:modeifyAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteAccount_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteAccount" />
+  </wsdl:message>
+  <wsdl:message name="IService1_deleteAccount_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteAccountResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserInformation" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_checkUserNameExistOrNot_InputMessage">
+    <wsdl:part name="parameters" element="tns:checkUserNameExistOrNot" />
+  </wsdl:message>
+  <wsdl:message name="IService1_checkUserNameExistOrNot_OutputMessage">
+    <wsdl:part name="parameters" element="tns:checkUserNameExistOrNotResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserRole_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserRole" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserRole_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserRoleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateNewRelyingParty_InputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewRelyingParty" />
+  </wsdl:message>
+  <wsdl:message name="IService1_CreateNewRelyingParty_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CreateNewRelyingPartyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteRelyingParty_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRelyingParty" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DeleteRelyingParty_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteRelyingPartyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllRoles_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllRoles" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllRoles_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllRolesResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllServiceGroup_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllServiceGroup" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getAllServiceGroup_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllServiceGroupResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserKeyInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserKeyInformation" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserKeyInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserKeyInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserKeyByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getUserKeyByName" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getUserKeyByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getUserKeyByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTokenFromACS_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetTokenFromACS" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetTokenFromACS_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetTokenFromACSResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="registerCloudUser">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/registerCloudUser" message="tns:IService1_registerCloudUser_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/registerCloudUserResponse" message="tns:IService1_registerCloudUser_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="validateAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/validateAccount" message="tns:IService1_validateAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/validateAccountResponse" message="tns:IService1_validateAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="modeifyAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/modeifyAccount" message="tns:IService1_modeifyAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/modeifyAccountResponse" message="tns:IService1_modeifyAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteAccount">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/deleteAccount" message="tns:IService1_deleteAccount_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/deleteAccountResponse" message="tns:IService1_deleteAccount_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getUserInformation" message="tns:IService1_getUserInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getUserInformationResponse" message="tns:IService1_getUserInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="checkUserNameExistOrNot">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/checkUserNameExistOrNot" message="tns:IService1_checkUserNameExistOrNot_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/checkUserNameExistOrNotResponse" message="tns:IService1_checkUserNameExistOrNot_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserRole">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getUserRole" message="tns:IService1_getUserRole_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getUserRoleResponse" message="tns:IService1_getUserRole_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewRelyingParty">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/CreateNewRelyingParty" message="tns:IService1_CreateNewRelyingParty_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/CreateNewRelyingPartyResponse" message="tns:IService1_CreateNewRelyingParty_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRelyingParty">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DeleteRelyingParty" message="tns:IService1_DeleteRelyingParty_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DeleteRelyingPartyResponse" message="tns:IService1_DeleteRelyingParty_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllRoles">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getAllRoles" message="tns:IService1_getAllRoles_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getAllRolesResponse" message="tns:IService1_getAllRoles_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllServiceGroup">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getAllServiceGroup" message="tns:IService1_getAllServiceGroup_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getAllServiceGroupResponse" message="tns:IService1_getAllServiceGroup_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserKeyInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getUserKeyInformation" message="tns:IService1_getUserKeyInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getUserKeyInformationResponse" message="tns:IService1_getUserKeyInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getUserKeyByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getUserKeyByName" message="tns:IService1_getUserKeyByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getUserKeyByNameResponse" message="tns:IService1_getUserKeyByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetTokenFromACS">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetTokenFromACS" message="tns:IService1_GetTokenFromACS_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetTokenFromACSResponse" message="tns:IService1_GetTokenFromACS_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="registerCloudUser">
+      <soap:operation soapAction="http://tempuri.org/IService1/registerCloudUser" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="validateAccount">
+      <soap:operation soapAction="http://tempuri.org/IService1/validateAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modeifyAccount">
+      <soap:operation soapAction="http://tempuri.org/IService1/modeifyAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteAccount">
+      <soap:operation soapAction="http://tempuri.org/IService1/deleteAccount" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserInformation">
+      <soap:operation soapAction="http://tempuri.org/IService1/getUserInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="checkUserNameExistOrNot">
+      <soap:operation soapAction="http://tempuri.org/IService1/checkUserNameExistOrNot" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserRole">
+      <soap:operation soapAction="http://tempuri.org/IService1/getUserRole" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateNewRelyingParty">
+      <soap:operation soapAction="http://tempuri.org/IService1/CreateNewRelyingParty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteRelyingParty">
+      <soap:operation soapAction="http://tempuri.org/IService1/DeleteRelyingParty" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllRoles">
+      <soap:operation soapAction="http://tempuri.org/IService1/getAllRoles" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllServiceGroup">
+      <soap:operation soapAction="http://tempuri.org/IService1/getAllServiceGroup" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserKeyInformation">
+      <soap:operation soapAction="http://tempuri.org/IService1/getUserKeyInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getUserKeyByName">
+      <soap:operation soapAction="http://tempuri.org/IService1/getUserKeyByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetTokenFromACS">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetTokenFromACS" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://140.116.86.170/UserManagements/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

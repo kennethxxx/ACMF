@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ServiceBroker" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ServiceBroker" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://114.33.127.121/ServiceBroker/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://114.33.127.121/ServiceBroker/Service1.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/" />
+  <xs:complexType name="ProductBasicInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="XinfoList" nillable="true" type="tns:ArrayOfXinfo" />
+      <xs:element minOccurs="0" name="YinfoList" nillable="true" type="tns:ArrayOfYinfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductBasicInfo" nillable="true" type="tns:ProductBasicInfo" />
+  <xs:complexType name="ArrayOfXinfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Xinfo" nillable="true" type="tns:Xinfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfXinfo" nillable="true" type="tns:ArrayOfXinfo" />
+  <xs:complexType name="Xinfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Position" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Xinfo" nillable="true" type="tns:Xinfo" />
+  <xs:complexType name="ArrayOfYinfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Yinfo" nillable="true" type="tns:Yinfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfYinfo" nillable="true" type="tns:ArrayOfYinfo" />
+  <xs:complexType name="Yinfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Action" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Yinfo" nillable="true" type="tns:Yinfo" />
+  <xs:complexType name="ArrayOfModel_GetContent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Model_GetContent" nillable="true" type="tns:Model_GetContent" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfModel_GetContent" nillable="true" type="tns:ArrayOfModel_GetContent" />
+  <xs:complexType name="Model_GetContent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CNC_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FilePath" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cretateTime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vMachineIP" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Model_GetContent" nillable="true" type="tns:Model_GetContent" />
+  <xs:complexType name="ModelFull">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="equipmentList" nillable="true" type="q1:ArrayOfstring" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="model" nillable="true" type="q2:Model" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="vMachineList" nillable="true" type="q3:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ModelFull" nillable="true" type="tns:ModelFull" />
+</xs:schema>

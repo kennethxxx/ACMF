@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="OntologyCuttingToolService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/OntologyServiceCuttingToolInterface/OntologyServiceCuttingToolInterface.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/OntologyServiceCuttingToolInterface/OntologyServiceCuttingToolInterface.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="CuttingToolInterface_GetDriverOption_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDriverOption" />
+  </wsdl:message>
+  <wsdl:message name="CuttingToolInterface_GetDriverOption_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDriverOptionResponse" />
+  </wsdl:message>
+  <wsdl:message name="CuttingToolInterface_PriavateUpload_InputMessage">
+    <wsdl:part name="parameters" element="tns:PriavateUpload" />
+  </wsdl:message>
+  <wsdl:message name="CuttingToolInterface_PriavateUpload_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PriavateUploadResponse" />
+  </wsdl:message>
+  <wsdl:message name="CuttingToolInterface_PriavateDownload_InputMessage">
+    <wsdl:part name="parameters" element="tns:PriavateDownload" />
+  </wsdl:message>
+  <wsdl:message name="CuttingToolInterface_PriavateDownload_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PriavateDownloadResponse" />
+  </wsdl:message>
+  <wsdl:message name="CuttingToolInterface_uploadBlob2_InputMessage">
+    <wsdl:part name="parameters" element="tns:uploadBlob2" />
+  </wsdl:message>
+  <wsdl:message name="CuttingToolInterface_uploadBlob2_OutputMessage">
+    <wsdl:part name="parameters" element="tns:uploadBlob2Response" />
+  </wsdl:message>
+  <wsdl:message name="CuttingToolInterface_getInferSelectStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:getInferSelectStatus" />
+  </wsdl:message>
+  <wsdl:message name="CuttingToolInterface_getInferSelectStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getInferSelectStatusResponse" />
+  </wsdl:message>
+  <wsdl:message name="CuttingToolInterface_ConvertJsonFunction_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertJsonFunction" />
+  </wsdl:message>
+  <wsdl:message name="CuttingToolInterface_ConvertJsonFunction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertJsonFunctionResponse" />
+  </wsdl:message>
+  <wsdl:message name="CuttingToolInterface_OntologyCuttingToolInterface_InputMessage">
+    <wsdl:part name="parameters" element="tns:OntologyCuttingToolInterface" />
+  </wsdl:message>
+  <wsdl:message name="CuttingToolInterface_OntologyCuttingToolInterface_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OntologyCuttingToolInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="CuttingToolInterface_updateInferSelectStatus_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateInferSelectStatus" />
+  </wsdl:message>
+  <wsdl:message name="CuttingToolInterface_updateInferSelectStatus_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateInferSelectStatusResponse" />
+  </wsdl:message>
+  <wsdl:portType name="CuttingToolInterface">
+    <wsdl:operation name="GetDriverOption">
+      <wsdl:input wsaw:Action="http://tempuri.org/CuttingToolInterface/GetDriverOption" message="tns:CuttingToolInterface_GetDriverOption_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CuttingToolInterface/GetDriverOptionResponse" message="tns:CuttingToolInterface_GetDriverOption_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PriavateUpload">
+      <wsdl:input wsaw:Action="http://tempuri.org/CuttingToolInterface/PriavateUpload" message="tns:CuttingToolInterface_PriavateUpload_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CuttingToolInterface/PriavateUploadResponse" message="tns:CuttingToolInterface_PriavateUpload_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PriavateDownload">
+      <wsdl:input wsaw:Action="http://tempuri.org/CuttingToolInterface/PriavateDownload" message="tns:CuttingToolInterface_PriavateDownload_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CuttingToolInterface/PriavateDownloadResponse" message="tns:CuttingToolInterface_PriavateDownload_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="uploadBlob2">
+      <wsdl:input wsaw:Action="http://tempuri.org/CuttingToolInterface/uploadBlob2" message="tns:CuttingToolInterface_uploadBlob2_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CuttingToolInterface/uploadBlob2Response" message="tns:CuttingToolInterface_uploadBlob2_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getInferSelectStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/CuttingToolInterface/getInferSelectStatus" message="tns:CuttingToolInterface_getInferSelectStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CuttingToolInterface/getInferSelectStatusResponse" message="tns:CuttingToolInterface_getInferSelectStatus_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertJsonFunction">
+      <wsdl:input wsaw:Action="http://tempuri.org/CuttingToolInterface/ConvertJsonFunction" message="tns:CuttingToolInterface_ConvertJsonFunction_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CuttingToolInterface/ConvertJsonFunctionResponse" message="tns:CuttingToolInterface_ConvertJsonFunction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OntologyCuttingToolInterface">
+      <wsdl:input wsaw:Action="http://tempuri.org/CuttingToolInterface/OntologyCuttingToolInterface" message="tns:CuttingToolInterface_OntologyCuttingToolInterface_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CuttingToolInterface/OntologyCuttingToolInterfaceResponse" message="tns:CuttingToolInterface_OntologyCuttingToolInterface_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateInferSelectStatus">
+      <wsdl:input wsaw:Action="http://tempuri.org/CuttingToolInterface/updateInferSelectStatus" message="tns:CuttingToolInterface_updateInferSelectStatus_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/CuttingToolInterface/updateInferSelectStatusResponse" message="tns:CuttingToolInterface_updateInferSelectStatus_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_CuttingToolInterface" type="tns:CuttingToolInterface">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetDriverOption">
+      <soap:operation soapAction="http://tempuri.org/CuttingToolInterface/GetDriverOption" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PriavateUpload">
+      <soap:operation soapAction="http://tempuri.org/CuttingToolInterface/PriavateUpload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PriavateDownload">
+      <soap:operation soapAction="http://tempuri.org/CuttingToolInterface/PriavateDownload" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadBlob2">
+      <soap:operation soapAction="http://tempuri.org/CuttingToolInterface/uploadBlob2" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getInferSelectStatus">
+      <soap:operation soapAction="http://tempuri.org/CuttingToolInterface/getInferSelectStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertJsonFunction">
+      <soap:operation soapAction="http://tempuri.org/CuttingToolInterface/ConvertJsonFunction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OntologyCuttingToolInterface">
+      <soap:operation soapAction="http://tempuri.org/CuttingToolInterface/OntologyCuttingToolInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateInferSelectStatus">
+      <soap:operation soapAction="http://tempuri.org/CuttingToolInterface/updateInferSelectStatus" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OntologyCuttingToolService">
+    <wsdl:port name="BasicHttpBinding_CuttingToolInterface" binding="tns:BasicHttpBinding_CuttingToolInterface">
+      <soap:address location="http://localhost/OntologyServiceCuttingToolInterface/OntologyServiceCuttingToolInterface.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

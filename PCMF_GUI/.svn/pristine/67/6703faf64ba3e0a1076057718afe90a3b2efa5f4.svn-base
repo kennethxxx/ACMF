@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MTConnectDevices>
+  <Header sender="140.116.86.48" bufferSize="100000" creationTime="NOW" version="0.9" instanceId="VMACHINE0001"/>
+  <Devices>
+    <Device iso841Class="1" uuid="machine-01" name="LinuxCNC" sampleRate="100.0" id="1">
+      <Description manufacturer="NIST" serialNumber="01"/>
+      <DataItems>
+        <DataItem type="ALARM" name="alarm" category="EVENT" id="10"/>
+      </DataItems>
+      <Components>
+        <Axes name="Axes" id="3">
+          <Components>
+            <Linear name="S" id="7">
+              <DataItems>
+                <DataItem type="vabriation" name="Sspeed" category="SAMPLE" id="18" nativeUnits="REVOLUTION/MINUTE" subtype="ACTUAL" units="REVOLUTION/MINUTE">
+                </DataItem>
+              </DataItems>
+            </Linear>
+            <Linear name="X" id="4">
+              <DataItems>
+                <DataItem type="vabriation" category="SAMPLE" id="12" nativeUnits="MILLIMETER" subType="ACTUAL" units="MILLIMETER"/>
+              </DataItems>
+            </Linear>
+            <Linear name="Y" id="5">
+              <DataItems>
+                <DataItem type="vabriation"  category="SAMPLE"  id="14" nativeUnits="MILLIMETER" subType="ACTUAL" units="MILLIMETER"/>
+              </DataItems>
+            </Linear>
+            <Linear name="Z" id="6">
+              <DataItems>
+                <DataItem type="vabriation" category="SAMPLE" id="16" nativeUnits="MILLIMETER" subType="ACTUAL" units="MILLIMETER"/>
+              </DataItems>
+            </Linear>
+          </Components>
+        </Axes>
+      </Components>
+    </Device>
+  </Devices>
+</MTConnectDevices>

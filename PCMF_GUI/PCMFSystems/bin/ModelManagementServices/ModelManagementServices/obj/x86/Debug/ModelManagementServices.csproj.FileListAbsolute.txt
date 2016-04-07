@@ -1,0 +1,15 @@
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\x86\Debug\7z.dll
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\x86\Debug\SevenZipSharp.dll
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\x86\Debug\Output_classes\Model_SendContent.cs
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\x86\Debug\ModelManagementServices.dll
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\x86\Debug\ModelManagementServices.pdb
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\x86\Debug\ICSharpCode.SharpZipLib.dll
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\x86\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\x86\Debug\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\x86\Debug\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\x86\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\x86\Debug\Microsoft.WindowsAzure.ServiceRuntime.xml
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\x86\Debug\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\obj\x86\Debug\ModelManagementServices.dll
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\obj\x86\Debug\ModelManagementServices.pdb
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\obj\x86\Debug\ModelManagementServices.csprojResolveAssemblyReference.cache

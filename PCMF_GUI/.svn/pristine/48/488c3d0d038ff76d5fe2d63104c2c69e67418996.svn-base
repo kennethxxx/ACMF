@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?><?xml-stylesheet type='text/xsl' href='_UpgradeReport_Files/UpgradeReport.xslt'?><UpgradeLog>
+<Properties><Property Name="Solution" Value="AMCSystems">
+</Property><Property Name="方案檔" Value="D:\VS_Project\小晃範例程式碼\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\AMCSystems.sln">
+</Property><Property Name="Date" Value="2013年1月25日">
+</Property><Property Name="Time" Value="下午 15:11">
+</Property></Properties><Event ErrorLevel="0" Project="D:\VS_Project\小晃範例程式碼\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\AMCSystems\AMCSystems.ccproj" Source="AMCSystems\ServiceDefinition.csdef" Description="已將 ServiceConfiguration 項目 schemaVersion 屬性更新為 '2012-10.1.8'。">
+</Event><Event ErrorLevel="3" Project="D:\VS_Project\小晃範例程式碼\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\AMCSystems\AMCSystems.ccproj" Source="AMCSystems\ServiceDefinition.csdef" Description="Converted">
+</Event><Event ErrorLevel="0" Project="D:\VS_Project\小晃範例程式碼\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\AMCSystems\AMCSystems.ccproj" Source="AMCSystems\ServiceConfiguration.Local.cscfg" Description="已將 ServiceDefinition 項目 schemaVersion 屬性更新為 '2012-10.1.8'。">
+</Event><Event ErrorLevel="3" Project="D:\VS_Project\小晃範例程式碼\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\AMCSystems\AMCSystems.ccproj" Source="AMCSystems\ServiceConfiguration.Local.cscfg" Description="Converted">
+</Event><Event ErrorLevel="0" Project="D:\VS_Project\小晃範例程式碼\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\AMCSystems\AMCSystems.ccproj" Source="AMCSystems\ServiceConfiguration.Cloud.cscfg" Description="已將 ServiceDefinition 項目 schemaVersion 屬性更新為 '2012-10.1.8'。">
+</Event><Event ErrorLevel="3" Project="D:\VS_Project\小晃範例程式碼\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\AMCSystems\AMCSystems.ccproj" Source="AMCSystems\ServiceConfiguration.Cloud.cscfg" Description="Converted">
+</Event><Event ErrorLevel="0" Project="D:\VS_Project\小晃範例程式碼\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\AMCSystems\AMCSystems.ccproj" Source="AMCSystems\AMCSystems.ccproj" Description="已將 ProductVersion 值升級成 1.8。">
+</Event><Event ErrorLevel="3" Project="D:\VS_Project\小晃範例程式碼\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\AMCSystems\AMCSystems.ccproj" Source="AMCSystems\AMCSystems.ccproj" Description="Converted">
+</Event><Event ErrorLevel="0" Project="D:\VS_Project\小晃範例程式碼\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\AMCSystems\AMCSystems.ccproj" Source="AMCSystems\AMCSystems.ccproj" Description="已加入 UseIISExpressByDefault 值 'false'。">
+</Event><Event ErrorLevel="0" Project="D:\VS_Project\小晃範例程式碼\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\AMCSystems\AMCSystems.ccproj" Source="AMCSystems\AMCSystems.ccproj" Description="已將 CloudExtensionsDir 值升級成 $(MSBuildExtensionsPath)\Microsoft\VisualStudio\v$(VisualStudioVersion)\Windows Azure Tools\1.8\。">
+</Event><Event ErrorLevel="1" Project="D:\VS_Project\小晃範例程式碼\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\AMCSystems\AMCSystems.ccproj" Source="AMCSystems\ServiceDefinition.csdef" Description="VirtualApplication 項目的 physicalDirectory 屬性 '../DataAquactionServices' 包含相對路徑。 這是封裝時目標「服務定義」檔案所在目錄的相對路徑。 在舊版中，這個檔案位於根專案目錄內。  在這個版本中，此檔案預設位於專案的輸出目錄中。 您可能需要更新相對路徑，以反映目標「服務定義」檔案的新位置。">
+</Event><Event ErrorLevel="1" Project="D:\VS_Project\小晃範例程式碼\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\AMCSystems\AMCSystems.ccproj" Source="AMCSystems\ServiceDefinition.csdef" Description="VirtualApplication 項目的 physicalDirectory 屬性 '../ModelCreationService' 包含相對路徑。 這是封裝時目標「服務定義」檔案所在目錄的相對路徑。 在舊版中，這個檔案位於根專案目錄內。  在這個版本中，此檔案預設位於專案的輸出目錄中。 您可能需要更新相對路徑，以反映目標「服務定義」檔案的新位置。">
+</Event><Event ErrorLevel="1" Project="D:\VS_Project\小晃範例程式碼\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\AMCSystems\AMCSystems.ccproj" Source="AMCSystems\ServiceDefinition.csdef" Description="VirtualApplication 項目的 physicalDirectory 屬性 '../ModelManagementServices' 包含相對路徑。 這是封裝時目標「服務定義」檔案所在目錄的相對路徑。 在舊版中，這個檔案位於根專案目錄內。  在這個版本中，此檔案預設位於專案的輸出目錄中。 您可能需要更新相對路徑，以反映目標「服務定義」檔案的新位置。">
+</Event><Event ErrorLevel="1" Project="D:\VS_Project\小晃範例程式碼\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\AMCSystems\AMCSystems.ccproj" Source="AMCSystems\ServiceDefinition.csdef" Description="VirtualApplication 項目的 physicalDirectory 屬性 '../Get_DCR_From_ServiceBroker' 包含相對路徑。 這是封裝時目標「服務定義」檔案所在目錄的相對路徑。 在舊版中，這個檔案位於根專案目錄內。  在這個版本中，此檔案預設位於專案的輸出目錄中。 您可能需要更新相對路徑，以反映目標「服務定義」檔案的新位置。">
+</Event><Event ErrorLevel="0" Project="IPS" Source="IPS\IPS.csproj" Description="專案檔不需要轉換。">
+</Event><Event ErrorLevel="3" Project="IPS" Source="IPS\IPS.csproj" Description="不需要轉換">
+</Event><Event ErrorLevel="0" Project="IPS.Web" Source="IPS.Web\IPS.Web.csproj" Description="專案檔不需要轉換。">
+</Event><Event ErrorLevel="3" Project="IPS.Web" Source="IPS.Web\IPS.Web.csproj" Description="不需要轉換">
+</Event><Event ErrorLevel="0" Project="" Source="AMCSystems.sln" Description="這個方案檔不需要轉換。">
+</Event><Event ErrorLevel="3" Project="" Source="AMCSystems.sln" Description="不需要轉換">
+</Event></UpgradeLog>

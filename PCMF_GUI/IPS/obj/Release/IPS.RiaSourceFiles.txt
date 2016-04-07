@@ -1,0 +1,1 @@
+C:\研究所\AMCSystems20121106-更新MMbyXML\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\IPS.Web.csproj,635783330859314595,C:\研究所\AMCSystems20121106-更新MMbyXML\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\SharedAssemblyInfo.cs,Properties\AssemblyInfo.cs,WebRole.cs,

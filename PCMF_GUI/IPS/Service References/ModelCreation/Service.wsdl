@@ -1,0 +1,705 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/ModelCreationService/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/ModelCreationService/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/ModelCreationService/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ModelCreationService" />
+      <xsd:import schemaLocation="http://localhost/ModelCreationService/Service.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_Get_KVSResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_KVSResult" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_KVSResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_KVSResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_DQIxResult_VerifyDQIx_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_DQIxResult_VerifyDQIx" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_DQIxResult_VerifyDQIx_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_DQIxResult_VerifyDQIxResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_DQIyResult_VerifyDQIy_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_DQIyResult_VerifyDQIy" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_DQIyResult_VerifyDQIy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_DQIyResult_VerifyDQIyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_BPNNResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_BPNNResult" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_BPNNResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_BPNNResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_MRResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_MRResult" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_MRResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_MRResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_RIResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_RIResult" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_RIResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_RIResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_GSIResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_GSIResult" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_GSIResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_GSIResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_UploadModel_InputMessage">
+    <wsdl:part name="parameters" element="tns:UploadModel" />
+  </wsdl:message>
+  <wsdl:message name="IService_UploadModel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:UploadModelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_CurrentVersion_InputMessage">
+    <wsdl:part name="parameters" element="tns:CurrentVersion" />
+  </wsdl:message>
+  <wsdl:message name="IService_CurrentVersion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CurrentVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getVmachine_ID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getVmachine_ID" />
+  </wsdl:message>
+  <wsdl:message name="IService_getVmachine_ID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getVmachine_IDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCNC_Number_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCNC_Number" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCNC_Number_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCNC_NumberResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getNCProgram_ID_InputMessage">
+    <wsdl:part name="parameters" element="tns:getNCProgram_ID" />
+  </wsdl:message>
+  <wsdl:message name="IService_getNCProgram_ID_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getNCProgram_IDResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCategoryDef_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoryDef" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCategoryDef_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCategoryDefResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getListOfPostYType_1Name_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListOfPostYType_1Name" />
+  </wsdl:message>
+  <wsdl:message name="IService_getListOfPostYType_1Name_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListOfPostYType_1NameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getListOfPostYType_2Name_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListOfPostYType_2Name" />
+  </wsdl:message>
+  <wsdl:message name="IService_getListOfPostYType_2Name_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListOfPostYType_2NameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getListOfMetrology_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListOfMetrology" />
+  </wsdl:message>
+  <wsdl:message name="IService_getListOfMetrology_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListOfMetrologyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getListOfIndicator_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListOfIndicator" />
+  </wsdl:message>
+  <wsdl:message name="IService_getListOfIndicator_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListOfIndicatorResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getListOfIndicatorName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getListOfIndicatorName" />
+  </wsdl:message>
+  <wsdl:message name="IService_getListOfIndicatorName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getListOfIndicatorNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getNewPopulation_InputMessage">
+    <wsdl:part name="parameters" element="tns:getNewPopulation" />
+  </wsdl:message>
+  <wsdl:message name="IService_getNewPopulation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getNewPopulationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_InitTempleFolder_InputMessage">
+    <wsdl:part name="parameters" element="tns:InitTempleFolder" />
+  </wsdl:message>
+  <wsdl:message name="IService_InitTempleFolder_OutputMessage">
+    <wsdl:part name="parameters" element="tns:InitTempleFolderResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_ChecktJobState_InputMessage">
+    <wsdl:part name="parameters" element="tns:ChecktJobState" />
+  </wsdl:message>
+  <wsdl:message name="IService_ChecktJobState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ChecktJobStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_DataTransferModule_InputMessage">
+    <wsdl:part name="parameters" element="tns:Set_DataTransferModule" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_DataTransferModule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Set_DataTransferModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_MDFRModule_InputMessage">
+    <wsdl:part name="parameters" element="tns:Set_MDFRModule" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_MDFRModule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Set_MDFRModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_DQIyModule_GetDQIyPattern_InputMessage">
+    <wsdl:part name="parameters" element="tns:Set_DQIyModule_GetDQIyPattern" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_DQIyModule_GetDQIyPattern_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Set_DQIyModule_GetDQIyPatternResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_KSSModule_InputMessage">
+    <wsdl:part name="parameters" element="tns:Set_KSSModule" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_KSSModule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Set_KSSModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_KVSModule_InputMessage">
+    <wsdl:part name="parameters" element="tns:Set_KVSModule" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_KVSModule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Set_KVSModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_DQIxModule_VerifyDQIx_InputMessage">
+    <wsdl:part name="parameters" element="tns:Set_DQIxModule_VerifyDQIx" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_DQIxModule_VerifyDQIx_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Set_DQIxModule_VerifyDQIxResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_DQIyModule_VerifyDQIy_InputMessage">
+    <wsdl:part name="parameters" element="tns:Set_DQIyModule_VerifyDQIy" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_DQIyModule_VerifyDQIy_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Set_DQIyModule_VerifyDQIyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_BPNNModule_InputMessage">
+    <wsdl:part name="parameters" element="tns:Set_BPNNModule" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_BPNNModule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Set_BPNNModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_MRModule_InputMessage">
+    <wsdl:part name="parameters" element="tns:Set_MRModule" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_MRModule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Set_MRModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_RIModule_InputMessage">
+    <wsdl:part name="parameters" element="tns:Set_RIModule" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_RIModule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Set_RIModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_GSIModule_InputMessage">
+    <wsdl:part name="parameters" element="tns:Set_GSIModule" />
+  </wsdl:message>
+  <wsdl:message name="IService_Set_GSIModule_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Set_GSIModuleResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_DataTransferResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_DataTransferResult" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_DataTransferResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_DataTransferResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_MDFRResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_MDFRResult" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_MDFRResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_MDFRResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_DQIyResult_GetDQIyPattern_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_DQIyResult_GetDQIyPattern" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_DQIyResult_GetDQIyPattern_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_DQIyResult_GetDQIyPatternResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_KSSResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_KSSResult" />
+  </wsdl:message>
+  <wsdl:message name="IService_Get_KSSResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_KSSResultResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService">
+    <wsdl:operation name="Get_KVSResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Get_KVSResult" message="tns:IService_Get_KVSResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Get_KVSResultResponse" message="tns:IService_Get_KVSResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_DQIxResult_VerifyDQIx">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Get_DQIxResult_VerifyDQIx" message="tns:IService_Get_DQIxResult_VerifyDQIx_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Get_DQIxResult_VerifyDQIxResponse" message="tns:IService_Get_DQIxResult_VerifyDQIx_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_DQIyResult_VerifyDQIy">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Get_DQIyResult_VerifyDQIy" message="tns:IService_Get_DQIyResult_VerifyDQIy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Get_DQIyResult_VerifyDQIyResponse" message="tns:IService_Get_DQIyResult_VerifyDQIy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_BPNNResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Get_BPNNResult" message="tns:IService_Get_BPNNResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Get_BPNNResultResponse" message="tns:IService_Get_BPNNResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_MRResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Get_MRResult" message="tns:IService_Get_MRResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Get_MRResultResponse" message="tns:IService_Get_MRResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_RIResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Get_RIResult" message="tns:IService_Get_RIResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Get_RIResultResponse" message="tns:IService_Get_RIResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_GSIResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Get_GSIResult" message="tns:IService_Get_GSIResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Get_GSIResultResponse" message="tns:IService_Get_GSIResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="UploadModel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/UploadModel" message="tns:IService_UploadModel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/UploadModelResponse" message="tns:IService_UploadModel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="CurrentVersion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/CurrentVersion" message="tns:IService_CurrentVersion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/CurrentVersionResponse" message="tns:IService_CurrentVersion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getVmachine_ID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getVmachine_ID" message="tns:IService_getVmachine_ID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getVmachine_IDResponse" message="tns:IService_getVmachine_ID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCNC_Number">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getCNC_Number" message="tns:IService_getCNC_Number_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getCNC_NumberResponse" message="tns:IService_getCNC_Number_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getNCProgram_ID">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getNCProgram_ID" message="tns:IService_getNCProgram_ID_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getNCProgram_IDResponse" message="tns:IService_getNCProgram_ID_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCategoryDef">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getCategoryDef" message="tns:IService_getCategoryDef_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getCategoryDefResponse" message="tns:IService_getCategoryDef_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListOfPostYType_1Name">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getListOfPostYType_1Name" message="tns:IService_getListOfPostYType_1Name_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getListOfPostYType_1NameResponse" message="tns:IService_getListOfPostYType_1Name_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListOfPostYType_2Name">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getListOfPostYType_2Name" message="tns:IService_getListOfPostYType_2Name_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getListOfPostYType_2NameResponse" message="tns:IService_getListOfPostYType_2Name_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListOfMetrology">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getListOfMetrology" message="tns:IService_getListOfMetrology_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getListOfMetrologyResponse" message="tns:IService_getListOfMetrology_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListOfIndicator">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getListOfIndicator" message="tns:IService_getListOfIndicator_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getListOfIndicatorResponse" message="tns:IService_getListOfIndicator_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getListOfIndicatorName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getListOfIndicatorName" message="tns:IService_getListOfIndicatorName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getListOfIndicatorNameResponse" message="tns:IService_getListOfIndicatorName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getNewPopulation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getNewPopulation" message="tns:IService_getNewPopulation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getNewPopulationResponse" message="tns:IService_getNewPopulation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="InitTempleFolder">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/InitTempleFolder" message="tns:IService_InitTempleFolder_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/InitTempleFolderResponse" message="tns:IService_InitTempleFolder_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ChecktJobState">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/ChecktJobState" message="tns:IService_ChecktJobState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/ChecktJobStateResponse" message="tns:IService_ChecktJobState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Set_DataTransferModule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Set_DataTransferModule" message="tns:IService_Set_DataTransferModule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Set_DataTransferModuleResponse" message="tns:IService_Set_DataTransferModule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Set_MDFRModule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Set_MDFRModule" message="tns:IService_Set_MDFRModule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Set_MDFRModuleResponse" message="tns:IService_Set_MDFRModule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Set_DQIyModule_GetDQIyPattern">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Set_DQIyModule_GetDQIyPattern" message="tns:IService_Set_DQIyModule_GetDQIyPattern_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Set_DQIyModule_GetDQIyPatternResponse" message="tns:IService_Set_DQIyModule_GetDQIyPattern_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Set_KSSModule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Set_KSSModule" message="tns:IService_Set_KSSModule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Set_KSSModuleResponse" message="tns:IService_Set_KSSModule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Set_KVSModule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Set_KVSModule" message="tns:IService_Set_KVSModule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Set_KVSModuleResponse" message="tns:IService_Set_KVSModule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Set_DQIxModule_VerifyDQIx">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Set_DQIxModule_VerifyDQIx" message="tns:IService_Set_DQIxModule_VerifyDQIx_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Set_DQIxModule_VerifyDQIxResponse" message="tns:IService_Set_DQIxModule_VerifyDQIx_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Set_DQIyModule_VerifyDQIy">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Set_DQIyModule_VerifyDQIy" message="tns:IService_Set_DQIyModule_VerifyDQIy_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Set_DQIyModule_VerifyDQIyResponse" message="tns:IService_Set_DQIyModule_VerifyDQIy_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Set_BPNNModule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Set_BPNNModule" message="tns:IService_Set_BPNNModule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Set_BPNNModuleResponse" message="tns:IService_Set_BPNNModule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Set_MRModule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Set_MRModule" message="tns:IService_Set_MRModule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Set_MRModuleResponse" message="tns:IService_Set_MRModule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Set_RIModule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Set_RIModule" message="tns:IService_Set_RIModule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Set_RIModuleResponse" message="tns:IService_Set_RIModule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Set_GSIModule">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Set_GSIModule" message="tns:IService_Set_GSIModule_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Set_GSIModuleResponse" message="tns:IService_Set_GSIModule_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_DataTransferResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Get_DataTransferResult" message="tns:IService_Get_DataTransferResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Get_DataTransferResultResponse" message="tns:IService_Get_DataTransferResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_MDFRResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Get_MDFRResult" message="tns:IService_Get_MDFRResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Get_MDFRResultResponse" message="tns:IService_Get_MDFRResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_DQIyResult_GetDQIyPattern">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Get_DQIyResult_GetDQIyPattern" message="tns:IService_Get_DQIyResult_GetDQIyPattern_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Get_DQIyResult_GetDQIyPatternResponse" message="tns:IService_Get_DQIyResult_GetDQIyPattern_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_KSSResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/Get_KSSResult" message="tns:IService_Get_KSSResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/Get_KSSResultResponse" message="tns:IService_Get_KSSResult_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="Get_KVSResult">
+      <soap:operation soapAction="http://tempuri.org/IService/Get_KVSResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_DQIxResult_VerifyDQIx">
+      <soap:operation soapAction="http://tempuri.org/IService/Get_DQIxResult_VerifyDQIx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_DQIyResult_VerifyDQIy">
+      <soap:operation soapAction="http://tempuri.org/IService/Get_DQIyResult_VerifyDQIy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_BPNNResult">
+      <soap:operation soapAction="http://tempuri.org/IService/Get_BPNNResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_MRResult">
+      <soap:operation soapAction="http://tempuri.org/IService/Get_MRResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_RIResult">
+      <soap:operation soapAction="http://tempuri.org/IService/Get_RIResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_GSIResult">
+      <soap:operation soapAction="http://tempuri.org/IService/Get_GSIResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="UploadModel">
+      <soap:operation soapAction="http://tempuri.org/IService/UploadModel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CurrentVersion">
+      <soap:operation soapAction="http://tempuri.org/IService/CurrentVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getVmachine_ID">
+      <soap:operation soapAction="http://tempuri.org/IService/getVmachine_ID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCNC_Number">
+      <soap:operation soapAction="http://tempuri.org/IService/getCNC_Number" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNCProgram_ID">
+      <soap:operation soapAction="http://tempuri.org/IService/getNCProgram_ID" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCategoryDef">
+      <soap:operation soapAction="http://tempuri.org/IService/getCategoryDef" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListOfPostYType_1Name">
+      <soap:operation soapAction="http://tempuri.org/IService/getListOfPostYType_1Name" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListOfPostYType_2Name">
+      <soap:operation soapAction="http://tempuri.org/IService/getListOfPostYType_2Name" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListOfMetrology">
+      <soap:operation soapAction="http://tempuri.org/IService/getListOfMetrology" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListOfIndicator">
+      <soap:operation soapAction="http://tempuri.org/IService/getListOfIndicator" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getListOfIndicatorName">
+      <soap:operation soapAction="http://tempuri.org/IService/getListOfIndicatorName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getNewPopulation">
+      <soap:operation soapAction="http://tempuri.org/IService/getNewPopulation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InitTempleFolder">
+      <soap:operation soapAction="http://tempuri.org/IService/InitTempleFolder" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ChecktJobState">
+      <soap:operation soapAction="http://tempuri.org/IService/ChecktJobState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_DataTransferModule">
+      <soap:operation soapAction="http://tempuri.org/IService/Set_DataTransferModule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_MDFRModule">
+      <soap:operation soapAction="http://tempuri.org/IService/Set_MDFRModule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_DQIyModule_GetDQIyPattern">
+      <soap:operation soapAction="http://tempuri.org/IService/Set_DQIyModule_GetDQIyPattern" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_KSSModule">
+      <soap:operation soapAction="http://tempuri.org/IService/Set_KSSModule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_KVSModule">
+      <soap:operation soapAction="http://tempuri.org/IService/Set_KVSModule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_DQIxModule_VerifyDQIx">
+      <soap:operation soapAction="http://tempuri.org/IService/Set_DQIxModule_VerifyDQIx" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_DQIyModule_VerifyDQIy">
+      <soap:operation soapAction="http://tempuri.org/IService/Set_DQIyModule_VerifyDQIy" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_BPNNModule">
+      <soap:operation soapAction="http://tempuri.org/IService/Set_BPNNModule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_MRModule">
+      <soap:operation soapAction="http://tempuri.org/IService/Set_MRModule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_RIModule">
+      <soap:operation soapAction="http://tempuri.org/IService/Set_RIModule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Set_GSIModule">
+      <soap:operation soapAction="http://tempuri.org/IService/Set_GSIModule" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_DataTransferResult">
+      <soap:operation soapAction="http://tempuri.org/IService/Get_DataTransferResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_MDFRResult">
+      <soap:operation soapAction="http://tempuri.org/IService/Get_MDFRResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_DQIyResult_GetDQIyPattern">
+      <soap:operation soapAction="http://tempuri.org/IService/Get_DQIyResult_GetDQIyPattern" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_KSSResult">
+      <soap:operation soapAction="http://tempuri.org/IService/Get_KSSResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService">
+      <soap:address location="http://localhost/ModelCreationService/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

@@ -1,0 +1,17 @@
+﻿<controls:ChildWindow x:Class="IPS.Views.WaitingWindow"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"                      
+           Width="350" Height="Auto" Style="{StaticResource ChildWindowStyle}"
+           Title="{Binding message,Mode=TwoWay}" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk">
+    <Grid x:Name="LayoutRoot" Margin="3">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="Auto"/>
+            <RowDefinition Height="Auto"/>
+        </Grid.RowDefinitions>
+        <TextBlock Name="txtMessage" Loaded="StartTimer" Grid.Row="0" VerticalAlignment="Center" HorizontalAlignment="Left" Margin="2" Text="Message"/>
+        <ProgressBar Name="progressBar" Grid.Row="1" Width="330" VerticalAlignment="Center" HorizontalAlignment="Center" Height="20" IsIndeterminate="True"/>
+        <TextBlock Height="16" HorizontalAlignment="Center" Margin="0" Name="txtTimeString" Text="0.0" VerticalAlignment="Center" TextAlignment="Right" FontWeight="Normal" FontSize="12" Grid.Row="1" />
+    </Grid>
+</controls:ChildWindow>

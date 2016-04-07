@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/DataAquactionServices/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/DataAquactionServices/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/DataAquactionServices/Service.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost/DataAquactionServices/Service.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/DataAquactionServices" />
+      <xsd:import schemaLocation="http://localhost/DataAquactionServices/Service.svc?xsd=xsd4" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_getVmachineList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getVmachineList" />
+  </wsdl:message>
+  <wsdl:message name="IService_getVmachineList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getVmachineListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getEquipmentList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getEquipmentList" />
+  </wsdl:message>
+  <wsdl:message name="IService_getEquipmentList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getEquipmentListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getSensorList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getSensorList" />
+  </wsdl:message>
+  <wsdl:message name="IService_getSensorList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getSensorListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_uploadSTDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:uploadSTDB" />
+  </wsdl:message>
+  <wsdl:message name="IService_uploadSTDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:uploadSTDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_startPeriodTimeUploadSTDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:startPeriodTimeUploadSTDB" />
+  </wsdl:message>
+  <wsdl:message name="IService_startPeriodTimeUploadSTDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:startPeriodTimeUploadSTDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_stopPeriodTimeUploadSTDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:stopPeriodTimeUploadSTDB" />
+  </wsdl:message>
+  <wsdl:message name="IService_stopPeriodTimeUploadSTDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:stopPeriodTimeUploadSTDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getAllVmachineStateList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllVmachineStateList" />
+  </wsdl:message>
+  <wsdl:message name="IService_getAllVmachineStateList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllVmachineStateListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getAllStopVmachineStateList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllStopVmachineStateList" />
+  </wsdl:message>
+  <wsdl:message name="IService_getAllStopVmachineStateList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllStopVmachineStateListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getAllStartVmachineStateList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllStartVmachineStateList" />
+  </wsdl:message>
+  <wsdl:message name="IService_getAllStartVmachineStateList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllStartVmachineStateListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_uploadDefOfSTDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:uploadDefOfSTDB" />
+  </wsdl:message>
+  <wsdl:message name="IService_uploadDefOfSTDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:uploadDefOfSTDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_updateVMResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateVMResult" />
+  </wsdl:message>
+  <wsdl:message name="IService_updateVMResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateVMResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getModelResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:getModelResult" />
+  </wsdl:message>
+  <wsdl:message name="IService_getModelResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getModelResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getEquipmentByName_InputMessage">
+    <wsdl:part name="parameters" element="tns:getEquipmentByName" />
+  </wsdl:message>
+  <wsdl:message name="IService_getEquipmentByName_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getEquipmentByNameResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getAllvMachine_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllvMachine" />
+  </wsdl:message>
+  <wsdl:message name="IService_getAllvMachine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllvMachineResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService">
+    <wsdl:operation name="getVmachineList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getVmachineList" message="tns:IService_getVmachineList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getVmachineListResponse" message="tns:IService_getVmachineList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEquipmentList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getEquipmentList" message="tns:IService_getEquipmentList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getEquipmentListResponse" message="tns:IService_getEquipmentList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getSensorList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getSensorList" message="tns:IService_getSensorList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getSensorListResponse" message="tns:IService_getSensorList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="uploadSTDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/uploadSTDB" message="tns:IService_uploadSTDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/uploadSTDBResponse" message="tns:IService_uploadSTDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="startPeriodTimeUploadSTDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/startPeriodTimeUploadSTDB" message="tns:IService_startPeriodTimeUploadSTDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/startPeriodTimeUploadSTDBResponse" message="tns:IService_startPeriodTimeUploadSTDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="stopPeriodTimeUploadSTDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/stopPeriodTimeUploadSTDB" message="tns:IService_stopPeriodTimeUploadSTDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/stopPeriodTimeUploadSTDBResponse" message="tns:IService_stopPeriodTimeUploadSTDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllVmachineStateList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getAllVmachineStateList" message="tns:IService_getAllVmachineStateList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getAllVmachineStateListResponse" message="tns:IService_getAllVmachineStateList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllStopVmachineStateList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getAllStopVmachineStateList" message="tns:IService_getAllStopVmachineStateList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getAllStopVmachineStateListResponse" message="tns:IService_getAllStopVmachineStateList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllStartVmachineStateList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getAllStartVmachineStateList" message="tns:IService_getAllStartVmachineStateList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getAllStartVmachineStateListResponse" message="tns:IService_getAllStartVmachineStateList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="uploadDefOfSTDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/uploadDefOfSTDB" message="tns:IService_uploadDefOfSTDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/uploadDefOfSTDBResponse" message="tns:IService_uploadDefOfSTDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateVMResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/updateVMResult" message="tns:IService_updateVMResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/updateVMResultResponse" message="tns:IService_updateVMResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getModelResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getModelResult" message="tns:IService_getModelResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getModelResultResponse" message="tns:IService_getModelResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEquipmentByName">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getEquipmentByName" message="tns:IService_getEquipmentByName_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getEquipmentByNameResponse" message="tns:IService_getEquipmentByName_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllvMachine">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getAllvMachine" message="tns:IService_getAllvMachine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getAllvMachineResponse" message="tns:IService_getAllvMachine_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getVmachineList">
+      <soap:operation soapAction="http://tempuri.org/IService/getVmachineList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEquipmentList">
+      <soap:operation soapAction="http://tempuri.org/IService/getEquipmentList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getSensorList">
+      <soap:operation soapAction="http://tempuri.org/IService/getSensorList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadSTDB">
+      <soap:operation soapAction="http://tempuri.org/IService/uploadSTDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="startPeriodTimeUploadSTDB">
+      <soap:operation soapAction="http://tempuri.org/IService/startPeriodTimeUploadSTDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="stopPeriodTimeUploadSTDB">
+      <soap:operation soapAction="http://tempuri.org/IService/stopPeriodTimeUploadSTDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllVmachineStateList">
+      <soap:operation soapAction="http://tempuri.org/IService/getAllVmachineStateList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllStopVmachineStateList">
+      <soap:operation soapAction="http://tempuri.org/IService/getAllStopVmachineStateList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllStartVmachineStateList">
+      <soap:operation soapAction="http://tempuri.org/IService/getAllStartVmachineStateList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadDefOfSTDB">
+      <soap:operation soapAction="http://tempuri.org/IService/uploadDefOfSTDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateVMResult">
+      <soap:operation soapAction="http://tempuri.org/IService/updateVMResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getModelResult">
+      <soap:operation soapAction="http://tempuri.org/IService/getModelResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEquipmentByName">
+      <soap:operation soapAction="http://tempuri.org/IService/getEquipmentByName" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllvMachine">
+      <soap:operation soapAction="http://tempuri.org/IService/getAllvMachine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService">
+      <soap:address location="http://localhost/DataAquactionServices/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

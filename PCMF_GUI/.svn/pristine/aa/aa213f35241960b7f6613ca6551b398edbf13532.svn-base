@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DataAquactionServices" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DataAquactionServices" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/DataAquactionServices/Service.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfvMachineState">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="vMachineState" nillable="true" type="tns:vMachineState" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfvMachineState" nillable="true" type="tns:ArrayOfvMachineState" />
+  <xs:complexType name="vMachineState">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CNC_Type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equipmentName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="hour" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sensor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="state" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vMachineName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="vMachineState" nillable="true" type="tns:vMachineState" />
+  <xs:complexType name="ModelPredictiveValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bpnnValue" nillable="true" type="tns:Out_BPNN" />
+      <xs:element minOccurs="0" name="contentsNumber" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="contextsDatetime" nillable="true" type="q1:ArrayOfdateTime" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="contextsId" nillable="true" type="q2:ArrayOfdouble" />
+      <xs:element minOccurs="0" name="gsiValue" nillable="true" type="tns:Out_GSI" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="metrologyVlaue" nillable="true" type="q3:ArrayOfdouble" />
+      <xs:element minOccurs="0" name="mrValue" nillable="true" type="tns:Out_MR" />
+      <xs:element minOccurs="0" name="riValue" nillable="true" type="tns:Out_RI" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ModelPredictiveValue" nillable="true" type="tns:ModelPredictiveValue" />
+  <xs:complexType name="Out_BPNN">
+    <xs:sequence>
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OutAll_MAPE" nillable="true" type="q4:ArrayOfdouble" />
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OutAll_MaxError" nillable="true" type="q5:ArrayOfdouble" />
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OutAll_PredictValueList" nillable="true" type="q6:ArrayOfArrayOfdouble" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Out_BPNN" nillable="true" type="tns:Out_BPNN" />
+  <xs:complexType name="Out_GSI">
+    <xs:sequence>
+      <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OUTGSI_Threshold" nillable="true" type="q7:ArrayOfdouble" />
+      <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OutAll_PredictValueList" nillable="true" type="q8:ArrayOfArrayOfdouble" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Out_GSI" nillable="true" type="tns:Out_GSI" />
+  <xs:complexType name="Out_MR">
+    <xs:sequence>
+      <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OutAll_MAPE" nillable="true" type="q9:ArrayOfdouble" />
+      <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OutAll_MaxError" nillable="true" type="q10:ArrayOfdouble" />
+      <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OutAll_PredictValueList" nillable="true" type="q11:ArrayOfArrayOfdouble" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Out_MR" nillable="true" type="tns:Out_MR" />
+  <xs:complexType name="Out_RI">
+    <xs:sequence>
+      <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OutAll_PredictValueList" nillable="true" type="q12:ArrayOfArrayOfdouble" />
+      <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OutRI_Threshold" nillable="true" type="q13:ArrayOfdouble" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Out_RI" nillable="true" type="tns:Out_RI" />
+</xs:schema>

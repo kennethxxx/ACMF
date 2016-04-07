@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="ServiceManager" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/WCFServiceWebRole/ServiceManager.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/WCFServiceWebRole/ServiceManager.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/WCFServiceWebRole/ServiceManager.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/WCFServiceWebRole" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IServiceManager_CurrentVersion_InputMessage">
+    <wsdl:part name="parameters" element="tns:CurrentVersion" />
+  </wsdl:message>
+  <wsdl:message name="IServiceManager_CurrentVersion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CurrentVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceManager_GetServiceList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetServiceList" />
+  </wsdl:message>
+  <wsdl:message name="IServiceManager_GetServiceList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetServiceListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceManager_GetProviderInfoList_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetProviderInfoList" />
+  </wsdl:message>
+  <wsdl:message name="IServiceManager_GetProviderInfoList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetProviderInfoListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceManager_PublishAService_InputMessage">
+    <wsdl:part name="parameters" element="tns:PublishAService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceManager_PublishAService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:PublishAServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceManager_DeleteAService_InputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAService" />
+  </wsdl:message>
+  <wsdl:message name="IServiceManager_DeleteAService_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DeleteAServiceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceManager_GetServiceMapping_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetServiceMapping" />
+  </wsdl:message>
+  <wsdl:message name="IServiceManager_GetServiceMapping_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetServiceMappingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceManager_SaveServiceMapping_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveServiceMapping" />
+  </wsdl:message>
+  <wsdl:message name="IServiceManager_SaveServiceMapping_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveServiceMappingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceManager_GetUDDIConnectionInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetUDDIConnectionInfo" />
+  </wsdl:message>
+  <wsdl:message name="IServiceManager_GetUDDIConnectionInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetUDDIConnectionInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IServiceManager_SaveUDDIConnectionInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:SaveUDDIConnectionInfo" />
+  </wsdl:message>
+  <wsdl:message name="IServiceManager_SaveUDDIConnectionInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:SaveUDDIConnectionInfoResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IServiceManager">
+    <wsdl:operation name="CurrentVersion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceManager/CurrentVersion" message="tns:IServiceManager_CurrentVersion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceManager/CurrentVersionResponse" message="tns:IServiceManager_CurrentVersion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceManager/GetServiceList" message="tns:IServiceManager_GetServiceList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceManager/GetServiceListResponse" message="tns:IServiceManager_GetServiceList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetProviderInfoList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceManager/GetProviderInfoList" message="tns:IServiceManager_GetProviderInfoList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceManager/GetProviderInfoListResponse" message="tns:IServiceManager_GetProviderInfoList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="PublishAService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceManager/PublishAService" message="tns:IServiceManager_PublishAService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceManager/PublishAServiceResponse" message="tns:IServiceManager_PublishAService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAService">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceManager/DeleteAService" message="tns:IServiceManager_DeleteAService_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceManager/DeleteAServiceResponse" message="tns:IServiceManager_DeleteAService_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceMapping">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceManager/GetServiceMapping" message="tns:IServiceManager_GetServiceMapping_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceManager/GetServiceMappingResponse" message="tns:IServiceManager_GetServiceMapping_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveServiceMapping">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceManager/SaveServiceMapping" message="tns:IServiceManager_SaveServiceMapping_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceManager/SaveServiceMappingResponse" message="tns:IServiceManager_SaveServiceMapping_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetUDDIConnectionInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceManager/GetUDDIConnectionInfo" message="tns:IServiceManager_GetUDDIConnectionInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceManager/GetUDDIConnectionInfoResponse" message="tns:IServiceManager_GetUDDIConnectionInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="SaveUDDIConnectionInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IServiceManager/SaveUDDIConnectionInfo" message="tns:IServiceManager_SaveUDDIConnectionInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IServiceManager/SaveUDDIConnectionInfoResponse" message="tns:IServiceManager_SaveUDDIConnectionInfo_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IServiceManager" type="tns:IServiceManager">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CurrentVersion">
+      <soap:operation soapAction="http://tempuri.org/IServiceManager/CurrentVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceList">
+      <soap:operation soapAction="http://tempuri.org/IServiceManager/GetServiceList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetProviderInfoList">
+      <soap:operation soapAction="http://tempuri.org/IServiceManager/GetProviderInfoList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PublishAService">
+      <soap:operation soapAction="http://tempuri.org/IServiceManager/PublishAService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DeleteAService">
+      <soap:operation soapAction="http://tempuri.org/IServiceManager/DeleteAService" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceMapping">
+      <soap:operation soapAction="http://tempuri.org/IServiceManager/GetServiceMapping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveServiceMapping">
+      <soap:operation soapAction="http://tempuri.org/IServiceManager/SaveServiceMapping" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetUDDIConnectionInfo">
+      <soap:operation soapAction="http://tempuri.org/IServiceManager/GetUDDIConnectionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="SaveUDDIConnectionInfo">
+      <soap:operation soapAction="http://tempuri.org/IServiceManager/SaveUDDIConnectionInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="ServiceManager">
+    <wsdl:port name="BasicHttpBinding_IServiceManager" binding="tns:BasicHttpBinding_IServiceManager">
+      <soap:address location="http://localhost/WCFServiceWebRole/ServiceManager.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

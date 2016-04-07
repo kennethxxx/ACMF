@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WCFServiceWebRole" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WCFServiceWebRole" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfSVInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="SVInfo" nillable="true" type="tns:SVInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfSVInfo" nillable="true" type="tns:ArrayOfSVInfo" />
+  <xs:complexType name="SVInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="businesskey" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="businessname" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="endpoint" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="key" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="SVInfo" nillable="true" type="tns:SVInfo" />
+  <xs:complexType name="ArrayOfProviderInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProviderInfo" nillable="true" type="tns:ProviderInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProviderInfo" nillable="true" type="tns:ArrayOfProviderInfo" />
+  <xs:complexType name="ProviderInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="key" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProviderInfo" nillable="true" type="tns:ProviderInfo" />
+  <xs:complexType name="ArrayOfServiceMappingInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ServiceMappingInfo" nillable="true" type="tns:ServiceMappingInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfServiceMappingInfo" nillable="true" type="tns:ArrayOfServiceMappingInfo" />
+  <xs:complexType name="ServiceMappingInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="functionName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="svInfo" nillable="true" type="tns:SVInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceMappingInfo" nillable="true" type="tns:ServiceMappingInfo" />
+  <xs:complexType name="ConnectionInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="password" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="url" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="username" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ConnectionInfo" nillable="true" type="tns:ConnectionInfo" />
+</xs:schema>

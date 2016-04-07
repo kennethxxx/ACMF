@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="C:\Users\Jerry Hsieh\Desktop\0" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="設定檔1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="bin/IPS.Web.pdb" publishTime="10/30/2012 17:57:45" />
+    <file relUrl="bin/IPS.Web.dll" publishTime="10/30/2012 17:57:45" />
+    <file relUrl="ClientBin/IPS.xap" publishTime="10/30/2012 17:57:57" />
+    <file relUrl="Web.config" publishTime="10/30/2012 17:58:34" />
+    <file relUrl="Silverlight.js" publishTime="12/10/2010 00:04:18" />
+    <file relUrl="bin/Microsoft.WindowsAzure.Diagnostics.dll" publishTime="11/03/2011 15:32:52" />
+    <file relUrl="bin/Microsoft.WindowsAzure.StorageClient.xml" publishTime="10/24/2011 16:37:32" />
+    <file relUrl="default.aspx" publishTime="04/19/2012 10:55:06" />
+    <file relUrl="bin/Microsoft.WindowsAzure.StorageClient.dll" publishTime="11/03/2011 15:32:50" />
+    <file relUrl="bin/Microsoft.WindowsAzure.Diagnostics.xml" publishTime="11/03/2011 15:04:58" />
+  </publishProfile>
+</publishData>

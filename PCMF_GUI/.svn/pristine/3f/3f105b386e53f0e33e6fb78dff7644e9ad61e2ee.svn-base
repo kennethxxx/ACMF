@@ -1,0 +1,208 @@
+﻿<UserControl
+	xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+	xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+	xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+	xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+	xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit" xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+	mc:Ignorable="d"
+	x:Class="IPS.ViewsSub.ModelCreationModule.ModelCreationModule_DataCollection_Page"
+	d:DesignWidth="978" d:DesignHeight="580">
+
+    <Grid x:Name="LayoutRoot">
+        <Border BorderBrush="Black" BorderThickness="0" Margin="0,0,0,0" Height="580" VerticalAlignment="Top">
+            <Grid>
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition Width="280" />
+                    <ColumnDefinition Width="700" />
+                </Grid.ColumnDefinitions>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto" MinHeight="530" />
+                    <RowDefinition Height="0"/>
+                </Grid.RowDefinitions>
+
+                <StackPanel Margin="0,0,-180,-24" Grid.RowSpan="2">
+                    <toolkit:HeaderedContentControl Style="{StaticResource GroupBox}" Header="Step 1. 設定建模條件" VerticalAlignment="Top" Height="344">
+                        <Grid Margin="5,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="447" Height="331">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" MinHeight="38" />
+                                <RowDefinition Height="Auto" MinHeight="38" />
+                                <RowDefinition Height="Auto" MinHeight="38" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" MinHeight="34" />
+                                <RowDefinition Height="Auto" MinHeight="32" />
+                                <RowDefinition Height="Auto" MinHeight="34"/>
+                                <RowDefinition Height="Auto" MinHeight="32" />
+                                <RowDefinition Height="Auto" MinHeight="15" />
+                                <RowDefinition Height="0.805*"/>
+                                <RowDefinition Height="0.195*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="88" />
+                                <ColumnDefinition Width="160" />
+                                <ColumnDefinition Width="199*" />
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Text="v-Machine:" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,5,0,5"/>
+                            <ComboBox x:Name="ui_DC_vMachine" Grid.Column="1" VerticalAlignment="Center" Margin="5,18,5,0" SelectionChanged="ui_DC_vMachine_SelectionChanged"/>
+
+                            <TextBlock Text="CNC Number:" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,5,0,5"/>
+                            <ComboBox x:Name="ui_DC_CNCnumber" Grid.Column="1" Grid.Row="1" VerticalAlignment="Center" Margin="5" SelectionChanged="ui_DC_CNCnumber_SelectionChanged"/>
+
+                            <TextBlock Text="NC Program:" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5,5,0,5"/>
+                            <ComboBox x:Name="ui_DC_NCprogram" Grid.Column="1" Grid.Row="2" VerticalAlignment="Center" Margin="5" SelectionChanged="ui_DC_NCprogram_SelectionChanged"/>
+                            <sdk:DataGrid x:Name="ui_DG_ProductBasicInfoList" Margin="4,12,10,14" Grid.RowSpan="10" Grid.ColumnSpan="3" SelectionChanged="ui_DG_ProductBasicInfoList_SelectionChanged" />
+                        </Grid>
+                    </toolkit:HeaderedContentControl>
+                    <toolkit:HeaderedContentControl Style="{StaticResource GroupBox}" Header="Step 3. 設定資料蒐集區間" VerticalAlignment="Top" Height="187">
+                        <Grid Margin="5,5,0,0" HorizontalAlignment="Left" VerticalAlignment="Top" Width="447" Height="153">
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto" MinHeight="38" />
+                                <RowDefinition Height="Auto" MinHeight="38" />
+                                <RowDefinition Height="Auto" MinHeight="38" />
+                                <RowDefinition Height="10" />
+                                <RowDefinition Height="Auto" MinHeight="34" />
+                                <RowDefinition Height="Auto" MinHeight="32" />
+                                <RowDefinition Height="Auto" MinHeight="34"/>
+                                <RowDefinition Height="Auto" MinHeight="32" />
+                                <RowDefinition Height="Auto" MinHeight="15" />
+                                <RowDefinition Height="0.805*"/>
+                                <RowDefinition Height="0.195*"/>
+                            </Grid.RowDefinitions>
+                            <Grid.ColumnDefinitions>
+                                <ColumnDefinition Width="88" />
+                                <ColumnDefinition Width="160" />
+                                <ColumnDefinition Width="199*" />
+                            </Grid.ColumnDefinitions>
+
+                            <TextBlock Text="開始時間:" Margin="8,8,0,14" HorizontalAlignment="Left" d:LayoutOverrides="Height" />
+
+                            <TextBlock Text="結束時間:" Grid.Row="2" Margin="8,8,0,14" HorizontalAlignment="Left" d:LayoutOverrides="Height" />
+                            <toolkit:TimePicker Language="en-GB" x:Name="ui_DC_StartTime" Value="12:00 AM" PopupButtonMode="Hover" Margin="8,8,-85,0" Grid.Column="1" Grid.Row="1" VerticalAlignment="Top"/>
+                            <sdk:DatePicker Language="en-GB" x:Name="ui_DC_StartDate" Margin="8,4,-85,0" SelectedDateFormat="Short" Grid.Column="1" VerticalAlignment="Top" />
+                            <sdk:DatePicker Language="en-GB" x:Name="ui_DC_EndDate" Margin="8,8,-85,6" Grid.Column="1" Grid.Row="2" d:LayoutOverrides="Height" />
+                            <toolkit:TimePicker Language="en-GB" x:Name="ui_DC_EndTime" Value="12:00 AM" PopupButtonMode="Hover" Margin="8,-2,-85,14" DataContext="{Binding}" Grid.Row="4" Grid.Column="1" />
+                            <Button x:Name="ui_DC_NextStep" IsEnabled="False" Click="ui_DC_NextStep_Click" ToolTipService.ToolTip="Confirm &amp; Next" Margin="0,-2,-191,14" Grid.Row="4" Grid.Column="1" HorizontalAlignment="Right" Width="90">
+                                <StackPanel Orientation="Horizontal">
+                                    <Image Height="22" Width="22" Margin="0" Source="/IPS;component/Images/arrow_right.png" Stretch="Fill" />
+                                    <TextBlock Text="下一步" FontWeight="Bold" VerticalAlignment="Center" Margin="5,0,0,0" Width="55" Height="16" TextAlignment="Center" />
+                                </StackPanel>
+                            </Button>
+                            <Button x:Name="ui_DC_Search" Margin="0,-1,16,11" Width="82" Grid.Column="2" Height="28" HorizontalAlignment="Right" ToolTipService.ToolTip="Search Population" d:LayoutOverrides="HorizontalAlignment" Click="ui_DC_Search_Click" Visibility="Visible">
+                                <StackPanel VerticalAlignment="Center" Orientation="Horizontal" HorizontalAlignment="Left">
+                                    <Image Height="22" Width="22" Margin="0" Source="/IPS;component/Images/search.png" Stretch="Fill" />
+                                    <TextBlock Text="資料檢索" FontWeight="Bold" VerticalAlignment="Center" Margin="5,0,0,0" Width="44" Height="16" TextAlignment="Center" />
+                                </StackPanel>
+                            </Button>
+                        </Grid>
+                    </toolkit:HeaderedContentControl>
+                </StackPanel>
+
+                <toolkit:HeaderedContentControl x:Name="headerControlVariable" Visibility="Visible" Style="{StaticResource GroupBox}" Margin="184,0,5,-1" Header="Step 2. 設定變數" Grid.Column="1" Grid.RowSpan="2">
+                    <Grid Margin="0" Height="471">
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="19" />
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="0.486*"  />
+                            <ColumnDefinition Width="Auto" MinWidth="14.25"/>
+                            <ColumnDefinition Width="0.514*"  />
+                        </Grid.ColumnDefinitions>
+
+                        <TextBlock Text="特徵值" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" x:Name="ui_DC_IndicatorTypeTitle" />
+                        <TextBlock Text="量測精度" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="10,0,0,0" x:Name="ui_DC_MetrologyTypeTitle" />
+                        <sdk:DataGrid LoadingRow="ui_DC_IndicatorType_LoadingRow" x:Name="ui_DC_IndicatorType" IsReadOnly="True" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Visible" Margin="8,8,10,0" SelectionMode="Single" Grid.Row="1" d:LayoutOverrides="Width, GridBox" Width="220" VerticalAlignment="Top" SelectionChanged="ui_DC_IndicatorType_SelectionChanged" RenderTransformOrigin="0.5,0.385">
+                            <sdk:DataGrid.Columns>
+                                <sdk:DataGridTextColumn Header="特徵項目" Binding="{Binding Name}" Width="140"/>
+
+                                <sdk:DataGridTemplateColumn Width="60">
+                                    <sdk:DataGridTemplateColumn.HeaderStyle>
+                                        <Style TargetType="sdk:DataGridColumnHeader">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate>
+                                                        <Grid>
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition/>
+                                                            </Grid.ColumnDefinitions>
+                                                            <Rectangle x:Name="BackgroundRectangle" Fill="#FF1F3B53" Stretch="Fill"/>
+                                                            <Rectangle x:Name="BackgroundGradient" Stretch="Fill">
+                                                                <Rectangle.Fill>
+                                                                    <LinearGradientBrush EndPoint=".7,1" StartPoint=".7,0">
+                                                                        <GradientStop Color="#FCFFFFFF" Offset="0.015"/>
+                                                                        <GradientStop Color="#F7FFFFFF" Offset="0.375"/>
+                                                                        <GradientStop Color="#E5FFFFFF" Offset="0.6"/>
+                                                                        <GradientStop Color="#D1FFFFFF" Offset="1"/>
+                                                                    </LinearGradientBrush>
+                                                                </Rectangle.Fill>
+                                                            </Rectangle>
+                                                            <CheckBox x:Name="ui_DC_CheckIndicatorAll" Click="ui_DC_CheckIndicatorTypeAll_Click" Margin="2,0,0,0" Content="輸入" VerticalAlignment="Center" Grid.Column="0"/>
+                                                        </Grid>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </sdk:DataGridTemplateColumn.HeaderStyle>
+                                    <sdk:DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <CheckBox x:Name="chkVariableNone" Click="ui_DC_CheckIndicatorType_Click" VerticalAlignment="Center" IsChecked="false" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+                                        </DataTemplate>
+                                    </sdk:DataGridTemplateColumn.CellTemplate>
+                                </sdk:DataGridTemplateColumn>
+
+                                <sdk:DataGridTextColumn Header="Data Key" Binding="{Binding Value}" Width="0" Visibility="Collapsed" />
+
+                            </sdk:DataGrid.Columns>
+                        </sdk:DataGrid>
+                        <sdk:DataGrid x:Name="ui_DC_MetrologyType" IsReadOnly="True" AutoGenerateColumns="False" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Visible" Margin="10,8,21,0" LoadingRow="ui_DC_MetrologyType_LoadingRow" SelectionMode="Single" RenderTransformOrigin="0.5,0.385" Grid.Row="1" Grid.Column="2" Width="220" VerticalAlignment="Top">
+                            <sdk:DataGrid.Columns>
+                                <sdk:DataGridTextColumn Header="精度項目" Binding="{Binding Name}" Width="135"/>
+
+                                <sdk:DataGridTemplateColumn Width="60">
+                                    <sdk:DataGridTemplateColumn.HeaderStyle>
+                                        <Style TargetType="sdk:DataGridColumnHeader">
+                                            <Setter Property="Template">
+                                                <Setter.Value>
+                                                    <ControlTemplate>
+                                                        <Grid>
+                                                            <Grid.ColumnDefinitions>
+                                                                <ColumnDefinition/>
+                                                            </Grid.ColumnDefinitions>
+                                                            <Rectangle x:Name="BackgroundRectangle" Fill="#FF1F3B53" Stretch="Fill"/>
+                                                            <Rectangle x:Name="BackgroundGradient" Stretch="Fill">
+                                                                <Rectangle.Fill>
+                                                                    <LinearGradientBrush EndPoint=".7,1" StartPoint=".7,0">
+                                                                        <GradientStop Color="#FCFFFFFF" Offset="0.015"/>
+                                                                        <GradientStop Color="#F7FFFFFF" Offset="0.375"/>
+                                                                        <GradientStop Color="#E5FFFFFF" Offset="0.6"/>
+                                                                        <GradientStop Color="#D1FFFFFF" Offset="1"/>
+                                                                    </LinearGradientBrush>
+                                                                </Rectangle.Fill>
+                                                            </Rectangle>
+                                                            <CheckBox x:Name="ui_DC_CheckMetrologyTypeAll" Click="ui_DC_CheckMetrologyTypeAll_Click" Background="Transparent" Margin="2,0,0,0" Content="輸出" VerticalAlignment="Center" Grid.Column="0"/>
+                                                        </Grid>
+                                                    </ControlTemplate>
+                                                </Setter.Value>
+                                            </Setter>
+                                        </Style>
+                                    </sdk:DataGridTemplateColumn.HeaderStyle>
+                                    <sdk:DataGridTemplateColumn.CellTemplate>
+                                        <DataTemplate>
+                                            <CheckBox x:Name="chkVariableType1" Click="ui_DC_CheckMetrologyType_Click" VerticalAlignment="Center" IsChecked="false" HorizontalAlignment="Center" HorizontalContentAlignment="Center"/>
+                                        </DataTemplate>
+                                    </sdk:DataGridTemplateColumn.CellTemplate>
+                                </sdk:DataGridTemplateColumn>
+
+                                <sdk:DataGridTextColumn Header="Data Key" Binding="{Binding Value}" Width="0" Visibility="Collapsed" />
+                            </sdk:DataGrid.Columns>
+                        </sdk:DataGrid>
+                        <!--<TextBlock Text="Roundness" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Center" VerticalAlignment="Center" Margin="5"/>-->
+
+
+                    </Grid>
+                </toolkit:HeaderedContentControl>
+
+            </Grid>
+        </Border>
+    </Grid>
+</UserControl>

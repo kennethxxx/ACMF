@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="Get_DCR_From_ServiceBroker.Service1" CodeBehind="Service1.svc.cs" %>

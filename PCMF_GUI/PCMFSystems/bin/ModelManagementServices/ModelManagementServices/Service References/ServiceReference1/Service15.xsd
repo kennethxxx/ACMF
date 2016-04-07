@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ModelManagementServices" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ModelManagementServices" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfEquipmentInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EquipmentInformation" nillable="true" type="tns:EquipmentInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEquipmentInformation" nillable="true" type="tns:ArrayOfEquipmentInformation" />
+  <xs:complexType name="EquipmentInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CNCID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="v_Machine_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="v_Machine_IP" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EquipmentInformation" nillable="true" type="tns:EquipmentInformation" />
+</xs:schema>

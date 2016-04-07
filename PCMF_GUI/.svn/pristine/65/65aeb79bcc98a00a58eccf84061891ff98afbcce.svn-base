@@ -1,0 +1,289 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/ModelManagementServices/Service.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/ModelManagementServices/Service.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/ModelManagementServices/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ModelManagementServices" />
+      <xsd:import schemaLocation="http://localhost/ModelManagementServices/Service.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost/ModelManagementServices/Service.svc?xsd=xsd4" namespace="http://schemas.datacontract.org/2004/07/ServiceBroker" />
+      <xsd:import schemaLocation="http://localhost/ModelManagementServices/Service.svc?xsd=xsd5" namespace="http://schemas.datacontract.org/2004/07/" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService_CurrentVersion_InputMessage">
+    <wsdl:part name="parameters" element="tns:CurrentVersion" />
+  </wsdl:message>
+  <wsdl:message name="IService_CurrentVersion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:CurrentVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCNCType_InputMessage">
+    <wsdl:part name="parameters" element="tns:getCNCType" />
+  </wsdl:message>
+  <wsdl:message name="IService_getCNCType_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getCNCTypeResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_uploadModel_InputMessage">
+    <wsdl:part name="parameters" element="tns:uploadModel" />
+  </wsdl:message>
+  <wsdl:message name="IService_uploadModel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:uploadModelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_uploadTempModel_InputMessage">
+    <wsdl:part name="parameters" element="tns:uploadTempModel" />
+  </wsdl:message>
+  <wsdl:message name="IService_uploadTempModel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:uploadTempModelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getTempBlob_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTempBlob" />
+  </wsdl:message>
+  <wsdl:message name="IService_getTempBlob_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTempBlobResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_deleteModel_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteModel" />
+  </wsdl:message>
+  <wsdl:message name="IService_deleteModel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteModelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_deleteTempBlobData_InputMessage">
+    <wsdl:part name="parameters" element="tns:deleteTempBlobData" />
+  </wsdl:message>
+  <wsdl:message name="IService_deleteTempBlobData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:deleteTempBlobDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getModelInformationList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getModelInformationList" />
+  </wsdl:message>
+  <wsdl:message name="IService_getModelInformationList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getModelInformationListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_fanOutModelControl_InputMessage">
+    <wsdl:part name="parameters" element="tns:fanOutModelControl" />
+  </wsdl:message>
+  <wsdl:message name="IService_fanOutModelControl_OutputMessage">
+    <wsdl:part name="parameters" element="tns:fanOutModelControlResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_fanOutModel_InputMessage">
+    <wsdl:part name="parameters" element="tns:fanOutModel" />
+  </wsdl:message>
+  <wsdl:message name="IService_fanOutModel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:fanOutModelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getModelFilterParameter_InputMessage">
+    <wsdl:part name="parameters" element="tns:getModelFilterParameter" />
+  </wsdl:message>
+  <wsdl:message name="IService_getModelFilterParameter_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getModelFilterParameterResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getVmachineInformationList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getVmachineInformationList" />
+  </wsdl:message>
+  <wsdl:message name="IService_getVmachineInformationList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getVmachineInformationListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getAllModelInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:getAllModelInformation" />
+  </wsdl:message>
+  <wsdl:message name="IService_getAllModelInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getAllModelInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService_getEquipmentInformationList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getEquipmentInformationList" />
+  </wsdl:message>
+  <wsdl:message name="IService_getEquipmentInformationList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getEquipmentInformationListResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService">
+    <wsdl:operation name="CurrentVersion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/CurrentVersion" message="tns:IService_CurrentVersion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/CurrentVersionResponse" message="tns:IService_CurrentVersion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getCNCType">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getCNCType" message="tns:IService_getCNCType_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getCNCTypeResponse" message="tns:IService_getCNCType_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="uploadModel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/uploadModel" message="tns:IService_uploadModel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/uploadModelResponse" message="tns:IService_uploadModel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="uploadTempModel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/uploadTempModel" message="tns:IService_uploadTempModel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/uploadTempModelResponse" message="tns:IService_uploadTempModel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTempBlob">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getTempBlob" message="tns:IService_getTempBlob_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getTempBlobResponse" message="tns:IService_getTempBlob_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteModel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/deleteModel" message="tns:IService_deleteModel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/deleteModelResponse" message="tns:IService_deleteModel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="deleteTempBlobData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/deleteTempBlobData" message="tns:IService_deleteTempBlobData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/deleteTempBlobDataResponse" message="tns:IService_deleteTempBlobData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getModelInformationList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getModelInformationList" message="tns:IService_getModelInformationList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getModelInformationListResponse" message="tns:IService_getModelInformationList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="fanOutModelControl">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/fanOutModelControl" message="tns:IService_fanOutModelControl_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/fanOutModelControlResponse" message="tns:IService_fanOutModelControl_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="fanOutModel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/fanOutModel" message="tns:IService_fanOutModel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/fanOutModelResponse" message="tns:IService_fanOutModel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getModelFilterParameter">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getModelFilterParameter" message="tns:IService_getModelFilterParameter_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getModelFilterParameterResponse" message="tns:IService_getModelFilterParameter_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getVmachineInformationList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getVmachineInformationList" message="tns:IService_getVmachineInformationList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getVmachineInformationListResponse" message="tns:IService_getVmachineInformationList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getAllModelInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getAllModelInformation" message="tns:IService_getAllModelInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getAllModelInformationResponse" message="tns:IService_getAllModelInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEquipmentInformationList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService/getEquipmentInformationList" message="tns:IService_getEquipmentInformationList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService/getEquipmentInformationListResponse" message="tns:IService_getEquipmentInformationList_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService" type="tns:IService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CurrentVersion">
+      <soap:operation soapAction="http://tempuri.org/IService/CurrentVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getCNCType">
+      <soap:operation soapAction="http://tempuri.org/IService/getCNCType" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadModel">
+      <soap:operation soapAction="http://tempuri.org/IService/uploadModel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadTempModel">
+      <soap:operation soapAction="http://tempuri.org/IService/uploadTempModel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTempBlob">
+      <soap:operation soapAction="http://tempuri.org/IService/getTempBlob" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteModel">
+      <soap:operation soapAction="http://tempuri.org/IService/deleteModel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="deleteTempBlobData">
+      <soap:operation soapAction="http://tempuri.org/IService/deleteTempBlobData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getModelInformationList">
+      <soap:operation soapAction="http://tempuri.org/IService/getModelInformationList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fanOutModelControl">
+      <soap:operation soapAction="http://tempuri.org/IService/fanOutModelControl" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fanOutModel">
+      <soap:operation soapAction="http://tempuri.org/IService/fanOutModel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getModelFilterParameter">
+      <soap:operation soapAction="http://tempuri.org/IService/getModelFilterParameter" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getVmachineInformationList">
+      <soap:operation soapAction="http://tempuri.org/IService/getVmachineInformationList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getAllModelInformation">
+      <soap:operation soapAction="http://tempuri.org/IService/getAllModelInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEquipmentInformationList">
+      <soap:operation soapAction="http://tempuri.org/IService/getEquipmentInformationList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service">
+    <wsdl:port name="BasicHttpBinding_IService" binding="tns:BasicHttpBinding_IService">
+      <soap:address location="http://localhost/ModelManagementServices/Service.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

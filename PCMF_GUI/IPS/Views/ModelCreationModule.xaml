@@ -1,0 +1,55 @@
+﻿<navigation:Page 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"                 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"                 
+           xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk"
+           xmlns:dataPrimitives="clr-namespace:System.Windows.Controls.Primitives;assembly=System.Windows.Controls.Data"                      
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           xmlns:IPS="clr-namespace:IPS" x:Name="page" x:Class="IPS.Views.ModelCreationModule"
+           xmlns:IPSVSModelCreationModule="clr-namespace:IPS.ViewsSub.ModelCreationModule"
+           
+           mc:Ignorable="d"
+           Title="ModelCreationModule Page" d:DesignHeight="820" d:DesignWidth="1024" MinHeight="570" MinWidth="990" MaxHeight="820" Height="Auto" Width="990" HorizontalAlignment="Left">
+    <Grid x:Name="LayoutRoot" Margin="0">
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*" />
+        </Grid.ColumnDefinitions>
+    	<sdk:TabControl x:Name="tabControl1" Margin="0" Background="White" Grid.ColumnSpan="1" MinHeight="570" MinWidth="990">
+            <sdk:TabItem Header="Step 1. 樣本資料蒐集 " IsEnabled="True" x:Name="ui_DC_MainTab" FontSize="12" FontWeight="SemiBold" ToolTipService.ToolTip="Collect Modeling Data">
+                <IPSVSModelCreationModule:ModelCreationModule_DataCollection_Page Margin="0" x:Name="ui_DataCollection_Page"/>
+    		</sdk:TabItem>
+
+            <sdk:TabItem Header="Step 2. 樣本資料分配" IsEnabled="False" x:Name="ui_DS_MainTab" FontSize="12" FontWeight="SemiBold" ToolTipService.ToolTip="Set Training and Running Data">
+                <IPSVSModelCreationModule:ModelCreationModule_DataSelection_Page Margin="0" x:Name="ui_DataSelection_Page"/>
+    		</sdk:TabItem>
+
+            <sdk:TabItem Header="Step 3. 樣本資料輸出輸入對應" IsEnabled="False" Height="Auto" x:Name="ui_SG_MainTab" FontSize="12" FontWeight="SemiBold" ToolTipService.ToolTip="Set Metrology item Spec. and Group">
+                <IPSVSModelCreationModule:ModelCreationModule_SetGroup_Page Margin="0" x:Name="ui_SetGroup_Page"/>
+    		</sdk:TabItem>
+
+            <sdk:TabItem Header="Step 4. 剔除異常樣本(以實際物理量)" IsEnabled="False" x:Name="ui_CP_MainTab" FontSize="12" FontWeight="SemiBold" ToolTipService.ToolTip="Clean Process Data (X) via Chart">
+                <IPSVSModelCreationModule:ModelCreationModule_CleanProcessData_Page Margin="0" x:Name="ui_CleanProcessData_Page"/>
+    		</sdk:TabItem>
+
+            <sdk:TabItem Header="Step 5. 剔除異常樣本 (以分群)" IsEnabled="False" x:Name="ui_CM_MainTab" FontSize="12" FontWeight="SemiBold" ToolTipService.ToolTip="Clean Metrology Data(y) via DQIy Pattern">
+                <IPSVSModelCreationModule:ModelCreationModule_CleanMetrologyData_Page Margin="0" x:Name="ui_CleanMetrologyData_Page"/>
+    		</sdk:TabItem>
+
+            <sdk:TabItem Header="Step 6. 樣本輸入品質(DQIx 驗證)" IsEnabled="False" x:Name="ui_VX_MainTab" FontSize="12" FontWeight="SemiBold" ToolTipService.ToolTip="Create DQIx Module, DQIx: Data Quality Index of X">
+                <IPSVSModelCreationModule:ModelCreationModule_VerifyDQIx_Page Margin="0" x:Name="ui_VerifyDQIx_Page"/>
+    		</sdk:TabItem>
+
+            <sdk:TabItem Header="Step 7. 樣本輸出品質(DQIy 驗證)" IsEnabled="False" x:Name="ui_VY_MainTab" FontSize="12" FontWeight="SemiBold" ToolTipService.ToolTip="Create DQIy Module, DQIy: Data Quality Index of y">
+                <IPSVSModelCreationModule:ModelCreationModule_VerifyDQIy_Page Margin="0" x:Name="ui_VerifyDQIy_Page"/>
+    		</sdk:TabItem>
+
+            <sdk:TabItem Header="Step 8. 精度預測模型建立" IsEnabled="False" x:Name="ui_BM_MainTab" FontSize="12" FontWeight="SemiBold">
+                <IPSVSModelCreationModule:ModelCreationModule_BuildConjectureModel_Page Margin="0" x:Name="ui_BuildConjectureModel_Page" />
+    		</sdk:TabItem>
+
+    	</sdk:TabControl>
+    </Grid>
+</navigation:Page>

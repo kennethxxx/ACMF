@@ -1,0 +1,224 @@
+﻿<UserControl x:Class="IPS.Views.OntologyTOC" 
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d" 
+    xmlns:Local="clr-namespace:OMC.Comm"
+    xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"
+    xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"                 
+    xmlns:sdk="http://schemas.microsoft.com/winfx/2006/xaml/presentation/sdk" d:DesignWidth="900">
+    <!--版面設計-->
+    <UserControl.Resources>
+        <DataTemplate x:Key="ImageGalleryDataTemplate">
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="0.833*"/>
+                    <RowDefinition Height="0.167*"/>
+                </Grid.RowDefinitions>
+                <Border Grid.Row="0" Grid.Column="0" BorderBrush="#FFADABA8" BorderThickness="2"  Width="200" Height="150" Padding="10" Margin="10" CornerRadius="10">
+                    <!--Bind Image Path in Image Control-->
+                    <Image Source="{Binding ImageName}" Stretch="Fill"  HorizontalAlignment="Center">
+                        <!--View Large Image on Image Control Tooltip 滑鼠移到圖片並放大圖片，可以改Height，Width-->
+                        <ToolTipService.ToolTip>
+                            <Grid>
+                                <Image Source="{Binding ImageName}" Stretch="Fill" HorizontalAlignment="Center" Height="Auto" Width="Auto"></Image>
+                            </Grid>
+                        </ToolTipService.ToolTip>
+                    </Image>
+                </Border>
+                <Grid Grid.Row="1" Grid.Column="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="100" />
+                        <ColumnDefinition Width="100" />
+                    </Grid.ColumnDefinitions>
+                    <TextBlock  Grid.Column="0"  Text="{Binding ImageLine}"  Foreground="Orange" HorizontalAlignment="Center"></TextBlock>
+                    <TextBlock Grid.Column="1" Text="{Binding ImageTime}"  Foreground="Orange" HorizontalAlignment="Center"></TextBlock>
+                </Grid>
+            </Grid>
+        </DataTemplate>
+        <ItemsPanelTemplate x:Key="ImageGalleryItemsPanelTemplate">
+            <Local:UniformGrid Columns="3" HorizontalAlignment="Center" VerticalAlignment="Stretch" />
+        </ItemsPanelTemplate>
+    </UserControl.Resources>
+    <Grid x:Name="LayoutRoot" Background="White" >
+        <Border Margin="0,0,17,50" Name="LinksBorder" Background="White">
+            <sdk:TabControl Name="ProcessEngineer" HorizontalAlignment="Left" Margin="5" VerticalAlignment="Top" Width="900" Background="{x:Null}">
+                <sdk:TabItem Header="步驟一. 更換NC檔之刀具資料" Name="TBGetMachineStatus" FontWeight="SemiBold" FontSize="12">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="158"/>
+                            <RowDefinition Height="280"/>
+                        </Grid.RowDefinitions>
+                        <toolkit:HeaderedContentControl Style="{StaticResource GroupBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="0" Width="720" Height="Auto" Header="提示：" Margin="5">
+                            <TextBlock Grid.RowSpan="2" Height="Auto" Width="650" HorizontalAlignment="Left" Margin="28,15,10,10" Name="LB_Info1" Text="TextBlock" VerticalAlignment="Top" TextWrapping="Wrap" />
+                        </toolkit:HeaderedContentControl>
+                        <toolkit:HeaderedContentControl Style="{StaticResource GroupBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="1" Width="720" Header="選擇機台的位置資訊取得機台狀態" Height="196" Margin="5,5,0,0" Grid.RowSpan="2">
+                            <Grid Height="187" Width="703">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="200" />
+                                    <ColumnDefinition Width="200" />
+                                    <ColumnDefinition Width="181*" />
+                                    <ColumnDefinition Width="131*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="35"/>
+                                    <RowDefinition Height="35"/>
+                                    <RowDefinition Height="35" />
+                                    <RowDefinition Height="35" />
+                                    <RowDefinition Height="35" />
+                                    <RowDefinition Height="12*" />
+                                </Grid.RowDefinitions>
+                                <sdk:Label HorizontalAlignment="Left"   Name="label2" VerticalAlignment="Center"  Grid.Row="0" Grid.Column="0" Content="公司名稱：" Margin="10,2,0,12"/>
+                                <sdk:Label HorizontalAlignment="Left" Name="label4" VerticalAlignment="Center" Grid.Row="1" Grid.Column="0"  Content="Service Broker：" Margin="10,2,0,12" />
+                                <sdk:Label Content="vMachine：" Height="26" HorizontalAlignment="Left" Margin="10,1,0,39" Name="label5" VerticalAlignment="Center" Grid.Row="2" Grid.RowSpan="2" />
+                                <sdk:Label Content="CNC名稱：" Height="26" HorizontalAlignment="Left" Margin="11,9,0,5" Name="label7" VerticalAlignment="Center" Grid.Row="3" />
+                                <ComboBox HorizontalAlignment="Left" Margin="10,2,0,0" Name="CBCompany" VerticalAlignment="Top" Width="177" Grid.Column="1" Grid.Row="0" SelectionChanged="CBCompany_SelectionChanged" />
+                                <ComboBox HorizontalAlignment="Left" Margin="10,2,0,0" Name="CBServiceBroker" VerticalAlignment="Top" Width="177" Grid.Row="1" Grid.Column="1" SelectionChanged="CBServiceBroker_SelectionChanged" />
+                                <ComboBox HorizontalAlignment="Left" Margin="10,4,0,0" Name="CBvMachine" VerticalAlignment="Top" Width="177" Grid.Column="1" Grid.Row="2" SelectionChanged="CBvMachine_SelectionChanged" />
+                                <ComboBox HorizontalAlignment="Left" Margin="10,8,0,0" Name="CBCNCname" VerticalAlignment="Top" Width="177" Grid.Column="1" Grid.Row="3" SelectionChanged="CBCNCname_SelectionChanged" />
+                                <sdk:Label HorizontalAlignment="Left"   Name="lbNCfile" VerticalAlignment="Center"  Grid.Row="1" Grid.Column="2" Content="● 目前使用的工件檔：" Margin="10,2,0,12" FontWeight="Bold" Visibility="Collapsed" />
+                                <sdk:Label HorizontalAlignment="Left"   Name="lbtool" VerticalAlignment="Center"  Grid.Row="2" Grid.Column="2" Content="● 目前使用的刀具：" Margin="10,2,0,12" FontWeight="Bold" Visibility="Collapsed" />
+                                <sdk:Label HorizontalAlignment="Left"   Name="lbmachine" VerticalAlignment="Center"  Grid.Row="3" Grid.Column="2" Content="● 目前加工的工具機：" Margin="10,2,0,12" FontWeight="Bold" Visibility="Collapsed" />
+                                <TextBox Grid.Column="3" Grid.Row="1" Height="23" HorizontalAlignment="Left" Margin="0,5,0,0" Name="tb_NCfile"  VerticalAlignment="Top" Width="120" Visibility="Collapsed" IsReadOnly="True" Background="Transparent" AllowDrop="True" />
+                                <TextBox Grid.Column="3" Grid.Row="2" Height="23" HorizontalAlignment="Left" Margin="0,5,0,0" Name="tb_tool" VerticalAlignment="Top" Width="120" Visibility="Collapsed" IsReadOnly="True" Background="Transparent" />
+                                <TextBox Grid.Column="3" Grid.Row="3" Height="23" HorizontalAlignment="Left" Margin="0,5,0,0" Name="tb_machine" VerticalAlignment="Top" Width="120" Visibility="Collapsed" IsReadOnly="True" Background="Transparent" />
+                            </Grid>
+                        </toolkit:HeaderedContentControl>
+                        <toolkit:HeaderedContentControl Style="{StaticResource GroupBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Row="2" Width="720" Header="顯示可替代的刀具資料" Margin="5,46,0,0" Grid.RowSpan="2">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="606*" />
+                                    <ColumnDefinition Width="106*" />
+                                </Grid.ColumnDefinitions>
+                                <sdk:DataGrid AutoGenerateColumns="False" Height="181" HorizontalAlignment="Center" Margin="10,1,30,0" Name="GDGetMachineStatus" VerticalAlignment="Top" Width="566">
+                                    <sdk:DataGrid.Columns>
+                                        <sdk:DataGridTemplateColumn Header="選擇刀具">
+                                            <sdk:DataGridTemplateColumn.CellTemplate>
+                                                <DataTemplate>
+                                                    <StackPanel Orientation="Vertical">
+                                                        <RadioButton x:Name="RB_ToolSelect" VerticalAlignment="Center"  HorizontalAlignment="Center" Tag="{Binding ID}" GroupName="SelectedItem"></RadioButton>
+                                                    </StackPanel>
+                                                </DataTemplate>
+                                            </sdk:DataGridTemplateColumn.CellTemplate>
+                                        </sdk:DataGridTemplateColumn>
+                                        <sdk:DataGridTextColumn CanUserReorder="True" CanUserResize="True" CanUserSort="True" Header="刀具名稱" Width="Auto" Binding="{Binding NC_Descriptions}"/>
+                                        <sdk:DataGridTextColumn CanUserReorder="True" CanUserResize="True" CanUserSort="True" Header="刀具種類" Width="Auto" Binding="{Binding A_kind_of_Tool}"/>
+                                        <sdk:DataGridTextColumn CanUserReorder="True" CanUserResize="True" CanUserSort="True" Header="刀具的直徑" Width="Auto" Binding="{Binding Tool_of_Diameter}"/>
+                                        <!--<sdk:DataGridTextColumn CanUserReorder="True" CanUserResize="True" CanUserSort="True" Header="NC檔名稱" Width="Auto" Binding="{Binding NC_File_Name}"/>-->
+                                        <!--<sdk:DataGridTextColumn CanUserReorder="True" CanUserResize="True" CanUserSort="True" Header="BLOB位置" Width="Auto" Binding="{Binding BLOB_Address}"/>-->
+                                    </sdk:DataGrid.Columns>
+                                </sdk:DataGrid>
+                                <Button Name="btnNextToPEIP2" Margin="0,151,0,187" Width="90" Height="30" Grid.Column="1" HorizontalAlignment="Left" Click="btnNextToPEIP2_Click">
+                                    <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                                        <Image Height="24" Width="24" Margin="1" ToolTipService.ToolTip="Do Search" Source="/OMC;component/Images/arrow_right.png"/>
+                                        <TextBlock Text=" 下一步 " FontWeight="Bold" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button>
+                                <Button Name="btnNextToPEIP" Margin="0,151,0,187" Width="90" Height="30" Grid.Column="1" HorizontalAlignment="Left" Click="btnNextToPEIP_Click">
+                                    <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                                        <Image Height="24" Width="24" Margin="1" ToolTipService.ToolTip="Do Search" Source="/OMC;component/Images/arrow_right.png"/>
+                                        <TextBlock Text=" 下一步 " FontWeight="Bold" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button>
+                            </Grid>
+                        </toolkit:HeaderedContentControl>
+                        <sdk:Label Content="CNC Name：" Height="26" HorizontalAlignment="Left" Margin="18,13,0,311" Name="label6" VerticalAlignment="Center" Grid.Row="2" />
+                    </Grid>
+                </sdk:TabItem>
+                <sdk:TabItem Header="步驟二. 新刀具切削過程展示圖" Name="TIShowPic" FontWeight="SemiBold" FontSize="12" IsEnabled="False">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="735*" />
+                        </Grid.ColumnDefinitions>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="Auto"/>
+                        </Grid.RowDefinitions>
+                        <toolkit:HeaderedContentControl Style="{StaticResource GroupBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="860" Header="提示：" Margin="5,5,0,0" Height="Auto">
+                            <TextBlock Grid.RowSpan="2" Height="Auto" Width="800" HorizontalAlignment="Left" Margin="28,15,10,10" Name="LB_Info2" Text="TextBlock" VerticalAlignment="Top" TextWrapping="Wrap" />
+                        </toolkit:HeaderedContentControl>
+                        <toolkit:HeaderedContentControl Grid.Row="1"  Style="{StaticResource GroupBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="860" Header="刀具過切展示圖" Margin="5,5,0,0" Height="296">
+                            <Grid>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="59*" />
+                                    <RowDefinition Height="213*" />
+                                </Grid.RowDefinitions>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="708*" />
+                                    <ColumnDefinition Width="84*" />
+                                </Grid.ColumnDefinitions>
+                                <ListBox x:Name="LsImageGallery" ItemsSource="{Binding }" ItemTemplate="{StaticResource ImageGalleryDataTemplate}" ItemsPanel="{StaticResource ImageGalleryItemsPanelTemplate}" Margin="0,47,6,0" Grid.RowSpan="2">
+                                    <ListBox.Background>
+                                        <LinearGradientBrush EndPoint="0.5,1" StartPoint="0.5,0">
+                                            <GradientStop Color="Black"/>
+                                            <GradientStop Color="#FF1E2A2F" Offset="1"/>
+                                        </LinearGradientBrush>
+                                    </ListBox.Background>
+                                </ListBox>
+                                <Image Height="75" HorizontalAlignment="Left" Margin="761,39,0,0" Name="ig_Undercutting" Stretch="Fill" VerticalAlignment="Top" Width="80" Grid.ColumnSpan="2" Source="/OMC;component/Images/symbol-error.png" Grid.Row="1" />
+                                <sdk:Label Grid.Row="1" Height="28" HorizontalAlignment="Left" Margin="761,116,0,0" Name="lb_Undercutting" VerticalAlignment="Top" Width="87" Grid.ColumnSpan="2" Foreground="Red" FontSize="20" />
+                                <Button Name="btnLastToChangeTool" Width="90" Height="34" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Margin="0,0,0,36" Click="btnLastToChangeTool_Click">
+                                    <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                                        <Image Height="24" Width="24" Margin="1" ToolTipService.ToolTip="Do Search" Source="/OMC;component/Images/arrow_left.png"/>
+                                        <TextBlock Text=" 上一步 " FontWeight="Bold" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button>
+                                <Button Name="btnNextToRealMachining" Width="90" Height="30" Grid.Column="1" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Bottom" Click="btnNextToRealMachining_Click">
+                                    <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                                        <Image Height="24" Width="24" Margin="1" ToolTipService.ToolTip="Do Search" Source="/OMC;component/Images/arrow_right.png"/>
+                                        <TextBlock Text=" 下一步 " FontWeight="Bold" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button>
+                                <sdk:Label Height="28" HorizontalAlignment="Left" Margin="2,5,0,0" Name="label1" VerticalAlignment="Top" Width="250" Content="刀具切削的NC檔：" />
+                                <TextBox Height="23" HorizontalAlignment="Right" Margin="0,3,0,0" Name="TB_NCFileName" VerticalAlignment="Top" Width="504" IsReadOnly="True" IsEnabled="False" />
+                            </Grid>
+                        </toolkit:HeaderedContentControl>
+                    </Grid>
+                </sdk:TabItem>
+                <sdk:TabItem Header="步驟三. 確認偏好之刀具資料與送出加工請求" Name="TBRealMachining" FontWeight="SemiBold" FontSize="12" IsEnabled="False">
+                    <Grid>
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="117*" />
+                            </Grid.RowDefinitions>
+                            <toolkit:HeaderedContentControl Style="{StaticResource GroupBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="775" Header="提示：" Margin="5,5,0,0" Height="Auto">
+                                <TextBlock Grid.RowSpan="2" Height="Auto" Width="650" HorizontalAlignment="Left" Margin="28,15,10,10" Name="LB_Info3" Text="TextBlock" VerticalAlignment="Top" TextWrapping="Wrap" />
+                            </toolkit:HeaderedContentControl>
+                            <toolkit:HeaderedContentControl Grid.Row="1" Style="{StaticResource GroupBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Width="775" Header="選擇工具機知識庫推薦機台的NC檔，送往實際加工機台" Margin="5,5,0,0" Height="229"></toolkit:HeaderedContentControl>
+                            <Grid Margin="6,24,118,0" Grid.Row="1">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="350*" />
+                                    <ColumnDefinition Width="129*" />
+                                </Grid.ColumnDefinitions>
+                                <Grid.RowDefinitions>
+                                    <RowDefinition Height="Auto" />
+                                    <RowDefinition Height="Auto" />
+                                </Grid.RowDefinitions>
+                                <sdk:DataGrid AutoGenerateColumns="False" Height="177" HorizontalAlignment="Left" Margin="14,10,0,0" Name="DGRealMachining" VerticalAlignment="Top" Width="538">
+                                    <sdk:DataGrid.Columns>
+                                        <sdk:DataGridTextColumn CanUserReorder="True" CanUserResize="True" CanUserSort="True" Header="CNC 名稱" Width="Auto" Binding="{Binding CNC_Name}" />
+                                        <sdk:DataGridTextColumn CanUserReorder="True" CanUserResize="True" CanUserSort="True" Header="使用的刀具" Width="Auto" Binding="{Binding ToolNo}" />
+                                        <sdk:DataGridTextColumn CanUserReorder="True" CanUserResize="True" CanUserSort="True" Header="可替代刀具的NC檔名稱" Width="Auto" Binding="{Binding ToolNC_Name}" />
+                                    </sdk:DataGrid.Columns>
+                                </sdk:DataGrid>
+                                <Button Name="btnStartCutting" Width="120" Height="30" HorizontalAlignment="Left" VerticalAlignment="Top" Grid.Column="1" Margin="0,158,0,0" Grid.RowSpan="3" Click="btnStartCutting_Click">
+                                    <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                                        <Image Height="24" Width="24" Margin="1" ToolTipService.ToolTip="Do Search" Source="/OMC;component/Images/arrow_right.png" />
+                                        <TextBlock Text=" 開始切削 " FontWeight="Bold" VerticalAlignment="Center" />
+                                    </StackPanel>
+                                </Button>
+                            </Grid>
+                        </Grid>
+                    </Grid>
+                </sdk:TabItem>
+            </sdk:TabControl>
+        </Border>
+    </Grid>
+</UserControl>

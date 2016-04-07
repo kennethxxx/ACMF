@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/DataAquactionServices" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/DataAquactionServices" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://140.116.86.235/DataAquactionServices/Service.svc?xsd=xsd2" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ArrayOfvMachineState">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="vMachineState" nillable="true" type="tns:vMachineState" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfvMachineState" nillable="true" type="tns:ArrayOfvMachineState" />
+  <xs:complexType name="vMachineState">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CNC_Type" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="equipmentName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="hour" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="sensor" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="state" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vMachineName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="vMachineState" nillable="true" type="tns:vMachineState" />
+  <xs:complexType name="ModelPredictiveValue">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="bpnnValue" nillable="true" type="tns:Out_BPNN" />
+      <xs:element minOccurs="0" name="contentsNumber" type="xs:int" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="contextsDatetime" nillable="true" type="q1:ArrayOfdateTime" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="contextsId" nillable="true" type="q2:ArrayOfdouble" />
+      <xs:element minOccurs="0" name="gsiValue" nillable="true" type="tns:Out_GSI" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="metrologyVlaue" nillable="true" type="q3:ArrayOfdouble" />
+      <xs:element minOccurs="0" name="mrValue" nillable="true" type="tns:Out_MR" />
+      <xs:element minOccurs="0" name="riValue" nillable="true" type="tns:Out_RI" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ModelPredictiveValue" nillable="true" type="tns:ModelPredictiveValue" />
+  <xs:complexType name="Out_BPNN">
+    <xs:sequence>
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OutAll_MAPE" nillable="true" type="q4:ArrayOfdouble" />
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OutAll_MaxError" nillable="true" type="q5:ArrayOfdouble" />
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OutAll_PredictValueList" nillable="true" type="q6:ArrayOfArrayOfdouble" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Out_BPNN" nillable="true" type="tns:Out_BPNN" />
+  <xs:complexType name="Out_GSI">
+    <xs:sequence>
+      <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OUTGSI_Threshold" nillable="true" type="q7:ArrayOfdouble" />
+      <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OutAll_PredictValueList" nillable="true" type="q8:ArrayOfArrayOfdouble" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Out_GSI" nillable="true" type="tns:Out_GSI" />
+  <xs:complexType name="Out_MR">
+    <xs:sequence>
+      <xs:element xmlns:q9="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OutAll_MAPE" nillable="true" type="q9:ArrayOfdouble" />
+      <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OutAll_MaxError" nillable="true" type="q10:ArrayOfdouble" />
+      <xs:element xmlns:q11="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OutAll_PredictValueList" nillable="true" type="q11:ArrayOfArrayOfdouble" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Out_MR" nillable="true" type="tns:Out_MR" />
+  <xs:complexType name="Out_RI">
+    <xs:sequence>
+      <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OutAll_PredictValueList" nillable="true" type="q12:ArrayOfArrayOfdouble" />
+      <xs:element xmlns:q13="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="OutRI_Threshold" nillable="true" type="q13:ArrayOfdouble" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Out_RI" nillable="true" type="tns:Out_RI" />
+  <xs:complexType name="ProductBasicInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="XinfoList" nillable="true" type="tns:ArrayOfXinfo" />
+      <xs:element minOccurs="0" name="YinfoList" nillable="true" type="tns:ArrayOfYinfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductBasicInfo" nillable="true" type="tns:ProductBasicInfo" />
+  <xs:complexType name="ArrayOfXinfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Xinfo" nillable="true" type="tns:Xinfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfXinfo" nillable="true" type="tns:ArrayOfXinfo" />
+  <xs:complexType name="Xinfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Position" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Xinfo" nillable="true" type="tns:Xinfo" />
+  <xs:complexType name="ArrayOfYinfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Yinfo" nillable="true" type="tns:Yinfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfYinfo" nillable="true" type="tns:ArrayOfYinfo" />
+  <xs:complexType name="Yinfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Action" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Yinfo" nillable="true" type="tns:Yinfo" />
+  <xs:complexType name="DADCPInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CollectionMethod" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ConjectureType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="EndTime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FactoryName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServiceBrokerInformation" nillable="true" type="tns:ServiceBrokerInfo" />
+      <xs:element minOccurs="0" name="StartTime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WorkPieceName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="WorkPieceType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="X_Data" nillable="true" type="tns:ArrayOfXItem" />
+      <xs:element minOccurs="0" name="Y_Data" nillable="true" type="tns:ArrayOfYItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DADCPInfo" nillable="true" type="tns:DADCPInfo" />
+  <xs:complexType name="ServiceBrokerInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="URL" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vMachineList" nillable="true" type="tns:ArrayOfvMachineInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ServiceBrokerInfo" nillable="true" type="tns:ServiceBrokerInfo" />
+  <xs:complexType name="ArrayOfvMachineInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="vMachineInfo" nillable="true" type="tns:vMachineInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfvMachineInfo" nillable="true" type="tns:ArrayOfvMachineInfo" />
+  <xs:complexType name="vMachineInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CNCList" nillable="true" type="tns:ArrayOfCNCInfo" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="vMachineInfo" nillable="true" type="tns:vMachineInfo" />
+  <xs:complexType name="ArrayOfCNCInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="CNCInfo" nillable="true" type="tns:CNCInfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfCNCInfo" nillable="true" type="tns:ArrayOfCNCInfo" />
+  <xs:complexType name="CNCInfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CNCInfo" nillable="true" type="tns:CNCInfo" />
+  <xs:complexType name="ArrayOfXItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="XItem" nillable="true" type="tns:XItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfXItem" nillable="true" type="tns:ArrayOfXItem" />
+  <xs:complexType name="XItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Position" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="XItem" nillable="true" type="tns:XItem" />
+  <xs:complexType name="ArrayOfYItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="YItem" nillable="true" type="tns:YItem" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfYItem" nillable="true" type="tns:ArrayOfYItem" />
+  <xs:complexType name="YItem">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Block" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Type" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="YItem" nillable="true" type="tns:YItem" />
+  <xs:complexType name="DCPInfoClass">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="DCPinfoList" nillable="true" type="tns:ArrayOfDCPinfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DCPInfoClass" nillable="true" type="tns:DCPInfoClass" />
+  <xs:complexType name="ArrayOfDCPinfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="DCPinfo" nillable="true" type="tns:DCPinfo" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfDCPinfo" nillable="true" type="tns:ArrayOfDCPinfo" />
+  <xs:complexType name="DCPinfo">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CreateTime" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DCPStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="DCRStatus" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="FileName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TargetSBID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="TargetSBURL" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DCPinfo" nillable="true" type="tns:DCPinfo" />
+</xs:schema>

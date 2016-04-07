@@ -1,0 +1,25 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<publishData>
+  <publishProfile publishUrl="D:\20121011 上傳雲端OK\AMCSystems\AMCSystems\ModelCreationService" deleteExistingFiles="True" ftpAnonymousLogin="False" ftpPassiveMode="True" msdeploySite="" msdeploySiteID="" msdeployRemoteSitePhysicalPath="" msdeployAllowUntrustedCertificate="False" msdeploySkipExtraFilesOnServer="True" msdeployMarkAsApp="False" profileName="設定檔1" publishMethod="FileSystem" replaceMatchingFiles="False" userName="" savePWD="False" userPWD="" SelectedForPublish="True">
+    <file relUrl="Web.config" publishTime="10/18/2012 19:10:45" />
+    <file relUrl="bin/Microsoft.WindowsAzure.StorageClient.xml" publishTime="10/24/2011 16:37:32" />
+    <file relUrl="bin/Microsoft.WindowsAzure.Diagnostics.dll" publishTime="11/03/2011 15:32:52" />
+    <file relUrl="bin/ModelCreationService.pdb" publishTime="10/18/2012 19:09:26" />
+    <file relUrl="bin/7z86.dll" publishTime="08/26/2010 21:13:12" />
+    <file relUrl="bin/SerializableContainer.dll" publishTime="04/17/2012 17:10:36" />
+    <file relUrl="Service.svc" publishTime="04/18/2012 14:12:08" />
+    <file relUrl="QueueMessages.dll" publishTime="04/30/2012 11:05:56" />
+    <file relUrl="7z86.dll" publishTime="08/26/2010 21:13:12" />
+    <file relUrl="bin/ModelCreationService.dll" publishTime="10/18/2012 19:09:26" />
+    <file relUrl="bin/QueueMessages.dll" publishTime="04/30/2012 11:05:56" />
+    <file relUrl="BlobOperator.dll" publishTime="04/25/2012 16:59:28" />
+    <file relUrl="bin/Microsoft.WindowsAzure.StorageClient.dll" publishTime="11/03/2011 15:32:50" />
+    <file relUrl="7z64.dll" publishTime="08/26/2010 21:11:20" />
+    <file relUrl="SerializableContainer.dll" publishTime="04/17/2012 17:10:36" />
+    <file relUrl="bin/Microsoft.WindowsAzure.Diagnostics.xml" publishTime="11/03/2011 15:04:58" />
+    <file relUrl="bin/BlobOperator.dll" publishTime="04/25/2012 16:59:28" />
+    <file relUrl="SevenZipSharp.dll" publishTime="10/05/2011 13:32:02" />
+    <file relUrl="bin/SevenZipSharp.dll" publishTime="10/05/2011 13:32:02" />
+    <file relUrl="bin/7z64.dll" publishTime="08/26/2010 21:11:20" />
+  </publishProfile>
+</publishData>

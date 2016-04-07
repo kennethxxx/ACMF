@@ -1,0 +1,132 @@
+﻿<navigation:Page x:Class="IPS.Views.HistoricalDataModule" 
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+           xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+           xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"      
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"                                  
+           mc:Ignorable="d"
+           xmlns:navigation="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls.Navigation"
+           Title="HistoricalDataModule Page">
+    <Grid x:Name="LayoutRoot">
+        <Border x:Name="LinksBorder" Grid.Row="0">
+            <controls:TabControl HorizontalAlignment="Left" Name="tabControl1" Margin="5" VerticalAlignment="Top" Width="1000" Height="Auto" Background="White">
+                <controls:TabItem Header="搜尋VM 的歷史結果" Name="tabDataCollection" Height="Auto" FontSize="12" FontWeight="SemiBold">
+                    <Grid>
+                        <Grid.RowDefinitions>
+                            <RowDefinition Height="Auto"/>
+                            <RowDefinition Height="*" />
+                        </Grid.RowDefinitions>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="Auto"/>
+                            <ColumnDefinition Width="770"/>
+                        </Grid.ColumnDefinitions>
+
+                        <StackPanel Orientation="Vertical" Margin="0" Grid.Row="0" Grid.Column="0" VerticalAlignment="Top" >
+                            <toolkit:HeaderedContentControl Style="{StaticResource GroupBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="220" Header=" 搜尋 ">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="80" />
+                                        <ColumnDefinition Width="130" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Text="v-Machine:" Grid.Row="0" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="2"/>
+                                    <ComboBox Name="cmbVMachine" Width="120" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="2" SelectionChanged="cmbVMachine_SelectionChanged">
+                                    </ComboBox>
+
+                                    <TextBlock Text="機台:" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="2"/>
+                                    <ComboBox Name="cmbEquipment" Width="120" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="2" >
+                                    </ComboBox>
+
+                                    <TextBlock Text="Phase:" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="2"/>
+                                    <ComboBox Name="cmbPhase" Width="120" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="2" ItemsSource="{Binding}" SelectedIndex="0">
+                                        <ComboBoxItem Content="PhaseI" IsSelected="True" />
+                                        <ComboBoxItem Content="PhaseII" />
+                                    </ComboBox>
+
+                                    <TextBlock Text="開始日期:" Grid.Row="3" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="2"/>
+                                    <controls:DatePicker Grid.Row="3" Grid.Column="1" Language="en-GB" Name="startDatePicker" Margin="2" />
+
+                                    <TextBlock Text="結束日期:" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="2"/>
+                                    <controls:DatePicker Grid.Row="4" Grid.Column="1" Language="en-GB" Name="endDatePicker" Margin="2" />
+
+                                </Grid>
+                            </toolkit:HeaderedContentControl>
+
+                            <toolkit:HeaderedContentControl Style="{StaticResource GroupBox}" Name="headerMAPEError" Visibility="Collapsed" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="220" Header="">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <Grid.ColumnDefinitions>
+                                        <ColumnDefinition Width="40" />
+                                        <ColumnDefinition Width="75" />
+                                        <ColumnDefinition Width="85" />
+                                    </Grid.ColumnDefinitions>
+
+                                    <TextBlock Text="NN:" Grid.Row="1" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+                                    <TextBlock Text="MR:" Grid.Row="2" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+
+                                    <TextBlock Text="MAPE(%)" Grid.Row="0" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4"/>
+                                    <TextBlock Text="Max Err(%)" Grid.Row="0" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="4"/>
+
+                                    <TextBlock Name="txtMapeNN" Text="0" Grid.Row="1" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+                                    <TextBlock Name="txtMapeMR" Text="0" Grid.Row="2" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+
+                                    <TextBlock Name="txtMaxErrNN" Text="0" Grid.Row="1" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+                                    <TextBlock Name="txtMaxErrMR" Text="0" Grid.Row="2" Grid.Column="2" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="5"/>
+                                </Grid>
+                            </toolkit:HeaderedContentControl>
+
+                            <StackPanel HorizontalAlignment="Center" Orientation="Horizontal">
+                                <Button Name="btnSearch" Margin="5" Height="30" Width="90" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnSearch_Click">
+                                    <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                                        <Image Height="24" Width="24" Margin="1" ToolTipService.ToolTip="Do Search" Source="/IPS;component/Images/search.png"/>
+                                        <TextBlock Text="搜尋" FontWeight="Bold" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button>
+                                <Button Name="btnReset" Margin="5" Height="30" Width="90" Grid.Row="4" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Center" Click="btnReset_Click">
+                                    <StackPanel VerticalAlignment="Center" Orientation="Horizontal">
+                                        <Image Height="24" Width="24" Margin="1" ToolTipService.ToolTip="Search Again" Source="/IPS;component/Images/reset.png"/>
+                                        <TextBlock Text="重新設定" FontWeight="Bold" VerticalAlignment="Center"/>
+                                    </StackPanel>
+                                </Button>
+                            </StackPanel>
+
+                        </StackPanel>
+
+                        <StackPanel HorizontalAlignment="Left" Orientation="Vertical" Margin="0" Grid.Row="0" Grid.Column="1">
+                            <StackPanel HorizontalAlignment="Left" Orientation="Horizontal">
+                                <TextBlock Text="測量項目:" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="2"/>
+                                <ComboBox Name="cmbPoint" SelectedValuePath="Value" DisplayMemberPath="Name" Width="120" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="2" SelectionChanged="cmbPoint_SelectionChanged" />
+                            </StackPanel>
+                            <toolkit:HeaderedContentControl Style="{StaticResource GroupBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="780" Header="圖表">
+                                <Grid>
+                                    <Grid.RowDefinitions>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                        <RowDefinition Height="Auto"/>
+                                    </Grid.RowDefinitions>
+                                    <StackPanel Grid.Row="0" Name="stpMetrologyChart" HorizontalAlignment="Left" Orientation="Vertical" />
+                                    <StackPanel Grid.Row="1" Name="stpRIChart" HorizontalAlignment="Left" Orientation="Vertical" />
+                                    <StackPanel Grid.Row="2" Name="stpGSIChart" HorizontalAlignment="Left" Orientation="Vertical" />
+                                </Grid>
+                            </toolkit:HeaderedContentControl>
+                        </StackPanel>
+                    </Grid>
+                </controls:TabItem>
+            </controls:TabControl>
+        </Border>
+    </Grid>
+</navigation:Page>

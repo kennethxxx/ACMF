@@ -1,0 +1,13 @@
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\x64\Debug\7z.dll
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\x64\Debug\SevenZipSharp.dll
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\x64\Debug\ModelManagementServices.dll
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\x64\Debug\ModelManagementServices.pdb
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\x64\Debug\CBPN10b.dll
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\x64\Debug\ICSharpCode.SharpZipLib.dll
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\x64\Debug\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\x64\Debug\Microsoft.WindowsAzure.StorageClient.dll
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\x64\Debug\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\x64\Debug\Microsoft.WindowsAzure.StorageClient.xml
+D:\Jerry\ModelManagementServices\ModelManagementServices\obj\x64\Debug\ResolveAssemblyReference.cache
+D:\Jerry\ModelManagementServices\ModelManagementServices\obj\x64\Debug\ModelManagementServices.dll
+D:\Jerry\ModelManagementServices\ModelManagementServices\obj\x64\Debug\ModelManagementServices.pdb

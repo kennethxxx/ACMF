@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4d413473-d362-45be-9375-f3ee9c4b1ddd" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://140.116.86.235/ModelCreationService/Service.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service1.disco" MetadataType="Disco" ID="377217c8-54a3-4dd0-bec9-fe1251f5aa28" SourceId="1" SourceUrl="http://140.116.86.235/ModelCreationService/Service.svc?disco" />
+    <MetadataFile FileName="Service4.xsd" MetadataType="Schema" ID="1e446a53-536c-4e56-8b9a-40fa132065e3" SourceId="1" SourceUrl="http://140.116.86.235/ModelCreationService/Service.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service41.xsd" MetadataType="Schema" ID="ee9519d3-ea0f-4cdd-ba54-81ec865af4f9" SourceId="1" SourceUrl="http://140.116.86.235/ModelCreationService/Service.svc?xsd=xsd1" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="78e034b1-94e1-42a2-9c6b-f4971ead6be5" SourceId="1" SourceUrl="http://140.116.86.235/ModelCreationService/Service.svc?wsdl" />
+    <MetadataFile FileName="Service.xsd" MetadataType="Schema" ID="e927c91e-a76c-4c12-9e14-44cd96518825" SourceId="1" SourceUrl="http://140.116.86.235/ModelCreationService/Service.svc?xsd=xsd4" />
+    <MetadataFile FileName="Service42.xsd" MetadataType="Schema" ID="2a2923f4-dc4d-4259-a69a-caf3e6543c4b" SourceId="1" SourceUrl="http://140.116.86.235/ModelCreationService/Service.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service43.xsd" MetadataType="Schema" ID="da6f676b-3484-4ab4-a0ae-ab53da67b6dc" SourceId="1" SourceUrl="http://140.116.86.235/ModelCreationService/Service.svc?xsd=xsd3" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

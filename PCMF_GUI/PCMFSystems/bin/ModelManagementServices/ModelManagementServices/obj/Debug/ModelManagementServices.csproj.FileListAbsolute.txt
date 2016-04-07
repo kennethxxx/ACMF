@@ -1,0 +1,242 @@
+D:\Jerry\ModelManagementServices\ModelManagementServices\obj\Debug\ResolveAssemblyReference.cache
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\7z.dll
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\SevenZipSharp.dll
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.dll
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.pdb
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\CBPN10b.dll
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\ICSharpCode.SharpZipLib.dll
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\MWArray.dll
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Jerry\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Jerry\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.dll
+D:\Jerry\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.pdb
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\SevenZipSharp.dll
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\Output_classes\Model_SendContent.cs
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.dll
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.pdb
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.ServiceRuntime.xml
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.dll
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.pdb
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.csprojResolveAssemblyReference.cache
+C:\Users\dodo\Desktop\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\7z.dll
+D:\dodo\0829\MM_0815\0822\ModelManagementServices\ModelManagementServices\obj\Debug\ResolveAssemblyReference.cache
+D:\dodo\0829\MM_0815\0822\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.dll
+D:\dodo\0829\MM_0815\0822\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.pdb
+D:\dodo\0829\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\7z.dll
+D:\dodo\0829\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\ICSharpCode.SharpZipLib.dll
+D:\dodo\0829\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\SevenZipSharp.dll
+D:\dodo\0829\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\Output_classes\Model_SendContent.cs
+D:\dodo\0829\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.dll
+D:\dodo\0829\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.pdb
+D:\dodo\0829\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\dodo\0829\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\dodo\0829\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\dodo\0829\MM_0815\0822\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\Jerry Hsieh\Desktop\20120830-AMC上傳雲端備份\ModelManagementServices\ModelManagementServices\bin\7z.dll
+C:\Users\Jerry Hsieh\Desktop\20120830-AMC上傳雲端備份\ModelManagementServices\ModelManagementServices\bin\ICSharpCode.SharpZipLib.dll
+C:\Users\Jerry Hsieh\Desktop\20120830-AMC上傳雲端備份\ModelManagementServices\ModelManagementServices\bin\SevenZipSharp.dll
+C:\Users\Jerry Hsieh\Desktop\20120830-AMC上傳雲端備份\ModelManagementServices\ModelManagementServices\bin\Output_classes\Model_SendContent.cs
+C:\Users\Jerry Hsieh\Desktop\20120830-AMC上傳雲端備份\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.dll
+C:\Users\Jerry Hsieh\Desktop\20120830-AMC上傳雲端備份\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.pdb
+C:\Users\Jerry Hsieh\Desktop\20120830-AMC上傳雲端備份\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\Jerry Hsieh\Desktop\20120830-AMC上傳雲端備份\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\Jerry Hsieh\Desktop\20120830-AMC上傳雲端備份\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\Jerry Hsieh\Desktop\20120830-AMC上傳雲端備份\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\Jerry Hsieh\Desktop\20120830-AMC上傳雲端備份\ModelManagementServices\ModelManagementServices\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jerry Hsieh\Desktop\20120830-AMC上傳雲端備份\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.dll
+C:\Users\Jerry Hsieh\Desktop\20120830-AMC上傳雲端備份\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.pdb
+C:\Users\autolab\Desktop\KUAS Example\ModelManagementServices\ModelManagementServices\bin\Output_classes\Model_SendContent.cs
+C:\Users\autolab\Desktop\KUAS Example\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.dll
+C:\Users\autolab\Desktop\KUAS Example\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.pdb
+C:\Users\autolab\Desktop\KUAS Example\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\autolab\Desktop\KUAS Example\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\autolab\Desktop\KUAS Example\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\autolab\Desktop\KUAS Example\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\autolab\Desktop\KUAS Example\ModelManagementServices\ModelManagementServices\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\autolab\Desktop\KUAS Example\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.dll
+C:\Users\autolab\Desktop\KUAS Example\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.pdb
+C:\Users\autolab\Desktop\KUAS Example\ModelManagementServices\ModelManagementServices\bin\BlobOperator.dll
+C:\Users\autolab\Desktop\KUAS Example\ModelManagementServices\ModelManagementServices\bin\SevenZipSharp.dll
+D:\20120831TEST\ModelManagementServices\ModelManagementServices\bin\Output_classes\Model_SendContent.cs
+D:\20120831TEST\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.dll
+D:\20120831TEST\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.pdb
+D:\20120831TEST\ModelManagementServices\ModelManagementServices\bin\BlobOperator.dll
+D:\20120831TEST\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\20120831TEST\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\20120831TEST\ModelManagementServices\ModelManagementServices\bin\SevenZipSharp.dll
+D:\20120831TEST\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\20120831TEST\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\20120831TEST\ModelManagementServices\ModelManagementServices\obj\Debug\ResolveAssemblyReference.cache
+D:\20120831TEST\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.dll
+D:\20120831TEST\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.pdb
+D:\Jerry\20120901\ModelManagementServices\ModelManagementServices\obj\Debug\ResolveAssemblyReference.cache
+D:\Jerry\20120901\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.dll
+D:\Jerry\20120901\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.pdb
+D:\Jerry\20120901\ModelManagementServices\ModelManagementServices\bin\Output_classes\Model_SendContent.cs
+D:\Jerry\20120901\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.dll
+D:\Jerry\20120901\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.pdb
+D:\Jerry\20120901\ModelManagementServices\ModelManagementServices\bin\BlobOperator.dll
+D:\Jerry\20120901\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Jerry\20120901\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Jerry\20120901\ModelManagementServices\ModelManagementServices\bin\SevenZipSharp.dll
+D:\Jerry\20120901\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Jerry\20120901\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Jerry\20120902\ModelManagementServices\ModelManagementServices\bin\Output_classes\Model_SendContent.cs
+D:\Jerry\20120902\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.dll
+D:\Jerry\20120902\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.pdb
+D:\Jerry\20120902\ModelManagementServices\ModelManagementServices\bin\BlobOperator.dll
+D:\Jerry\20120902\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Jerry\20120902\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Jerry\20120902\ModelManagementServices\ModelManagementServices\bin\SevenZipSharp.dll
+D:\Jerry\20120902\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Jerry\20120902\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Jerry\20120902\ModelManagementServices\ModelManagementServices\obj\Debug\ResolveAssemblyReference.cache
+D:\Jerry\20120902\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.dll
+D:\Jerry\20120902\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.pdb
+D:\Jerry\20120902\ModelManagementServices\ModelManagementServices\bin\MySql.Data.dll
+C:\Users\Jerry Hsieh\Desktop\09051500\20120903-update GUI word\ModelManagementServices\ModelManagementServices\bin\MySql.Data.dll
+C:\Users\Jerry Hsieh\Desktop\09051500\20120903-update GUI word\ModelManagementServices\ModelManagementServices\bin\Output_classes\Model_SendContent.cs
+C:\Users\Jerry Hsieh\Desktop\09051500\20120903-update GUI word\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.dll
+C:\Users\Jerry Hsieh\Desktop\09051500\20120903-update GUI word\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.pdb
+C:\Users\Jerry Hsieh\Desktop\09051500\20120903-update GUI word\ModelManagementServices\ModelManagementServices\bin\BlobOperator.dll
+C:\Users\Jerry Hsieh\Desktop\09051500\20120903-update GUI word\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\Jerry Hsieh\Desktop\09051500\20120903-update GUI word\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\Jerry Hsieh\Desktop\09051500\20120903-update GUI word\ModelManagementServices\ModelManagementServices\bin\SevenZipSharp.dll
+C:\Users\Jerry Hsieh\Desktop\09051500\20120903-update GUI word\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\Jerry Hsieh\Desktop\09051500\20120903-update GUI word\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\Jerry Hsieh\Desktop\09051500\20120903-update GUI word\ModelManagementServices\ModelManagementServices\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jerry Hsieh\Desktop\09051500\20120903-update GUI word\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.dll
+C:\Users\Jerry Hsieh\Desktop\09051500\20120903-update GUI word\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.pdb
+C:\Users\dodo\Desktop\0914\ModelManagementServices\ModelManagementServices\bin\MySql.Data.dll
+C:\Users\dodo\Desktop\0914\ModelManagementServices\ModelManagementServices\bin\Output_classes\Model_SendContent.cs
+C:\Users\dodo\Desktop\0914\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.dll
+C:\Users\dodo\Desktop\0914\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.pdb
+C:\Users\dodo\Desktop\0914\ModelManagementServices\ModelManagementServices\bin\BlobOperator.dll
+C:\Users\dodo\Desktop\0914\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\dodo\Desktop\0914\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\dodo\Desktop\0914\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\dodo\Desktop\0914\ModelManagementServices\ModelManagementServices\bin\SevenZipSharp.dll
+C:\Users\dodo\Desktop\0914\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\dodo\Desktop\0914\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.ServiceRuntime.xml
+C:\Users\dodo\Desktop\0914\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\dodo\Desktop\0914\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.csprojResolveAssemblyReference.cache
+C:\Users\dodo\Desktop\0914\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.dll
+C:\Users\dodo\Desktop\0914\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.pdb
+C:\Users\dodo\Desktop\ModelManagementServices\ModelManagementServices\bin\MySql.Data.dll
+C:\Users\dodo\Desktop\ModelManagementServices\ModelManagementServices\bin\Output_classes\Model_SendContent.cs
+C:\Users\dodo\Desktop\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.dll
+C:\Users\dodo\Desktop\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.pdb
+C:\Users\dodo\Desktop\ModelManagementServices\ModelManagementServices\bin\BlobOperator.dll
+C:\Users\dodo\Desktop\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\dodo\Desktop\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\dodo\Desktop\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\dodo\Desktop\ModelManagementServices\ModelManagementServices\bin\SevenZipSharp.dll
+C:\Users\dodo\Desktop\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\dodo\Desktop\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.ServiceRuntime.xml
+C:\Users\dodo\Desktop\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\dodo\Desktop\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.csprojResolveAssemblyReference.cache
+C:\Users\dodo\Desktop\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.dll
+C:\Users\dodo\Desktop\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.pdb
+C:\Users\Jerry Hsieh\Desktop\0926\0926\ModelManagementServices\ModelManagementServices\bin\MySql.Data.dll
+C:\Users\Jerry Hsieh\Desktop\0926\0926\ModelManagementServices\ModelManagementServices\bin\Output_classes\Model_SendContent.cs
+C:\Users\Jerry Hsieh\Desktop\0926\0926\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.dll
+C:\Users\Jerry Hsieh\Desktop\0926\0926\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.pdb
+C:\Users\Jerry Hsieh\Desktop\0926\0926\ModelManagementServices\ModelManagementServices\bin\BlobOperator.dll
+C:\Users\Jerry Hsieh\Desktop\0926\0926\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\Jerry Hsieh\Desktop\0926\0926\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\Jerry Hsieh\Desktop\0926\0926\ModelManagementServices\ModelManagementServices\bin\SevenZipSharp.dll
+C:\Users\Jerry Hsieh\Desktop\0926\0926\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\Jerry Hsieh\Desktop\0926\0926\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\Jerry Hsieh\Desktop\0926\0926\ModelManagementServices\ModelManagementServices\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jerry Hsieh\Desktop\0926\0926\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.dll
+C:\Users\Jerry Hsieh\Desktop\0926\0926\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.pdb
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\MySql.Data.dll
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\Output_classes\Model_SendContent.cs
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.dll
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.pdb
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\BlobOperator.dll
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\SevenZipSharp.dll
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\obj\Debug\ResolveAssemblyReference.cache
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.dll
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.pdb
+D:\20121012 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\MySql.Data.dll
+D:\20121012 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\Output_classes\Model_SendContent.cs
+D:\20121012 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.dll
+D:\20121012 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.pdb
+D:\20121012 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\BlobOperator.dll
+D:\20121012 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\20121012 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\20121012 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\SevenZipSharp.dll
+D:\20121012 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\20121012 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\20121012 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\obj\Debug\ResolveAssemblyReference.cache
+D:\20121012 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.dll
+D:\20121012 上傳雲端OK\Source Code\IN_Cloud\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.pdb
+C:\Users\Jerry Hsieh\Desktop\HK\ModelManagementServices\ModelManagementServices\bin\MySql.Data.dll
+C:\Users\Jerry Hsieh\Desktop\HK\ModelManagementServices\ModelManagementServices\bin\Output_classes\Model_SendContent.cs
+C:\Users\Jerry Hsieh\Desktop\HK\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.dll
+C:\Users\Jerry Hsieh\Desktop\HK\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.pdb
+C:\Users\Jerry Hsieh\Desktop\HK\ModelManagementServices\ModelManagementServices\bin\BlobOperator.dll
+C:\Users\Jerry Hsieh\Desktop\HK\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\Jerry Hsieh\Desktop\HK\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\Jerry Hsieh\Desktop\HK\ModelManagementServices\ModelManagementServices\bin\SevenZipSharp.dll
+C:\Users\Jerry Hsieh\Desktop\HK\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\Jerry Hsieh\Desktop\HK\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\Jerry Hsieh\Desktop\HK\ModelManagementServices\ModelManagementServices\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jerry Hsieh\Desktop\HK\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.dll
+C:\Users\Jerry Hsieh\Desktop\HK\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.pdb
+F:\頂尖計畫\2012工具機展原始碼\HK\20121025\HK\ModelManagementServices\ModelManagementServices\bin\MySql.Data.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121025\HK\ModelManagementServices\ModelManagementServices\bin\Output_classes\Model_SendContent.cs
+F:\頂尖計畫\2012工具機展原始碼\HK\20121025\HK\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121025\HK\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.pdb
+F:\頂尖計畫\2012工具機展原始碼\HK\20121025\HK\ModelManagementServices\ModelManagementServices\bin\BlobOperator.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121025\HK\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121025\HK\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121025\HK\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121025\HK\ModelManagementServices\ModelManagementServices\bin\SevenZipSharp.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121025\HK\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+F:\頂尖計畫\2012工具機展原始碼\HK\20121025\HK\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.ServiceRuntime.xml
+F:\頂尖計畫\2012工具機展原始碼\HK\20121025\HK\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.xml
+F:\頂尖計畫\2012工具機展原始碼\HK\20121025\HK\ModelManagementServices\ModelManagementServices\obj\Debug\ResolveAssemblyReference.cache
+F:\頂尖計畫\2012工具機展原始碼\HK\20121025\HK\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121025\HK\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.pdb
+C:\Users\Jerry Hsieh\Desktop\20121030\ModelManagementServices\ModelManagementServices\bin\MySql.Data.dll
+C:\Users\Jerry Hsieh\Desktop\20121030\ModelManagementServices\ModelManagementServices\bin\Output_classes\Model_SendContent.cs
+C:\Users\Jerry Hsieh\Desktop\20121030\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.dll
+C:\Users\Jerry Hsieh\Desktop\20121030\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.pdb
+C:\Users\Jerry Hsieh\Desktop\20121030\ModelManagementServices\ModelManagementServices\bin\BlobOperator.dll
+C:\Users\Jerry Hsieh\Desktop\20121030\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\Jerry Hsieh\Desktop\20121030\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\Jerry Hsieh\Desktop\20121030\ModelManagementServices\ModelManagementServices\bin\SevenZipSharp.dll
+C:\Users\Jerry Hsieh\Desktop\20121030\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\Jerry Hsieh\Desktop\20121030\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\Jerry Hsieh\Desktop\20121030\ModelManagementServices\ModelManagementServices\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Jerry Hsieh\Desktop\20121030\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.dll
+C:\Users\Jerry Hsieh\Desktop\20121030\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.pdb
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\ModelManagementServices\ModelManagementServices\bin\MySql.Data.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\ModelManagementServices\ModelManagementServices\bin\Output_classes\Model_SendContent.cs
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\ModelManagementServices\ModelManagementServices\bin\ModelManagementServices.pdb
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\ModelManagementServices\ModelManagementServices\bin\BlobOperator.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\ModelManagementServices\ModelManagementServices\bin\SevenZipSharp.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.Diagnostics.xml
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.ServiceRuntime.xml
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\ModelManagementServices\ModelManagementServices\bin\Microsoft.WindowsAzure.StorageClient.xml
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\ModelManagementServices\ModelManagementServices\obj\Debug\ResolveAssemblyReference.cache
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\ModelManagementServices\ModelManagementServices\obj\Debug\ModelManagementServices.pdb

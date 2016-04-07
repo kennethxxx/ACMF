@@ -1,0 +1,943 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns="http://ont_wsService.edu" xmlns:ns1="http://org.apache.axis2/xsd" targetNamespace="http://ont_wsService.edu" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>
+		Please Type your service description here
+	</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://ont_wsService.edu">
+      <xs:element name="XMLFile">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="XMLData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="XMLFileResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="showdb">
+        <xs:complexType>
+          <xs:sequence />
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="showdbResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="insterrules">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="SelectdbName" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="insterstr" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="insterrulesResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="createdk">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="FilePath" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="db" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="createdkResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="createdkdb">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="dbName" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="createdkdbResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="reTable">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="selectdb" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="selecttable" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="reTableResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getEditOnt">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="data" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="getEditOntResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="GUIEditOnt">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="data" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Tsize">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="x" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="y" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="z" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="TsizeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CpWeight">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="weight" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CpWeightResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="Createrulestable">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="SelectdbName" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="sql_syntax" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreaterulestableResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="setUserParameters">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="File" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="AccuracyData" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="RuleXML" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="allCNC" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="setUserParametersResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PEModeule_SPARQLQuery">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="File" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="data" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PEModeule_SPARQLQueryResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PEModeule_SWRLADD">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="File" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="Target_File" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="data" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PEModeule_SWRLADDResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CPLengthAndWidth">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="length" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="width" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CPLengthAndWidthResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PEModeule_SWRLReasoner">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="File" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="Target_File" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PEModeule_SWRLReasonerResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PE_setPreferencesCNC">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="data" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PE_setPreferencesCNCResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PE_setActualProcessingCNC">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="CNCName" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="data" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="PE_setActualProcessingCNCResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="getEditOntRequest">
+    <wsdl:part name="parameters" element="ns:getEditOnt" />
+  </wsdl:message>
+  <wsdl:message name="getEditOntResponse">
+    <wsdl:part name="parameters" element="ns:getEditOntResponse" />
+  </wsdl:message>
+  <wsdl:message name="showdbRequest">
+    <wsdl:part name="parameters" element="ns:showdb" />
+  </wsdl:message>
+  <wsdl:message name="showdbResponse">
+    <wsdl:part name="parameters" element="ns:showdbResponse" />
+  </wsdl:message>
+  <wsdl:message name="createdkRequest">
+    <wsdl:part name="parameters" element="ns:createdk" />
+  </wsdl:message>
+  <wsdl:message name="createdkResponse">
+    <wsdl:part name="parameters" element="ns:createdkResponse" />
+  </wsdl:message>
+  <wsdl:message name="CpWeightRequest">
+    <wsdl:part name="parameters" element="ns:CpWeight" />
+  </wsdl:message>
+  <wsdl:message name="CpWeightResponse">
+    <wsdl:part name="parameters" element="ns:CpWeightResponse" />
+  </wsdl:message>
+  <wsdl:message name="createdkdbRequest">
+    <wsdl:part name="parameters" element="ns:createdkdb" />
+  </wsdl:message>
+  <wsdl:message name="createdkdbResponse">
+    <wsdl:part name="parameters" element="ns:createdkdbResponse" />
+  </wsdl:message>
+  <wsdl:message name="PE_setPreferencesCNCRequest">
+    <wsdl:part name="parameters" element="ns:PE_setPreferencesCNC" />
+  </wsdl:message>
+  <wsdl:message name="PE_setPreferencesCNCResponse">
+    <wsdl:part name="parameters" element="ns:PE_setPreferencesCNCResponse" />
+  </wsdl:message>
+  <wsdl:message name="setUserParametersRequest">
+    <wsdl:part name="parameters" element="ns:setUserParameters" />
+  </wsdl:message>
+  <wsdl:message name="setUserParametersResponse">
+    <wsdl:part name="parameters" element="ns:setUserParametersResponse" />
+  </wsdl:message>
+  <wsdl:message name="XMLFileRequest">
+    <wsdl:part name="parameters" element="ns:XMLFile" />
+  </wsdl:message>
+  <wsdl:message name="XMLFileResponse">
+    <wsdl:part name="parameters" element="ns:XMLFileResponse" />
+  </wsdl:message>
+  <wsdl:message name="PEModeule_SWRLReasonerRequest">
+    <wsdl:part name="parameters" element="ns:PEModeule_SWRLReasoner" />
+  </wsdl:message>
+  <wsdl:message name="PEModeule_SWRLReasonerResponse">
+    <wsdl:part name="parameters" element="ns:PEModeule_SWRLReasonerResponse" />
+  </wsdl:message>
+  <wsdl:message name="GUIEditOntRequest">
+    <wsdl:part name="parameters" element="ns:GUIEditOnt" />
+  </wsdl:message>
+  <wsdl:message name="CPLengthAndWidthRequest">
+    <wsdl:part name="parameters" element="ns:CPLengthAndWidth" />
+  </wsdl:message>
+  <wsdl:message name="CPLengthAndWidthResponse">
+    <wsdl:part name="parameters" element="ns:CPLengthAndWidthResponse" />
+  </wsdl:message>
+  <wsdl:message name="insterrulesRequest">
+    <wsdl:part name="parameters" element="ns:insterrules" />
+  </wsdl:message>
+  <wsdl:message name="insterrulesResponse">
+    <wsdl:part name="parameters" element="ns:insterrulesResponse" />
+  </wsdl:message>
+  <wsdl:message name="PEModeule_SWRLADDRequest">
+    <wsdl:part name="parameters" element="ns:PEModeule_SWRLADD" />
+  </wsdl:message>
+  <wsdl:message name="PEModeule_SWRLADDResponse">
+    <wsdl:part name="parameters" element="ns:PEModeule_SWRLADDResponse" />
+  </wsdl:message>
+  <wsdl:message name="reTableRequest">
+    <wsdl:part name="parameters" element="ns:reTable" />
+  </wsdl:message>
+  <wsdl:message name="reTableResponse">
+    <wsdl:part name="parameters" element="ns:reTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="TsizeRequest">
+    <wsdl:part name="parameters" element="ns:Tsize" />
+  </wsdl:message>
+  <wsdl:message name="TsizeResponse">
+    <wsdl:part name="parameters" element="ns:TsizeResponse" />
+  </wsdl:message>
+  <wsdl:message name="PE_setActualProcessingCNCRequest">
+    <wsdl:part name="parameters" element="ns:PE_setActualProcessingCNC" />
+  </wsdl:message>
+  <wsdl:message name="PE_setActualProcessingCNCResponse">
+    <wsdl:part name="parameters" element="ns:PE_setActualProcessingCNCResponse" />
+  </wsdl:message>
+  <wsdl:message name="PEModeule_SPARQLQueryRequest">
+    <wsdl:part name="parameters" element="ns:PEModeule_SPARQLQuery" />
+  </wsdl:message>
+  <wsdl:message name="PEModeule_SPARQLQueryResponse">
+    <wsdl:part name="parameters" element="ns:PEModeule_SPARQLQueryResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreaterulestableRequest">
+    <wsdl:part name="parameters" element="ns:Createrulestable" />
+  </wsdl:message>
+  <wsdl:message name="CreaterulestableResponse">
+    <wsdl:part name="parameters" element="ns:CreaterulestableResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Receive_ModulePortType">
+    <wsdl:operation name="getEditOnt">
+      <wsdl:input wsaw:Action="urn:getEditOnt" message="ns:getEditOntRequest" />
+      <wsdl:output wsaw:Action="urn:getEditOntResponse" message="ns:getEditOntResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="showdb">
+      <wsdl:input wsaw:Action="urn:showdb" message="ns:showdbRequest" />
+      <wsdl:output wsaw:Action="urn:showdbResponse" message="ns:showdbResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="createdk">
+      <wsdl:input wsaw:Action="urn:createdk" message="ns:createdkRequest" />
+      <wsdl:output wsaw:Action="urn:createdkResponse" message="ns:createdkResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="CpWeight">
+      <wsdl:input wsaw:Action="urn:CpWeight" message="ns:CpWeightRequest" />
+      <wsdl:output wsaw:Action="urn:CpWeightResponse" message="ns:CpWeightResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="createdkdb">
+      <wsdl:input wsaw:Action="urn:createdkdb" message="ns:createdkdbRequest" />
+      <wsdl:output wsaw:Action="urn:createdkdbResponse" message="ns:createdkdbResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="PE_setPreferencesCNC">
+      <wsdl:input wsaw:Action="urn:PE_setPreferencesCNC" message="ns:PE_setPreferencesCNCRequest" />
+      <wsdl:output wsaw:Action="urn:PE_setPreferencesCNCResponse" message="ns:PE_setPreferencesCNCResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="setUserParameters">
+      <wsdl:input wsaw:Action="urn:setUserParameters" message="ns:setUserParametersRequest" />
+      <wsdl:output wsaw:Action="urn:setUserParametersResponse" message="ns:setUserParametersResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="XMLFile">
+      <wsdl:input wsaw:Action="urn:XMLFile" message="ns:XMLFileRequest" />
+      <wsdl:output wsaw:Action="urn:XMLFileResponse" message="ns:XMLFileResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="PEModeule_SWRLReasoner">
+      <wsdl:input wsaw:Action="urn:PEModeule_SWRLReasoner" message="ns:PEModeule_SWRLReasonerRequest" />
+      <wsdl:output wsaw:Action="urn:PEModeule_SWRLReasonerResponse" message="ns:PEModeule_SWRLReasonerResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="GUIEditOnt">
+      <wsdl:input wsaw:Action="urn:GUIEditOnt" message="ns:GUIEditOntRequest" />
+    </wsdl:operation>
+    <wsdl:operation name="CPLengthAndWidth">
+      <wsdl:input wsaw:Action="urn:CPLengthAndWidth" message="ns:CPLengthAndWidthRequest" />
+      <wsdl:output wsaw:Action="urn:CPLengthAndWidthResponse" message="ns:CPLengthAndWidthResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="insterrules">
+      <wsdl:input wsaw:Action="urn:insterrules" message="ns:insterrulesRequest" />
+      <wsdl:output wsaw:Action="urn:insterrulesResponse" message="ns:insterrulesResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="PEModeule_SWRLADD">
+      <wsdl:input wsaw:Action="urn:PEModeule_SWRLADD" message="ns:PEModeule_SWRLADDRequest" />
+      <wsdl:output wsaw:Action="urn:PEModeule_SWRLADDResponse" message="ns:PEModeule_SWRLADDResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="reTable">
+      <wsdl:input wsaw:Action="urn:reTable" message="ns:reTableRequest" />
+      <wsdl:output wsaw:Action="urn:reTableResponse" message="ns:reTableResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="Tsize">
+      <wsdl:input wsaw:Action="urn:Tsize" message="ns:TsizeRequest" />
+      <wsdl:output wsaw:Action="urn:TsizeResponse" message="ns:TsizeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="PE_setActualProcessingCNC">
+      <wsdl:input wsaw:Action="urn:PE_setActualProcessingCNC" message="ns:PE_setActualProcessingCNCRequest" />
+      <wsdl:output wsaw:Action="urn:PE_setActualProcessingCNCResponse" message="ns:PE_setActualProcessingCNCResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="PEModeule_SPARQLQuery">
+      <wsdl:input wsaw:Action="urn:PEModeule_SPARQLQuery" message="ns:PEModeule_SPARQLQueryRequest" />
+      <wsdl:output wsaw:Action="urn:PEModeule_SPARQLQueryResponse" message="ns:PEModeule_SPARQLQueryResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="Createrulestable">
+      <wsdl:input wsaw:Action="urn:Createrulestable" message="ns:CreaterulestableRequest" />
+      <wsdl:output wsaw:Action="urn:CreaterulestableResponse" message="ns:CreaterulestableResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Receive_ModuleSoap11Binding" type="ns:Receive_ModulePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getEditOnt">
+      <soap:operation soapAction="urn:getEditOnt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showdb">
+      <soap:operation soapAction="urn:showdb" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createdk">
+      <soap:operation soapAction="urn:createdk" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CpWeight">
+      <soap:operation soapAction="urn:CpWeight" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createdkdb">
+      <soap:operation soapAction="urn:createdkdb" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PE_setPreferencesCNC">
+      <soap:operation soapAction="urn:PE_setPreferencesCNC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XMLFile">
+      <soap:operation soapAction="urn:XMLFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUserParameters">
+      <soap:operation soapAction="urn:setUserParameters" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PEModeule_SWRLReasoner">
+      <soap:operation soapAction="urn:PEModeule_SWRLReasoner" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GUIEditOnt">
+      <soap:operation soapAction="urn:GUIEditOnt" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="CPLengthAndWidth">
+      <soap:operation soapAction="urn:CPLengthAndWidth" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insterrules">
+      <soap:operation soapAction="urn:insterrules" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PEModeule_SWRLADD">
+      <soap:operation soapAction="urn:PEModeule_SWRLADD" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reTable">
+      <soap:operation soapAction="urn:reTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tsize">
+      <soap:operation soapAction="urn:Tsize" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PEModeule_SPARQLQuery">
+      <soap:operation soapAction="urn:PEModeule_SPARQLQuery" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PE_setActualProcessingCNC">
+      <soap:operation soapAction="urn:PE_setActualProcessingCNC" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Createrulestable">
+      <soap:operation soapAction="urn:Createrulestable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Receive_ModuleSoap12Binding" type="ns:Receive_ModulePortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getEditOnt">
+      <soap12:operation soapAction="urn:getEditOnt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showdb">
+      <soap12:operation soapAction="urn:showdb" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createdk">
+      <soap12:operation soapAction="urn:createdk" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CpWeight">
+      <soap12:operation soapAction="urn:CpWeight" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createdkdb">
+      <soap12:operation soapAction="urn:createdkdb" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PE_setPreferencesCNC">
+      <soap12:operation soapAction="urn:PE_setPreferencesCNC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XMLFile">
+      <soap12:operation soapAction="urn:XMLFile" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUserParameters">
+      <soap12:operation soapAction="urn:setUserParameters" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PEModeule_SWRLReasoner">
+      <soap12:operation soapAction="urn:PEModeule_SWRLReasoner" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GUIEditOnt">
+      <soap12:operation soapAction="urn:GUIEditOnt" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="CPLengthAndWidth">
+      <soap12:operation soapAction="urn:CPLengthAndWidth" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insterrules">
+      <soap12:operation soapAction="urn:insterrules" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PEModeule_SWRLADD">
+      <soap12:operation soapAction="urn:PEModeule_SWRLADD" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reTable">
+      <soap12:operation soapAction="urn:reTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tsize">
+      <soap12:operation soapAction="urn:Tsize" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PEModeule_SPARQLQuery">
+      <soap12:operation soapAction="urn:PEModeule_SPARQLQuery" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PE_setActualProcessingCNC">
+      <soap12:operation soapAction="urn:PE_setActualProcessingCNC" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Createrulestable">
+      <soap12:operation soapAction="urn:Createrulestable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Receive_ModuleHttpBinding" type="ns:Receive_ModulePortType">
+    <http:binding verb="POST" />
+    <wsdl:operation name="getEditOnt">
+      <http:operation location="getEditOnt" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="showdb">
+      <http:operation location="showdb" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createdk">
+      <http:operation location="createdk" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CpWeight">
+      <http:operation location="CpWeight" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="createdkdb">
+      <http:operation location="createdkdb" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PE_setPreferencesCNC">
+      <http:operation location="PE_setPreferencesCNC" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="XMLFile">
+      <http:operation location="XMLFile" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="setUserParameters">
+      <http:operation location="setUserParameters" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PEModeule_SWRLReasoner">
+      <http:operation location="PEModeule_SWRLReasoner" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GUIEditOnt">
+      <http:operation location="GUIEditOnt" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+    </wsdl:operation>
+    <wsdl:operation name="CPLengthAndWidth">
+      <http:operation location="CPLengthAndWidth" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insterrules">
+      <http:operation location="insterrules" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PEModeule_SWRLADD">
+      <http:operation location="PEModeule_SWRLADD" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="reTable">
+      <http:operation location="reTable" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Tsize">
+      <http:operation location="Tsize" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PEModeule_SPARQLQuery">
+      <http:operation location="PEModeule_SPARQLQuery" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="PE_setActualProcessingCNC">
+      <http:operation location="PE_setActualProcessingCNC" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Createrulestable">
+      <http:operation location="Createrulestable" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Receive_Module">
+    <wsdl:port name="Receive_ModuleHttpSoap11Endpoint" binding="ns:Receive_ModuleSoap11Binding">
+      <soap:address location="http://mmdb1.cloudapp.net:8080/AMC_Ontology_test/services/Receive_Module.Receive_ModuleHttpSoap11Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="Receive_ModuleHttpSoap12Endpoint" binding="ns:Receive_ModuleSoap12Binding">
+      <soap12:address location="http://mmdb1.cloudapp.net:8080/AMC_Ontology_test/services/Receive_Module.Receive_ModuleHttpSoap12Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="Receive_ModuleHttpEndpoint" binding="ns:Receive_ModuleHttpBinding">
+      <http:address location="http://mmdb1.cloudapp.net:8080/AMC_Ontology_test/services/Receive_Module.Receive_ModuleHttpEndpoint/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

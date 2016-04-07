@@ -1,0 +1,168 @@
+D:\Huy.Q.Tran\CloudProjectSVN\CloudProject\SourceCode\IPS\IPS.Web\bin\IPS.Web.dll
+D:\Huy.Q.Tran\CloudProjectSVN\CloudProject\SourceCode\IPS\IPS.Web\bin\IPS.Web.pdb
+D:\Huy.Q.Tran\CloudProjectSVN\CloudProject\SourceCode\IPS\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\Huy.Q.Tran\CloudProjectSVN\CloudProject\SourceCode\IPS\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\Huy.Q.Tran\CloudProjectSVN\CloudProject\SourceCode\IPS\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\Huy.Q.Tran\CloudProjectSVN\CloudProject\SourceCode\IPS\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\Huy.Q.Tran\CloudProjectSVN\CloudProject\SourceCode\IPS\IPS.Web\obj\Release\ResolveAssemblyReference.cache
+D:\Huy.Q.Tran\CloudProjectSVN\CloudProject\SourceCode\IPS\IPS.Web\obj\Release\IPS.Web.dll
+D:\Huy.Q.Tran\CloudProjectSVN\CloudProject\SourceCode\IPS\IPS.Web\obj\Release\IPS.Web.pdb
+C:\Users\lingpxs\Desktop\IPS 已經上 SVN 要確認有沒有檔案沒有丟上去的\IPS\IPS.Web\bin\IPS.Web.dll
+C:\Users\lingpxs\Desktop\IPS 已經上 SVN 要確認有沒有檔案沒有丟上去的\IPS\IPS.Web\bin\IPS.Web.pdb
+C:\Users\lingpxs\Desktop\IPS 已經上 SVN 要確認有沒有檔案沒有丟上去的\IPS\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\lingpxs\Desktop\IPS 已經上 SVN 要確認有沒有檔案沒有丟上去的\IPS\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\lingpxs\Desktop\IPS 已經上 SVN 要確認有沒有檔案沒有丟上去的\IPS\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\lingpxs\Desktop\IPS 已經上 SVN 要確認有沒有檔案沒有丟上去的\IPS\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\lingpxs\Desktop\IPS 已經上 SVN 要確認有沒有檔案沒有丟上去的\IPS\IPS.Web\obj\Release\ResolveAssemblyReference.cache
+C:\Users\lingpxs\Desktop\IPS 已經上 SVN 要確認有沒有檔案沒有丟上去的\IPS\IPS.Web\obj\Release\IPS.Web.dll
+C:\Users\lingpxs\Desktop\IPS 已經上 SVN 要確認有沒有檔案沒有丟上去的\IPS\IPS.Web\obj\Release\IPS.Web.pdb
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\2012-04-23-1-AMCProject\AMCProject\AMCSystems\IPS.Web\bin\IPS.Web.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\2012-04-23-1-AMCProject\AMCProject\AMCSystems\IPS.Web\bin\IPS.Web.pdb
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\2012-04-23-1-AMCProject\AMCProject\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\2012-04-23-1-AMCProject\AMCProject\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\2012-04-23-1-AMCProject\AMCProject\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\2012-04-23-1-AMCProject\AMCProject\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\2012-04-23-1-AMCProject\AMCProject\AMCSystems\IPS.Web\obj\Release\ResolveAssemblyReference.cache
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\2012-04-23-1-AMCProject\AMCProject\AMCSystems\IPS.Web\obj\Release\IPS.Web.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\2012-04-23-1-AMCProject\AMCProject\AMCSystems\IPS.Web\obj\Release\IPS.Web.pdb
+C:\Users\Danny\Desktop\2012-05-07-1-AMCProject\AMCProject\AMCSystems\IPS.Web\bin\IPS.Web.dll
+C:\Users\Danny\Desktop\2012-05-07-1-AMCProject\AMCProject\AMCSystems\IPS.Web\bin\IPS.Web.pdb
+C:\Users\Danny\Desktop\2012-05-07-1-AMCProject\AMCProject\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\Danny\Desktop\2012-05-07-1-AMCProject\AMCProject\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\Danny\Desktop\2012-05-07-1-AMCProject\AMCProject\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\Danny\Desktop\2012-05-07-1-AMCProject\AMCProject\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\Danny\Desktop\2012-05-07-1-AMCProject\AMCProject\AMCSystems\IPS.Web\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Danny\Desktop\2012-05-07-1-AMCProject\AMCProject\AMCSystems\IPS.Web\obj\Release\IPS.Web.dll
+C:\Users\Danny\Desktop\2012-05-07-1-AMCProject\AMCProject\AMCSystems\IPS.Web\obj\Release\IPS.Web.pdb
+D:\20120807-AMC-GUI+MCS完成但最後一步建模有問題\AMCSystems\IPS.Web\bin\IPS.Web.dll
+D:\20120807-AMC-GUI+MCS完成但最後一步建模有問題\AMCSystems\IPS.Web\bin\IPS.Web.pdb
+D:\20120807-AMC-GUI+MCS完成但最後一步建模有問題\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\20120807-AMC-GUI+MCS完成但最後一步建模有問題\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\20120807-AMC-GUI+MCS完成但最後一步建模有問題\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\20120807-AMC-GUI+MCS完成但最後一步建模有問題\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\20120807-AMC-GUI+MCS完成但最後一步建模有問題\AMCSystems\IPS.Web\obj\Release\ResolveAssemblyReference.cache
+D:\20120807-AMC-GUI+MCS完成但最後一步建模有問題\AMCSystems\IPS.Web\obj\Release\IPS.Web.dll
+D:\20120807-AMC-GUI+MCS完成但最後一步建模有問題\AMCSystems\IPS.Web\obj\Release\IPS.Web.pdb
+D:\dodo\MM_0815\AMCSystems\IPS.Web\bin\IPS.Web.dll
+D:\dodo\MM_0815\AMCSystems\IPS.Web\bin\IPS.Web.pdb
+D:\dodo\MM_0815\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\dodo\MM_0815\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\dodo\MM_0815\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\dodo\MM_0815\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\dodo\MM_0815\AMCSystems\IPS.Web\obj\Release\ResolveAssemblyReference.cache
+D:\dodo\MM_0815\AMCSystems\IPS.Web\obj\Release\IPS.Web.dll
+D:\dodo\MM_0815\AMCSystems\IPS.Web\obj\Release\IPS.Web.pdb
+C:\Users\Jerry Hsieh\Desktop\20121005   上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\bin\IPS.Web.dll
+C:\Users\Jerry Hsieh\Desktop\20121005   上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\bin\IPS.Web.pdb
+C:\Users\Jerry Hsieh\Desktop\20121005   上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\Jerry Hsieh\Desktop\20121005   上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\Jerry Hsieh\Desktop\20121005   上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\Jerry Hsieh\Desktop\20121005   上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\Jerry Hsieh\Desktop\20121005   上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Jerry Hsieh\Desktop\20121005   上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\obj\Release\IPS.Web.dll
+C:\Users\Jerry Hsieh\Desktop\20121005   上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\obj\Release\IPS.Web.pdb
+C:\Users\Jerry Hsieh\Desktop\20121008 上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\bin\IPS.Web.dll
+C:\Users\Jerry Hsieh\Desktop\20121008 上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\bin\IPS.Web.pdb
+C:\Users\Jerry Hsieh\Desktop\20121008 上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\Jerry Hsieh\Desktop\20121008 上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\Jerry Hsieh\Desktop\20121008 上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\Jerry Hsieh\Desktop\20121008 上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\Jerry Hsieh\Desktop\20121008 上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Jerry Hsieh\Desktop\20121008 上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\obj\Release\IPS.Web.dll
+C:\Users\Jerry Hsieh\Desktop\20121008 上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\obj\Release\IPS.Web.pdb
+D:\20121011 上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\bin\IPS.Web.dll
+D:\20121011 上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\bin\IPS.Web.pdb
+D:\20121011 上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\20121011 上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\20121011 上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\20121011 上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\20121011 上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\obj\Release\ResolveAssemblyReference.cache
+D:\20121011 上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\obj\Release\IPS.Web.dll
+D:\20121011 上傳雲端OK\AMCSystems\AMCSystems\IPS.Web\obj\Release\IPS.Web.pdb
+D:\20121019\AMCSystems\AMCSystems\IPS.Web\bin\IPS.Web.dll
+D:\20121019\AMCSystems\AMCSystems\IPS.Web\bin\IPS.Web.pdb
+D:\20121019\AMCSystems\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\20121019\AMCSystems\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\20121019\AMCSystems\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\20121019\AMCSystems\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\20121019\AMCSystems\AMCSystems\IPS.Web\obj\Release\ResolveAssemblyReference.cache
+D:\20121019\AMCSystems\AMCSystems\IPS.Web\obj\Release\IPS.Web.dll
+D:\20121019\AMCSystems\AMCSystems\IPS.Web\obj\Release\IPS.Web.pdb
+D:\20121019\AMCSystems false\AMCSystems\IPS.Web\bin\IPS.Web.dll
+D:\20121019\AMCSystems false\AMCSystems\IPS.Web\bin\IPS.Web.pdb
+D:\20121019\AMCSystems false\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\20121019\AMCSystems false\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\20121019\AMCSystems false\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\20121019\AMCSystems false\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\20121019\AMCSystems false\AMCSystems\IPS.Web\obj\Release\ResolveAssemblyReference.cache
+D:\20121019\AMCSystems false\AMCSystems\IPS.Web\obj\Release\IPS.Web.dll
+D:\20121019\AMCSystems false\AMCSystems\IPS.Web\obj\Release\IPS.Web.pdb
+D:\20121024中文化GUI\20121023中文化GUI(改一半)\AMCSystems\IPS.Web\bin\IPS.Web.dll
+D:\20121024中文化GUI\20121023中文化GUI(改一半)\AMCSystems\IPS.Web\bin\IPS.Web.pdb
+D:\20121024中文化GUI\20121023中文化GUI(改一半)\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\20121024中文化GUI\20121023中文化GUI(改一半)\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\20121024中文化GUI\20121023中文化GUI(改一半)\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\20121024中文化GUI\20121023中文化GUI(改一半)\AMCSystems\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\20121024中文化GUI\20121023中文化GUI(改一半)\AMCSystems\IPS.Web\obj\Release\ResolveAssemblyReference.cache
+D:\20121024中文化GUI\20121023中文化GUI(改一半)\AMCSystems\IPS.Web\obj\Release\IPS.Web.dll
+D:\20121024中文化GUI\20121023中文化GUI(改一半)\AMCSystems\IPS.Web\obj\Release\IPS.Web.pdb
+C:\Users\Jerry Hsieh\Desktop\20121030\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\IPS.Web.dll
+C:\Users\Jerry Hsieh\Desktop\20121030\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\IPS.Web.pdb
+C:\Users\Jerry Hsieh\Desktop\20121030\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\Jerry Hsieh\Desktop\20121030\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\Jerry Hsieh\Desktop\20121030\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\Jerry Hsieh\Desktop\20121030\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\Jerry Hsieh\Desktop\20121030\AMCSystems20121030-更新DAUserFriendly\IPS.Web\obj\Release\ResolveAssemblyReference.cache
+C:\Users\Jerry Hsieh\Desktop\20121030\AMCSystems20121030-更新DAUserFriendly\IPS.Web\obj\Release\IPS.Web.dll
+C:\Users\Jerry Hsieh\Desktop\20121030\AMCSystems20121030-更新DAUserFriendly\IPS.Web\obj\Release\IPS.Web.pdb
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\IPS.Web.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\IPS.Web.pdb
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.xml
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\obj\Release\ResolveAssemblyReference.cache
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\obj\Release\IPS.Web.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121106\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\obj\Release\IPS.Web.pdb
+D:\VS_Project\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\IPS.Web.dll
+D:\VS_Project\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\IPS.Web.pdb
+D:\VS_Project\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\VS_Project\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\VS_Project\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\VS_Project\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\VS_Project\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\obj\Release\IPS.Web.dll
+D:\VS_Project\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\obj\Release\IPS.Web.pdb
+D:\VS_Project\工具機展系統正式版本\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\IPS.Web.dll
+D:\VS_Project\工具機展系統正式版本\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\IPS.Web.pdb
+D:\VS_Project\工具機展系統正式版本\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\VS_Project\工具機展系統正式版本\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\VS_Project\工具機展系統正式版本\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\VS_Project\工具機展系統正式版本\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\VS_Project\工具機展系統正式版本\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\obj\Release\IPS.Web.csprojResolveAssemblyReference.cache
+D:\VS_Project\工具機展系統正式版本\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\obj\Release\IPS.Web.dll
+D:\VS_Project\工具機展系統正式版本\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\obj\Release\IPS.Web.pdb
+D:\VS_Project\本體論系統\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\IPS.Web.dll
+D:\VS_Project\本體論系統\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\IPS.Web.pdb
+D:\VS_Project\本體論系統\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\VS_Project\本體論系統\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\VS_Project\本體論系統\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\VS_Project\本體論系統\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\VS_Project\本體論系統\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\obj\Release\IPS.Web.dll
+D:\VS_Project\本體論系統\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\obj\Release\IPS.Web.pdb
+D:\研究所\刀具選用服務GUI+WCF (前端)\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\IPS.Web.dll
+D:\研究所\刀具選用服務GUI+WCF (前端)\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\IPS.Web.pdb
+D:\研究所\刀具選用服務GUI+WCF (前端)\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Configuration.dll
+D:\研究所\刀具選用服務GUI+WCF (前端)\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\研究所\刀具選用服務GUI+WCF (前端)\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\研究所\刀具選用服務GUI+WCF (前端)\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\研究所\刀具選用服務GUI+WCF (前端)\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\obj\Release\IPS.Web.dll
+D:\研究所\刀具選用服務GUI+WCF (前端)\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\obj\Release\IPS.Web.pdb
+C:\研究所\AMCSystems20121106-更新MMbyXML\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\IPS.Web.dll
+C:\研究所\AMCSystems20121106-更新MMbyXML\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\IPS.Web.pdb
+C:\研究所\AMCSystems20121106-更新MMbyXML\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Configuration.dll
+C:\研究所\AMCSystems20121106-更新MMbyXML\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\研究所\AMCSystems20121106-更新MMbyXML\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\研究所\AMCSystems20121106-更新MMbyXML\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\研究所\AMCSystems20121106-更新MMbyXML\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\obj\Release\IPS.Web.csprojResolveAssemblyReference.cache
+C:\研究所\AMCSystems20121106-更新MMbyXML\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\obj\Release\IPS.Web.dll
+C:\研究所\AMCSystems20121106-更新MMbyXML\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS.Web\obj\Release\IPS.Web.pdb

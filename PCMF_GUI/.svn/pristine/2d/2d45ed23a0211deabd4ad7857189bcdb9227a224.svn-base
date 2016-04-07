@@ -1,0 +1,248 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="OService" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://140.116.86.249/OntologyServiceWCFInterface/IontologyClassMain.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://140.116.86.249/OntologyServiceWCFInterface/IontologyClassMain.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://140.116.86.249/OntologyServiceWCFInterface/IontologyClassMain.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/OntologyServiceWCFInterface" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IOntologyService_GetData_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetData" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_GetData_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_GetDataUsingDataContract_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContract" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_GetDataUsingDataContract_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetDataUsingDataContractResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_sendTable_InputMessage">
+    <wsdl:part name="parameters" element="tns:sendTable" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_sendTable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sendTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_getTable_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTable" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_getTable_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_OntologySystemInterface_InputMessage">
+    <wsdl:part name="parameters" element="tns:OntologySystemInterface" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_OntologySystemInterface_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OntologySystemInterfaceResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_ConvertJsonFunction_InputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertJsonFunction" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_ConvertJsonFunction_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ConvertJsonFunctionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_insertloop_InputMessage">
+    <wsdl:part name="parameters" element="tns:insertloop" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_insertloop_OutputMessage">
+    <wsdl:part name="parameters" element="tns:insertloopResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_TimeDisplay_InputMessage">
+    <wsdl:part name="parameters" element="tns:TimeDisplay" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_TimeDisplay_OutputMessage">
+    <wsdl:part name="parameters" element="tns:TimeDisplayResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_OntSysTesting_InputMessage">
+    <wsdl:part name="parameters" element="tns:OntSysTesting" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_OntSysTesting_OutputMessage">
+    <wsdl:part name="parameters" element="tns:OntSysTestingResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_sendTableTestingVersion_InputMessage">
+    <wsdl:part name="parameters" element="tns:sendTableTestingVersion" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_sendTableTestingVersion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sendTableTestingVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_getTableTestingVersion_InputMessage">
+    <wsdl:part name="parameters" element="tns:getTableTestingVersion" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_getTableTestingVersion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getTableTestingVersionResponse" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_updateTableTestingVersion_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateTableTestingVersion" />
+  </wsdl:message>
+  <wsdl:message name="IOntologyService_updateTableTestingVersion_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateTableTestingVersionResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IOntologyService">
+    <wsdl:operation name="GetData">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOntologyService/GetData" message="tns:IOntologyService_GetData_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOntologyService/GetDataResponse" message="tns:IOntologyService_GetData_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOntologyService/GetDataUsingDataContract" message="tns:IOntologyService_GetDataUsingDataContract_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOntologyService/GetDataUsingDataContractResponse" message="tns:IOntologyService_GetDataUsingDataContract_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sendTable">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOntologyService/sendTable" message="tns:IOntologyService_sendTable_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOntologyService/sendTableResponse" message="tns:IOntologyService_sendTable_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTable">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOntologyService/getTable" message="tns:IOntologyService_getTable_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOntologyService/getTableResponse" message="tns:IOntologyService_getTable_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OntologySystemInterface">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOntologyService/OntologySystemInterface" message="tns:IOntologyService_OntologySystemInterface_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOntologyService/OntologySystemInterfaceResponse" message="tns:IOntologyService_OntologySystemInterface_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ConvertJsonFunction">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOntologyService/ConvertJsonFunction" message="tns:IOntologyService_ConvertJsonFunction_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOntologyService/ConvertJsonFunctionResponse" message="tns:IOntologyService_ConvertJsonFunction_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="insertloop">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOntologyService/insertloop" message="tns:IOntologyService_insertloop_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOntologyService/insertloopResponse" message="tns:IOntologyService_insertloop_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="TimeDisplay">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOntologyService/TimeDisplay" message="tns:IOntologyService_TimeDisplay_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOntologyService/TimeDisplayResponse" message="tns:IOntologyService_TimeDisplay_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="OntSysTesting">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOntologyService/OntSysTesting" message="tns:IOntologyService_OntSysTesting_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOntologyService/OntSysTestingResponse" message="tns:IOntologyService_OntSysTesting_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sendTableTestingVersion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOntologyService/sendTableTestingVersion" message="tns:IOntologyService_sendTableTestingVersion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOntologyService/sendTableTestingVersionResponse" message="tns:IOntologyService_sendTableTestingVersion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getTableTestingVersion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOntologyService/getTableTestingVersion" message="tns:IOntologyService_getTableTestingVersion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOntologyService/getTableTestingVersionResponse" message="tns:IOntologyService_getTableTestingVersion_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateTableTestingVersion">
+      <wsdl:input wsaw:Action="http://tempuri.org/IOntologyService/updateTableTestingVersion" message="tns:IOntologyService_updateTableTestingVersion_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IOntologyService/updateTableTestingVersionResponse" message="tns:IOntologyService_updateTableTestingVersion_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IOntologyService" type="tns:IOntologyService">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="GetData">
+      <soap:operation soapAction="http://tempuri.org/IOntologyService/GetData" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetDataUsingDataContract">
+      <soap:operation soapAction="http://tempuri.org/IOntologyService/GetDataUsingDataContract" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendTable">
+      <soap:operation soapAction="http://tempuri.org/IOntologyService/sendTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTable">
+      <soap:operation soapAction="http://tempuri.org/IOntologyService/getTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OntologySystemInterface">
+      <soap:operation soapAction="http://tempuri.org/IOntologyService/OntologySystemInterface" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ConvertJsonFunction">
+      <soap:operation soapAction="http://tempuri.org/IOntologyService/ConvertJsonFunction" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="insertloop">
+      <soap:operation soapAction="http://tempuri.org/IOntologyService/insertloop" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="TimeDisplay">
+      <soap:operation soapAction="http://tempuri.org/IOntologyService/TimeDisplay" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="OntSysTesting">
+      <soap:operation soapAction="http://tempuri.org/IOntologyService/OntSysTesting" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendTableTestingVersion">
+      <soap:operation soapAction="http://tempuri.org/IOntologyService/sendTableTestingVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getTableTestingVersion">
+      <soap:operation soapAction="http://tempuri.org/IOntologyService/getTableTestingVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateTableTestingVersion">
+      <soap:operation soapAction="http://tempuri.org/IOntologyService/updateTableTestingVersion" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="OService">
+    <wsdl:port name="BasicHttpBinding_IOntologyService" binding="tns:BasicHttpBinding_IOntologyService">
+      <soap:address location="http://140.116.86.249/OntologyServiceWCFInterface/IontologyClassMain.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

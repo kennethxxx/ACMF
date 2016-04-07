@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/ModelManagementServices" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/ModelManagementServices" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://140.116.86.172/ModelManagementServices/Service1.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:complexType name="ModelStorationInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CNCType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COMPANY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServiceBrokerID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cnc_number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="createTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="createUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dataEndTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dataStartTime" type="xs:dateTime" />
+      <xs:element xmlns:q1="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="matSizeList" nillable="true" type="q1:ArrayOfdouble" />
+      <xs:element minOccurs="0" name="modelSize" type="xs:double" />
+      <xs:element minOccurs="0" name="vMachineID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ModelStorationInformation" nillable="true" type="tns:ModelStorationInformation" />
+  <xs:complexType name="ArrayOfModelInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ModelInformation" nillable="true" type="tns:ModelInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfModelInformation" nillable="true" type="tns:ArrayOfModelInformation" />
+  <xs:complexType name="ModelInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CNCType" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="COMPANY" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ModelID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServiceBrokerID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="cnc_number" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="createTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="createUser" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="dataEndTime" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="dataStartTime" type="xs:dateTime" />
+      <xs:element xmlns:q2="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="matSizeList" nillable="true" type="q2:ArrayOfdouble" />
+      <xs:element xmlns:q3="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="modelNameList" nillable="true" type="q3:ArrayOfstring" />
+      <xs:element minOccurs="0" name="modelSize" type="xs:double" />
+      <xs:element minOccurs="0" name="vMachineID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ModelInformation" nillable="true" type="tns:ModelInformation" />
+  <xs:complexType name="ArrayOfFanOutEquipmentInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="FanOutEquipmentInformation" nillable="true" type="tns:FanOutEquipmentInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfFanOutEquipmentInformation" nillable="true" type="tns:ArrayOfFanOutEquipmentInformation" />
+  <xs:complexType name="FanOutEquipmentInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="equipmentName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vMachineName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="FanOutEquipmentInformation" nillable="true" type="tns:FanOutEquipmentInformation" />
+  <xs:complexType name="ArrayOfModel_SendContent">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="Model_SendContent" nillable="true" type="tns:Model_SendContent" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfModel_SendContent" nillable="true" type="tns:ArrayOfModel_SendContent" />
+  <xs:complexType name="Model_SendContent">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CNCID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="Company" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="PK" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ServiceBrokerID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="vMachineID" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Model_SendContent" nillable="true" type="tns:Model_SendContent" />
+  <xs:complexType name="ModelFilterParameters">
+    <xs:sequence>
+      <xs:element xmlns:q4="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ProductID" nillable="true" type="q4:ArrayOfstring" />
+      <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="ServiceBrokerID" nillable="true" type="q5:ArrayOfstring" />
+      <xs:element xmlns:q6="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="cnc_number" nillable="true" type="q6:ArrayOfstring" />
+      <xs:element minOccurs="0" name="modelEndDate" type="xs:dateTime" />
+      <xs:element minOccurs="0" name="modelStartDate" type="xs:dateTime" />
+      <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="vMachineID" nillable="true" type="q7:ArrayOfstring" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ModelFilterParameters" nillable="true" type="tns:ModelFilterParameters" />
+  <xs:complexType name="ArrayOfEquipmentInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="EquipmentInformation" nillable="true" type="tns:EquipmentInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfEquipmentInformation" nillable="true" type="tns:ArrayOfEquipmentInformation" />
+  <xs:complexType name="EquipmentInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="CNCID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="v_Machine_ID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="v_Machine_IP" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="EquipmentInformation" nillable="true" type="tns:EquipmentInformation" />
+</xs:schema>

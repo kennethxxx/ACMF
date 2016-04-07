@@ -1,0 +1,86 @@
+﻿<controls:ChildWindow x:Class="IPS.ViewsSub.ModelCreationModule.ModelCreationBuildOption"
+           xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+           xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+           xmlns:controls="clr-namespace:System.Windows.Controls;assembly=System.Windows.Controls"
+           xmlns:toolkit="http://schemas.microsoft.com/winfx/2006/xaml/presentation/toolkit"                      
+           Width="600" Height="350" Style="{StaticResource ChildWindowStyle}"
+           Title="建立模型選項">
+    <Grid x:Name="LayoutRoot" Margin="2">
+        <Grid.RowDefinitions>
+            <RowDefinition />
+            <RowDefinition Height="Auto" />
+        </Grid.RowDefinitions>
+        <Border>
+            <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                    <RowDefinition Height="Auto"/>
+                </Grid.RowDefinitions>
+
+                <toolkit:HeaderedContentControl Style="{StaticResource GroupBox}" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5,5,0,0" Width="423" Header="MR 演算法" Height="67">
+                    <Grid Height="64">
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="250" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <RadioButton Name="radMR" Margin="2,2,128,2" GroupName="MR" Content="MR" IsChecked="True" />
+                        <RadioButton Content="PLS" GroupName="MR" IsChecked="{x:Null}" Margin="113,2,60,38" Name="radioButton1" IsEnabled="True" />
+                        <RadioButton Grid.Column="1" Name="radMMR" Margin="2" GroupName="MR" Content="MMR" />
+                    </Grid>
+                </toolkit:HeaderedContentControl>
+
+                <toolkit:HeaderedContentControl Style="{StaticResource GroupBox}" Grid.Row="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="425" Header="GSI 演算法">
+                    <Grid>
+                        <Grid.ColumnDefinitions>
+                            <ColumnDefinition Width="250" />
+                            <ColumnDefinition Width="*" />
+                        </Grid.ColumnDefinitions>
+                        <RadioButton Grid.Column="0" Name="radMhalanobis" Margin="2" GroupName="GSI" Content="MahalanobisDistance" IsChecked="True" />
+                        <RadioButton Grid.Column="1" Name="radEuclidean" Margin="2" GroupName="GSI" Content="EuclideanDistance" />
+                    </Grid>
+                </toolkit:HeaderedContentControl>
+
+                <Grid Grid.Row="2" Margin="0">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="250" />
+                        <ColumnDefinition Width="*" />
+                    </Grid.ColumnDefinitions>
+
+                    <toolkit:HeaderedContentControl Style="{StaticResource GroupBox}" Grid.Column="0" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="240" Header="NN 演算法">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <StackPanel Orientation="Horizontal" Grid.Row="0">
+                                <RadioButton Name="radBPNN" Margin="2" GroupName="NN" Content="BPNN" IsChecked="True" />
+                                <RadioButton Name="radGRNN" Margin="2" GroupName="NN" Content="GRNN" />
+                            </StackPanel>
+                        </Grid>
+                    </toolkit:HeaderedContentControl>
+
+                    <toolkit:HeaderedContentControl Style="{StaticResource GroupBox}" Grid.Column="1" HorizontalAlignment="Left" VerticalAlignment="Top" Margin="5" Width="175" Header="RI 演算法">
+                        <Grid>
+                            <Grid.RowDefinitions>
+                                <RowDefinition Height="Auto"/>
+                                <RowDefinition Height="Auto"/>
+                            </Grid.RowDefinitions>
+
+                            <TextBlock Text="最大容忍誤差 (%):" Grid.Row="0" HorizontalAlignment="Left" VerticalAlignment="Center" Margin="2"/>
+                            <StackPanel Orientation="Horizontal" Grid.Row="1">
+                                <RadioButton Name="radManual" Margin="2" GroupName="RI" Content="手動" />
+                                <RadioButton Name="radAuto" Margin="2" GroupName="RI" Content="自動" IsChecked="True" />
+                            </StackPanel>
+                        </Grid>
+                    </toolkit:HeaderedContentControl>
+
+                </Grid>
+
+            </Grid>
+        </Border>
+
+        <Button x:Name="CancelButton" Content="取消" Click="CancelButton_Click" Width="75" Height="23" HorizontalAlignment="Right" Margin="0,12,0,0" Grid.Row="1" />
+        <Button x:Name="OKButton" Content="確認" Click="OKButton_Click" Width="75" Height="23" HorizontalAlignment="Right" Margin="0,12,79,0" Grid.Row="1" />
+    </Grid>
+</controls:ChildWindow>

@@ -1,0 +1,1422 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>8.0.50727</ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{F307ED0D-A37B-4A69-9AAF-21F594F54FF5}</ProjectGuid>
+    <ProjectTypeGuids>{A1591282-1198-4647-A2B1-27E5FF5F6F3B};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>IPS</RootNamespace>
+    <AssemblyName>IPS</AssemblyName>
+    <TargetFrameworkIdentifier>Silverlight</TargetFrameworkIdentifier>
+    <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
+    <SilverlightVersion>$(TargetFrameworkVersion)</SilverlightVersion>
+    <SilverlightApplication>true</SilverlightApplication>
+    <SupportedCultures>
+    </SupportedCultures>
+    <XapOutputs>true</XapOutputs>
+    <GenerateSilverlightManifest>true</GenerateSilverlightManifest>
+    <XapFilename>IPS.xap</XapFilename>
+    <SilverlightManifestTemplate>Properties\AppManifest.xml</SilverlightManifestTemplate>
+    <SilverlightAppEntry>IPS.App</SilverlightAppEntry>
+    <TestPageFileName>IPSTestPage.html</TestPageFileName>
+    <CreateTestPage>true</CreateTestPage>
+    <ValidateXaml>true</ValidateXaml>
+    <EnableOutOfBrowser>false</EnableOutOfBrowser>
+    <OutOfBrowserSettingsFile>Properties\OutOfBrowserSettings.xml</OutOfBrowserSettingsFile>
+    <UsePlatformExtensions>false</UsePlatformExtensions>
+    <ThrowErrorsInValidation>true</ThrowErrorsInValidation>
+    <LinkedServerProject>..\IPS.Web\IPS.Web.csproj</LinkedServerProject>
+    <SccProjectName>
+    </SccProjectName>
+    <SccLocalPath>
+    </SccLocalPath>
+    <SccAuxPath>
+    </SccAuxPath>
+    <SccProvider>
+    </SccProvider>
+    <Utf8Output>true</Utf8Output>
+    <ExpressionBlendVersion>4.0.30816.0</ExpressionBlendVersion>
+    <PublishUrl>publish\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>0</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <!-- This property group is only here to support building this project using the 
+       MSBuild 3.5 toolset. In order to work correctly with this older toolset, it needs 
+       to set the TargetFrameworkVersion to v3.5 -->
+  <PropertyGroup Condition="'$(MSBuildToolsVersion)' == '3.5'">
+    <TargetFrameworkVersion>v3.5</TargetFrameworkVersion>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>Bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>Bin\</OutputPath>
+    <DefineConstants>TRACE;SILVERLIGHT</DefineConstants>
+    <NoStdLib>true</NoStdLib>
+    <NoConfig>true</NoConfig>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+    <CodeAnalysisRuleSet>AllRules.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="FJ.Core">
+      <HintPath>Components\Visifire\FJ.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="Microsoft.Expression.Drawing">
+      <HintPath>..\..\..\20120626-1620\VMachine(3)\VMachine\Bin\Debug\Microsoft.Expression.Drawing.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Composite">
+      <HintPath>..\..\..\20120626-1620\VMachine(3)\VMachine\Components\Composite\Microsoft.Practices.Composite.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Composite.Presentation">
+      <HintPath>..\..\..\20120626-1620\VMachine(3)\VMachine\Components\Composite\Microsoft.Practices.Composite.Presentation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Composite.UnityExtensions">
+      <HintPath>..\..\..\20120626-1620\VMachine(3)\VMachine\Components\Composite\Microsoft.Practices.Composite.UnityExtensions.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.ServiceLocation">
+      <HintPath>..\..\..\20120626-1620\VMachine(3)\VMachine\Components\Composite\Microsoft.Practices.ServiceLocation.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Practices.Unity">
+      <HintPath>..\..\..\20120626-1620\VMachine(3)\VMachine\Components\Composite\Microsoft.Practices.Unity.dll</HintPath>
+    </Reference>
+    <Reference Include="mscorlib" />
+    <Reference Include="OMC, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL" />
+    <Reference Include="SLDataTemplate">
+      <HintPath>..\..\..\20120626-1620\VMachine(3)\VMachine\Bin\Debug\SLDataTemplate.dll</HintPath>
+    </Reference>
+    <Reference Include="SLVisifire.Charts">
+      <HintPath>Components\Visifire\SLVisifire.Charts.dll</HintPath>
+    </Reference>
+    <Reference Include="SLVisifire.Gauges">
+      <HintPath>..\..\..\20120626-1620\VMachine(3)\VMachine\Components\Visifire\SLVisifire.Gauges.dll</HintPath>
+    </Reference>
+    <Reference Include="System.ComponentModel.DataAnnotations, Version=2.0.5.0, Culture=neutral, PublicKeyToken=ddd0da4d3e678217, processorArchitecture=MSIL" />
+    <Reference Include="System.Json, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
+    <Reference Include="System.ServiceModel.DomainServices.Client, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel.DomainServices.Client.Web, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.ServiceModel.Extensions, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.ServiceModel.NetTcp, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.ServiceModel.PollingDuplex, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.ServiceModel.Syndication, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.ServiceModel.Web" />
+    <Reference Include="System.ServiceModel.Web.Extensions, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows" />
+    <Reference Include="system" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net" />
+    <Reference Include="System.Windows.Controls, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Data.Input, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.DataVisualization.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.DomainServices, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Input.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Navigation, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Theming.ExpressionDark, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Theming.SystemColors, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Windows.Controls.Theming.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Controls.Toolkit, Version=4.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Windows.Data, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Windows.Browser" />
+    <Reference Include="System.Xml.Linq, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="System.Xml.Serialization, Version=2.0.5.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL" />
+    <Reference Include="TiledBG">
+      <HintPath>Components\TiledBG.dll</HintPath>
+    </Reference>
+    <Reference Include="VMachine">
+      <HintPath>..\..\..\20120626-1620\VMachine(3)\VMachine\Bin\Debug\VMachine.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="..\SharedAssemblyInfo.cs">
+      <Link>Properties\SharedAssemblyInfo.cs</Link>
+    </Compile>
+    <Compile Include="App.xaml.cs">
+      <DependentUpon>App.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Common\BuildModelOption.cs" />
+    <Compile Include="Common\ComboxDataObj.cs" />
+    <Compile Include="Common\CommonValue.cs" />
+    <Compile Include="Common\DataAquisitionModuleContainer.cs" />
+    <Compile Include="Common\MCS_Data\ProductBasicInfoClass.cs" />
+    <Compile Include="Common\ModelCreationModuleContainer.cs" />
+    <Compile Include="Common\ModelMgtModuleContainer.cs" />
+    <Compile Include="Common\OMC\KM_CreationFourClass.cs" />
+    <Compile Include="Common\OMC\KM_EditFourClass.cs" />
+    <Compile Include="Common\OMC\PE_CNCClass.cs" />
+    <Compile Include="Common\OMC\RuleClass.cs" />
+    <Compile Include="Common\StateManager.cs" />
+    <Compile Include="Common\VisifireChart.cs" />
+    <Compile Include="Comm\CBworkpieceProvider.cs" />
+    <Compile Include="Comm\CToolClass.cs" />
+    <Compile Include="Comm\ImageEntity.cs" />
+    <Compile Include="Comm\ImagesView.cs" />
+    <Compile Include="Comm\OrderByClass.cs" />
+    <Compile Include="Comm\ParseJsonFormatClass.cs" />
+    <Compile Include="Comm\PEUseClass.cs" />
+    <Compile Include="Comm\UniformGrid.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Service References\BPEL_Service\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\DataAcquisition\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MachineInfomation2\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\MachineInfomation\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ModelCreation\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ModelManager\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\OntologyService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\Ontology\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\RecommendedCuttingTool\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\ServiceManager\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UploadFileService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Service References\UserMgtService\Reference.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </Compile>
+    <Compile Include="Shell.xaml.cs">
+      <DependentUpon>Shell.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="SilverlightSerializer\Entry.cs" />
+    <Compile Include="SilverlightSerializer\GetSet.cs" />
+    <Compile Include="SilverlightSerializer\GetSetGeneric.cs" />
+    <Compile Include="SilverlightSerializer\GetWritableAttributes.cs" />
+    <Compile Include="SilverlightSerializer\IStorage.cs" />
+    <Compile Include="SilverlightSerializer\SerializationUnits.cs" />
+    <Compile Include="SilverlightSerializer\SilverlightSerializer.cs" />
+    <Compile Include="ViewsSub\ModelCreationModule\ModelCreationModuleAlgorithmFlowControler.cs" />
+    <Compile Include="ViewsSub\ModelCreationModule\ModelCreationModule_CleanMetrologyData_Page.xaml.cs">
+      <DependentUpon>ModelCreationModule_CleanMetrologyData_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsSub\ModelCreationModule\ModelCreationModule_CleanProcessData_Page.xaml.cs">
+      <DependentUpon>ModelCreationModule_CleanProcessData_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsSub\ModelCreationModule\ModelCreationModule_DataCollection_Page.xaml.cs">
+      <DependentUpon>ModelCreationModule_DataCollection_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsSub\ModelCreationModule\ModelCreationModule_SetGroup_Page.xaml.cs">
+      <DependentUpon>ModelCreationModule_SetGroup_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsSub\ModelCreationModule\ModelCreationModule_VerifyDQIx_Page.xaml.cs">
+      <DependentUpon>ModelCreationModule_VerifyDQIx_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsSub\OntologyModule\ErrorWindow.xaml.cs">
+      <DependentUpon>ErrorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsSub\OntologyModule\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsSub\OntologyModule\OntologyModuleFlowController.cs" />
+    <Compile Include="ViewsSub\OntologyModule\ProgressBar.xaml.cs">
+      <DependentUpon>ProgressBar.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\DataAquisitionModule.xaml.cs">
+      <DependentUpon>DataAquisitionModule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsSub\DataAquisitionModule\DataAquisitionModule_CreateNewDCP_Page.xaml.cs">
+      <DependentUpon>DataAquisitionModule_CreateNewDCP_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsSub\DataAquisitionModule\DataAquisitionModule_HistoryDCPView_Page.xaml.cs">
+      <DependentUpon>DataAquisitionModule_HistoryDCPView_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsComponent\DateTimePicker.xaml.cs">
+      <DependentUpon>DateTimePicker.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ErrorWindow.xaml.cs">
+      <DependentUpon>ErrorWindow.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\HistoricalDataModule.xaml.cs">
+      <DependentUpon>HistoricalDataModule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\Home.xaml.cs">
+      <DependentUpon>Home.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\LoginModule.xaml.cs">
+      <DependentUpon>LoginModule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsSub\ModelCreationModule\ModelCreationBuildOption.xaml.cs">
+      <DependentUpon>ModelCreationBuildOption.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsSub\ModelCreationModule\ModelCreationChartViewer.xaml.cs">
+      <DependentUpon>ModelCreationChartViewer.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ModelCreationModule.xaml.cs">
+      <DependentUpon>ModelCreationModule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsSub\ModelCreationModule\ModelCreationModule_BuildConjectureModel_Page.xaml.cs">
+      <DependentUpon>ModelCreationModule_BuildConjectureModel_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsSub\ModelCreationModule\ModelCreationModule_VerifyDQIy_Page.xaml.cs">
+      <DependentUpon>ModelCreationModule_VerifyDQIy_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="ViewsSub\ModelCreationModule\ModelCreationModule_DataSelection_Page.xaml.cs">
+      <DependentUpon>ModelCreationModule_DataSelection_Page.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ModelMgtModule.xaml.cs">
+      <DependentUpon>ModelMgtModule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OntologyRecommendingCuttingTool.xaml.cs">
+      <DependentUpon>OntologyRecommendingCuttingTool.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OntologyTOC.xaml.cs">
+      <DependentUpon>OntologyTOC.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OntologyModule.xaml.cs">
+      <DependentUpon>OntologyModule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\OntologyUpload.xaml.cs">
+      <DependentUpon>OntologyUpload.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\ServiceMgtModule.xaml.cs">
+      <DependentUpon>ServiceMgtModule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UDDIPublishService.xaml.cs">
+      <DependentUpon>UDDIPublishService.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UDDIServiceMapping.xaml.cs">
+      <DependentUpon>UDDIServiceMapping.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UDDISetting.xaml.cs">
+      <DependentUpon>UDDISetting.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserManager.xaml.cs">
+      <DependentUpon>UserManager.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\UserMgtModule.xaml.cs">
+      <DependentUpon>UserMgtModule.xaml</DependentUpon>
+    </Compile>
+    <Compile Include="Views\WaitingWindow.xaml.cs">
+      <DependentUpon>WaitingWindow.xaml</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <ApplicationDefinition Include="App.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </ApplicationDefinition>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Properties\AppManifest.xml" />
+    <None Include="Service References\BPEL_Service\IPS.BPEL_Service.initiateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\BPEL_Service\WD_CAPPService1.wsdl" />
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.FanoutDCPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.getAllStartVmachineStateListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.getAllStopVmachineStateListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.getAllvMachineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.getAllVmachineStateListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.getDCPInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.getDCRResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.getEquipmentByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.getEquipmentListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.getModelResultResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.getProductBasicInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.getProductInfo1Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.getProductInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.getProductionHistoInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.getSensorListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.getServiceBrokerInfoResponse1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.getVmachineListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.InsertDCRResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.startPeriodTimeUploadSTDBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.stopPeriodTimeUploadSTDBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.updateVMResultResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.uploadDefOfSTDBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\IPS.DataAcquisition.uploadSTDBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\DataAcquisition\Service.wsdl" />
+    <None Include="Service References\DataAcquisition\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DataAcquisition\Service1.wsdl" />
+    <None Include="Service References\DataAcquisition\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DataAcquisition\Service10.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DataAcquisition\Service2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DataAcquisition\Service3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DataAcquisition\Service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DataAcquisition\Service5.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DataAcquisition\Service6.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DataAcquisition\Service7.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DataAcquisition\Service8.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\DataAcquisition\Service9.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.Cnc_State_CheckResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.Delete_vMachibneResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.DownloadNCFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.fanOutModelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.GetCompanyInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.getDCPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.getEquipmentInformationListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.getEquipmentListByVmachineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.getEquipmentListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.getProductBasicInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.getProductInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.getProductionHistoInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.getRunningModelInformationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.GetServiceBrokerInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.GetvMachineCNCInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.GetvMachineCNCInfo_OntologyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.getVmachineInformationListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.getVmachineList1Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.getVmachineListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.Get_Model_From_MMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.get_vMachineIPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.Insert_vNachineStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.modify_cncstateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.modify_vMachinestateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.registerCNCInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.registerProductInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.registerProductionHistoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.registervMachineInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.registerVmachineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.sendAlarmResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.ServiceBroker_sendDataCollectionReport_ReturnResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.testResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.testvResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.updateVMResultResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.Update_vNachineStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.uploadDefOfSTDBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.uploadSTDBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\IPS.MachineInfomation2.vMachine_RegInfo_CheckResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation2\Service1.wsdl" />
+    <None Include="Service References\MachineInfomation2\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MachineInfomation2\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MachineInfomation2\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MachineInfomation2\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MachineInfomation2\Service14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MachineInfomation2\Service15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MachineInfomation2\Service16.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.Cnc_State_CheckResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.Delete_vMachibneResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.DownloadNCFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.fanOutModelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.GetCompanyInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.getEquipmentInformationListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.getEquipmentListByVmachineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.getEquipmentListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.getProductBasicInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.getProductInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.getProductionHistoInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.getRunningModelInformationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.GetServiceBrokerInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.GetvMachineCNCInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.GetvMachineCNCInfo_OntologyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.getVmachineInformationListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.getVmachineList1Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.getVmachineListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.Get_CNCInfo_OntologyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.Get_Model_From_MMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.Get_vMachineInfo_OntologyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.get_vMachineIPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.Insert_vNachineStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.kinfe_InfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.modify_cncstateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.modify_vMachinestateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.registerCNCInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.registerProductInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.registerProductionHistoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.registervMachineInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.registerVmachineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.sendAlarmResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.ServiceBroker_sendDataCollectionReport_ReturnResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.testResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.testvResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.updateVMResultResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.Update_vNachineStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.uploadDefOfSTDBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.uploadSTDBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\IPS.MachineInfomation.vMachine_RegInfo_CheckResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\MachineInfomation\Service11.wsdl" />
+    <None Include="Service References\MachineInfomation\Service17.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MachineInfomation\Service171.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MachineInfomation\Service172.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MachineInfomation\Service173.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MachineInfomation\Service174.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MachineInfomation\Service175.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\MachineInfomation\Service176.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelCreation\IPS.ModelCreation.MetrologyPoint.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelCreation\IPS.ModelCreation.Out_BPNN.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelCreation\IPS.ModelCreation.Out_CategoryDef.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelCreation\IPS.ModelCreation.Out_DQIy_CleanAbnormalY.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelCreation\IPS.ModelCreation.Out_GSI.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelCreation\IPS.ModelCreation.Out_IndicatorsPopulation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelCreation\IPS.ModelCreation.Out_KSS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelCreation\IPS.ModelCreation.Out_KVS.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelCreation\IPS.ModelCreation.Out_MDFR.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelCreation\IPS.ModelCreation.Out_MR.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelCreation\IPS.ModelCreation.Out_RI.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelCreation\IPS.ModelCreation.Out_UploadModel.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelCreation\IPS.ModelCreation.Out_VerifyDQIxResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelCreation\IPS.ModelCreation.Out_VerifyDQIyResult.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelCreation\Service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelCreation\Service1.wsdl" />
+    <None Include="Service References\ModelCreation\Service4.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelCreation\Service41.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelCreation\Service42.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelCreation\Service43.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelManager\IPS.ModelManager.EquipmentInformation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelManager\IPS.ModelManager.ModelFilterParameters.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelManager\IPS.ModelManager.ModelFull.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelManager\IPS.ModelManager.ModelInformation.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelManager\IPS.ModelManager.Vmachine.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ModelManager\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelManager\Service11.wsdl" />
+    <None Include="Service References\ModelManager\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelManager\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelManager\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelManager\Service14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ModelManager\Service15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OntologyService\IontologyClassMain.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OntologyService\IontologyClassMain1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OntologyService\IontologyClassMain2.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\OntologyService\IPS.OntologyService.CompositeType.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\OntologyService\OService.wsdl" />
+    <None Include="Service References\Ontology\IPS.Ontology.Cnc_State_CheckResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.Delete_vMachibneResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.DownloadNCFileResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.fanOutModelResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.GetCompanyInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.getDCPResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.getEquipmentListByVmachineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.getEquipmentListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.getProductBasicInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.getProductInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.getProductionHistoInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.getRunningModelInformationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.GetServiceBrokerInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.GetvMachineCNCInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.GetvMachineCNCInfo_OntologyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.getVmachineInformationListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.getVmachineList1Response.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.getVmachineListResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.Get_Model_From_MMResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.Insert_vNachineStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.modify_cncstateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.modify_vMachinestateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.registerCNCInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.registerProductInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.registerProductionHistoryResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.registervMachineInfoResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.registerVmachineResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.sendAlarmResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.ServiceBroker_sendDataCollectionReport_ReturnResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.testResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.testvResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.updateVMResultResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.Update_vNachineStateResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.uploadDefOfSTDBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.uploadSTDBResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\IPS.Ontology.vMachine_RegInfo_CheckResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\Ontology\Service1.wsdl" />
+    <None Include="Service References\Ontology\Service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Ontology\Service11.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Ontology\Service12.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Ontology\Service13.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Ontology\Service14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\Ontology\Service15.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RecommendedCuttingTool\OntologyCuttingToolService1.wsdl" />
+    <None Include="Service References\RecommendedCuttingTool\OntologyServiceCuttingToolInterface31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\RecommendedCuttingTool\OntologyServiceCuttingToolInterface32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceManager\IPS.ServiceManager.ConnectionInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceManager\IPS.ServiceManager.ProviderInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceManager\IPS.ServiceManager.ServiceMappingInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceManager\IPS.ServiceManager.SVInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\ServiceManager\ServiceManager1.wsdl" />
+    <None Include="Service References\ServiceManager\ServiceManager3.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceManager\ServiceManager31.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\ServiceManager\ServiceManager32.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadFileService\FileUploadService.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadFileService\IPS.UploadFileService.FileUploadMessage1.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadFileService\IPS.UploadFileService.UploadFileInfo.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UploadFileService\Message.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadFileService\service.wsdl" />
+    <None Include="Service References\UploadFileService\service.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UploadFileService\service1.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserMgtService\IPS.UserMgtService.checkUserNameExistOrNotResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserMgtService\IPS.UserMgtService.CreateNewRelyingPartyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserMgtService\IPS.UserMgtService.deleteAccountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserMgtService\IPS.UserMgtService.DeleteRelyingPartyResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserMgtService\IPS.UserMgtService.getAllRolesResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserMgtService\IPS.UserMgtService.getAllServiceGroupResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserMgtService\IPS.UserMgtService.GetTokenFromACSResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserMgtService\IPS.UserMgtService.getUserInformationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserMgtService\IPS.UserMgtService.getUserKeyByNameResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserMgtService\IPS.UserMgtService.getUserKeyInformationResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserMgtService\IPS.UserMgtService.getUserRoleResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserMgtService\IPS.UserMgtService.modeifyAccountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserMgtService\IPS.UserMgtService.registerCloudUserResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserMgtService\IPS.UserMgtService.validateAccountResponse.datasource">
+      <DependentUpon>Reference.svcmap</DependentUpon>
+    </None>
+    <None Include="Service References\UserMgtService\Service11.wsdl" />
+    <None Include="Service References\UserMgtService\Service14.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserMgtService\Service141.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserMgtService\Service142.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserMgtService\Service143.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Service References\UserMgtService\Service144.xsd">
+      <SubType>Designer</SubType>
+    </None>
+    <Resource Include="Images\add.png" />
+    <Resource Include="Images\change.png" />
+    <Resource Include="Images\delete.png" />
+    <Resource Include="Images\edit.png" />
+    <Resource Include="Images\load.png" />
+    <Resource Include="Images\save.png" />
+    <Resource Include="Images\select.png" />
+    <Resource Include="Images\start.png" />
+    <Resource Include="Images\Stop.png" />
+    <Resource Include="Images\Publish.png" />
+    <Resource Include="Images\arrow_left.png" />
+    <Resource Include="Images\arrow_right.png" />
+    <Resource Include="Images\arrow_down.png" />
+    <Resource Include="Images\arrow_up.png" />
+    <Resource Include="Images\fanout.png" />
+    <Resource Include="Images\add-icon.png" />
+    <Resource Include="Images\delete-icon.png" />
+    <None Include="Service References\ServiceManager\configuration91.svcinfo" />
+    <None Include="Service References\ServiceManager\configuration.svcinfo" />
+    <None Include="Service References\ServiceManager\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Resource Include="Images\login_icon.png" />
+    <Resource Include="Images\fullscreen.png" />
+    <Resource Include="Images\fullscreen_exit.png" />
+    <Resource Include="Images\symbol-error.png" />
+    <Resource Include="Images\search.png" />
+    <Resource Include="Images\exit.png" />
+    <Resource Include="Images\build_model.png" />
+    <None Include="Service References\ModelManager\configuration91.svcinfo" />
+    <None Include="Service References\ModelManager\configuration.svcinfo" />
+    <None Include="Service References\ModelManager\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\ModelCreation\configuration91.svcinfo" />
+    <None Include="Service References\ModelCreation\configuration.svcinfo" />
+    <None Include="Service References\ModelCreation\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\UserMgtService\configuration91.svcinfo" />
+    <None Include="Service References\UserMgtService\configuration.svcinfo" />
+    <None Include="Service References\UserMgtService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Resource Include="Images\blue.png" />
+    <Resource Include="Images\green.png" />
+    <Resource Include="Images\orange.png" />
+    <None Include="Service References\UserMgtService\Service11.disco" />
+    <None Include="Service References\DataAcquisition\configuration91.svcinfo" />
+    <None Include="Service References\DataAcquisition\configuration.svcinfo" />
+    <None Include="Service References\DataAcquisition\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Resource Include="Images\reset.png" />
+    <Resource Include="Images\crosshatch.png" />
+    <Resource Include="Images\MessageBoxCancel.png" />
+    <Resource Include="Images\MessageBoxOK.png" />
+    <None Include="Service References\ServiceManager\ServiceManager1.disco" />
+    <None Include="Service References\DataAcquisition\Service.disco" />
+    <None Include="Service References\ModelCreation\Service1.disco" />
+    <None Include="Service References\Ontology\Service1.disco" />
+    <None Include="Service References\Ontology\configuration91.svcinfo" />
+    <None Include="Service References\Ontology\configuration.svcinfo" />
+    <None Include="Service References\Ontology\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\UploadFileService\configuration91.svcinfo" />
+    <None Include="Service References\UploadFileService\configuration.svcinfo" />
+    <None Include="Service References\UploadFileService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\OntologyService\configuration91.svcinfo" />
+    <None Include="Service References\OntologyService\configuration.svcinfo" />
+    <None Include="Service References\OntologyService\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\MachineInfomation\configuration91.svcinfo" />
+    <None Include="Service References\MachineInfomation\configuration.svcinfo" />
+    <None Include="Service References\MachineInfomation\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\MachineInfomation2\Service1.disco" />
+    <None Include="Service References\MachineInfomation2\configuration91.svcinfo" />
+    <None Include="Service References\MachineInfomation2\configuration.svcinfo" />
+    <None Include="Service References\MachineInfomation2\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <None Include="Service References\MachineInfomation\Service11.disco" />
+    <None Include="Service References\DataAcquisition\Service1.disco" />
+    <None Include="Service References\ModelManager\Service11.disco" />
+    <None Include="Service References\OntologyService\IontologyClassMain.disco" />
+    <Resource Include="Images\build_model - Copy.png" />
+    <Resource Include="Images\Login-icon1.gif" />
+    <Resource Include="Images\login.gif" />
+    <Resource Include="Images\login_icon.gif" />
+    <Resource Include="Images\not-ok-icon.jpg" />
+    <Resource Include="Images\ok-icon.jpg" />
+    <Resource Include="Images\Time-icon.png" />
+    <None Include="Service References\RecommendedCuttingTool\configuration91.svcinfo" />
+    <None Include="Service References\RecommendedCuttingTool\configuration.svcinfo" />
+    <None Include="Service References\RecommendedCuttingTool\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Resource Include="Images\icon-Warning2.png" />
+    <Resource Include="Images\T01.png" />
+    <Resource Include="Images\T02.png" />
+    <Resource Include="Images\T03.png" />
+    <Resource Include="Images\T04.png" />
+    <Resource Include="Images\T05.png" />
+    <Resource Include="Images\T06.png" />
+    <None Include="Service References\BPEL_Service\configuration91.svcinfo" />
+    <None Include="Service References\BPEL_Service\configuration.svcinfo" />
+    <None Include="Service References\BPEL_Service\Reference.svcmap">
+      <Generator>WCF Proxy Generator</Generator>
+      <LastGenOutput>Reference.cs</LastGenOutput>
+    </None>
+    <Content Include="ServiceReferences.ClientConfig">
+      <SubType>Designer</SubType>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <Page Include="ViewsSub\ModelCreationModule\ModelCreationModule_CleanMetrologyData_Page.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewsSub\ModelCreationModule\ModelCreationModule_CleanProcessData_Page.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewsSub\ModelCreationModule\ModelCreationModule_DataCollection_Page.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewsSub\ModelCreationModule\ModelCreationModule_SetGroup_Page.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewsSub\ModelCreationModule\ModelCreationModule_VerifyDQIx_Page.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewsSub\OntologyModule\ErrorWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewsSub\OntologyModule\Home.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewsSub\OntologyModule\ProgressBar.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\DataAquisitionModule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewsSub\DataAquisitionModule\DataAquisitionModule_CreateNewDCP_Page.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewsSub\DataAquisitionModule\DataAquisitionModule_HistoryDCPView_Page.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewsComponent\DateTimePicker.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ErrorWindow.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\HistoricalDataModule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\LoginModule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewsSub\ModelCreationModule\ModelCreationBuildOption.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewsSub\ModelCreationModule\ModelCreationChartViewer.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ModelCreationModule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="ViewsSub\ModelCreationModule\ModelCreationModule_BuildConjectureModel_Page.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewsSub\ModelCreationModule\ModelCreationModule_VerifyDQIy_Page.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="ViewsSub\ModelCreationModule\ModelCreationModule_DataSelection_Page.xaml">
+      <Generator>MSBuild:MarkupCompilePass1</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\ModelMgtModule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OntologyRecommendingCuttingTool.xaml">
+      <Generator>MSBuild:Compile</Generator>
+      <SubType>Designer</SubType>
+    </Page>
+    <Page Include="Views\OntologyTOC.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OntologyModule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\OntologyUpload.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\ServiceMgtModule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UDDIPublishService.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UDDIServiceMapping.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UDDISetting.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserManager.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\UserMgtModule.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\WaitingWindow.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Resource Include="Images\eMRC.png" />
+    <Resource Include="Assets\Styles.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Resource>
+    <Page Include="Shell.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Views\Home.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Images\Example\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <WCFMetadataStorage Include="Service References\BPEL_Service\" />
+    <WCFMetadataStorage Include="Service References\DataAcquisition\" />
+    <WCFMetadataStorage Include="Service References\MachineInfomation2\" />
+    <WCFMetadataStorage Include="Service References\MachineInfomation\" />
+    <WCFMetadataStorage Include="Service References\ModelCreation\" />
+    <WCFMetadataStorage Include="Service References\ModelManager\" />
+    <WCFMetadataStorage Include="Service References\OntologyService\" />
+    <WCFMetadataStorage Include="Service References\Ontology\" />
+    <WCFMetadataStorage Include="Service References\RecommendedCuttingTool\" />
+    <WCFMetadataStorage Include="Service References\ServiceManager\" />
+    <WCFMetadataStorage Include="Service References\UploadFileService\" />
+    <WCFMetadataStorage Include="Service References\UserMgtService\" />
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Silverlight\$(SilverlightVersion)\Microsoft.Silverlight.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{A1591282-1198-4647-A2B1-27E5FF5F6F3B}">
+        <SilverlightProjectProperties />
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+</Project>

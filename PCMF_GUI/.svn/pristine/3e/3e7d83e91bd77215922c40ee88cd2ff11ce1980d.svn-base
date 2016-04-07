@@ -1,0 +1,97 @@
+﻿<configuration>
+    <system.serviceModel>
+        <bindings>
+            <basicHttpBinding>
+                <binding name="BasicHttpBinding_IServiceManager" closeTimeout="01:00:00"
+                    openTimeout="01:00:00" receiveTimeout="01:00:00" sendTimeout="01:00:00"
+                    maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_IUserMgtService" closeTimeout="01:00:00"
+                    openTimeout="01:00:00" receiveTimeout="01:00:00" sendTimeout="01:00:00"
+                    maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_IService" closeTimeout="01:00:00"
+                    openTimeout="01:00:00" receiveTimeout="01:00:00" sendTimeout="01:00:00"
+                    maxBufferSize="2147483647" maxReceivedMessageSize="2147483647" />
+                <binding name="BasicHttpBinding_IService1" closeTimeout="01:00:00"
+                    openTimeout="01:00:00" receiveTimeout="01:00:00" sendTimeout="01:00:00"
+                    maxBufferSize="2147483647" maxReceivedMessageSize="2147483647" />
+                <binding name="BasicHttpBinding_IService2" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647" />
+                <binding name="BasicHttpBinding_IService11" closeTimeout="01:00:00"
+                    openTimeout="01:00:00" receiveTimeout="01:00:00" sendTimeout="01:00:00"
+                    maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_IService13" closeTimeout="03:00:00"
+                    openTimeout="03:00:00" receiveTimeout="03:00:00" sendTimeout="03:00:00"
+                    maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_IService12" maxBufferSize="2147483647"
+                    maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_IService14" closeTimeout="03:00:00"
+                    openTimeout="03:00:00" receiveTimeout="03:00:00" sendTimeout="03:00:00"
+                    maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_IOntologyService" closeTimeout="03:00:00"
+                    openTimeout="03:00:00" receiveTimeout="03:00:00" sendTimeout="03:00:00"
+                    maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="BasicHttpBinding_CuttingToolInterface" closeTimeout="03:00:00"
+                    openTimeout="03:00:00" receiveTimeout="03:00:00" sendTimeout="03:00:00"
+                    maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+                <binding name="WD_CAPPBinding" maxBufferSize="2147483647" maxReceivedMessageSize="2147483647">
+                    <security mode="None" />
+                </binding>
+            </basicHttpBinding>
+        </bindings>
+        <client>
+            <endpoint address="http://140.116.86.170/UserManagements/Service1.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IUserMgtService"
+                contract="UserMgtService.IService1" name="BasicHttpBinding_IUserMgtService" />
+            <endpoint address="http://localhost/ServiceBroker/Service1.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IService11"
+                contract="Ontology.IService1" name="BasicHttpBinding_IService11" />
+            <endpoint address="http://140.116.86.172/ServiceBroker/Service1.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IService14"
+                contract="MachineInfomation2.IService1" name="BasicHttpBinding_IService14" />
+            <endpoint address="http://114.33.127.121/ServiceBroker/Service1.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IService12"
+                contract="MachineInfomation.IService1" name="BasicHttpBinding_IService12" />
+            <endpoint address="http://140.116.86.235/DataAquactionServices/Service.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IService2"
+                contract="DataAcquisition.IService" name="BasicHttpBinding_IService2" />
+            <endpoint address="http://140.116.86.172/ModelManagementServices/Service1.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IService1"
+                contract="ModelManager.IService1" name="BasicHttpBinding_IService1" />
+            <endpoint address="http://140.116.86.235/ModelCreationService/Service.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IService"
+                contract="ModelCreation.IService" name="BasicHttpBinding_IService" />
+            <endpoint address="http://140.116.86.162/WCFServiceWebRole/ServiceManager.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IServiceManager"
+                contract="ServiceManager.IServiceManager" name="BasicHttpBinding_IServiceManager" />
+            <endpoint address="http://140.116.86.249/FileUploadService/Service1.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IService13"
+                contract="UploadFileService.IService1" name="BasicHttpBinding_IService13" />
+            <endpoint address="http://140.116.86.249/OntologyServiceWCFInterface/IontologyClassMain.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_IOntologyService"
+                contract="OntologyService.IOntologyService" name="BasicHttpBinding_IOntologyService" />
+            <endpoint address="http://localhost/OntologyServiceCuttingToolInterface/OntologyServiceCuttingToolInterface.svc"
+                binding="basicHttpBinding" bindingConfiguration="BasicHttpBinding_CuttingToolInterface"
+                contract="RecommendedCuttingTool.CuttingToolInterface" name="BasicHttpBinding_CuttingToolInterface" />
+            <endpoint address="http://192.168.0.82:8080/ode/processes/WD_CAPPService.WD_CAPPPort/"
+                binding="basicHttpBinding" bindingConfiguration="WD_CAPPBinding"
+                contract="BPEL_Service.WD_CAPPServicePortType" name="WD_CAPPPort" />
+        </client>       
+      
+    </system.serviceModel>
+</configuration>

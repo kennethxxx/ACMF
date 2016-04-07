@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="4541d36e-abd5-470c-ab9f-5b28db563fce" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://140.116.86.249/FileUploadService/Service1.svc/mex" Protocol="mex" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="65ceb42b-ae35-409d-b8bc-4dd96226d529" SourceId="1" SourceUrl="http://140.116.86.249/FileUploadService/Service1.svc/mex" />
+    <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="af9214f5-9aab-427d-96c1-a6cc5698aef0" SourceId="1" SourceUrl="http://140.116.86.249/FileUploadService/Service1.svc/mex" />
+    <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="8812ba61-237a-4b49-be3d-488aeb479895" SourceId="1" SourceUrl="http://140.116.86.249/FileUploadService/Service1.svc/mex" />
+    <MetadataFile FileName="Message.xsd" MetadataType="Schema" ID="22c19fab-e1fa-4bb0-a9e8-b8394fe4a80e" SourceId="1" SourceUrl="http://140.116.86.249/FileUploadService/Service1.svc/mex" />
+    <MetadataFile FileName="FileUploadService.xsd" MetadataType="Schema" ID="88c97c76-f597-48b0-94b8-a19ff8df63b7" SourceId="1" SourceUrl="http://140.116.86.249/FileUploadService/Service1.svc/mex" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

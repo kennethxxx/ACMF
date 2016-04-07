@@ -1,0 +1,68 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+此檔案是由您 Web 專案的發行/封裝處理程序所使用。您可以編輯此 MSBuild 檔案，
+以自訂此處理程序的行為。若要深入了解，請造訪 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <LastUsedBuildConfiguration>Release</LastUsedBuildConfiguration>
+    <LastUsedPlatform>Any CPU</LastUsedPlatform>
+    <TimeStampOfAssociatedLegacyPublishXmlFile>2012-10-18T19:10:45.6149199+08:00</TimeStampOfAssociatedLegacyPublishXmlFile>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="7z64.dll">
+      <publishTime>08/26/2010 21:11:20</publishTime>
+    </File>
+    <File Include="7z86.dll">
+      <publishTime>08/26/2010 21:13:12</publishTime>
+    </File>
+    <File Include="bin/7z64.dll">
+      <publishTime>08/26/2010 21:11:20</publishTime>
+    </File>
+    <File Include="bin/7z86.dll">
+      <publishTime>08/26/2010 21:13:12</publishTime>
+    </File>
+    <File Include="bin/BlobOperator.dll">
+      <publishTime>04/25/2012 16:59:28</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Diagnostics.dll">
+      <publishTime>11/03/2011 15:32:52</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.StorageClient.dll">
+      <publishTime>11/03/2011 15:32:50</publishTime>
+    </File>
+    <File Include="bin/ModelCreationService.dll">
+      <publishTime>10/29/2012 20:57:18</publishTime>
+    </File>
+    <File Include="bin/QueueMessages.dll">
+      <publishTime>04/30/2012 11:05:56</publishTime>
+    </File>
+    <File Include="bin/SerializableContainer.dll">
+      <publishTime>04/17/2012 17:10:36</publishTime>
+    </File>
+    <File Include="bin/SevenZipSharp.dll">
+      <publishTime>10/05/2011 13:32:02</publishTime>
+    </File>
+    <File Include="BlobOperator.dll">
+      <publishTime>04/25/2012 16:59:28</publishTime>
+    </File>
+    <File Include="MCS_MCSModelInfo.xml">
+      <publishTime>10/22/2012 14:20:21</publishTime>
+    </File>
+    <File Include="QueueMessages.dll">
+      <publishTime>04/30/2012 11:05:56</publishTime>
+    </File>
+    <File Include="SerializableContainer.dll">
+      <publishTime>04/17/2012 17:10:36</publishTime>
+    </File>
+    <File Include="Service.svc">
+      <publishTime>04/18/2012 14:12:08</publishTime>
+    </File>
+    <File Include="SevenZipSharp.dll">
+      <publishTime>10/05/2011 13:32:02</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>10/30/2012 16:35:04</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

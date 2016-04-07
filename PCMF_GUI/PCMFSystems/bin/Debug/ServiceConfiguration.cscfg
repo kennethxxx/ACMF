@@ -1,0 +1,26 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+  **********************************************************************************************
+
+  這個檔案是由專案檔案中的工具產生: ServiceConfiguration.Local.cscfg
+
+  對這個檔案所做的變更可能會造成錯誤的行為，而且如果重新產生檔案，所做的變更將會遺失。
+
+  **********************************************************************************************
+-->
+<ServiceConfiguration serviceName="AMCSystems" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="1" osVersion="*" schemaVersion="2012-10.1.8">
+  <Role name="IPS.Web">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountUsername" value="admin" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountEncryptedPassword" value="MIIBiAYJKoZIhvcNAQcDoIIBeTCCAXUCAQAxggFBMIIBPQIBADAlMBExDzANBgNVBAMTBlRvdTEwMQIQUQegiEgLM6ZH+0VgGz68IDANBgkqhkiG9w0BAQEFAASCAQB3ToZ77qWSL+NIj0yreZXybnk8dxMiZfS9n5ZYAjSxbbbjWyXTEPpTCu3tC+UUX0+pLr4iitHYcmgoorqGNDZ5TU3eibbtWZFEkOvy3VprzT3kmlZmzXhlbh131BbQTWXaPiD4S7OArKmweScJJBN8y7cSl3/aO7RkrK4/h7OQ7d/u1gNymjyRKk24H5blPV9ZxzumSWz44NmUieEy7m2qZlui8YNmoPUJamnqizUSu1tj2MJmhO1ADArP7WSAAnzOurzr0G4aNMofflHDupEFHV6+62cuDtfrUgMlXk9dQO65dcMXVU8F3k4gaKL/+jDEK8ewGbyjmGwqwXsAitLxMCsGCSqGSIb3DQEHATAUBggqhkiG9w0DBwQI+vcfG7FSc3WACJwJ8YquVfMb" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteAccess.AccountExpiration" value="2014-05-08T23:59:59.0000000+08:00" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.RemoteForwarder.Enabled" value="true" />
+      <Setting name="Microsoft.WindowsAzure.Plugins.Diagnostics.ConnectionString" value="UseDevelopmentStorage=true" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Microsoft.WindowsAzure.Plugins.RemoteAccess.PasswordEncryption" thumbprint="3F2BD691CCDAD65D7A25A0357BC5860F89EE8670" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

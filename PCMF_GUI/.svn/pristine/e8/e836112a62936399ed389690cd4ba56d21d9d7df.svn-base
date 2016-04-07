@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<Modularity:ModuleCatalog
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:sys="clr-namespace:System;assembly=mscorlib"
+    xmlns:Modularity="clr-namespace:Microsoft.Practices.Composite.Modularity;assembly=Microsoft.Practices.Composite">
+    <!--<Modularity:ModuleInfo
+        Ref="IPS.Status.xap"
+        ModuleName="IPS.Status"
+        ModuleType="IPS.Status.StatusModule, IPS.Status, Version=1.0.0.0"
+        InitializationMode="WhenAvailable" >
+    </Modularity:ModuleInfo>-->
+    <!--<Modularity:ModuleInfo
+        Ref="IPS.Toolbar.xap"
+        ModuleName="IPS.Toolbar"
+        ModuleType="IPS.Toolbar.ToolbarModule, IPS.Toolbar, Version=1.0.0.0"
+        InitializationMode="WhenAvailable" >
+    </Modularity:ModuleInfo>-->
+    
+    <!--<Modularity:ModuleInfo
+        Ref="IPS.DataCollection.xap"
+        ModuleName="IPS.DataCollection"
+        ModuleType="IPS.DataCollection.DataCollectionModule, IPS.DataCollection, Version=1.0.0.0"
+        InitializationMode="OnDemand" >
+    </Modularity:ModuleInfo>
+    
+    <Modularity:ModuleInfo
+        Ref="IPS.ModelCreation.xap"
+        ModuleName="IPS.ModelCreation"
+        ModuleType="IPS.ModelCreation.ModelCreationModule, IPS.ModelCreation, Version=1.0.0.0"
+        InitializationMode="OnDemand" >
+    </Modularity:ModuleInfo>
+
+    <Modularity:ModuleInfo
+        Ref="IPS.HistoricalData.xap"
+        ModuleName="IPS.HistoricalData"
+        ModuleType="IPS.HistoricalData.HistoricalDataModule, IPS.HistoricalData, Version=1.0.0.0"
+        InitializationMode="OnDemand" >
+    </Modularity:ModuleInfo>-->
+</Modularity:ModuleCatalog>

@@ -1,0 +1,40 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+此檔案是由您 Web 專案的發行/封裝處理程序所使用。您可以編輯此 MSBuild 檔案，
+以自訂此處理程序的行為。若要深入了解，請造訪 http://go.microsoft.com/fwlink/?LinkID=208121。
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>C:\inetpub\wwwroot\CAPPService.html</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/IPS.Web.dll">
+      <publishTime>09/20/2015 08:04:46</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Configuration.dll">
+      <publishTime>01/25/2013 15:11:15</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.Diagnostics.dll">
+      <publishTime>02/22/2013 16:30:42</publishTime>
+    </File>
+    <File Include="bin/Microsoft.WindowsAzure.StorageClient.dll">
+      <publishTime>01/25/2013 15:11:15</publishTime>
+    </File>
+    <File Include="ClientBin/IPS.xap">
+      <publishTime>09/20/2015 08:02:44</publishTime>
+    </File>
+    <File Include="default.aspx">
+      <publishTime>11/21/2013 16:02:09</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>01/25/2013 15:11:15</publishTime>
+    </File>
+    <File Include="Silverlight.js">
+      <publishTime>12/10/2010 00:04:18</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>09/20/2015 08:04:46</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

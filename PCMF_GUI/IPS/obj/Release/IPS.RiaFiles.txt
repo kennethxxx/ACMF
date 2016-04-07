@@ -1,0 +1,2 @@
+C:\研究所\AMCSystems20121106-更新MMbyXML\AMCSystems20121106-更新MMbyXML\AMCSystems20121030-更新DAUserFriendly\IPS
+Generated_Code\IPS.Web.g.cs

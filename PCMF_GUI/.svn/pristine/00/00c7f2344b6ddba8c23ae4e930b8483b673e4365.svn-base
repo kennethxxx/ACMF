@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="607cc4cd-05ae-4676-b45c-45302bcd8f0c" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://140.116.86.235/DataAquactionServices/Service.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="Service5.xsd" MetadataType="Schema" ID="e7f78c18-8b60-4185-8bba-0c1dab7d0c68" SourceId="1" SourceUrl="http://140.116.86.235/DataAquactionServices/Service.svc?xsd=xsd3" />
+    <MetadataFile FileName="Service6.xsd" MetadataType="Schema" ID="9e35ae11-3eb6-4a74-9c68-4640204e7bb1" SourceId="1" SourceUrl="http://140.116.86.235/DataAquactionServices/Service.svc?xsd=xsd5" />
+    <MetadataFile FileName="Service7.xsd" MetadataType="Schema" ID="a5d197bc-794b-4907-a67e-b979fca21d24" SourceId="1" SourceUrl="http://140.116.86.235/DataAquactionServices/Service.svc?xsd=xsd0" />
+    <MetadataFile FileName="Service1.wsdl" MetadataType="Wsdl" ID="84c478c3-f7a1-4b01-a0d4-23fc6dcb1a2c" SourceId="1" SourceUrl="http://140.116.86.235/DataAquactionServices/Service.svc?wsdl" />
+    <MetadataFile FileName="Service8.xsd" MetadataType="Schema" ID="15f36dd5-19d2-4574-8cee-549b87c22186" SourceId="1" SourceUrl="http://140.116.86.235/DataAquactionServices/Service.svc?xsd=xsd2" />
+    <MetadataFile FileName="Service1.disco" MetadataType="Disco" ID="05a5bce4-bb34-47bb-8778-0d055a9aad75" SourceId="1" SourceUrl="http://140.116.86.235/DataAquactionServices/Service.svc?disco" />
+    <MetadataFile FileName="Service9.xsd" MetadataType="Schema" ID="cb358964-fc7d-4558-97fe-fafea88a3ae5" SourceId="1" SourceUrl="http://140.116.86.235/DataAquactionServices/Service.svc?xsd=xsd4" />
+    <MetadataFile FileName="Service10.xsd" MetadataType="Schema" ID="748797c5-4a1e-48bb-a78d-5bc98cbf40f6" SourceId="1" SourceUrl="http://140.116.86.235/DataAquactionServices/Service.svc?xsd=xsd1" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

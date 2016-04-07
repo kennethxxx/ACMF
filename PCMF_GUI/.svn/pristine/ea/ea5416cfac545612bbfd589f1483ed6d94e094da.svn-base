@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://140.116.86.249/OntologyServiceWCFInterface/IontologyClassMain.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/OntologyServiceWCFInterface" />
+  <xs:element name="GetData">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="value" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetDataResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataUsingDataContract">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/OntologyServiceWCFInterface" minOccurs="0" name="composite" nillable="true" type="q1:CompositeType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetDataUsingDataContractResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/OntologyServiceWCFInterface" minOccurs="0" name="GetDataUsingDataContractResult" nillable="true" type="q2:CompositeType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendTable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_currentstep" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_laststep" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_functionCodeIndicator" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_functionData" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendTableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sendTableResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTable">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_currentstep" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_laststep" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_functionCodeIndicator" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_functionData" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTableResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getTableResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OntologySystemInterface">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_method" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_getString" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OntologySystemInterfaceResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OntologySystemInterfaceResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConvertJsonFunction">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_converMethod" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_getString" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ConvertJsonFunctionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ConvertJsonFunctionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertloop">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="insertloopResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimeDisplay">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="TimeDisplayResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="TimeDisplayResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OntSysTesting">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_functionCodeIndicator" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_functionData" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_round" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_totalpeople" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_startdate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_starttime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_ta1" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_isLock" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="OntSysTestingResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="OntSysTestingResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendTableTestingVersion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_currentStep" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_lastStep" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_functionCodeIndicator" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_functionData" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_round" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_totalpeople" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_startdate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_starttime" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_ta1" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendTableTestingVersionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sendTableTestingVersionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTableTestingVersion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_userID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_currentStep" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_lastStep" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_functionCodeIndicator" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_round" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_totalpeople" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_startdate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="isMatchData" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getTableTestingVersionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getTableTestingVersionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateTableTestingVersion">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="_userNume" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_currentStep" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_lastStep" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_functionCodeIndicator" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_round" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_totalpeople" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="_startdate" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="result" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateTableTestingVersionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateTableTestingVersionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

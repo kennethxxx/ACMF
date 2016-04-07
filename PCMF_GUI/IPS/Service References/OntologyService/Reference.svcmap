@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="60d70de8-175d-42a3-ac9f-2b444c7cb44e" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>true</GenerateAsynchronousMethods>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings>
+      <CollectionMapping TypeName="System.Collections.ObjectModel.ObservableCollection`1" Category="List" />
+    </CollectionMappings>
+    <GenerateSerializableTypes>false</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>true</ReferenceAllAssemblies>
+    <ReferencedAssemblies />
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://140.116.86.249/OntologyServiceWCFInterface/IontologyClassMain.svc" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="OService.wsdl" MetadataType="Wsdl" ID="b6949d52-431d-48d7-a539-53935d110618" SourceId="1" SourceUrl="http://140.116.86.249/OntologyServiceWCFInterface/IontologyClassMain.svc?wsdl" />
+    <MetadataFile FileName="IontologyClassMain.xsd" MetadataType="Schema" ID="4789db58-e6a8-4396-9acd-bfdad13112b6" SourceId="1" SourceUrl="http://140.116.86.249/OntologyServiceWCFInterface/IontologyClassMain.svc?xsd=xsd0" />
+    <MetadataFile FileName="IontologyClassMain1.xsd" MetadataType="Schema" ID="e1cbf703-6601-4282-8704-4387cc7478f3" SourceId="1" SourceUrl="http://140.116.86.249/OntologyServiceWCFInterface/IontologyClassMain.svc?xsd=xsd1" />
+    <MetadataFile FileName="IontologyClassMain2.xsd" MetadataType="Schema" ID="1098bea9-d754-46b4-a986-0c6ec8c3c22d" SourceId="1" SourceUrl="http://140.116.86.249/OntologyServiceWCFInterface/IontologyClassMain.svc?xsd=xsd2" />
+    <MetadataFile FileName="IontologyClassMain.disco" MetadataType="Disco" ID="e984fda1-e337-4af3-a60b-8635a6d7e9dd" SourceId="1" SourceUrl="http://140.116.86.249/OntologyServiceWCFInterface/IontologyClassMain.svc?disco" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>

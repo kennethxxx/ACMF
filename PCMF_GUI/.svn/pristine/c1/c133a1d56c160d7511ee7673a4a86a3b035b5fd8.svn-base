@@ -1,0 +1,583 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost/ModelCreationService/Service.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/ModelCreationService" />
+  <xs:import schemaLocation="http://localhost/ModelCreationService/Service.svc?xsd=xsd3" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:element name="Get_KVSResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="JobID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q1:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_KVSResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="Get_KVSResultResult" nillable="true" type="q2:Out_KVS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_DQIxResult_VerifyDQIx">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="JobID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q3:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_DQIxResult_VerifyDQIxResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="Get_DQIxResult_VerifyDQIxResult" nillable="true" type="q4:Out_VerifyDQIxResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_DQIyResult_VerifyDQIy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="JobID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q5:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_DQIyResult_VerifyDQIyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="Get_DQIyResult_VerifyDQIyResult" nillable="true" type="q6:Out_VerifyDQIyResult" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_BPNNResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="JobID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q7:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_BPNNResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="Get_BPNNResultResult" nillable="true" type="q8:Out_BPNN" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_MRResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="JobID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q9:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_MRResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="Get_MRResultResult" nillable="true" type="q10:Out_MR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_RIResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="JobID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q11:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_RIResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="Get_RIResultResult" nillable="true" type="q12:Out_RI" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_GSIResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="JobID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q13:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_GSIResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q14="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="Get_GSIResultResult" nillable="true" type="q14:Out_GSI" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadModel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vMachineID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CNCType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CNCNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NCProgramID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="DataStartTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="DataEndTime" type="xs:dateTime" />
+        <xs:element xmlns:q15="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q15:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="UploadModelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q16="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="UploadModelResult" nillable="true" type="q16:Out_UploadModel" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CurrentVersion">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="CurrentVersionResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CurrentVersionResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVmachine_ID">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVmachine_IDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q17="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="getVmachine_IDResult" nillable="true" type="q17:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCNC_Number">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VmachineID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCNC_NumberResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q18="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="getCNC_NumberResult" nillable="true" type="q18:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getNCProgram_ID">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="VmachineID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CNC_Number" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getNCProgram_IDResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q19="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="getNCProgram_IDResult" nillable="true" type="q19:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCategoryDef">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getCategoryDefResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q20="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="getCategoryDefResult" nillable="true" type="q20:Out_CategoryDef" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListOfPostYType_1Name">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListOfPostYType_1NameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q21="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="getListOfPostYType_1NameResult" nillable="true" type="q21:ArrayOfArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListOfPostYType_2Name">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListOfPostYType_2NameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q22="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="getListOfPostYType_2NameResult" nillable="true" type="q22:ArrayOfArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListOfMetrology">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListOfMetrologyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q23="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="getListOfMetrologyResult" nillable="true" type="q23:ArrayOfMetrologyPoint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListOfIndicator">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListOfIndicatorResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q24="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="getListOfIndicatorResult" nillable="true" type="q24:ArrayOfMetrologyPoint" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListOfIndicatorName">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getListOfIndicatorNameResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q25="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="getListOfIndicatorNameResult" nillable="true" type="q25:ArrayOfArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getNewPopulation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q26="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="processKeyList" nillable="true" type="q26:ArrayOfMetrologyPoint" />
+        <xs:element xmlns:q27="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="metrologyKeyList" nillable="true" type="q27:ArrayOfMetrologyPoint" />
+        <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getNewPopulationResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q28="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="getNewPopulationResult" nillable="true" type="q28:Out_IndicatorsPopulation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitTempleFolder">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q29="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q29:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="InitTempleFolderResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InitTempleFolderResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChecktJobState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="JobID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q30="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q30:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ChecktJobStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ChecktJobStateResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_DataTransferModule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="contextIDCount" type="xs:int" />
+        <xs:element minOccurs="0" name="trainContextIDCount" type="xs:int" />
+        <xs:element minOccurs="0" name="runContextIDCount" type="xs:int" />
+        <xs:element xmlns:q31="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="processKeyList" nillable="true" type="q31:ArrayOfMetrologyPoint" />
+        <xs:element xmlns:q32="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="metrologyKeyList" nillable="true" type="q32:ArrayOfMetrologyPoint" />
+        <xs:element minOccurs="0" name="startTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="endTime" type="xs:dateTime" />
+        <xs:element xmlns:q33="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="combinedIndicator" nillable="true" type="q33:ArrayOfMetrologyPoint" />
+        <xs:element xmlns:q34="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="combinedPoint" nillable="true" type="q34:ArrayOfMetrologyPoint" />
+        <xs:element xmlns:q35="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="groupValue" nillable="true" type="q35:ArrayOfGroup" />
+        <xs:element xmlns:q36="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q36:In_UserInfo" />
+        <xs:element minOccurs="0" name="vMachineId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CNCType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CNCNumber" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="NCProgram" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="model_Id" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="version" nillable="true" type="xs:string" />
+        <xs:element xmlns:q37="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="allAction" nillable="true" type="q37:ArrayOfint" />
+        <xs:element xmlns:q38="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="listAbnormalList" nillable="true" type="q38:ArrayOfstring" />
+        <xs:element xmlns:q39="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="listIsolatedList" nillable="true" type="q39:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_DataTransferModuleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Set_DataTransferModuleResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_MDFRModule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="EwmaLamda" type="xs:double" />
+        <xs:element minOccurs="0" name="EwmaTolerance" type="xs:double" />
+        <xs:element minOccurs="0" name="EwmaWindow" type="xs:double" />
+        <xs:element minOccurs="0" name="VarConfidence" type="xs:double" />
+        <xs:element minOccurs="0" name="baseSampleNum" type="xs:double" />
+        <xs:element minOccurs="0" name="RangeMultipleValue" type="xs:double" />
+        <xs:element xmlns:q40="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q40:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_MDFRModuleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Set_MDFRModuleResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_DQIyModule_GetDQIyPattern">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q41="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q41:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_DQIyModule_GetDQIyPatternResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Set_DQIyModule_GetDQIyPatternResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_KSSModule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="AlgorithmSelection" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ClusterNumber" type="xs:double" />
+        <xs:element xmlns:q42="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q42:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_KSSModuleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Set_KSSModuleResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_KVSModule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Fin_apha" type="xs:double" />
+        <xs:element minOccurs="0" name="Fout_apha" type="xs:double" />
+        <xs:element minOccurs="0" name="InOneByOneChoose" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="AlgorithmSelection" nillable="true" type="xs:string" />
+        <xs:element xmlns:q43="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q43:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_KVSModuleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Set_KVSModuleResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_DQIxModule_VerifyDQIx">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="InLambda" type="xs:double" />
+        <xs:element minOccurs="0" name="InConstant" type="xs:double" />
+        <xs:element minOccurs="0" name="DQIxFilterPercentage" type="xs:double" />
+        <xs:element minOccurs="0" name="DQIxRefreshCounter" type="xs:double" />
+        <xs:element xmlns:q44="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q44:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_DQIxModule_VerifyDQIxResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Set_DQIxModule_VerifyDQIxResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_DQIyModule_VerifyDQIy">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="corralpha" type="xs:double" />
+        <xs:element minOccurs="0" name="IsMixedModel" type="xs:double" />
+        <xs:element xmlns:q45="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q45:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_DQIyModule_VerifyDQIyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Set_DQIyModule_VerifyDQIyResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_BPNNModule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iMomTermRange_Min" type="xs:double" />
+        <xs:element minOccurs="0" name="iMomTermRange_Int" type="xs:double" />
+        <xs:element minOccurs="0" name="iMomTermRange_Max" type="xs:double" />
+        <xs:element minOccurs="0" name="iAlphaRange_Min" type="xs:double" />
+        <xs:element minOccurs="0" name="iAlphaRange_Int" type="xs:double" />
+        <xs:element minOccurs="0" name="iAlphaRange_Max" type="xs:double" />
+        <xs:element minOccurs="0" name="iEpochsRange_1" type="xs:double" />
+        <xs:element minOccurs="0" name="iEpochsRange_2" type="xs:double" />
+        <xs:element minOccurs="0" name="iEpochsRange_3" type="xs:double" />
+        <xs:element xmlns:q46="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="iNodesRange" nillable="true" type="q46:ArrayOfdouble" />
+        <xs:element minOccurs="0" name="iInOneByOneChoose" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="iBPNNRefreshCounter" type="xs:double" />
+        <xs:element xmlns:q47="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q47:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_BPNNModuleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Set_BPNNModuleResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_MRModule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="iInSelectAlgorithm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="iInMR_TSVD_Condition_Number_Criteria" type="xs:double" />
+        <xs:element minOccurs="0" name="iInMR_TSVD_Energy_Ratio_Criteria" type="xs:double" />
+        <xs:element minOccurs="0" name="iMRRefreshCounter" type="xs:double" />
+        <xs:element xmlns:q48="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q48:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_MRModuleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Set_MRModuleResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_RIModule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="FirstAlgoValue" type="xs:boolean" />
+        <xs:element minOccurs="0" name="FirstAlgoName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q49="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="FitstPredictValue" nillable="true" type="q49:ArrayOfArrayOfdouble" />
+        <xs:element minOccurs="0" name="SecondAlgoValue" type="xs:boolean" />
+        <xs:element minOccurs="0" name="SecondAlgoName" nillable="true" type="xs:string" />
+        <xs:element xmlns:q50="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="SecondPredictValue" nillable="true" type="q50:ArrayOfArrayOfdouble" />
+        <xs:element minOccurs="0" name="iTolerant_MaxError" type="xs:double" />
+        <xs:element minOccurs="0" name="iInSelectCalculator" nillable="true" type="xs:string" />
+        <xs:element xmlns:q51="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q51:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_RIModuleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Set_RIModuleResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_GSIModule">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="numberOfGroup" type="xs:int" />
+        <xs:element minOccurs="0" name="iInSelectAlgorithm" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="iGSI_RT" type="xs:double" />
+        <xs:element minOccurs="0" name="iGSI_Threshold" type="xs:double" />
+        <xs:element minOccurs="0" name="iRefreshCounter" type="xs:double" />
+        <xs:element minOccurs="0" name="iInGSI_TSVD_Condition_Number_Criteria" type="xs:double" />
+        <xs:element minOccurs="0" name="iInGSI_TSVD_Energy_Ratio_Criteria" type="xs:double" />
+        <xs:element xmlns:q52="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q52:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Set_GSIModuleResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Set_GSIModuleResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_DataTransferResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="JobID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q53="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q53:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_DataTransferResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_DataTransferResultResult" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_MDFRResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="JobID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q54="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q54:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_MDFRResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q55="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="Get_MDFRResultResult" nillable="true" type="q55:Out_MDFR" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_DQIyResult_GetDQIyPattern">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="JobID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q56="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q56:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_DQIyResult_GetDQIyPatternResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q57="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="Get_DQIyResult_GetDQIyPatternResult" nillable="true" type="q57:Out_DQIy_CleanAbnormalY" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_KSSResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="JobID" nillable="true" type="xs:string" />
+        <xs:element xmlns:q58="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="In_userinfo" nillable="true" type="q58:In_UserInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_KSSResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q59="http://schemas.datacontract.org/2004/07/ModelCreationService" minOccurs="0" name="Get_KSSResultResult" nillable="true" type="q59:Out_KSS" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

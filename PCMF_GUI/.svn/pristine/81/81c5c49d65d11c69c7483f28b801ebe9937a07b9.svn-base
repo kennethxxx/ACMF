@@ -1,0 +1,647 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://tempuri.org/" elementFormDefault="qualified" targetNamespace="http://tempuri.org/" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://140.116.86.172/ServiceBroker/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+  <xs:import schemaLocation="http://140.116.86.172/ServiceBroker/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/ServiceBroker" />
+  <xs:import schemaLocation="http://140.116.86.172/ServiceBroker/Service1.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+  <xs:import schemaLocation="http://140.116.86.172/ServiceBroker/Service1.svc?xsd=xsd6" namespace="http://schemas.datacontract.org/2004/07/ModelManagementServices" />
+  <xs:element name="getVmachineList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVmachineListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="getVmachineListResult" nillable="true" type="q1:ArrayOfVmachine" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registerVmachine">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="cem" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registerVmachineResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="registerVmachineResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendAlarm">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vMachineName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="eventDescription" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="errorCode" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="sendAlarmResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="sendAlarmResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getEquipmentList">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getEquipmentListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="getEquipmentListResult" nillable="true" type="q2:ArrayOfEquipmentType" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fanOutModel">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/ServiceBroker" minOccurs="0" name="modelfull" nillable="true" type="q3:ModelFull" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="fanOutModelResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="fanOutModelResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVmachineInformation">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVmachineInformationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRunningModelInformation">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vMachineId" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getRunningModelInformationResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVmachineInformationList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVmachineInformationListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="getVmachineInformationListResult" nillable="true" type="q4:ArrayOfVmachine" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="uploadSTDB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vMachineID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="equipmentID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="sensor" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="uploadSTDBResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="uploadSTDBResult" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="uploadDefOfSTDB">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ds" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="vMachineID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="equipmentID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="uploadDefOfSTDBResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="uploadDefOfSTDBResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateVMResult">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ds" nillable="true">
+          <xs:complexType>
+            <xs:annotation>
+              <xs:appinfo>
+                <ActualType Name="DataSet" Namespace="http://schemas.datacontract.org/2004/07/System.Data" xmlns="http://schemas.microsoft.com/2003/10/Serialization/" />
+              </xs:appinfo>
+            </xs:annotation>
+            <xs:sequence>
+              <xs:element ref="xs:schema" />
+              <xs:any />
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+        <xs:element minOccurs="0" name="vMachineID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="equipmentID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="updateVMResultResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="updateVMResultResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getEquipmentListByVmachine">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vMachineName" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getEquipmentListByVmachineResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q5="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="getEquipmentListByVmachineResult" nillable="true" type="q5:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Insert_vNachineState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vMachine_Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vMachine_IP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vMachine_State" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cnc_Num" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cnc_State" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cnc_IP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cnc_Type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cnc_ControllerType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Service_Status" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Insert_vNachineStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Insert_vNachineStateResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Update_vNachineState">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ovMachine_Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="oCnc_Num" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vMachine_Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vMachine_IP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vMachine_State" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cnc_Num" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cnc_State" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cnc_IP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cnc_Type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cnc_ControllerType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Service_Status" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Update_vNachineStateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Update_vNachineStateResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Delete_vMachibne">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Cnc_Num" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vMachine_Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="flag_vMachine" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Delete_vMachibneResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Delete_vMachibneResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVmachineList1">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getVmachineList1Response">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/" minOccurs="0" name="getVmachineList1Result" nillable="true" type="q6:ArrayOfVmachine" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="vMachine_RegInfo_Check">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vMachine_Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vMachine_IP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vMachine_State" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="vMachine_RegInfo_CheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vMachine_RegInfo_CheckResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Cnc_State_Check">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vMachine_Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vMachine_IP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vMachine_State" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cnc_Num" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cnc_State" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cnc_IP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cnc_Type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Cnc_ControllerType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Service_Status" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Cnc_State_CheckResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Cnc_State_CheckResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="test">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="s" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="testResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="testResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="testv">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="testvResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="testvResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="testm">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="testmResponse">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registerCNCInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="v_machine_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CNC_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CNCIP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CNC_Type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CNCState" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registerCNCInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="registerCNCInfoResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registervMachineInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="v_machine_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="v_MachineIP" nillable="true" type="xs:string" />
+        <xs:element xmlns:q7="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="CNCID" nillable="true" type="q7:ArrayOfstring" />
+        <xs:element minOccurs="0" name="vMachineState" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registervMachineInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="registervMachineInfoResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="modify_cncstate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="v_machine_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CNC_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CNCState" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="modify_cncstateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="modify_cncstateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="modify_vMachinestate">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="v_machine_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="v_machine_IP" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="State" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="modify_vMachinestateResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="modify_vMachinestateResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getProductInfo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getProductInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q8="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="getProductInfoResult" nillable="true" type="q8:ArrayOfArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registerProductionHistory">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ProductName" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ProductType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WorkPieceID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="v_MachineID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CNC_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CNC_Type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="WorkPieceState" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Process_StartTime" type="xs:dateTime" />
+        <xs:element minOccurs="0" name="Process_EndTime" type="xs:dateTime" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registerProductionHistoryResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="registerProductionHistoryResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registerProductInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="CNC_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="v_Machine_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CLFile" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ProductType" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="inProductTypeSub_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="inMetrology_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="inBlock_ID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="registerProductInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="registerProductInfoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getProductBasicInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Product_Type" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Product_Name" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="CNC_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="vMachine_ID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getProductBasicInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/ServiceBroker" minOccurs="0" name="getProductBasicInfoResult" nillable="true" type="q9:ProductBasicInfo" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getProductionHistoInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Ptype" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="Pname" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getProductionHistoInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q10="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="getProductionHistoInfoResult" nillable="true" type="q10:ArrayOfArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDCP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DCP_File" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getDCPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="getDCPResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceBroker_sendDataCollectionReport_Return">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="inAnswer" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="inDCP_ID" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="ServiceBroker_sendDataCollectionReport_ReturnResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="ServiceBroker_sendDataCollectionReport_ReturnResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_Model_From_MM">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q11="http://schemas.datacontract.org/2004/07/ServiceBroker" minOccurs="0" name="Model_Info" nillable="true" type="q11:ArrayOfModel_GetContent" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="Get_Model_From_MMResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="Get_Model_From_MMResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="get_vMachineIP">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="vMachine_ID" nillable="true" type="xs:string" />
+        <xs:element minOccurs="0" name="ModelInfo_Count" type="xs:int" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="get_vMachineIPResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q12="http://schemas.microsoft.com/2003/10/Serialization/Arrays" minOccurs="0" name="get_vMachineIPResult" nillable="true" type="q12:ArrayOfstring" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getEquipmentInformationList">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="getEquipmentInformationListResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element xmlns:q13="http://schemas.datacontract.org/2004/07/ModelManagementServices" minOccurs="0" name="getEquipmentInformationListResult" nillable="true" type="q13:ArrayOfEquipmentInformation" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyInfo">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetCompanyInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetCompanyInfoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServiceBrokerInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="XMLFile" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetServiceBrokerInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetServiceBrokerInfoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetvMachineCNCInfo">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="XMLFile" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetvMachineCNCInfoResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetvMachineCNCInfoResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetvMachineCNCInfo_Ontology">
+    <xs:complexType>
+      <xs:sequence />
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="GetvMachineCNCInfo_OntologyResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="GetvMachineCNCInfo_OntologyResult" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownloadNCFile">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="XMLFile" nillable="true" type="xs:string" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+  <xs:element name="DownloadNCFileResponse">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element minOccurs="0" name="DownloadNCFileResult" type="xs:boolean" />
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>

@@ -1,0 +1,745 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:wsap="http://schemas.xmlsoap.org/ws/2004/08/addressing/policy" xmlns:wsa10="http://www.w3.org/2005/08/addressing" xmlns:tns="http://tempuri.org/" xmlns:msc="http://schemas.microsoft.com/ws/2005/12/wsdl/contract" xmlns:soapenc="http://schemas.xmlsoap.org/soap/encoding/" xmlns:wsx="http://schemas.xmlsoap.org/ws/2004/09/mex" xmlns:wsp="http://schemas.xmlsoap.org/ws/2004/09/policy" xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:wsam="http://www.w3.org/2007/05/addressing/metadata" xmlns:wsa="http://schemas.xmlsoap.org/ws/2004/08/addressing" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:wsu="http://docs.oasis-open.org/wss/2004/01/oasis-200401-wss-wssecurity-utility-1.0.xsd" xmlns:xsd="http://www.w3.org/2001/XMLSchema" name="Service1" targetNamespace="http://tempuri.org/" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:types>
+    <xsd:schema targetNamespace="http://tempuri.org/Imports">
+      <xsd:import schemaLocation="http://localhost/ServiceBroker/Service1.svc?xsd=xsd0" namespace="http://tempuri.org/" />
+      <xsd:import schemaLocation="http://localhost/ServiceBroker/Service1.svc?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+      <xsd:import schemaLocation="http://localhost/ServiceBroker/Service1.svc?xsd=xsd2" namespace="http://schemas.datacontract.org/2004/07/" />
+      <xsd:import schemaLocation="http://localhost/ServiceBroker/Service1.svc?xsd=xsd3" namespace="http://schemas.datacontract.org/2004/07/ServiceBroker" />
+      <xsd:import schemaLocation="http://localhost/ServiceBroker/Service1.svc?xsd=xsd4" namespace="http://schemas.microsoft.com/2003/10/Serialization/Arrays" />
+      <xsd:import schemaLocation="http://localhost/ServiceBroker/Service1.svc?xsd=xsd5" />
+    </xsd:schema>
+  </wsdl:types>
+  <wsdl:message name="IService1_getVmachineList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getVmachineList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getVmachineList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getVmachineListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_registerVmachine_InputMessage">
+    <wsdl:part name="parameters" element="tns:registerVmachine" />
+  </wsdl:message>
+  <wsdl:message name="IService1_registerVmachine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registerVmachineResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_sendAlarm_InputMessage">
+    <wsdl:part name="parameters" element="tns:sendAlarm" />
+  </wsdl:message>
+  <wsdl:message name="IService1_sendAlarm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:sendAlarmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getEquipmentList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getEquipmentList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getEquipmentList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getEquipmentListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_fanOutModel_InputMessage">
+    <wsdl:part name="parameters" element="tns:fanOutModel" />
+  </wsdl:message>
+  <wsdl:message name="IService1_fanOutModel_OutputMessage">
+    <wsdl:part name="parameters" element="tns:fanOutModelResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getVmachineInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:getVmachineInformation" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getVmachineInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getVmachineInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getRunningModelInformation_InputMessage">
+    <wsdl:part name="parameters" element="tns:getRunningModelInformation" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getRunningModelInformation_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getRunningModelInformationResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getVmachineInformationList_InputMessage">
+    <wsdl:part name="parameters" element="tns:getVmachineInformationList" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getVmachineInformationList_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getVmachineInformationListResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_uploadSTDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:uploadSTDB" />
+  </wsdl:message>
+  <wsdl:message name="IService1_uploadSTDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:uploadSTDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_uploadDefOfSTDB_InputMessage">
+    <wsdl:part name="parameters" element="tns:uploadDefOfSTDB" />
+  </wsdl:message>
+  <wsdl:message name="IService1_uploadDefOfSTDB_OutputMessage">
+    <wsdl:part name="parameters" element="tns:uploadDefOfSTDBResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateVMResult_InputMessage">
+    <wsdl:part name="parameters" element="tns:updateVMResult" />
+  </wsdl:message>
+  <wsdl:message name="IService1_updateVMResult_OutputMessage">
+    <wsdl:part name="parameters" element="tns:updateVMResultResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getEquipmentListByVmachine_InputMessage">
+    <wsdl:part name="parameters" element="tns:getEquipmentListByVmachine" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getEquipmentListByVmachine_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getEquipmentListByVmachineResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Insert_vNachineState_InputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_vNachineState" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Insert_vNachineState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Insert_vNachineStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Update_vNachineState_InputMessage">
+    <wsdl:part name="parameters" element="tns:Update_vNachineState" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Update_vNachineState_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Update_vNachineStateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Delete_vMachibne_InputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_vMachibne" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Delete_vMachibne_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Delete_vMachibneResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getVmachineList1_InputMessage">
+    <wsdl:part name="parameters" element="tns:getVmachineList1" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getVmachineList1_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getVmachineList1Response" />
+  </wsdl:message>
+  <wsdl:message name="IService1_vMachine_RegInfo_Check_InputMessage">
+    <wsdl:part name="parameters" element="tns:vMachine_RegInfo_Check" />
+  </wsdl:message>
+  <wsdl:message name="IService1_vMachine_RegInfo_Check_OutputMessage">
+    <wsdl:part name="parameters" element="tns:vMachine_RegInfo_CheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Cnc_State_Check_InputMessage">
+    <wsdl:part name="parameters" element="tns:Cnc_State_Check" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Cnc_State_Check_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Cnc_State_CheckResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_test_InputMessage">
+    <wsdl:part name="parameters" element="tns:test" />
+  </wsdl:message>
+  <wsdl:message name="IService1_test_OutputMessage">
+    <wsdl:part name="parameters" element="tns:testResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_testv_InputMessage">
+    <wsdl:part name="parameters" element="tns:testv" />
+  </wsdl:message>
+  <wsdl:message name="IService1_testv_OutputMessage">
+    <wsdl:part name="parameters" element="tns:testvResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_testm_InputMessage">
+    <wsdl:part name="parameters" element="tns:testm" />
+  </wsdl:message>
+  <wsdl:message name="IService1_testm_OutputMessage">
+    <wsdl:part name="parameters" element="tns:testmResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_registerCNCInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:registerCNCInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_registerCNCInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registerCNCInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_registervMachineInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:registervMachineInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_registervMachineInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registervMachineInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_modify_cncstate_InputMessage">
+    <wsdl:part name="parameters" element="tns:modify_cncstate" />
+  </wsdl:message>
+  <wsdl:message name="IService1_modify_cncstate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:modify_cncstateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_modify_vMachinestate_InputMessage">
+    <wsdl:part name="parameters" element="tns:modify_vMachinestate" />
+  </wsdl:message>
+  <wsdl:message name="IService1_modify_vMachinestate_OutputMessage">
+    <wsdl:part name="parameters" element="tns:modify_vMachinestateResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getProductInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:getProductInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getProductInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getProductInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_registerProductionHistory_InputMessage">
+    <wsdl:part name="parameters" element="tns:registerProductionHistory" />
+  </wsdl:message>
+  <wsdl:message name="IService1_registerProductionHistory_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registerProductionHistoryResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_registerProductInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:registerProductInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_registerProductInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:registerProductInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getProductBasicInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:getProductBasicInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getProductBasicInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getProductBasicInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getProductionHistoInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:getProductionHistoInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getProductionHistoInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getProductionHistoInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getDCP_InputMessage">
+    <wsdl:part name="parameters" element="tns:getDCP" />
+  </wsdl:message>
+  <wsdl:message name="IService1_getDCP_OutputMessage">
+    <wsdl:part name="parameters" element="tns:getDCPResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ServiceBroker_sendDataCollectionReport_Return_InputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceBroker_sendDataCollectionReport_Return" />
+  </wsdl:message>
+  <wsdl:message name="IService1_ServiceBroker_sendDataCollectionReport_Return_OutputMessage">
+    <wsdl:part name="parameters" element="tns:ServiceBroker_sendDataCollectionReport_ReturnResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Get_Model_From_MM_InputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Model_From_MM" />
+  </wsdl:message>
+  <wsdl:message name="IService1_Get_Model_From_MM_OutputMessage">
+    <wsdl:part name="parameters" element="tns:Get_Model_From_MMResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCompanyInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanyInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetCompanyInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetCompanyInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetServiceBrokerInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetServiceBrokerInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetServiceBrokerInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetServiceBrokerInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetvMachineCNCInfo_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetvMachineCNCInfo" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetvMachineCNCInfo_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetvMachineCNCInfoResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetvMachineCNCInfo_Ontology_InputMessage">
+    <wsdl:part name="parameters" element="tns:GetvMachineCNCInfo_Ontology" />
+  </wsdl:message>
+  <wsdl:message name="IService1_GetvMachineCNCInfo_Ontology_OutputMessage">
+    <wsdl:part name="parameters" element="tns:GetvMachineCNCInfo_OntologyResponse" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DownloadNCFile_InputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadNCFile" />
+  </wsdl:message>
+  <wsdl:message name="IService1_DownloadNCFile_OutputMessage">
+    <wsdl:part name="parameters" element="tns:DownloadNCFileResponse" />
+  </wsdl:message>
+  <wsdl:portType name="IService1">
+    <wsdl:operation name="getVmachineList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getVmachineList" message="tns:IService1_getVmachineList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getVmachineListResponse" message="tns:IService1_getVmachineList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registerVmachine">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/registerVmachine" message="tns:IService1_registerVmachine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/registerVmachineResponse" message="tns:IService1_registerVmachine_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="sendAlarm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/sendAlarm" message="tns:IService1_sendAlarm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/sendAlarmResponse" message="tns:IService1_sendAlarm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEquipmentList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getEquipmentList" message="tns:IService1_getEquipmentList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getEquipmentListResponse" message="tns:IService1_getEquipmentList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="fanOutModel">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/fanOutModel" message="tns:IService1_fanOutModel_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/fanOutModelResponse" message="tns:IService1_fanOutModel_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getVmachineInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getVmachineInformation" message="tns:IService1_getVmachineInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getVmachineInformationResponse" message="tns:IService1_getVmachineInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getRunningModelInformation">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getRunningModelInformation" message="tns:IService1_getRunningModelInformation_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getRunningModelInformationResponse" message="tns:IService1_getRunningModelInformation_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getVmachineInformationList">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getVmachineInformationList" message="tns:IService1_getVmachineInformationList_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getVmachineInformationListResponse" message="tns:IService1_getVmachineInformationList_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="uploadSTDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/uploadSTDB" message="tns:IService1_uploadSTDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/uploadSTDBResponse" message="tns:IService1_uploadSTDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="uploadDefOfSTDB">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/uploadDefOfSTDB" message="tns:IService1_uploadDefOfSTDB_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/uploadDefOfSTDBResponse" message="tns:IService1_uploadDefOfSTDB_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="updateVMResult">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/updateVMResult" message="tns:IService1_updateVMResult_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/updateVMResultResponse" message="tns:IService1_updateVMResult_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getEquipmentListByVmachine">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getEquipmentListByVmachine" message="tns:IService1_getEquipmentListByVmachine_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getEquipmentListByVmachineResponse" message="tns:IService1_getEquipmentListByVmachine_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Insert_vNachineState">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Insert_vNachineState" message="tns:IService1_Insert_vNachineState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Insert_vNachineStateResponse" message="tns:IService1_Insert_vNachineState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Update_vNachineState">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Update_vNachineState" message="tns:IService1_Update_vNachineState_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Update_vNachineStateResponse" message="tns:IService1_Update_vNachineState_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Delete_vMachibne">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Delete_vMachibne" message="tns:IService1_Delete_vMachibne_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Delete_vMachibneResponse" message="tns:IService1_Delete_vMachibne_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getVmachineList1">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getVmachineList1" message="tns:IService1_getVmachineList1_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getVmachineList1Response" message="tns:IService1_getVmachineList1_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="vMachine_RegInfo_Check">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/vMachine_RegInfo_Check" message="tns:IService1_vMachine_RegInfo_Check_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/vMachine_RegInfo_CheckResponse" message="tns:IService1_vMachine_RegInfo_Check_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Cnc_State_Check">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Cnc_State_Check" message="tns:IService1_Cnc_State_Check_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Cnc_State_CheckResponse" message="tns:IService1_Cnc_State_Check_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/test" message="tns:IService1_test_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/testResponse" message="tns:IService1_test_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="testv">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/testv" message="tns:IService1_testv_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/testvResponse" message="tns:IService1_testv_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="testm">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/testm" message="tns:IService1_testm_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/testmResponse" message="tns:IService1_testm_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registerCNCInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/registerCNCInfo" message="tns:IService1_registerCNCInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/registerCNCInfoResponse" message="tns:IService1_registerCNCInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registervMachineInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/registervMachineInfo" message="tns:IService1_registervMachineInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/registervMachineInfoResponse" message="tns:IService1_registervMachineInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="modify_cncstate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/modify_cncstate" message="tns:IService1_modify_cncstate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/modify_cncstateResponse" message="tns:IService1_modify_cncstate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="modify_vMachinestate">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/modify_vMachinestate" message="tns:IService1_modify_vMachinestate_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/modify_vMachinestateResponse" message="tns:IService1_modify_vMachinestate_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getProductInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getProductInfo" message="tns:IService1_getProductInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getProductInfoResponse" message="tns:IService1_getProductInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registerProductionHistory">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/registerProductionHistory" message="tns:IService1_registerProductionHistory_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/registerProductionHistoryResponse" message="tns:IService1_registerProductionHistory_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="registerProductInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/registerProductInfo" message="tns:IService1_registerProductInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/registerProductInfoResponse" message="tns:IService1_registerProductInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getProductBasicInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getProductBasicInfo" message="tns:IService1_getProductBasicInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getProductBasicInfoResponse" message="tns:IService1_getProductBasicInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getProductionHistoInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getProductionHistoInfo" message="tns:IService1_getProductionHistoInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getProductionHistoInfoResponse" message="tns:IService1_getProductionHistoInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="getDCP">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/getDCP" message="tns:IService1_getDCP_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/getDCPResponse" message="tns:IService1_getDCP_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="ServiceBroker_sendDataCollectionReport_Return">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/ServiceBroker_sendDataCollectionReport_Return" message="tns:IService1_ServiceBroker_sendDataCollectionReport_Return_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/ServiceBroker_sendDataCollectionReport_ReturnResponse" message="tns:IService1_ServiceBroker_sendDataCollectionReport_Return_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="Get_Model_From_MM">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/Get_Model_From_MM" message="tns:IService1_Get_Model_From_MM_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/Get_Model_From_MMResponse" message="tns:IService1_Get_Model_From_MM_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetCompanyInfo" message="tns:IService1_GetCompanyInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetCompanyInfoResponse" message="tns:IService1_GetCompanyInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceBrokerInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetServiceBrokerInfo" message="tns:IService1_GetServiceBrokerInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetServiceBrokerInfoResponse" message="tns:IService1_GetServiceBrokerInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetvMachineCNCInfo">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetvMachineCNCInfo" message="tns:IService1_GetvMachineCNCInfo_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetvMachineCNCInfoResponse" message="tns:IService1_GetvMachineCNCInfo_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="GetvMachineCNCInfo_Ontology">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/GetvMachineCNCInfo_Ontology" message="tns:IService1_GetvMachineCNCInfo_Ontology_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/GetvMachineCNCInfo_OntologyResponse" message="tns:IService1_GetvMachineCNCInfo_Ontology_OutputMessage" />
+    </wsdl:operation>
+    <wsdl:operation name="DownloadNCFile">
+      <wsdl:input wsaw:Action="http://tempuri.org/IService1/DownloadNCFile" message="tns:IService1_DownloadNCFile_InputMessage" />
+      <wsdl:output wsaw:Action="http://tempuri.org/IService1/DownloadNCFileResponse" message="tns:IService1_DownloadNCFile_OutputMessage" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="BasicHttpBinding_IService1" type="tns:IService1">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="getVmachineList">
+      <soap:operation soapAction="http://tempuri.org/IService1/getVmachineList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registerVmachine">
+      <soap:operation soapAction="http://tempuri.org/IService1/registerVmachine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="sendAlarm">
+      <soap:operation soapAction="http://tempuri.org/IService1/sendAlarm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEquipmentList">
+      <soap:operation soapAction="http://tempuri.org/IService1/getEquipmentList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="fanOutModel">
+      <soap:operation soapAction="http://tempuri.org/IService1/fanOutModel" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getVmachineInformation">
+      <soap:operation soapAction="http://tempuri.org/IService1/getVmachineInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getRunningModelInformation">
+      <soap:operation soapAction="http://tempuri.org/IService1/getRunningModelInformation" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getVmachineInformationList">
+      <soap:operation soapAction="http://tempuri.org/IService1/getVmachineInformationList" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadSTDB">
+      <soap:operation soapAction="http://tempuri.org/IService1/uploadSTDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="uploadDefOfSTDB">
+      <soap:operation soapAction="http://tempuri.org/IService1/uploadDefOfSTDB" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="updateVMResult">
+      <soap:operation soapAction="http://tempuri.org/IService1/updateVMResult" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getEquipmentListByVmachine">
+      <soap:operation soapAction="http://tempuri.org/IService1/getEquipmentListByVmachine" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Insert_vNachineState">
+      <soap:operation soapAction="http://tempuri.org/IService1/Insert_vNachineState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Update_vNachineState">
+      <soap:operation soapAction="http://tempuri.org/IService1/Update_vNachineState" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Delete_vMachibne">
+      <soap:operation soapAction="http://tempuri.org/IService1/Delete_vMachibne" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getVmachineList1">
+      <soap:operation soapAction="http://tempuri.org/IService1/getVmachineList1" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="vMachine_RegInfo_Check">
+      <soap:operation soapAction="http://tempuri.org/IService1/vMachine_RegInfo_Check" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Cnc_State_Check">
+      <soap:operation soapAction="http://tempuri.org/IService1/Cnc_State_Check" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="test">
+      <soap:operation soapAction="http://tempuri.org/IService1/test" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testv">
+      <soap:operation soapAction="http://tempuri.org/IService1/testv" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="testm">
+      <soap:operation soapAction="http://tempuri.org/IService1/testm" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registerCNCInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/registerCNCInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registervMachineInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/registervMachineInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modify_cncstate">
+      <soap:operation soapAction="http://tempuri.org/IService1/modify_cncstate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="modify_vMachinestate">
+      <soap:operation soapAction="http://tempuri.org/IService1/modify_vMachinestate" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProductInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/getProductInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registerProductionHistory">
+      <soap:operation soapAction="http://tempuri.org/IService1/registerProductionHistory" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="registerProductInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/registerProductInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProductBasicInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/getProductBasicInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getProductionHistoInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/getProductionHistoInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="getDCP">
+      <soap:operation soapAction="http://tempuri.org/IService1/getDCP" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ServiceBroker_sendDataCollectionReport_Return">
+      <soap:operation soapAction="http://tempuri.org/IService1/ServiceBroker_sendDataCollectionReport_Return" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="Get_Model_From_MM">
+      <soap:operation soapAction="http://tempuri.org/IService1/Get_Model_From_MM" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetCompanyInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetCompanyInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetServiceBrokerInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetServiceBrokerInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetvMachineCNCInfo">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetvMachineCNCInfo" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="GetvMachineCNCInfo_Ontology">
+      <soap:operation soapAction="http://tempuri.org/IService1/GetvMachineCNCInfo_Ontology" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="DownloadNCFile">
+      <soap:operation soapAction="http://tempuri.org/IService1/DownloadNCFile" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Service1">
+    <wsdl:port name="BasicHttpBinding_IService1" binding="tns:BasicHttpBinding_IService1">
+      <soap:address location="http://localhost/ServiceBroker/Service1.svc" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

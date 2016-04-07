@@ -1,0 +1,152 @@
+D:\lingpxs\CloudProgram\ModelCreationService Code\ModelCreationService\ModelCreationService\bin\7z64.dll
+D:\lingpxs\CloudProgram\ModelCreationService Code\ModelCreationService\ModelCreationService\bin\7z86.dll
+D:\lingpxs\CloudProgram\ModelCreationService Code\ModelCreationService\ModelCreationService\bin\SevenZipSharp.dll
+D:\lingpxs\CloudProgram\ModelCreationService Code\ModelCreationService\ModelCreationService\bin\BlobOperator.dll
+D:\lingpxs\CloudProgram\ModelCreationService Code\ModelCreationService\ModelCreationService\bin\QueueMessages.dll
+D:\lingpxs\CloudProgram\ModelCreationService Code\ModelCreationService\ModelCreationService\bin\SerializableContainer.dll
+D:\lingpxs\CloudProgram\ModelCreationService Code\ModelCreationService\ModelCreationService\bin\ModelCreationService.dll
+D:\lingpxs\CloudProgram\ModelCreationService Code\ModelCreationService\ModelCreationService\bin\ModelCreationService.pdb
+D:\lingpxs\CloudProgram\ModelCreationService Code\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\lingpxs\CloudProgram\ModelCreationService Code\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\lingpxs\CloudProgram\ModelCreationService Code\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\lingpxs\CloudProgram\ModelCreationService Code\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\lingpxs\CloudProgram\ModelCreationService Code\ModelCreationService\ModelCreationService\obj\Debug\ResolveAssemblyReference.cache
+D:\lingpxs\CloudProgram\ModelCreationService Code\ModelCreationService\ModelCreationService\obj\Debug\ModelCreationService.dll
+D:\lingpxs\CloudProgram\ModelCreationService Code\ModelCreationService\ModelCreationService\obj\Debug\ModelCreationService.pdb
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\ModelCreationService\bin\7z64.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\ModelCreationService\bin\7z86.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\ModelCreationService\bin\SevenZipSharp.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\ModelCreationService\bin\BlobOperator.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\ModelCreationService\bin\QueueMessages.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\ModelCreationService\bin\SerializableContainer.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\ModelCreationService\bin\ModelCreationService.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\ModelCreationService\bin\ModelCreationService.pdb
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\ModelCreationService\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\ModelCreationService\obj\Debug\ModelCreationService.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\ModelCreationService\obj\Debug\ModelCreationService.pdb
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\bin\7z64.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\bin\7z86.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\bin\BlobOperator.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\bin\QueueMessages.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\bin\SerializableContainer.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\bin\SevenZipSharp.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\bin\ModelCreationService.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\bin\ModelCreationService.pdb
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\obj\Debug\ModelCreationService.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProjects\ModelCreationService\obj\Debug\ModelCreationService.pdb
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCSystems\ModelCreationService\bin\7z64.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCSystems\ModelCreationService\bin\7z86.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCSystems\ModelCreationService\bin\BlobOperator.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCSystems\ModelCreationService\bin\QueueMessages.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCSystems\ModelCreationService\bin\SerializableContainer.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCSystems\ModelCreationService\bin\SevenZipSharp.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCSystems\ModelCreationService\bin\ModelCreationService.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCSystems\ModelCreationService\bin\ModelCreationService.pdb
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCSystems\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCSystems\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCSystems\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCSystems\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCSystems\ModelCreationService\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCSystems\ModelCreationService\obj\Debug\ModelCreationService.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCSystems\ModelCreationService\obj\Debug\ModelCreationService.pdb
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\7z64.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\7z86.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\BlobOperator.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\QueueMessages.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\SerializableContainer.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\SevenZipSharp.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\ModelCreationService.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\ModelCreationService.pdb
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProject\AMCProject\ModelCreationService\ModelCreationService\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProject\AMCProject\ModelCreationService\ModelCreationService\obj\Debug\ModelCreationService.dll
+C:\Users\lingpxs\Documents\Visual Studio 2010\Projects\AMCProject\AMCProject\ModelCreationService\ModelCreationService\obj\Debug\ModelCreationService.pdb
+C:\Users\Danny\Desktop\2012-07-09-1-AMCProject\2012-05-07-1-AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\7z64.dll
+C:\Users\Danny\Desktop\2012-07-09-1-AMCProject\2012-05-07-1-AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\7z86.dll
+C:\Users\Danny\Desktop\2012-07-09-1-AMCProject\2012-05-07-1-AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\BlobOperator.dll
+C:\Users\Danny\Desktop\2012-07-09-1-AMCProject\2012-05-07-1-AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\QueueMessages.dll
+C:\Users\Danny\Desktop\2012-07-09-1-AMCProject\2012-05-07-1-AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\SerializableContainer.dll
+C:\Users\Danny\Desktop\2012-07-09-1-AMCProject\2012-05-07-1-AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\SevenZipSharp.dll
+C:\Users\Danny\Desktop\2012-07-09-1-AMCProject\2012-05-07-1-AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\ModelCreationService.dll
+C:\Users\Danny\Desktop\2012-07-09-1-AMCProject\2012-05-07-1-AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\ModelCreationService.pdb
+C:\Users\Danny\Desktop\2012-07-09-1-AMCProject\2012-05-07-1-AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\Danny\Desktop\2012-07-09-1-AMCProject\2012-05-07-1-AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\Danny\Desktop\2012-07-09-1-AMCProject\2012-05-07-1-AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\Danny\Desktop\2012-07-09-1-AMCProject\2012-05-07-1-AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.xml
+C:\Users\Danny\Desktop\2012-07-09-1-AMCProject\2012-05-07-1-AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.ServiceRuntime.xml
+C:\Users\Danny\Desktop\2012-07-09-1-AMCProject\2012-05-07-1-AMCProject\AMCProject\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.xml
+C:\Users\Danny\Desktop\2012-07-09-1-AMCProject\2012-05-07-1-AMCProject\AMCProject\ModelCreationService\ModelCreationService\obj\Debug\ResolveAssemblyReference.cache
+C:\Users\Danny\Desktop\2012-07-09-1-AMCProject\2012-05-07-1-AMCProject\AMCProject\ModelCreationService\ModelCreationService\obj\Debug\ModelCreationService.dll
+C:\Users\Danny\Desktop\2012-07-09-1-AMCProject\2012-05-07-1-AMCProject\AMCProject\ModelCreationService\ModelCreationService\obj\Debug\ModelCreationService.pdb
+D:\jerry\ModelCreationService\ModelCreationService\bin\7z64.dll
+D:\jerry\ModelCreationService\ModelCreationService\bin\7z86.dll
+D:\jerry\ModelCreationService\ModelCreationService\bin\BlobOperator.dll
+D:\jerry\ModelCreationService\ModelCreationService\bin\QueueMessages.dll
+D:\jerry\ModelCreationService\ModelCreationService\bin\SerializableContainer.dll
+D:\jerry\ModelCreationService\ModelCreationService\bin\SevenZipSharp.dll
+D:\jerry\ModelCreationService\ModelCreationService\bin\ModelCreationService.dll
+D:\jerry\ModelCreationService\ModelCreationService\bin\ModelCreationService.pdb
+D:\jerry\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\jerry\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\jerry\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\jerry\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\jerry\ModelCreationService\ModelCreationService\obj\Debug\ResolveAssemblyReference.cache
+D:\jerry\ModelCreationService\ModelCreationService\obj\Debug\ModelCreationService.dll
+D:\jerry\ModelCreationService\ModelCreationService\obj\Debug\ModelCreationService.pdb
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelCreationService\ModelCreationService\bin\7z64.dll
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelCreationService\ModelCreationService\bin\7z86.dll
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelCreationService\ModelCreationService\bin\BlobOperator.dll
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelCreationService\ModelCreationService\bin\QueueMessages.dll
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelCreationService\ModelCreationService\bin\SerializableContainer.dll
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelCreationService\ModelCreationService\bin\SevenZipSharp.dll
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelCreationService\ModelCreationService\bin\ModelCreationService.dll
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelCreationService\ModelCreationService\bin\ModelCreationService.pdb
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.dll
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.dll
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.xml
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.xml
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelCreationService\ModelCreationService\obj\Debug\ResolveAssemblyReference.cache
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelCreationService\ModelCreationService\obj\Debug\ModelCreationService.dll
+D:\20121011 上傳雲端OK\Source Code\IN_Cloud\ModelCreationService\ModelCreationService\obj\Debug\ModelCreationService.pdb
+F:\頂尖計畫\2012工具機展原始碼\HK\20121029\ModelCreationService\ModelCreationService\bin\7z64.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121029\ModelCreationService\ModelCreationService\bin\7z86.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121029\ModelCreationService\ModelCreationService\bin\BlobOperator.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121029\ModelCreationService\ModelCreationService\bin\QueueMessages.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121029\ModelCreationService\ModelCreationService\bin\SerializableContainer.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121029\ModelCreationService\ModelCreationService\bin\SevenZipSharp.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121029\ModelCreationService\ModelCreationService\bin\ModelCreationService.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121029\ModelCreationService\ModelCreationService\bin\ModelCreationService.pdb
+F:\頂尖計畫\2012工具機展原始碼\HK\20121029\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121029\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121029\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.xml
+F:\頂尖計畫\2012工具機展原始碼\HK\20121029\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.xml
+F:\頂尖計畫\2012工具機展原始碼\HK\20121029\ModelCreationService\ModelCreationService\obj\Debug\ResolveAssemblyReference.cache
+F:\頂尖計畫\2012工具機展原始碼\HK\20121029\ModelCreationService\ModelCreationService\obj\Debug\ModelCreationService.dll
+F:\頂尖計畫\2012工具機展原始碼\HK\20121029\ModelCreationService\ModelCreationService\obj\Debug\ModelCreationService.pdb
+E:\20130118AMC\ModelCreationService\ModelCreationService\bin\7z64.dll
+E:\20130118AMC\ModelCreationService\ModelCreationService\bin\7z86.dll
+E:\20130118AMC\ModelCreationService\ModelCreationService\bin\BlobOperator.dll
+E:\20130118AMC\ModelCreationService\ModelCreationService\bin\QueueMessages.dll
+E:\20130118AMC\ModelCreationService\ModelCreationService\bin\SerializableContainer.dll
+E:\20130118AMC\ModelCreationService\ModelCreationService\bin\SevenZipSharp.dll
+E:\20130118AMC\ModelCreationService\ModelCreationService\bin\ModelCreationService.dll
+E:\20130118AMC\ModelCreationService\ModelCreationService\bin\ModelCreationService.pdb
+E:\20130118AMC\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.dll
+E:\20130118AMC\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.dll
+E:\20130118AMC\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.Diagnostics.xml
+E:\20130118AMC\ModelCreationService\ModelCreationService\bin\Microsoft.WindowsAzure.StorageClient.xml
+E:\20130118AMC\ModelCreationService\ModelCreationService\obj\Debug\ResolveAssemblyReference.cache
+E:\20130118AMC\ModelCreationService\ModelCreationService\obj\Debug\ModelCreationService.dll
+E:\20130118AMC\ModelCreationService\ModelCreationService\obj\Debug\ModelCreationService.pdb

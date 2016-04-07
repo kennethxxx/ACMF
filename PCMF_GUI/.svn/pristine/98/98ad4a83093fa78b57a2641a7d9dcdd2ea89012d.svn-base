@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/UserManagements" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/UserManagements" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:complexType name="ArrayOfUserInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="UserInformation" nillable="true" type="tns:UserInformation" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfUserInformation" nillable="true" type="tns:ArrayOfUserInformation" />
+  <xs:complexType name="UserInformation">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="employeeID" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="userAddress" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="userEmail" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="userName" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="userPassword" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="userPhone" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="userRole" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="UserInformation" nillable="true" type="tns:UserInformation" />
+</xs:schema>

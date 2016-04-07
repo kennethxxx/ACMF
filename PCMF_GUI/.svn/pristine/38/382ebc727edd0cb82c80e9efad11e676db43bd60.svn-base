@@ -1,0 +1,46 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 11.00
+# Visual Studio 2010
+Project("{CC5FD16D-436D-48AD-A40C-5A424C6E3E79}") = "AMCSystems", "AMCSystems\AMCSystems.ccproj", "{E6B91532-92EC-4192-B738-C93A59DED9E3}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPS", "IPS\IPS.csproj", "{F307ED0D-A37B-4A69-9AAF-21F594F54FF5}"
+	ProjectSection(ProjectDependencies) = postProject
+		{98033787-8D33-4C5E-AE23-491A5A8FC472} = {98033787-8D33-4C5E-AE23-491A5A8FC472}
+	EndProjectSection
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "IPS.Web", "IPS.Web\IPS.Web.csproj", "{98033787-8D33-4C5E-AE23-491A5A8FC472}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "Solution Items", "Solution Items", "{7A379BAF-20E6-40CF-AED4-6E19DE4A856A}"
+	ProjectSection(SolutionItems) = preProject
+		AMCSystems.vsmdi = AMCSystems.vsmdi
+	EndProjectSection
+EndProject
+Global
+	GlobalSection(TestCaseManagementSettings) = postSolution
+		CategoryFile = AMCSystems.vsmdi
+	EndGlobalSection
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{E6B91532-92EC-4192-B738-C93A59DED9E3}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{E6B91532-92EC-4192-B738-C93A59DED9E3}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{E6B91532-92EC-4192-B738-C93A59DED9E3}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{E6B91532-92EC-4192-B738-C93A59DED9E3}.Release|Any CPU.Build.0 = Release|Any CPU
+		{F307ED0D-A37B-4A69-9AAF-21F594F54FF5}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{F307ED0D-A37B-4A69-9AAF-21F594F54FF5}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{F307ED0D-A37B-4A69-9AAF-21F594F54FF5}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{F307ED0D-A37B-4A69-9AAF-21F594F54FF5}.Release|Any CPU.Build.0 = Release|Any CPU
+		{98033787-8D33-4C5E-AE23-491A5A8FC472}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{98033787-8D33-4C5E-AE23-491A5A8FC472}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{98033787-8D33-4C5E-AE23-491A5A8FC472}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{98033787-8D33-4C5E-AE23-491A5A8FC472}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		VisualSVNWorkingCopyRoot = .
+	EndGlobalSection
+EndGlobal
