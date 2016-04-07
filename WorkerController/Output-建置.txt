@@ -1,0 +1,154 @@
+﻿------ 已開始建置: 專案: WorkerRoleController, 組態: Debug Any CPU ------
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerRoleController\WorkerRole.cs(137,21): 錯誤 CS0104: 'OperationContext' 參考在 'Microsoft.WindowsAzure.Storage.OperationContext' 和 'System.ServiceModel.OperationContext' 之間模稜兩可
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerRoleController\WorkerRole.cs(137,38): 錯誤 CS0117: 'Microsoft.WindowsAzure.Storage.OperationContext' 不包含 'Current' 的定義
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerRoleController\WorkerRole.cs(157,21): 錯誤 CS0104: 'OperationContext' 參考在 'Microsoft.WindowsAzure.Storage.OperationContext' 和 'System.ServiceModel.OperationContext' 之間模稜兩可
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerRoleController\WorkerRole.cs(157,38): 錯誤 CS0117: 'Microsoft.WindowsAzure.Storage.OperationContext' 不包含 'Current' 的定義
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerRoleController\WorkerRole.cs(239,21): 錯誤 CS0104: 'OperationContext' 參考在 'Microsoft.WindowsAzure.Storage.OperationContext' 和 'System.ServiceModel.OperationContext' 之間模稜兩可
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerRoleController\WorkerRole.cs(239,38): 錯誤 CS0117: 'Microsoft.WindowsAzure.Storage.OperationContext' 不包含 'Current' 的定義
+
+編譯完成 -- 6 個錯誤，0 個警告
+已經開始建置於 2013/5/24 上午 01:55:03。
+GenerateTargetFrameworkMonikerAttribute:
+將略過目標 "GenerateTargetFrameworkMonikerAttribute"，因為所有輸出檔對於其輸入檔而言都已更新。
+CoreCompile:
+  C:\Windows\Microsoft.NET\Framework\v4.0.30319\Csc.exe /noconfig /nowarn:1701,1702 /nostdlib+ /errorreport:prompt /warn:4 /define:DEBUG;TRACE /errorendlocation /preferreduilang:zh-TW /highentropyva- /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\Microsoft.CSharp.dll" /reference:"C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll" /reference:"C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll" /reference:"C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerRoleController\bin\Debug\Microsoft.Samples.WindowsAzure.ServiceManagement.dll" /reference:"C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\packages\Microsoft.WindowsAzure.ConfigurationManager.2.0.1.0\lib\net40\Microsoft.WindowsAzure.Configuration.dll" /reference:"C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerRoleController\bin\Debug\Microsoft.WindowsAzure.Diagnostics.dll" /reference:"C:\Program Files\Microsoft SDKs\Windows Azure\.NET SDK\2012-10\ref\Microsoft.WindowsAzure.ServiceRuntime.dll" /reference:"C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\packages\WindowsAzure.Storage.2.0.5.1\lib\net40\Microsoft.WindowsAzure.Storage.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\mscorlib.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Core.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.DataSetExtensions.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Data.Services.Client.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Runtime.Serialization.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.ServiceModel.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.ServiceModel.Web.dll" /reference:"C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.dll" /reference:"C:\Program Files (x86)\Reference Assemblies\Microsoft\Framework\.NETFramework\v4.0\System.Xml.Linq.dll" /reference:"C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerRoleController\bin\Debug\XMLParser.dll" /debug+ /debug:full /filealign:512 /optimize- /out:obj\Debug\WorkerRoleController.dll /target:library /utf8output LogManagement\LogController.cs LogManagement\LogMessages.cs PerformanceManagement\CpuLoadInfoController.cs PerformanceManagement\PerformanceData.cs PerformanceManagement\PerformanceDataContext.cs PerformanceManagement\PerformanceDataSource.cs Properties\AssemblyInfo.cs ServiceManagement\Constants.cs ServiceManagement\DeploymentConfiguration.cs ServiceManagement\DeploymentInfoExtension.cs ServiceManagement\ServiceController.cs ServiceManagement\ServiceOperations.cs ServiceManagement\ServiceStatus.cs ServiceManagement\ServiceStatusController.cs ServiceManagement\TimeUtils.cs Settings.cs Utils.cs WorkerRole.cs WorkerRoleControllerClass.cs "C:\Users\sesame\AppData\Local\Temp\.NETFramework,Version=v4.0.AssemblyAttributes.cs"
+
+建置失敗。
+
+經過時間 00:00:00.20
+------ 已開始建置: 專案: WorkerController, 組態: Debug Any CPU ------
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "_CheckForInvalidConfigurationAndPlatform" (進入點):
+	工作 "Message"
+	工作 "Message"
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "BeforeBuild" (目標 "Build" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "BuildOnlySettings" (目標 "CoreBuild" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.NETFramework.targets" 中的目標 "GetFrameworkPaths" (目標 "PrepareForBuild" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "GetReferenceAssemblyPaths" (目標 "PrepareForBuild" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "PrepareForBuild" (目標 "CoreBuild" 與它有依存關係):
+	工作 "FindAppConfigFile"
+	工作 "MakeDir"
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "BeforeResolveReferences" (目標 "ResolveReferences" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "AssignProjectConfiguration" (目標 "ResolveReferences" 與它有依存關係):
+	工作 "AssignProjectConfiguration"
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "_SplitProjectReferencesByFileExistence" (目標 "ResolveProjectReferences" 與它有依存關係):
+	工作 "ResolveNonMSBuildProjectOutput"
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "ResolveProjectReferences" (目標 "ResolveReferences" 與它有依存關係):
+	工作 "MSBuild"
+		專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerRoleController\WorkerRoleController.csproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "_CheckForInvalidConfigurationAndPlatform" (進入點):
+			工作 "Message"
+			工作 "Message"
+		專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerRoleController\WorkerRoleController.csproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "GetTargetPath" (進入點):
+	工作 "MSBuild"
+		專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerRoleController\WorkerRoleController.csproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "GetNativeManifest" (進入點):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "AfterResolveReferences" (目標 "ResolveReferences" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "ResolveReferences" (目標 "CoreBuild" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "BeforePackageComputeService" (目標 "PackageComputeService" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "VerifySDKInstallation" (目標 "CorePackageComputeService" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "DeleteValidationIssuesFile" (目標 "CorePackageComputeService" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "BeforeResolveServiceModel" (目標 "ResolveServiceModel" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "ResolveServiceDefinition" (目標 "CoreResolveServiceModel" 與它有依存關係):
+	工作 "Message"
+		Source Service Definition: ServiceDefinition.csdef
+	工作 "Message"
+		Target Service Definition: bin\Debug\ServiceDefinition.csdef
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "ResolveServiceConfiguration" (目標 "CoreResolveServiceModel" 與它有依存關係):
+	工作 "Message"
+		Target Profile: Local
+	工作 "Message"
+		Service Configurations: ServiceConfiguration.Local.cscfg;ServiceConfiguration.Cloud.cscfg
+	工作 "Message"
+		Looking for a service configuration file named: ServiceConfiguration.Local.cscfg
+	工作 "FindInList"
+	工作 "Message"
+		Source Service Configuration: ServiceConfiguration.Local.cscfg
+	工作 "Message"
+		Target Service Configuration: bin\Debug\ServiceConfiguration.cscfg
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "CoreResolveServiceModel" (目標 "ResolveServiceModel" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "AfterResolveServiceModel" (目標 "ResolveServiceModel" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "ResolveServiceModel" (目標 "GenerateServiceModel" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "FindServiceDefinition" (目標 "GenerateServiceModel" 與它有依存關係):
+	工作 "Message"
+		ServiceDefinition in bin\Debug\ServiceDefinition.csdef
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "FindServiceConfiguration" (目標 "GenerateServiceModel" 與它有依存關係):
+	工作 "Message"
+		ServiceConfigurationFile is bin\Debug\ServiceConfiguration.cscfg
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "PreValidateServiceModel" (目標 "GenerateServiceModel" 與它有依存關係):
+	工作 "ValidateServiceFiles"
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "CopyServiceModel" (目標 "GenerateServiceModel" 與它有依存關係):
+	工作 "Message"
+		Running CopyServiceModel target
+	工作 "Message"
+		Copying the service configuration.
+	工作 "Copy"
+		正在將檔案從 "ServiceConfiguration.Local.cscfg" 複製到 "bin\Debug\ServiceConfiguration.cscfg"。
+	工作 "AddGeneratedXmlComment"
+	工作 "Message"
+		Copying the service definition.
+	工作 "Copy"
+		正在將檔案從 "ServiceDefinition.csdef" 複製到 "bin\Debug\ServiceDefinition.csdef"。
+	工作 "AddGeneratedXmlComment"
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "BeforeTransformServiceModel" (目標 "TransformServiceModel" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "CoreTransformServiceModel" (目標 "TransformServiceModel" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "AfterTransformServiceModel" (目標 "TransformServiceModel" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "TransformServiceModel" (目標 "GenerateServiceModel" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "BeforeValidateServiceModel" (目標 "ValidateServiceModel" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "GetVMRoleCounts" (目標 "ValidateRoleProjects" 與它有依存關係):
+	工作 "XPathQuery"
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "ValidateRoleProjects" (目標 "CoreValidateServiceModel" 與它有依存關係):
+	工作 "CreateItem"
+	工作 "Message"
+		Web Project        is 
+	工作 "Message"
+		Worker Project     is ..\WorkerRoleController\WorkerRoleController.csproj
+	工作 "Message"
+		VM Project         is 
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "ValidateServiceFiles" (目標 "CoreValidateServiceModel" 與它有依存關係):
+	工作 "ValidateServiceFiles"
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "CheckRoleInstanceCount" (目標 "CoreValidateServiceModel" 與它有依存關係):
+	工作 "XPathQuery"
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "CoreValidateServiceModel" (目標 "ValidateServiceModel" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "AfterValidateServiceModel" (目標 "ValidateServiceModel" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "ValidateServiceModel" (目標 "GenerateServiceModel" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "GenerateServiceModel" (目標 "CorePackageComputeService" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "ResetTargetNames" (目標 "CorePackageComputeService" 與它有依存關係):
+	工作 "Message"
+		Reset the targetDir      to csx\Debug\
+	工作 "Message"
+		Reset the TargetName     to ServiceDefinition
+	工作 "Message"
+		Reset the TargetExt      to .rd
+	工作 "Message"
+		Reset the TargetFileName to ServiceDefinition.rd
+	工作 "Message"
+		Reset the TargetPath     to csx\Debug\ServiceDefinition.rd
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "VerifyRoleReferences" (目標 "CorePackageComputeService" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "BeforeAddRoleContent" (目標 "AddRoleContent" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "CleanRoleContentFiles" (目標 "CoreAddRoleContent" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "CoreAddRoleContent" (目標 "AddRoleContent" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "AfterAddRoleContent" (目標 "AddRoleContent" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "AddRoleContent" (目標 "CorePackageComputeService" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "IgnoreSpecificValidationIssues" (目標 "IgnoreKnownValidationIssues" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "IgnoreValidationIssuesWithCode" (目標 "IgnoreKnownValidationIssues" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "IgnoreKnownValidationIssues" (目標 "CorePackageComputeService" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "RegisterCleanValidationIssuesFile" (目標 "CorePackageComputeService" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "CorePackageComputeService" (目標 "PackageComputeService" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "AfterPackageComputeService" (目標 "PackageComputeService" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Program Files (x86)\MSBuild\Microsoft\VisualStudio\v10.0\Windows Azure Tools\1.8\Microsoft.WindowsAzure.targets" 中的目標 "PackageComputeService" (目標 "CoreBuild" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "GetTargetPath" (目標 "CoreBuild" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "_CheckForCompileOutputs" (目標 "_CleanGetCurrentAndPriorFileWrites" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "_CleanGetCurrentAndPriorFileWrites" (目標 "IncrementalClean" 與它有依存關係):
+	工作 "ReadLinesFromFile"
+	工作 "ConvertToAbsolutePath"
+	工作 "FindUnderPath"
+	工作 "FindUnderPath"
+	工作 "FindUnderPath"
+	工作 "RemoveDuplicates"
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "IncrementalClean" (目標 "CoreBuild" 與它有依存關係):
+	工作 "FindUnderPath"
+	工作 "FindUnderPath"
+	工作 "Delete"
+	工作 "RemoveDuplicates"
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "CoreBuild" (目標 "Build" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "AfterBuild" (目標 "Build" 與它有依存關係):
+專案 "C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\WorkerController.ccproj" 的檔案 "C:\Windows\Microsoft.NET\Framework\v4.0.30319\Microsoft.Common.targets" 中的目標 "Build" (進入點):
+========== 組建: 1 成功或最新狀態、1 失敗、0 略過 ==========

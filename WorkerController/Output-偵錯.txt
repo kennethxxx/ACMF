@@ -1,0 +1,72 @@
+﻿'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_64\mscorlib\v4.0_4.0.0.0__b77a5c561934e089\mscorlib.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\csx\Debug\roles\WorkerRoleController\base\x64\WaWorkerHost.exe'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\assembly\GAC_64\msshrtmi\1.8.0.0__31bf3856ad364e35\msshrtmi.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\assembly\GAC_MSIL\Microsoft.WindowsAzure.ServiceRuntime\1.8.0.0__31bf3856ad364e35\Microsoft.WindowsAzure.ServiceRuntime.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\mscorlib.resources\v4.0_4.0.0.0_zh-Hant_b77a5c561934e089\mscorlib.resources.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System\v4.0_4.0.0.0__b77a5c561934e089\System.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\assembly\GAC_MSIL\Microsoft.ServiceHosting.Tools.DevelopmentFabric.Runtime\1.0.0.0__31bf3856ad364e35\Microsoft.ServiceHosting.Tools.DevelopmentFabric.Runtime.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Core\v4.0_4.0.0.0__b77a5c561934e089\System.Core.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml.Linq\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.Linq.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xml\v4.0_4.0.0.0__b77a5c561934e089\System.Xml.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Configuration\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Configuration.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\csx\Debug\roles\WorkerRoleController\approot\Microsoft.WindowsAzure.Diagnostics.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_64\System.Web\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Web.dll'
+Microsoft.WindowsAzure.ServiceRuntime Information: 100 : Role environment . INITIALIZING
+Microsoft.WindowsAzure.ServiceRuntime Information: 100 : Role environment . INITIALED RETURNED. HResult=0
+Microsoft.WindowsAzure.ServiceRuntime Information: 101 : Role environment . INITIALIZED
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\csx\Debug\roles\WorkerRoleController\approot\Microsoft.WindowsAzure.StorageClient.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\csx\Debug\roles\WorkerRoleController\approot\WorkerRoleController.dll'，已載入符號。
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\csx\Debug\roles\WorkerRoleController\approot\Microsoft.WindowsAzure.Storage.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Data.Services.Client\v4.0_4.0.0.0__b77a5c561934e089\System.Data.Services.Client.dll'
+Microsoft.WindowsAzure.ServiceRuntime Information: 200 : Role entrypoint . CALLING   OnStart()
+Microsoft.WindowsAzure.ServiceRuntime Information: 202 : Role entrypoint . COMPLETED OnStart()
+'Role Initialization Thread' (0x450) 執行緒以返回碼 0 (0x0) 結束。
+第一個可能發生的例外狀況類型 'System.Threading.WaitHandleCannotBeOpenedException' 發生於 mscorlib.dll
+Microsoft.WindowsAzure.ServiceRuntime Information: 203 : Role entrypoint . CALLING   Run()
+Microsoft.WindowsAzure.ServiceRuntime Verbose: 500 : Role instance status check starting
+Microsoft.WindowsAzure.ServiceRuntime Verbose: 502 : Role instance status check succeeded: Ready
+第一個可能發生的例外狀況類型 'System.IO.IOException' 發生於 mscorlib.dll
+Microsoft.WindowsAzure.ServiceRuntime Verbose: 500 : Role instance status check starting
+Microsoft.WindowsAzure.ServiceRuntime Verbose: 502 : Role instance status check succeeded: Ready
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_64\System.Data\v4.0_4.0.0.0__b77a5c561934e089\System.Data.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Numerics\v4.0_4.0.0.0__b77a5c561934e089\System.Numerics.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\csx\Debug\roles\WorkerRoleController\approot\Microsoft.Samples.WindowsAzure.ServiceManagement.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization\v4.0_4.0.0.0__b77a5c561934e089\System.Runtime.Serialization.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel\v4.0_4.0.0.0__b77a5c561934e089\System.ServiceModel.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel.Web\v4.0_4.0.0.0__31bf3856ad364e35\System.ServiceModel.Web.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\SMDiagnostics\v4.0_4.0.0.0__b77a5c561934e089\SMDiagnostics.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel.Internals\v4.0_4.0.0.0__31bf3856ad364e35\System.ServiceModel.Internals.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_64\System.Transactions\v4.0_4.0.0.0__b77a5c561934e089\System.Transactions.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.IdentityModel\v4.0_4.0.0.0__b77a5c561934e089\System.IdentityModel.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\Microsoft.VisualStudio.Diagnostics.ServiceModelSink\v4.0_4.0.0.0__b03f5f7f11d50a3a\Microsoft.VisualStudio.Diagnostics.ServiceModelSink.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Security\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Security.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Net.Http\v4.0_4.0.0.0__b03f5f7f11d50a3a\System.Net.Http.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.resources\v4.0_4.0.0.0_zh-Hant_b77a5c561934e089\System.resources.dll'
+第一個可能發生的例外狀況類型 'System.Net.WebException' 發生於 System.dll
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Xaml\v4.0_4.0.0.0__b77a5c561934e089\System.Xaml.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel.resources\v4.0_4.0.0.0_zh-Hant_b77a5c561934e089\System.ServiceModel.resources.dll'
+第一個可能發生的例外狀況類型 'System.ServiceModel.EndpointNotFoundException' 發生於 System.ServiceModel.dll
+第一個可能發生的例外狀況類型 'System.ServiceModel.EndpointNotFoundException' 發生於 System.ServiceModel.Internals.dll
+第一個可能發生的例外狀況類型 'System.ServiceModel.EndpointNotFoundException' 發生於 System.ServiceModel.Internals.dll
+第一個可能發生的例外狀況類型 'System.ServiceModel.EndpointNotFoundException' 發生於 mscorlib.dll
+沒有任何在 https://management.core.windows.net/77d8194d-fc82-482d-849b-82e475eb1c13/services/hostedservices/imismmdb/deployments/ncku-mmdblab 上進行接聽的端點可以接受該訊息。這通常是由不正確位址或 SOAP 動作所造成。若有 InnerException，可參閱以取得詳細資訊。nextInstanceCount:1 - nowInstanceCount:0
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\csx\Debug\roles\WorkerRoleController\approot\Microsoft.WindowsAzure.Configuration.dll'
+Loaded "Microsoft.WindowsAzure.ServiceRuntime, Version=1.8.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35"
+Getting "ScalingConfigurationStorageConnectionString" from ServiceRuntime: PASS (DefaultEndpointsProtocol=https;AccountName=mmdblab;AccountKey=6rNvmk7bZWCwUlrkey8Qsvv3uha0aEgT2KbyvLLjtVC4xznv/e/BQRgHYLvlJWd9dRfnnS8lDeKmyYac+2jEaA==).
+Getting "ScalingConfigurationStorageConnectionString" from ServiceRuntime: PASS (DefaultEndpointsProtocol=https;AccountName=mmdblab;AccountKey=6rNvmk7bZWCwUlrkey8Qsvv3uha0aEgT2KbyvLLjtVC4xznv/e/BQRgHYLvlJWd9dRfnnS8lDeKmyYac+2jEaA==).
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel.Channels\v4.0_4.0.0.0__31bf3856ad364e35\System.ServiceModel.Channels.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.ServiceModel.Channels.resources\v4.0_4.0.0.0_zh-Hant_31bf3856ad364e35\System.ServiceModel.Channels.resources.dll'
+'WaWorkerHost.exe' (Managed (v4.0.30319)): 已載入 'C:\Windows\Microsoft.Net\assembly\GAC_MSIL\System.Runtime.Serialization.resources\v4.0_4.0.0.0_zh-Hant_b77a5c561934e089\System.Runtime.Serialization.resources.dll'
+Processing...:InProgress
+Microsoft.WindowsAzure.ServiceRuntime Verbose: 500 : Role instance status check starting
+Microsoft.WindowsAzure.ServiceRuntime Verbose: 502 : Role instance status check succeeded: Ready
+'<沒有名稱>' (0x317c) 執行緒以返回碼 0 (0x0) 結束。
+'<沒有名稱>' (0x38a8) 執行緒以返回碼 0 (0x0) 結束。
+'<沒有名稱>' (0x10e0) 執行緒以返回碼 0 (0x0) 結束。
+'<沒有名稱>' (0x37c0) 執行緒以返回碼 0 (0x0) 結束。
+'<沒有名稱>' (0x1754) 執行緒以返回碼 0 (0x0) 結束。
+Microsoft.WindowsAzure.ServiceRuntime Verbose: 500 : Role instance status check starting
+Microsoft.WindowsAzure.ServiceRuntime Verbose: 502 : Role instance status check succeeded: Ready
+Processing...:Failed
+'[15196] WaWorkerHost.exe: Managed (v4.0.30319)' 程式以返回碼 0 (0x0) 結束。
+'[15196] WaWorkerHost.exe: 程式追蹤' 程式以返回碼 0 (0x0) 結束。

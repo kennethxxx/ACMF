@@ -1,0 +1,19 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<ServiceConfiguration serviceName="WorkerController" xmlns="http://schemas.microsoft.com/ServiceHosting/2008/10/ServiceConfiguration" osFamily="2" osVersion="*" schemaVersion="2012-10.1.8">
+  <Role name="WorkerRoleController">
+    <Instances count="1" />
+    <ConfigurationSettings>
+      <Setting name="ScalingConfigurationStorageConnectionString" value="DefaultEndpointsProtocol=https;AccountName=boyili;AccountKey=XXep/w2zNyecD3jE8YzX2a/WHsaGgF5j70XFLzv9CBuNNRYSs5wiSQ77kXcoXFDsRRp85uJu34wEHd0I1YZF4Q==" />
+      <Setting name="ScalingConfigurationBlobContainer" value="runtime" />
+      <Setting name="WorkerRoleControllerConfig" value="imismmdblab_TSP_WorkerRoleControllerConfig.xml" />
+      <Setting name="WRScalingRule" value="imismmdblab_TSP_WRScalingRule.xml" />
+      <Setting name="StoragesName" value="boyili" />
+      <Setting name="StoragesKey" value="XXep/w2zNyecD3jE8YzX2a/WHsaGgF5j70XFLzv9CBuNNRYSs5wiSQ77kXcoXFDsRRp85uJu34wEHd0I1YZF4Q==" />
+      <Setting name="DriverOption" value="DriverOption.xml" />
+      <Setting name="PrivateWorkerRoleControllerConfig" value="Private_WorkerRoleControllerConfig.xml" />
+    </ConfigurationSettings>
+    <Certificates>
+      <Certificate name="Mycert" thumbprint="39508A25405CFF3B37D4D6992EE3BD73EEE6B4CC" thumbprintAlgorithm="sha1" />
+    </Certificates>
+  </Role>
+</ServiceConfiguration>

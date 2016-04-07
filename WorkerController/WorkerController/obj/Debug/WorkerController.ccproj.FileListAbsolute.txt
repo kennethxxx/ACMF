@@ -1,0 +1,144 @@
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\bin\Debug\ServiceConfiguration.cscfg
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\bin\Debug\ServiceDefinition.csdef
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\de\Microsoft.Data.Edm.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\de\Microsoft.Data.OData.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\de\System.Spatial.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\es\Microsoft.Data.Edm.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\es\Microsoft.Data.OData.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\es\System.Spatial.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\fr\Microsoft.Data.OData.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\fr\System.Spatial.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\it\Microsoft.Data.Edm.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\it\Microsoft.Data.OData.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\it\System.Spatial.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ja\Microsoft.Data.OData.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ja\System.Spatial.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ko\Microsoft.Data.OData.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ko\System.Spatial.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.Data.Edm.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.Data.OData.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.Samples.WindowsAzure.ServiceManagement.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.WindowsAzure.Storage.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ru\Microsoft.Data.OData.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ru\System.Spatial.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\System.Spatial.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\WcfSamples.DynamicProxy.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\WcfSamples.DynamicProxy.pdb
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\WorkerRoleController.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\WorkerRoleController.dll.config
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\WorkerRoleController.pdb
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\XMLParser.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\XsdFile\WorkerRoleControllerConfig.xsd
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\XsdFile\WRScalingRule.xsd
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\zh-Hans\System.Spatial.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\sesame\Documents\Visual Studio 2010\Projects\WorkerController\WorkerController\obj\Debug\WorkerRoleController\zh-Hant\System.Spatial.resources.dll
+C:\Users\sesame\Desktop\WorkerController\WorkerController\bin\Debug\ServiceConfiguration.cscfg
+C:\Users\sesame\Desktop\WorkerController\WorkerController\bin\Debug\ServiceDefinition.csdef
+E:\B-程式\case2014expr\WorkerController\WorkerController\bin\Debug\ServiceConfiguration.cscfg
+E:\B-程式\case2014expr\WorkerController\WorkerController\bin\Debug\ServiceDefinition.csdef
+C:\Users\sesame\Desktop\TSP-schema_SPN_VS_real_system\WorkerController\WorkerController\bin\Debug\ServiceConfiguration.cscfg
+C:\Users\sesame\Desktop\TSP-schema_SPN_VS_real_system\WorkerController\WorkerController\bin\Debug\ServiceDefinition.csdef
+D:\研究所\WorkerController\WorkerController\bin\Debug\ServiceConfiguration.cscfg
+D:\研究所\WorkerController\WorkerController\bin\Debug\ServiceDefinition.csdef
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\de\Microsoft.Data.Edm.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\de\Microsoft.Data.OData.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\de\System.Spatial.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\es\Microsoft.Data.Edm.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\es\Microsoft.Data.OData.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\es\System.Spatial.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\fr\Microsoft.Data.Edm.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\fr\Microsoft.Data.OData.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\fr\System.Spatial.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\it\Microsoft.Data.Edm.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\it\Microsoft.Data.OData.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\it\System.Spatial.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ja\Microsoft.Data.Edm.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ja\Microsoft.Data.OData.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ja\System.Spatial.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ko\Microsoft.Data.Edm.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ko\Microsoft.Data.OData.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ko\System.Spatial.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.Data.Edm.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.Data.OData.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.Samples.WindowsAzure.ServiceManagement.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.WindowsAzure.Configuration.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.WindowsAzure.Diagnostics.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.WindowsAzure.Storage.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.WindowsAzure.StorageClient.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\mysql.data.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ru\Microsoft.Data.Edm.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ru\Microsoft.Data.OData.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ru\System.Spatial.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\System.Spatial.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\WcfSamples.DynamicProxy.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\WorkerRoleController.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\WorkerRoleController.dll.config
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\WorkerRoleController.pdb
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\XMLParser.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\XsdFile\WorkerRoleControllerConfig.xsd
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\XsdFile\WRScalingRule.xsd
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\zh-Hans\Microsoft.Data.Edm.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\zh-Hans\Microsoft.Data.OData.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\zh-Hans\System.Spatial.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\zh-Hant\Microsoft.Data.Edm.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\zh-Hant\Microsoft.Data.OData.resources.dll
+D:\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\zh-Hant\System.Spatial.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\bin\Debug\ServiceConfiguration.cscfg
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\bin\Debug\ServiceDefinition.csdef
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\de\Microsoft.Data.Edm.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\de\Microsoft.Data.OData.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\de\System.Spatial.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\es\Microsoft.Data.Edm.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\es\Microsoft.Data.OData.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\es\System.Spatial.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\fr\Microsoft.Data.Edm.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\fr\Microsoft.Data.OData.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\fr\System.Spatial.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\it\Microsoft.Data.Edm.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\it\Microsoft.Data.OData.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\it\System.Spatial.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ja\Microsoft.Data.Edm.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ja\Microsoft.Data.OData.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ja\System.Spatial.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ko\Microsoft.Data.Edm.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ko\Microsoft.Data.OData.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ko\System.Spatial.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.Data.Edm.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.Data.OData.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.Samples.WindowsAzure.ServiceManagement.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.WindowsAzure.Configuration.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.WindowsAzure.Diagnostics.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.WindowsAzure.ServiceRuntime.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.WindowsAzure.Storage.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\Microsoft.WindowsAzure.StorageClient.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\mysql.data.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ru\Microsoft.Data.Edm.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ru\Microsoft.Data.OData.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\ru\System.Spatial.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\System.Spatial.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\WcfSamples.DynamicProxy.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\WorkerRoleController.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\WorkerRoleController.dll.config
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\WorkerRoleController.pdb
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\XMLParser.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\XsdFile\WorkerRoleControllerConfig.xsd
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\XsdFile\WRScalingRule.xsd
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\zh-Hans\Microsoft.Data.Edm.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\zh-Hans\Microsoft.Data.OData.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\zh-Hans\System.Spatial.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\zh-Hant\Microsoft.Data.Edm.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\zh-Hant\Microsoft.Data.OData.resources.dll
+C:\Users\Hello\Downloads\研究所\WorkerController\WorkerController\obj\Debug\WorkerRoleController\zh-Hant\System.Spatial.resources.dll
+C:\研究所\WorkerController\WorkerController\bin\Debug\ServiceConfiguration.cscfg
+C:\研究所\WorkerController\WorkerController\bin\Debug\ServiceDefinition.csdef

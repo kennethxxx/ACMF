@@ -1,0 +1,93 @@
+<xs:schema attributeFormDefault="unqualified" elementFormDefault="qualified" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:element name="root">
+    <xs:complexType>
+      <xs:sequence>
+        <xs:element name="MonitoringWRPeriod">
+          <xs:complexType>
+            <xs:simpleContent>
+              <xs:extension base="xs:string">
+                <xs:attribute type="xs:short" name="period"/>
+              </xs:extension>
+            </xs:simpleContent>
+          </xs:complexType>
+        </xs:element>
+        <xs:element name="subscriptions">
+          <xs:complexType>
+            <xs:sequence>
+              <xs:element name="subscription">
+                <xs:complexType>
+                  <xs:sequence>
+                    <xs:element name="storages">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="storage">
+                            <xs:complexType>
+                              <xs:simpleContent>
+                                <xs:extension base="xs:string">
+                                  <xs:attribute type="xs:string" name="name"/>
+                                  <xs:attribute type="xs:string" name="key"/>
+                                </xs:extension>
+                              </xs:simpleContent>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                    <xs:element name="services">
+                      <xs:complexType>
+                        <xs:sequence>
+                          <xs:element name="hostedservice">
+                            <xs:complexType>
+                              <xs:sequence>
+                                <xs:element name="deployments">
+                                  <xs:complexType>
+                                    <xs:sequence>
+                                      <xs:element name="deployment">
+                                        <xs:complexType>
+                                          <xs:sequence>
+                                            <xs:element name="roles">
+                                              <xs:complexType>
+                                                <xs:sequence>
+                                                  <xs:element name="role">
+                                                    <xs:complexType>
+                                                      <xs:simpleContent>
+                                                        <xs:extension base="xs:string">
+                                                          <xs:attribute type="xs:string" name="name"/>
+                                                          <xs:attribute type="xs:byte" name="maxinstances"/>
+                                                          <xs:attribute type="xs:string" name="deploymentSlotType"/>
+                                                        </xs:extension>
+                                                      </xs:simpleContent>
+                                                    </xs:complexType>
+                                                  </xs:element>
+                                                </xs:sequence>
+                                              </xs:complexType>
+                                            </xs:element>
+                                          </xs:sequence>
+                                          <xs:attribute type="xs:string" name="name"/>
+                                          <xs:attribute type="xs:string" name="storage"/>
+                                          <xs:attribute type="xs:string" name="storagerelativepath"/>
+                                        </xs:complexType>
+                                      </xs:element>
+                                    </xs:sequence>
+                                  </xs:complexType>
+                                </xs:element>
+                              </xs:sequence>
+                              <xs:attribute type="xs:string" name="name"/>
+                              <xs:attribute type="xs:string" name="urlprefix"/>
+                            </xs:complexType>
+                          </xs:element>
+                        </xs:sequence>
+                      </xs:complexType>
+                    </xs:element>
+                  </xs:sequence>
+                  <xs:attribute type="xs:string" name="name"/>
+                  <xs:attribute type="xs:string" name="id"/>
+                </xs:complexType>
+              </xs:element>
+            </xs:sequence>
+          </xs:complexType>
+        </xs:element>
+      </xs:sequence>
+    </xs:complexType>
+  </xs:element>
+</xs:schema>
