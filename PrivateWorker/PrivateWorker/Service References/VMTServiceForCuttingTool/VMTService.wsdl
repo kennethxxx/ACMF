@@ -1,0 +1,83 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns="http://service.ve.me.imis.ncku" xmlns:ns1="http://org.apache.axis2/xsd" targetNamespace="http://service.ve.me.imis.ncku" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>
+		Please Type your service description here
+	</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://service.ve.me.imis.ncku">
+      <xs:element name="VMTServiceForCuttingTool">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="NCFilePathList" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="VMTServiceForCuttingToolResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="VMTServiceForCuttingToolRequest">
+    <wsdl:part name="parameters" element="ns:VMTServiceForCuttingTool" />
+  </wsdl:message>
+  <wsdl:message name="VMTServiceForCuttingToolResponse">
+    <wsdl:part name="parameters" element="ns:VMTServiceForCuttingToolResponse" />
+  </wsdl:message>
+  <wsdl:portType name="VMTServicePortType">
+    <wsdl:operation name="VMTServiceForCuttingTool">
+      <wsdl:input wsaw:Action="urn:VMTServiceForCuttingTool" message="ns:VMTServiceForCuttingToolRequest" />
+      <wsdl:output wsaw:Action="urn:VMTServiceForCuttingToolResponse" message="ns:VMTServiceForCuttingToolResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="VMTServiceSoap11Binding" type="ns:VMTServicePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VMTServiceForCuttingTool">
+      <soap:operation soapAction="urn:VMTServiceForCuttingTool" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VMTServiceSoap12Binding" type="ns:VMTServicePortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="VMTServiceForCuttingTool">
+      <soap12:operation soapAction="urn:VMTServiceForCuttingTool" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="VMTServiceHttpBinding" type="ns:VMTServicePortType">
+    <http:binding verb="POST" />
+    <wsdl:operation name="VMTServiceForCuttingTool">
+      <http:operation location="VMTServiceForCuttingTool" />
+      <wsdl:input>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="parameters" type="application/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="VMTService">
+    <wsdl:port name="VMTServiceHttpSoap11Endpoint" binding="ns:VMTServiceSoap11Binding">
+      <soap:address location="http://localhost:8080/VEServiceForCuttingTool/services/VMTService.VMTServiceHttpSoap11Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="VMTServiceHttpSoap12Endpoint" binding="ns:VMTServiceSoap12Binding">
+      <soap12:address location="http://localhost:8080/VEServiceForCuttingTool/services/VMTService.VMTServiceHttpSoap12Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="VMTServiceHttpEndpoint" binding="ns:VMTServiceHttpBinding">
+      <http:address location="http://localhost:8080/VEServiceForCuttingTool/services/VMTService.VMTServiceHttpEndpoint/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

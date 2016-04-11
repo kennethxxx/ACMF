@@ -1,0 +1,332 @@
+<?xml version="1.0" encoding="utf-8"?>
+<wsdl:definitions xmlns:soap="http://schemas.xmlsoap.org/wsdl/soap/" xmlns:soap12="http://schemas.xmlsoap.org/wsdl/soap12/" xmlns:mime="http://schemas.xmlsoap.org/wsdl/mime/" xmlns:wsaw="http://www.w3.org/2006/05/addressing/wsdl" xmlns:xs="http://www.w3.org/2001/XMLSchema" xmlns:http="http://schemas.xmlsoap.org/wsdl/http/" xmlns:ns="http://ontology.mmdb.imis.ncku.edu" xmlns:ns1="http://org.apache.axis2/xsd" targetNamespace="http://ontology.mmdb.imis.ncku.edu" xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+  <wsdl:documentation>
+		Please Type your service description here
+	</wsdl:documentation>
+  <wsdl:types>
+    <xs:schema attributeFormDefault="qualified" elementFormDefault="qualified" targetNamespace="http://ontology.mmdb.imis.ncku.edu">
+      <xs:element name="CreateDomainKnowledge">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="FilePath" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="db" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateDomainKnowledgeResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateDomainKnowledgeDataBase">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="dbName" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="CreateDomainKnowledgeDataBaseResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InferenceForCuttingTool">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="ontologyFile" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="inferData" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="InferenceForCuttingToolResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ShowAllOntologyResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ShowDBTable">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="selectdb" nillable="true" type="xs:string" />
+            <xs:element minOccurs="0" name="selecttable" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ShowDBTableResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ShowDataBaseTable">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="DataBase" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+      <xs:element name="ShowDataBaseTableResponse">
+        <xs:complexType>
+          <xs:sequence>
+            <xs:element minOccurs="0" name="return" nillable="true" type="xs:string" />
+          </xs:sequence>
+        </xs:complexType>
+      </xs:element>
+    </xs:schema>
+  </wsdl:types>
+  <wsdl:message name="CreateDomainKnowledgeRequest">
+    <wsdl:part name="parameters" element="ns:CreateDomainKnowledge" />
+  </wsdl:message>
+  <wsdl:message name="CreateDomainKnowledgeResponse">
+    <wsdl:part name="parameters" element="ns:CreateDomainKnowledgeResponse" />
+  </wsdl:message>
+  <wsdl:message name="ShowAllOntologyRequest" />
+  <wsdl:message name="ShowAllOntologyResponse">
+    <wsdl:part name="parameters" element="ns:ShowAllOntologyResponse" />
+  </wsdl:message>
+  <wsdl:message name="InferenceForCuttingToolRequest">
+    <wsdl:part name="parameters" element="ns:InferenceForCuttingTool" />
+  </wsdl:message>
+  <wsdl:message name="InferenceForCuttingToolResponse">
+    <wsdl:part name="parameters" element="ns:InferenceForCuttingToolResponse" />
+  </wsdl:message>
+  <wsdl:message name="CreateDomainKnowledgeDataBaseRequest">
+    <wsdl:part name="parameters" element="ns:CreateDomainKnowledgeDataBase" />
+  </wsdl:message>
+  <wsdl:message name="CreateDomainKnowledgeDataBaseResponse">
+    <wsdl:part name="parameters" element="ns:CreateDomainKnowledgeDataBaseResponse" />
+  </wsdl:message>
+  <wsdl:message name="ShowDataBaseTableRequest">
+    <wsdl:part name="parameters" element="ns:ShowDataBaseTable" />
+  </wsdl:message>
+  <wsdl:message name="ShowDataBaseTableResponse">
+    <wsdl:part name="parameters" element="ns:ShowDataBaseTableResponse" />
+  </wsdl:message>
+  <wsdl:message name="ShowDBTableRequest">
+    <wsdl:part name="parameters" element="ns:ShowDBTable" />
+  </wsdl:message>
+  <wsdl:message name="ShowDBTableResponse">
+    <wsdl:part name="parameters" element="ns:ShowDBTableResponse" />
+  </wsdl:message>
+  <wsdl:portType name="Receive_ModulePortType">
+    <wsdl:operation name="CreateDomainKnowledge">
+      <wsdl:input wsaw:Action="urn:CreateDomainKnowledge" message="ns:CreateDomainKnowledgeRequest" />
+      <wsdl:output wsaw:Action="urn:CreateDomainKnowledgeResponse" message="ns:CreateDomainKnowledgeResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowAllOntology">
+      <wsdl:input wsaw:Action="urn:ShowAllOntology" message="ns:ShowAllOntologyRequest" />
+      <wsdl:output wsaw:Action="urn:ShowAllOntologyResponse" message="ns:ShowAllOntologyResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="InferenceForCuttingTool">
+      <wsdl:input wsaw:Action="urn:InferenceForCuttingTool" message="ns:InferenceForCuttingToolRequest" />
+      <wsdl:output wsaw:Action="urn:InferenceForCuttingToolResponse" message="ns:InferenceForCuttingToolResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="CreateDomainKnowledgeDataBase">
+      <wsdl:input wsaw:Action="urn:CreateDomainKnowledgeDataBase" message="ns:CreateDomainKnowledgeDataBaseRequest" />
+      <wsdl:output wsaw:Action="urn:CreateDomainKnowledgeDataBaseResponse" message="ns:CreateDomainKnowledgeDataBaseResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowDataBaseTable">
+      <wsdl:input wsaw:Action="urn:ShowDataBaseTable" message="ns:ShowDataBaseTableRequest" />
+      <wsdl:output wsaw:Action="urn:ShowDataBaseTableResponse" message="ns:ShowDataBaseTableResponse" />
+    </wsdl:operation>
+    <wsdl:operation name="ShowDBTable">
+      <wsdl:input wsaw:Action="urn:ShowDBTable" message="ns:ShowDBTableRequest" />
+      <wsdl:output wsaw:Action="urn:ShowDBTableResponse" message="ns:ShowDBTableResponse" />
+    </wsdl:operation>
+  </wsdl:portType>
+  <wsdl:binding name="Receive_ModuleSoap11Binding" type="ns:Receive_ModulePortType">
+    <soap:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateDomainKnowledge">
+      <soap:operation soapAction="urn:CreateDomainKnowledge" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowAllOntology">
+      <soap:operation soapAction="urn:ShowAllOntology" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InferenceForCuttingTool">
+      <soap:operation soapAction="urn:InferenceForCuttingTool" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDomainKnowledgeDataBase">
+      <soap:operation soapAction="urn:CreateDomainKnowledgeDataBase" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowDataBaseTable">
+      <soap:operation soapAction="urn:ShowDataBaseTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowDBTable">
+      <soap:operation soapAction="urn:ShowDBTable" style="document" />
+      <wsdl:input>
+        <soap:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Receive_ModuleSoap12Binding" type="ns:Receive_ModulePortType">
+    <soap12:binding transport="http://schemas.xmlsoap.org/soap/http" />
+    <wsdl:operation name="CreateDomainKnowledge">
+      <soap12:operation soapAction="urn:CreateDomainKnowledge" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowAllOntology">
+      <soap12:operation soapAction="urn:ShowAllOntology" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InferenceForCuttingTool">
+      <soap12:operation soapAction="urn:InferenceForCuttingTool" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDomainKnowledgeDataBase">
+      <soap12:operation soapAction="urn:CreateDomainKnowledgeDataBase" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowDataBaseTable">
+      <soap12:operation soapAction="urn:ShowDataBaseTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowDBTable">
+      <soap12:operation soapAction="urn:ShowDBTable" style="document" />
+      <wsdl:input>
+        <soap12:body use="literal" />
+      </wsdl:input>
+      <wsdl:output>
+        <soap12:body use="literal" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:binding name="Receive_ModuleHttpBinding" type="ns:Receive_ModulePortType">
+    <http:binding verb="POST" />
+    <wsdl:operation name="CreateDomainKnowledge">
+      <http:operation location="Receive_Module/CreateDomainKnowledge" />
+      <wsdl:input>
+        <mime:content part="CreateDomainKnowledge" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="CreateDomainKnowledge" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowAllOntology">
+      <http:operation location="Receive_Module/ShowAllOntology" />
+      <wsdl:input>
+        <mime:content part="ShowAllOntology" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="ShowAllOntology" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="InferenceForCuttingTool">
+      <http:operation location="Receive_Module/InferenceForCuttingTool" />
+      <wsdl:input>
+        <mime:content part="InferenceForCuttingTool" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="InferenceForCuttingTool" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="CreateDomainKnowledgeDataBase">
+      <http:operation location="Receive_Module/CreateDomainKnowledgeDataBase" />
+      <wsdl:input>
+        <mime:content part="CreateDomainKnowledgeDataBase" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="CreateDomainKnowledgeDataBase" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowDataBaseTable">
+      <http:operation location="Receive_Module/ShowDataBaseTable" />
+      <wsdl:input>
+        <mime:content part="ShowDataBaseTable" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="ShowDataBaseTable" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+    <wsdl:operation name="ShowDBTable">
+      <http:operation location="Receive_Module/ShowDBTable" />
+      <wsdl:input>
+        <mime:content part="ShowDBTable" type="text/xml" />
+      </wsdl:input>
+      <wsdl:output>
+        <mime:content part="ShowDBTable" type="text/xml" />
+      </wsdl:output>
+    </wsdl:operation>
+  </wsdl:binding>
+  <wsdl:service name="Receive_Module">
+    <wsdl:port name="Receive_ModuleHttpSoap11Endpoint" binding="ns:Receive_ModuleSoap11Binding">
+      <soap:address location="http://192.168.0.83:8080/AMCOntologyForCuttingTool/services/Receive_Module.Receive_ModuleHttpSoap11Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="Receive_ModuleHttpSoap12Endpoint" binding="ns:Receive_ModuleSoap12Binding">
+      <soap12:address location="http://192.168.0.83:8080/AMCOntologyForCuttingTool/services/Receive_Module.Receive_ModuleHttpSoap12Endpoint/" />
+    </wsdl:port>
+    <wsdl:port name="Receive_ModuleHttpEndpoint" binding="ns:Receive_ModuleHttpBinding">
+      <http:address location="http://192.168.0.83:8080/AMCOntologyForCuttingTool/services/Receive_Module.Receive_ModuleHttpEndpoint/" />
+    </wsdl:port>
+  </wsdl:service>
+</wsdl:definitions>

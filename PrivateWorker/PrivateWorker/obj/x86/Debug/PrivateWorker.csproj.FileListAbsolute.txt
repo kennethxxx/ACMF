@@ -1,0 +1,14 @@
+c:\users\hello\documents\visual studio 2010\Projects\PrivateWorker\PrivateWorker\obj\x86\Debug\PrivateWorker.csprojResolveAssemblyReference.cache
+c:\users\hello\documents\visual studio 2010\Projects\PrivateWorker\PrivateWorker\bin\Debug\PrivateWorker.exe.config
+c:\users\hello\documents\visual studio 2010\Projects\PrivateWorker\PrivateWorker\bin\Debug\PrivateWorker.exe
+c:\users\hello\documents\visual studio 2010\Projects\PrivateWorker\PrivateWorker\bin\Debug\PrivateWorker.pdb
+c:\users\hello\documents\visual studio 2010\Projects\PrivateWorker\PrivateWorker\bin\Debug\MySql.Data.Entity.EF6.dll
+c:\users\hello\documents\visual studio 2010\Projects\PrivateWorker\PrivateWorker\obj\x86\Debug\PrivateWorker.exe
+c:\users\hello\documents\visual studio 2010\Projects\PrivateWorker\PrivateWorker\obj\x86\Debug\PrivateWorker.pdb
+D:\PrivateWorker\PrivateWorker\bin\Debug\PrivateWorker.exe.config
+D:\PrivateWorker\PrivateWorker\obj\x86\Debug\PrivateWorker.exe
+D:\PrivateWorker\PrivateWorker\obj\x86\Debug\PrivateWorker.pdb
+D:\PrivateWorker\PrivateWorker\bin\Debug\PrivateWorker.exe
+D:\PrivateWorker\PrivateWorker\bin\Debug\PrivateWorker.pdb
+D:\PrivateWorker\PrivateWorker\bin\Debug\MySql.Data.Entity.EF6.dll
+D:\PrivateWorker\PrivateWorker\obj\x86\Debug\PrivateWorker.csprojResolveAssemblyReference.cache

@@ -1,0 +1,778 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<DirectedGraph xmlns="http://schemas.microsoft.com/vs/2009/dgml">
+  <Nodes>
+    <Node Id="(@1 @11 @55 @112)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="VMTServicePortTypeClient" />
+    <Node Id="(@1 @11 @55 @113)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="VMTServicePortTypeClient" />
+    <Node Id="(@1 @11 @55 @116)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="VMTServicePortTypeClient" />
+    <Node Id="(@1 @11 @55 @128)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="VMTServicePortTypeClient" />
+    <Node Id="(@1 @11 @55 @86)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="VMTServicePortTypeClient" />
+    <Node Id="(@1 @11 Type=VMTServiceForCuttingToolRequest @86)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="VMTServiceForCuttingToolRequest" />
+    <Node Id="(@1 @11 Type=VMTServiceForCuttingToolResponse @128)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="VMTServiceForCuttingToolResponse" />
+    <Node Id="(@1 @11 Type=VMTServiceForCuttingToolResponse @86)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="VMTServiceForCuttingToolResponse" />
+    <Node Id="(@1 @3 Type=MainProgram @128)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="MainProgram" />
+    <Node Id="(@1 @5 @35 @112)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="Service1Client" />
+    <Node Id="(@1 @5 @35 @113)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="Service1Client" />
+    <Node Id="(@1 @5 @35 @116)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="Service1Client" />
+    <Node Id="(@1 @5 @35 @128)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="Service1Client" />
+    <Node Id="(@1 @5 @35 @86)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="Service1Client" />
+    <Node Id="(@1 @5 @47 Member=(Name=add_PropertyChanged OverloadingParameters=[(@76 Namespace=System.ComponentModel Type=PropertyChangedEventHandler)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="add_PropertyChanged" />
+    <Node Id="(@1 @5 @47 Member=(Name=remove_PropertyChanged OverloadingParameters=[(@76 Namespace=System.ComponentModel Type=PropertyChangedEventHandler)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="remove_PropertyChanged" />
+    <Node Id="(@1 @5 @47 Member=(Name=set_ExtensionData OverloadingParameters=[(@69 Namespace=System.Runtime.Serialization Type=ExtensionDataObject)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_ExtensionData" />
+    <Node Id="(@1 @5 @47 Member=get_ExtensionData)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_ExtensionData" />
+    <Node Id="(@1 @5 @47 Member=get_File)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_File" />
+    <Node Id="(@1 @5 @47 Member=get_FileName)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_FileName" />
+    <Node Id="(@1 @5 @49 @128)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="UploadFileInfo" />
+    <Node Id="(@1 @5 @49 Member=(Name=add_PropertyChanged OverloadingParameters=[(@76 Namespace=System.ComponentModel Type=PropertyChangedEventHandler)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="add_PropertyChanged" />
+    <Node Id="(@1 @5 @49 Member=(Name=remove_PropertyChanged OverloadingParameters=[(@76 Namespace=System.ComponentModel Type=PropertyChangedEventHandler)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="remove_PropertyChanged" />
+    <Node Id="(@1 @5 @49 Member=(Name=set_ExtensionData OverloadingParameters=[(@69 Namespace=System.Runtime.Serialization Type=ExtensionDataObject)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_ExtensionData" />
+    <Node Id="(@1 @5 @49 Member=get_ExtensionData)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_ExtensionData" />
+    <Node Id="(@1 @5 @49 Member=get_FileStoreUrl)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_FileStoreUrl" />
+    <Node Id="(@1 @5 @49 Member=get_Name)" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_Name" />
+    <Node Id="(@1 @5 Type=FileUploadMessage Member=(@83 OverloadingParameters=[@84,(@59 Namespace=System.IO Type=Stream)]))" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="FileUploadMessage" />
+    <Node Id="(@1 @7 @33 @112)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="Receive_ModulePortTypeClient" />
+    <Node Id="(@1 @7 @33 @113)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="Receive_ModulePortTypeClient" />
+    <Node Id="(@1 @7 @33 @116)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="Receive_ModulePortTypeClient" />
+    <Node Id="(@1 @7 @33 @128)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="Receive_ModulePortTypeClient" />
+    <Node Id="(@1 @7 @33 @86)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="Receive_ModulePortTypeClient" />
+    <Node Id="(@1 @7 Type=CreateDomainKnowledgeDataBaseRequest @86)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="CreateDomainKnowledgeDataBaseRequest" />
+    <Node Id="(@1 @7 Type=CreateDomainKnowledgeDataBaseResponse @128)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="CreateDomainKnowledgeDataBaseResponse" />
+    <Node Id="(@1 @7 Type=CreateDomainKnowledgeDataBaseResponse @86)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="CreateDomainKnowledgeDataBaseResponse" />
+    <Node Id="(@1 @7 Type=CreateDomainKnowledgeRequest @116)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="CreateDomainKnowledgeRequest" />
+    <Node Id="(@1 @7 Type=CreateDomainKnowledgeResponse @128)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="CreateDomainKnowledgeResponse" />
+    <Node Id="(@1 @7 Type=CreateDomainKnowledgeResponse @86)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="CreateDomainKnowledgeResponse" />
+    <Node Id="(@1 @7 Type=InferenceForCuttingToolRequest @116)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="InferenceForCuttingToolRequest" />
+    <Node Id="(@1 @7 Type=InferenceForCuttingToolResponse @128)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="InferenceForCuttingToolResponse" />
+    <Node Id="(@1 @7 Type=InferenceForCuttingToolResponse @86)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="InferenceForCuttingToolResponse" />
+    <Node Id="(@1 @7 Type=ShowAllOntologyResponse @128)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="ShowAllOntologyResponse" />
+    <Node Id="(@1 @7 Type=ShowAllOntologyResponse @86)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="ShowAllOntologyResponse" />
+    <Node Id="(@1 @7 Type=ShowDBTableRequest @116)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="ShowDBTableRequest" />
+    <Node Id="(@1 @7 Type=ShowDBTableResponse @128)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="ShowDBTableResponse" />
+    <Node Id="(@1 @7 Type=ShowDBTableResponse @86)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="ShowDBTableResponse" />
+    <Node Id="(@1 @7 Type=ShowDataBaseTableRequest @86)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="ShowDataBaseTableRequest" />
+    <Node Id="(@1 @7 Type=ShowDataBaseTableResponse @128)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="ShowDataBaseTableResponse" />
+    <Node Id="(@1 @7 Type=ShowDataBaseTableResponse @86)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="ShowDataBaseTableResponse" />
+    <Node Id="(@1 @9 @19 @112)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="DataTimePortTypeClient" />
+    <Node Id="(@1 @9 @19 @113)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="DataTimePortTypeClient" />
+    <Node Id="(@1 @9 @19 @116)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="DataTimePortTypeClient" />
+    <Node Id="(@1 @9 @19 @128)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="DataTimePortTypeClient" />
+    <Node Id="(@1 @9 @19 @86)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="DataTimePortTypeClient" />
+    <Node Id="(@1 @9 Type=DateTimeDisplayResponse @128)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="DateTimeDisplayResponse" />
+    <Node Id="(@1 @9 Type=DateTimeDisplayResponse @86)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="DateTimeDisplayResponse" />
+    <Node Id="(@1 @9 Type=TimeDisplayResponse @128)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="TimeDisplayResponse" />
+    <Node Id="(@1 @9 Type=TimeDisplayResponse @86)" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="TimeDisplayResponse" />
+    <Node Id="@10" Category="CodeSchema_Namespace" Group="Collapsed" Label="PrivateWorker.TimeService" />
+    <Node Id="@100" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_WorkerRoleID" />
+    <Node Id="@101" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="ShowDataBaseTable" />
+    <Node Id="@102" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="VMTServcie" />
+    <Node Id="@103" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="VMTServiceForCuttingTool" />
+    <Node Id="@104" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="RegistrationServiceTable" />
+    <Node Id="@105" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="PrivateWorker.TimeService.DataTimePortType.TimeDisplay" />
+    <Node Id="@106" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="TimeDisplay" />
+    <Node Id="@107" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="GetFileData" />
+    <Node Id="@108" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="GetFileData" />
+    <Node Id="@109" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="PrivateWorker.VMTServiceForCuttingTool.VMTServicePortType.VMTServiceForCuttingTool" />
+    <Node Id="@110" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="VMTServiceForCuttingTool" />
+    <Node Id="@114" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="SaveFile" />
+    <Node Id="@117" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="CreateDomainKnowledge" />
+    <Node Id="@118" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="InferenceForCuttingTool" />
+    <Node Id="@119" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="OntologyServiceFunction" />
+    <Node Id="@12" Category="CodeSchema_Namespace" Group="Collapsed" Label="PrivateWorker.VMTServiceForCuttingTool" />
+    <Node Id="@120" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="ShowDBTable" />
+    <Node Id="@121" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="SaveFile2" />
+    <Node Id="@122" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="SaveFile2" />
+    <Node Id="@123" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="UploadFile1" />
+    <Node Id="@124" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="ActionUpload" />
+    <Node Id="@125" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="ActionUpload" />
+    <Node Id="@126" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="DoUpload" />
+    <Node Id="@127" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="DoUpload" />
+    <Node Id="@129" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="CreateDomainKnowledgeDataBaseRequest" />
+    <Node Id="@13" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="CreateDomainKnowledgeDataBaseRequest" />
+    <Node Id="@130" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="CreateDomainKnowledgeRequest" />
+    <Node Id="@131" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="DateTimeDisplayRequest" />
+    <Node Id="@132" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="FileUploadMessage" />
+    <Node Id="@133" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="InferenceForCuttingToolRequest" />
+    <Node Id="@134" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="ShowAllOntologyRequest" />
+    <Node Id="@135" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="ShowDataBaseTableRequest" />
+    <Node Id="@136" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="ShowDBTableRequest" />
+    <Node Id="@137" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="TableDataClass" />
+    <Node Id="@138" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="TimeDisplayRequest" />
+    <Node Id="@139" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="UploadFile" />
+    <Node Id="@14" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="CreateDomainKnowledgeDataBaseResponse" />
+    <Node Id="@140" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="VMTServiceForCuttingToolRequest" />
+    <Node Id="@141" Category="CodeSchema_Method" CodeSchemaProperty_IsConstructor="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="WorkerRole" />
+    <Node Id="@142" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="CallLoadOntologyDB" />
+    <Node Id="@143" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="DateTimeDisplay" />
+    <Node Id="@144" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_CurrentJob" />
+    <Node Id="@145" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_FunctionCodeIndicator" />
+    <Node Id="@146" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_FunctionData" />
+    <Node Id="@147" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_LastJob" />
+    <Node Id="@148" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_UserID" />
+    <Node Id="@149" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="get_WorkerRoleID" />
+    <Node Id="@15" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="CreateDomainKnowledgeRequest" />
+    <Node Id="@150" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="GetTime" />
+    <Node Id="@151" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="MultiplayerArchitecture" />
+    <Node Id="@152" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="ShowAllOntology" />
+    <Node Id="@153" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="TimeDisplay" />
+    <Node Id="@16" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="CreateDomainKnowledgeResponse" />
+    <Node Id="@17" Category="CodeSchema_Interface" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="DataTimePortType" />
+    <Node Id="@18" Category="CodeSchema_Interface" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="DataTimePortTypeChannel" />
+    <Node Id="@2" Category="FileSystem.Category.FileOfType.exe" CodeSchemaProperty_StrongName="PrivateWorker, Version=0.0.0.0, Culture=neutral, PublicKeyToken=null" FilePath="$(972f7789-ca8b-4cf8-9203-b4bff35fb422.OutputPath)" Group="Expanded" Label="PrivateWorker.exe">
+      <Category Ref="CodeSchema_Assembly" />
+    </Node>
+    <Node Id="@20" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="DataTimePortTypeClient" />
+    <Node Id="@21" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="DateTimeDisplayRequest" />
+    <Node Id="@22" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="DateTimeDisplayResponse" />
+    <Node Id="@23" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="FileUploadMessage" />
+    <Node Id="@24" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="InferenceForCuttingToolRequest" />
+    <Node Id="@25" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="InferenceForCuttingToolResponse" />
+    <Node Id="@27" Category="CodeSchema_Interface" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="IService1" />
+    <Node Id="@28" Category="CodeSchema_Interface" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="IService1Channel" />
+    <Node Id="@29" Category="CodeSchema_Class" CodeSchemaProperty_IsPrivate="True" Group="Collapsed" Label="MainProgram" />
+    <Node Id="@31" Category="CodeSchema_Interface" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="Receive_ModulePortType" />
+    <Node Id="@32" Category="CodeSchema_Interface" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="Receive_ModulePortTypeChannel" />
+    <Node Id="@34" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="Receive_ModulePortTypeClient" />
+    <Node Id="@36" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="Service1Client" />
+    <Node Id="@37" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="ShowAllOntologyRequest" />
+    <Node Id="@38" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="ShowAllOntologyResponse" />
+    <Node Id="@39" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="ShowDataBaseTableRequest" />
+    <Node Id="@4" Category="CodeSchema_Namespace" Group="Expanded" Label="PrivateWorker" />
+    <Node Id="@40" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="ShowDataBaseTableResponse" />
+    <Node Id="@41" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="ShowDBTableRequest" />
+    <Node Id="@42" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="ShowDBTableResponse" />
+    <Node Id="@44" Category="CodeSchema_Class" CodeSchemaProperty_IsPrivate="True" Group="Collapsed" Label="TableDataClass" />
+    <Node Id="@45" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="TimeDisplayRequest" />
+    <Node Id="@46" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="TimeDisplayResponse" />
+    <Node Id="@48" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="UploadFile" />
+    <Node Id="@50" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="UploadFileInfo" />
+    <Node Id="@51" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="VMTServiceForCuttingToolRequest" />
+    <Node Id="@52" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="VMTServiceForCuttingToolResponse" />
+    <Node Id="@53" Category="CodeSchema_Interface" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="VMTServicePortType" />
+    <Node Id="@54" Category="CodeSchema_Interface" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="VMTServicePortTypeChannel" />
+    <Node Id="@56" Category="CodeSchema_Class" CodeSchemaProperty_IsGeneratedCode="True" CodeSchemaProperty_IsPublic="True" Group="Collapsed" Label="VMTServicePortTypeClient" />
+    <Node Id="@58" Category="CodeSchema_Class" CodeSchemaProperty_IsPublic="True" Group="Expanded" Label="WorkerRole" />
+    <Node Id="@6" Category="CodeSchema_Namespace" Group="Collapsed" Label="PrivateWorker.FileUploadService" />
+    <Node Id="@61" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_File" />
+    <Node Id="@62" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="Main" />
+    <Node Id="@63" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="CreateDomainKnowledgeDataBase" />
+    <Node Id="@64" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="PrivateWorker.OntologyService.Receive_ModulePortType.CreateDomainKnowledgeDataBase" />
+    <Node Id="@65" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="CreateDomainKnowledge" />
+    <Node Id="@66" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="PrivateWorker.OntologyService.Receive_ModulePortType.CreateDomainKnowledge" />
+    <Node Id="@67" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="DateTimeDisplay" />
+    <Node Id="@68" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="PrivateWorker.TimeService.DataTimePortType.DateTimeDisplay" />
+    <Node Id="@70" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="PrivateWorker.FileUploadService.IService1.SaveFile" />
+    <Node Id="@71" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="SaveFile" />
+    <Node Id="@72" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="InferenceForCuttingTool" />
+    <Node Id="@73" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="PrivateWorker.OntologyService.Receive_ModulePortType.InferenceForCuttingTool" />
+    <Node Id="@74" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="GetData" />
+    <Node Id="@75" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="GetData" />
+    <Node Id="@77" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="PrivateWorker.OntologyService.Receive_ModulePortType.ShowAllOntology" />
+    <Node Id="@78" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="ShowAllOntology" />
+    <Node Id="@79" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="PrivateWorker.OntologyService.Receive_ModulePortType.ShowDataBaseTable" />
+    <Node Id="@8" Category="CodeSchema_Namespace" Group="Collapsed" Label="PrivateWorker.OntologyService" />
+    <Node Id="@80" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="ShowDataBaseTable" />
+    <Node Id="@81" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="PrivateWorker.OntologyService.Receive_ModulePortType.ShowDBTable" />
+    <Node Id="@82" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="ShowDBTable" />
+    <Node Id="@87" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="CallOntologyRuleDataBase" />
+    <Node Id="@88" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" Label="CreateDomainKnowledgeDataBase" />
+    <Node Id="@89" Category="CodeSchema_Method" CodeSchemaProperty_IsPrivate="True" Label="InferenceForCuttingTool" />
+    <Node Id="@90" Category="CodeSchema_Method" CodeSchemaProperty_IsProtected="True" Label="RaisePropertyChanged" />
+    <Node Id="@91" Category="CodeSchema_Method" CodeSchemaProperty_IsProtected="True" Label="RaisePropertyChanged" />
+    <Node Id="@92" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_CurrentJob" />
+    <Node Id="@93" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_FileName" />
+    <Node Id="@94" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_FileStoreUrl" />
+    <Node Id="@95" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_FunctionCodeIndicator" />
+    <Node Id="@96" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_FunctionData" />
+    <Node Id="@97" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_LastJob" />
+    <Node Id="@98" Category="CodeSchema_Method" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_Name" />
+    <Node Id="@99" Category="CodeSchema_Method" CodeSchemaProperty_IsCompilerGenerated="True" CodeSchemaProperty_IsPublic="True" CodeSchemaProperty_IsSpecialName="True" Label="set_UserID" />
+  </Nodes>
+  <Links>
+    <Link Source="@10" Target="@17" Category="Contains" />
+    <Link Source="@10" Target="@18" Category="Contains" />
+    <Link Source="@10" Target="@20" Category="Contains" />
+    <Link Source="@10" Target="@21" Category="Contains" />
+    <Link Source="@10" Target="@22" Category="Contains" />
+    <Link Source="@10" Target="@45" Category="Contains" />
+    <Link Source="@10" Target="@46" Category="Contains" />
+    <Link Source="@101" Target="@135" Category="CodeSchema_Calls" />
+    <Link Source="@101" Target="@39" Category="References" />
+    <Link Source="@101" Target="@40" Category="References" />
+    <Link Source="@101" Target="@80" Category="CodeSchema_Calls" />
+    <Link Source="@102" Target="@110" Category="CodeSchema_Calls" />
+    <Link Source="@102" Target="@140" Category="CodeSchema_Calls" />
+    <Link Source="@102" Target="@51" Category="References" />
+    <Link Source="@102" Target="@52" Category="References" />
+    <Link Source="@102" Target="@54" Category="References" />
+    <Link Source="@103" Target="@110" Category="CodeSchema_Calls" />
+    <Link Source="@103" Target="@140" Category="CodeSchema_Calls" />
+    <Link Source="@103" Target="@51" Category="References" />
+    <Link Source="@103" Target="@52" Category="References" />
+    <Link Source="@105" Target="@106" Category="CodeSchema_Calls" />
+    <Link Source="@105" Target="@46" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@106" Target="@46" Category="CodeSchema_ReturnTypeLink" />
+    <Link Source="@108" Target="@107" Category="CodeSchema_Calls" />
+    <Link Source="@109" Target="@110" Category="CodeSchema_Calls" />
+    <Link Source="@109" Target="@52" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@110" Target="@52" Category="CodeSchema_ReturnTypeLink" />
+    <Link Source="@114" Target="@132" Category="CodeSchema_Calls" />
+    <Link Source="@114" Target="@23" Category="References" />
+    <Link Source="@114" Target="@71" Category="CodeSchema_Calls" />
+    <Link Source="@117" Target="@130" Category="CodeSchema_Calls" />
+    <Link Source="@117" Target="@15" Category="References" />
+    <Link Source="@117" Target="@16" Category="References" />
+    <Link Source="@117" Target="@65" Category="CodeSchema_Calls" />
+    <Link Source="@118" Target="@133" Category="CodeSchema_Calls" />
+    <Link Source="@118" Target="@24" Category="References" />
+    <Link Source="@118" Target="@25" Category="References" />
+    <Link Source="@118" Target="@72" Category="CodeSchema_Calls" />
+    <Link Source="@119" Target="@102" Category="CodeSchema_Calls" />
+    <Link Source="@119" Target="@142" Category="CodeSchema_Calls" />
+    <Link Source="@119" Target="@87" Category="CodeSchema_Calls" />
+    <Link Source="@119" Target="@89" Category="CodeSchema_Calls" />
+    <Link Source="@12" Target="@51" Category="Contains" />
+    <Link Source="@12" Target="@52" Category="Contains" />
+    <Link Source="@12" Target="@53" Category="Contains" />
+    <Link Source="@12" Target="@54" Category="Contains" />
+    <Link Source="@12" Target="@56" Category="Contains" />
+    <Link Source="@120" Target="@136" Category="CodeSchema_Calls" />
+    <Link Source="@120" Target="@41" Category="References" />
+    <Link Source="@120" Target="@42" Category="References" />
+    <Link Source="@120" Target="@82" Category="CodeSchema_Calls" />
+    <Link Source="@122" Target="@121" Category="CodeSchema_Calls" />
+    <Link Source="@123" Target="@121" Category="CodeSchema_Calls" />
+    <Link Source="@123" Target="@139" Category="CodeSchema_Calls" />
+    <Link Source="@123" Target="@28" Category="References" />
+    <Link Source="@123" Target="@48" Category="References" />
+    <Link Source="@123" Target="@61" Category="CodeSchema_Calls" />
+    <Link Source="@123" Target="@93" Category="CodeSchema_Calls" />
+    <Link Source="@125" Target="@124" Category="CodeSchema_Calls" />
+    <Link Source="@126" Target="@50" Category="CodeSchema_ReturnTypeLink" />
+    <Link Source="@127" Target="@126" Category="CodeSchema_Calls" />
+    <Link Source="@127" Target="@50" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@13" Target="(@1 @7 Type=CreateDomainKnowledgeDataBaseRequest @86)" Category="Contains" />
+    <Link Source="@13" Target="@129" Category="Contains" />
+    <Link Source="@14" Target="(@1 @7 Type=CreateDomainKnowledgeDataBaseResponse @128)" Category="Contains" />
+    <Link Source="@14" Target="(@1 @7 Type=CreateDomainKnowledgeDataBaseResponse @86)" Category="Contains" />
+    <Link Source="@142" Target="@134" Category="CodeSchema_Calls" />
+    <Link Source="@142" Target="@37" Category="References" />
+    <Link Source="@142" Target="@38" Category="References" />
+    <Link Source="@142" Target="@78" Category="CodeSchema_Calls" />
+    <Link Source="@143" Target="@131" Category="CodeSchema_Calls" />
+    <Link Source="@143" Target="@21" Category="References" />
+    <Link Source="@143" Target="@22" Category="References" />
+    <Link Source="@143" Target="@67" Category="CodeSchema_Calls" />
+    <Link Source="@15" Target="(@1 @7 Type=CreateDomainKnowledgeRequest @116)" Category="Contains" />
+    <Link Source="@15" Target="@130" Category="Contains" />
+    <Link Source="@150" Target="@106" Category="CodeSchema_Calls" />
+    <Link Source="@150" Target="@138" Category="CodeSchema_Calls" />
+    <Link Source="@150" Target="@18" Category="References" />
+    <Link Source="@150" Target="@45" Category="References" />
+    <Link Source="@150" Target="@46" Category="References" />
+    <Link Source="@151" Target="@100" Category="CodeSchema_Calls" />
+    <Link Source="@151" Target="@104" Category="CodeSchema_Calls" />
+    <Link Source="@151" Target="@119" Category="CodeSchema_Calls" />
+    <Link Source="@151" Target="@137" Category="CodeSchema_Calls" />
+    <Link Source="@151" Target="@144" Category="CodeSchema_Calls" />
+    <Link Source="@151" Target="@145" Category="CodeSchema_Calls" />
+    <Link Source="@151" Target="@146" Category="CodeSchema_Calls" />
+    <Link Source="@151" Target="@147" Category="CodeSchema_Calls" />
+    <Link Source="@151" Target="@148" Category="CodeSchema_Calls" />
+    <Link Source="@151" Target="@149" Category="CodeSchema_Calls" />
+    <Link Source="@151" Target="@44" Category="References" />
+    <Link Source="@151" Target="@92" Category="CodeSchema_Calls" />
+    <Link Source="@151" Target="@95" Category="CodeSchema_Calls" />
+    <Link Source="@151" Target="@96" Category="CodeSchema_Calls" />
+    <Link Source="@151" Target="@97" Category="CodeSchema_Calls" />
+    <Link Source="@151" Target="@99" Category="CodeSchema_Calls" />
+    <Link Source="@152" Target="@134" Category="CodeSchema_Calls" />
+    <Link Source="@152" Target="@37" Category="References" />
+    <Link Source="@152" Target="@38" Category="References" />
+    <Link Source="@152" Target="@78" Category="CodeSchema_Calls" />
+    <Link Source="@153" Target="@106" Category="CodeSchema_Calls" />
+    <Link Source="@153" Target="@138" Category="CodeSchema_Calls" />
+    <Link Source="@153" Target="@45" Category="References" />
+    <Link Source="@153" Target="@46" Category="References" />
+    <Link Source="@16" Target="(@1 @7 Type=CreateDomainKnowledgeResponse @128)" Category="Contains" />
+    <Link Source="@16" Target="(@1 @7 Type=CreateDomainKnowledgeResponse @86)" Category="Contains" />
+    <Link Source="@17" Target="@106" Category="Contains" />
+    <Link Source="@17" Target="@67" Category="Contains" />
+    <Link Source="@18" Target="@17" Category="Implements" />
+    <Link Source="@2" Target="@10" Category="Contains" />
+    <Link Source="@2" Target="@12" Category="Contains" />
+    <Link Source="@2" Target="@4" Category="Contains" />
+    <Link Source="@2" Target="@6" Category="Contains" />
+    <Link Source="@2" Target="@8" Category="Contains" />
+    <Link Source="@20" Target="(@1 @9 @19 @112)" Category="Contains" />
+    <Link Source="@20" Target="(@1 @9 @19 @113)" Category="Contains" />
+    <Link Source="@20" Target="(@1 @9 @19 @116)" Category="Contains" />
+    <Link Source="@20" Target="(@1 @9 @19 @128)" Category="Contains" />
+    <Link Source="@20" Target="(@1 @9 @19 @86)" Category="Contains" />
+    <Link Source="@20" Target="@105" Category="Contains" />
+    <Link Source="@20" Target="@143" Category="Contains" />
+    <Link Source="@20" Target="@153" Category="Contains" />
+    <Link Source="@20" Target="@17" Category="Implements">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@20" Target="@68" Category="Contains" />
+    <Link Source="@21" Target="@131" Category="Contains" />
+    <Link Source="@22" Target="(@1 @9 Type=DateTimeDisplayResponse @128)" Category="Contains" />
+    <Link Source="@22" Target="(@1 @9 Type=DateTimeDisplayResponse @86)" Category="Contains" />
+    <Link Source="@23" Target="(@1 @5 Type=FileUploadMessage Member=(@83 OverloadingParameters=[@84,(@59 Namespace=System.IO Type=Stream)]))" Category="Contains" />
+    <Link Source="@23" Target="@132" Category="Contains" />
+    <Link Source="@24" Target="(@1 @7 Type=InferenceForCuttingToolRequest @116)" Category="Contains" />
+    <Link Source="@24" Target="@133" Category="Contains" />
+    <Link Source="@25" Target="(@1 @7 Type=InferenceForCuttingToolResponse @128)" Category="Contains" />
+    <Link Source="@25" Target="(@1 @7 Type=InferenceForCuttingToolResponse @86)" Category="Contains" />
+    <Link Source="@27" Target="@107" Category="Contains" />
+    <Link Source="@27" Target="@121" Category="Contains" />
+    <Link Source="@27" Target="@124" Category="Contains" />
+    <Link Source="@27" Target="@126" Category="Contains" />
+    <Link Source="@27" Target="@71" Category="Contains" />
+    <Link Source="@27" Target="@74" Category="Contains" />
+    <Link Source="@28" Target="@27" Category="Implements" />
+    <Link Source="@29" Target="(@1 @3 Type=MainProgram @128)" Category="Contains" />
+    <Link Source="@29" Target="@62" Category="Contains" />
+    <Link Source="@31" Target="@63" Category="Contains" />
+    <Link Source="@31" Target="@65" Category="Contains" />
+    <Link Source="@31" Target="@72" Category="Contains" />
+    <Link Source="@31" Target="@78" Category="Contains" />
+    <Link Source="@31" Target="@80" Category="Contains" />
+    <Link Source="@31" Target="@82" Category="Contains" />
+    <Link Source="@32" Target="@31" Category="Implements" />
+    <Link Source="@34" Target="(@1 @7 @33 @112)" Category="Contains" />
+    <Link Source="@34" Target="(@1 @7 @33 @113)" Category="Contains" />
+    <Link Source="@34" Target="(@1 @7 @33 @116)" Category="Contains" />
+    <Link Source="@34" Target="(@1 @7 @33 @128)" Category="Contains" />
+    <Link Source="@34" Target="(@1 @7 @33 @86)" Category="Contains" />
+    <Link Source="@34" Target="@101" Category="Contains" />
+    <Link Source="@34" Target="@117" Category="Contains" />
+    <Link Source="@34" Target="@118" Category="Contains" />
+    <Link Source="@34" Target="@120" Category="Contains" />
+    <Link Source="@34" Target="@152" Category="Contains" />
+    <Link Source="@34" Target="@31" Category="Implements">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@34" Target="@64" Category="Contains" />
+    <Link Source="@34" Target="@66" Category="Contains" />
+    <Link Source="@34" Target="@73" Category="Contains" />
+    <Link Source="@34" Target="@77" Category="Contains" />
+    <Link Source="@34" Target="@79" Category="Contains" />
+    <Link Source="@34" Target="@81" Category="Contains" />
+    <Link Source="@34" Target="@88" Category="Contains" />
+    <Link Source="@36" Target="(@1 @5 @35 @112)" Category="Contains" />
+    <Link Source="@36" Target="(@1 @5 @35 @113)" Category="Contains" />
+    <Link Source="@36" Target="(@1 @5 @35 @116)" Category="Contains" />
+    <Link Source="@36" Target="(@1 @5 @35 @128)" Category="Contains" />
+    <Link Source="@36" Target="(@1 @5 @35 @86)" Category="Contains" />
+    <Link Source="@36" Target="@108" Category="Contains" />
+    <Link Source="@36" Target="@114" Category="Contains" />
+    <Link Source="@36" Target="@122" Category="Contains" />
+    <Link Source="@36" Target="@125" Category="Contains" />
+    <Link Source="@36" Target="@127" Category="Contains" />
+    <Link Source="@36" Target="@27" Category="Implements">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@36" Target="@70" Category="Contains" />
+    <Link Source="@36" Target="@75" Category="Contains" />
+    <Link Source="@37" Target="@134" Category="Contains" />
+    <Link Source="@38" Target="(@1 @7 Type=ShowAllOntologyResponse @128)" Category="Contains" />
+    <Link Source="@38" Target="(@1 @7 Type=ShowAllOntologyResponse @86)" Category="Contains" />
+    <Link Source="@39" Target="(@1 @7 Type=ShowDataBaseTableRequest @86)" Category="Contains" />
+    <Link Source="@39" Target="@135" Category="Contains" />
+    <Link Source="@4" Target="@29" Category="Contains" />
+    <Link Source="@4" Target="@44" Category="Contains" />
+    <Link Source="@4" Target="@58" Category="Contains" />
+    <Link Source="@40" Target="(@1 @7 Type=ShowDataBaseTableResponse @128)" Category="Contains" />
+    <Link Source="@40" Target="(@1 @7 Type=ShowDataBaseTableResponse @86)" Category="Contains" />
+    <Link Source="@41" Target="(@1 @7 Type=ShowDBTableRequest @116)" Category="Contains" />
+    <Link Source="@41" Target="@136" Category="Contains" />
+    <Link Source="@42" Target="(@1 @7 Type=ShowDBTableResponse @128)" Category="Contains" />
+    <Link Source="@42" Target="(@1 @7 Type=ShowDBTableResponse @86)" Category="Contains" />
+    <Link Source="@44" Target="@100" Category="Contains" />
+    <Link Source="@44" Target="@137" Category="Contains" />
+    <Link Source="@44" Target="@144" Category="Contains" />
+    <Link Source="@44" Target="@145" Category="Contains" />
+    <Link Source="@44" Target="@146" Category="Contains" />
+    <Link Source="@44" Target="@147" Category="Contains" />
+    <Link Source="@44" Target="@148" Category="Contains" />
+    <Link Source="@44" Target="@149" Category="Contains" />
+    <Link Source="@44" Target="@92" Category="Contains" />
+    <Link Source="@44" Target="@95" Category="Contains" />
+    <Link Source="@44" Target="@96" Category="Contains" />
+    <Link Source="@44" Target="@97" Category="Contains" />
+    <Link Source="@44" Target="@99" Category="Contains" />
+    <Link Source="@45" Target="@138" Category="Contains" />
+    <Link Source="@46" Target="(@1 @9 Type=TimeDisplayResponse @128)" Category="Contains" />
+    <Link Source="@46" Target="(@1 @9 Type=TimeDisplayResponse @86)" Category="Contains" />
+    <Link Source="@48" Target="(@1 @5 @47 Member=(Name=add_PropertyChanged OverloadingParameters=[(@76 Namespace=System.ComponentModel Type=PropertyChangedEventHandler)]))" Category="Contains" />
+    <Link Source="@48" Target="(@1 @5 @47 Member=(Name=remove_PropertyChanged OverloadingParameters=[(@76 Namespace=System.ComponentModel Type=PropertyChangedEventHandler)]))" Category="Contains" />
+    <Link Source="@48" Target="(@1 @5 @47 Member=(Name=set_ExtensionData OverloadingParameters=[(@69 Namespace=System.Runtime.Serialization Type=ExtensionDataObject)]))" Category="Contains" />
+    <Link Source="@48" Target="(@1 @5 @47 Member=get_ExtensionData)" Category="Contains" />
+    <Link Source="@48" Target="(@1 @5 @47 Member=get_File)" Category="Contains" />
+    <Link Source="@48" Target="(@1 @5 @47 Member=get_FileName)" Category="Contains" />
+    <Link Source="@48" Target="@139" Category="Contains" />
+    <Link Source="@48" Target="@61" Category="Contains" />
+    <Link Source="@48" Target="@90" Category="Contains" />
+    <Link Source="@48" Target="@93" Category="Contains" />
+    <Link Source="@50" Target="(@1 @5 @49 @128)" Category="Contains" />
+    <Link Source="@50" Target="(@1 @5 @49 Member=(Name=add_PropertyChanged OverloadingParameters=[(@76 Namespace=System.ComponentModel Type=PropertyChangedEventHandler)]))" Category="Contains" />
+    <Link Source="@50" Target="(@1 @5 @49 Member=(Name=remove_PropertyChanged OverloadingParameters=[(@76 Namespace=System.ComponentModel Type=PropertyChangedEventHandler)]))" Category="Contains" />
+    <Link Source="@50" Target="(@1 @5 @49 Member=(Name=set_ExtensionData OverloadingParameters=[(@69 Namespace=System.Runtime.Serialization Type=ExtensionDataObject)]))" Category="Contains" />
+    <Link Source="@50" Target="(@1 @5 @49 Member=get_ExtensionData)" Category="Contains" />
+    <Link Source="@50" Target="(@1 @5 @49 Member=get_FileStoreUrl)" Category="Contains" />
+    <Link Source="@50" Target="(@1 @5 @49 Member=get_Name)" Category="Contains" />
+    <Link Source="@50" Target="@91" Category="Contains" />
+    <Link Source="@50" Target="@94" Category="Contains" />
+    <Link Source="@50" Target="@98" Category="Contains" />
+    <Link Source="@51" Target="(@1 @11 Type=VMTServiceForCuttingToolRequest @86)" Category="Contains" />
+    <Link Source="@51" Target="@140" Category="Contains" />
+    <Link Source="@52" Target="(@1 @11 Type=VMTServiceForCuttingToolResponse @128)" Category="Contains" />
+    <Link Source="@52" Target="(@1 @11 Type=VMTServiceForCuttingToolResponse @86)" Category="Contains" />
+    <Link Source="@53" Target="@110" Category="Contains" />
+    <Link Source="@54" Target="@53" Category="Implements" />
+    <Link Source="@56" Target="(@1 @11 @55 @112)" Category="Contains" />
+    <Link Source="@56" Target="(@1 @11 @55 @113)" Category="Contains" />
+    <Link Source="@56" Target="(@1 @11 @55 @116)" Category="Contains" />
+    <Link Source="@56" Target="(@1 @11 @55 @128)" Category="Contains" />
+    <Link Source="@56" Target="(@1 @11 @55 @86)" Category="Contains" />
+    <Link Source="@56" Target="@103" Category="Contains" />
+    <Link Source="@56" Target="@109" Category="Contains" />
+    <Link Source="@56" Target="@53" Category="Implements">
+      <Category Ref="CodeSchema_Calls" />
+    </Link>
+    <Link Source="@58" Target="@102" Category="Contains" />
+    <Link Source="@58" Target="@104" Category="Contains" />
+    <Link Source="@58" Target="@119" Category="Contains" />
+    <Link Source="@58" Target="@123" Category="Contains" />
+    <Link Source="@58" Target="@141" Category="Contains" />
+    <Link Source="@58" Target="@142" Category="Contains" />
+    <Link Source="@58" Target="@150" Category="Contains" />
+    <Link Source="@58" Target="@151" Category="Contains" />
+    <Link Source="@58" Target="@32" Category="References" />
+    <Link Source="@58" Target="@87" Category="Contains" />
+    <Link Source="@58" Target="@89" Category="Contains" />
+    <Link Source="@6" Target="@23" Category="Contains" />
+    <Link Source="@6" Target="@27" Category="Contains" />
+    <Link Source="@6" Target="@28" Category="Contains" />
+    <Link Source="@6" Target="@36" Category="Contains" />
+    <Link Source="@6" Target="@48" Category="Contains" />
+    <Link Source="@6" Target="@50" Category="Contains" />
+    <Link Source="@61" Target="@90" Category="CodeSchema_Calls" />
+    <Link Source="@62" Target="@141" Category="CodeSchema_Calls" />
+    <Link Source="@62" Target="@151" Category="CodeSchema_Calls" />
+    <Link Source="@62" Target="@58" Category="References" />
+    <Link Source="@63" Target="@14" Category="CodeSchema_ReturnTypeLink" />
+    <Link Source="@64" Target="@14" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@64" Target="@63" Category="CodeSchema_Calls" />
+    <Link Source="@65" Target="@16" Category="CodeSchema_ReturnTypeLink" />
+    <Link Source="@66" Target="@16" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@66" Target="@65" Category="CodeSchema_Calls" />
+    <Link Source="@67" Target="@22" Category="CodeSchema_ReturnTypeLink" />
+    <Link Source="@68" Target="@22" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@68" Target="@67" Category="CodeSchema_Calls" />
+    <Link Source="@70" Target="@23" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@70" Target="@71" Category="CodeSchema_Calls" />
+    <Link Source="@71" Target="@23" Category="CodeSchema_ReturnTypeLink" />
+    <Link Source="@72" Target="@25" Category="CodeSchema_ReturnTypeLink" />
+    <Link Source="@73" Target="@25" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@73" Target="@72" Category="CodeSchema_Calls" />
+    <Link Source="@75" Target="@74" Category="CodeSchema_Calls" />
+    <Link Source="@77" Target="@38" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@77" Target="@78" Category="CodeSchema_Calls" />
+    <Link Source="@78" Target="@38" Category="CodeSchema_ReturnTypeLink" />
+    <Link Source="@79" Target="@40" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@79" Target="@80" Category="CodeSchema_Calls" />
+    <Link Source="@8" Target="@13" Category="Contains" />
+    <Link Source="@8" Target="@14" Category="Contains" />
+    <Link Source="@8" Target="@15" Category="Contains" />
+    <Link Source="@8" Target="@16" Category="Contains" />
+    <Link Source="@8" Target="@24" Category="Contains" />
+    <Link Source="@8" Target="@25" Category="Contains" />
+    <Link Source="@8" Target="@31" Category="Contains" />
+    <Link Source="@8" Target="@32" Category="Contains" />
+    <Link Source="@8" Target="@34" Category="Contains" />
+    <Link Source="@8" Target="@37" Category="Contains" />
+    <Link Source="@8" Target="@38" Category="Contains" />
+    <Link Source="@8" Target="@39" Category="Contains" />
+    <Link Source="@8" Target="@40" Category="Contains" />
+    <Link Source="@8" Target="@41" Category="Contains" />
+    <Link Source="@8" Target="@42" Category="Contains" />
+    <Link Source="@80" Target="@40" Category="CodeSchema_ReturnTypeLink" />
+    <Link Source="@81" Target="@42" Category="References">
+      <Category Ref="CodeSchema_ReturnTypeLink" />
+    </Link>
+    <Link Source="@81" Target="@82" Category="CodeSchema_Calls" />
+    <Link Source="@82" Target="@42" Category="CodeSchema_ReturnTypeLink" />
+    <Link Source="@87" Target="@135" Category="CodeSchema_Calls" />
+    <Link Source="@87" Target="@39" Category="References" />
+    <Link Source="@87" Target="@40" Category="References" />
+    <Link Source="@87" Target="@80" Category="CodeSchema_Calls" />
+    <Link Source="@88" Target="@129" Category="CodeSchema_Calls" />
+    <Link Source="@88" Target="@13" Category="References" />
+    <Link Source="@88" Target="@14" Category="References" />
+    <Link Source="@88" Target="@63" Category="CodeSchema_Calls" />
+    <Link Source="@89" Target="@133" Category="CodeSchema_Calls" />
+    <Link Source="@89" Target="@24" Category="References" />
+    <Link Source="@89" Target="@25" Category="References" />
+    <Link Source="@89" Target="@72" Category="CodeSchema_Calls" />
+    <Link Source="@93" Target="@90" Category="CodeSchema_Calls" />
+    <Link Source="@94" Target="@91" Category="CodeSchema_Calls" />
+    <Link Source="@98" Target="@91" Category="CodeSchema_Calls" />
+  </Links>
+  <Categories>
+    <Category Id="CodeSchema_Assembly" Label="組件" BasedOn="File" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Assembly" IsProviderRoot="False" NavigationActionLabel="組件" />
+    <Category Id="CodeSchema_Block" Label="區塊" BasedOn="CodeSchema_Statement" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" IsProviderRoot="False" NavigationActionLabel="區塊" />
+    <Category Id="CodeSchema_Calls" Label="呼叫" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="由下列呼叫" OutgoingActionLabel="呼叫" />
+    <Category Id="CodeSchema_Class" Label="類別" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" IsProviderRoot="False" NavigationActionLabel="類別" />
+    <Category Id="CodeSchema_Interface" Label="介面" BasedOn="CodeSchema_Type" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Interface" IsProviderRoot="False" NavigationActionLabel="介面" />
+    <Category Id="CodeSchema_Member" Label="成員" BasedOn="CodeSchema_Block" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="CodeSchema_Field" IsProviderRoot="False" NavigationActionLabel="成員" />
+    <Category Id="CodeSchema_Method" Label="方法" BasedOn="CodeSchema_Member" CanBeDataDriven="True" DefaultAction="Link:Forward:CodeSchema_Calls" Icon="CodeSchema_Method" IsProviderRoot="False" NavigationActionLabel="方法" />
+    <Category Id="CodeSchema_Namespace" Label="命名空間" BasedOn="CodeSchema_Block" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Type" Icon="CodeSchema_Namespace" IsProviderRoot="False" NavigationActionLabel="命名空間" />
+    <Category Id="CodeSchema_ReturnTypeLink" Label="傳回" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="傳回型別" OutgoingActionLabel="傳回型別" />
+    <Category Id="CodeSchema_Statement" Label="陳述式" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" IsProviderRoot="False" NavigationActionLabel="陳述式" />
+    <Category Id="CodeSchema_Type" Label="型別" BasedOn="CodeSchema_Block" CanBeDataDriven="True" DefaultAction="Node:Both:CodeSchema_Member" Icon="CodeSchema_Class" IsProviderRoot="False" NavigationActionLabel="型別" />
+    <Category Id="Contains" Label="包含" CanBeDataDriven="False" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="由下列包含" IsContainment="True" OutgoingActionLabel="包含" />
+    <Category Id="File" Label="檔案" CanBeDataDriven="True" DefaultAction="Microsoft.Contains" Icon="File" IsProviderRoot="False" NavigationActionLabel="檔案" />
+    <Category Id="FileSystem.Category.FileOfType.exe" Label="exe 檔案" BasedOn="CodeSchema_Assembly" CanBeDataDriven="True" IsProviderRoot="False" NavigationActionLabel="exe 檔案" />
+    <Category Id="Implements" Label="實作" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="由下列實作" OutgoingActionLabel="實作" />
+    <Category Id="References" Label="參考" CanBeDataDriven="True" CanLinkedNodesBeDataDriven="True" IncomingActionLabel="由下列參考" OutgoingActionLabel="參考" />
+  </Categories>
+  <Properties>
+    <Property Id="CanBeDataDriven" Label="CanBeDataDriven" Description="CanBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CanLinkedNodesBeDataDriven" Label="CanLinkedNodesBeDataDriven" Description="CanLinkedNodesBeDataDriven" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsCompilerGenerated" Label="IsCompilerGenerated" Description="IsCompilerGenerated" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsConstructor" Label="IsConstructor" Description="IsConstructor" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsGeneratedCode" Label="IsGeneratedCode" Description="IsGeneratedCode" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPrivate" Label="IsPrivate" Description="IsPrivate" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsProtected" Label="IsProtected" Description="IsProtected" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsPublic" Label="IsPublic" Description="IsPublic" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_IsSpecialName" Label="IsSpecialName" Description="IsSpecialName" DataType="System.Boolean" />
+    <Property Id="CodeSchemaProperty_StrongName" Label="StrongName" Description="StrongName" DataType="System.String" />
+    <Property Id="DefaultAction" Label="DefaultAction" Description="DefaultAction" DataType="System.String" />
+    <Property Id="FilePath" Label="檔案路徑" Description="檔案路徑" DataType="System.String" />
+    <Property Id="Group" Label="群組" Description="將節點顯示為群組" DataType="Microsoft.VisualStudio.Progression.GraphModel.GroupStyle" />
+    <Property Id="Icon" Label="圖示" Description="圖示" DataType="System.String" />
+    <Property Id="IncomingActionLabel" Label="IncomingActionLabel" Description="IncomingActionLabel" DataType="System.String" />
+    <Property Id="IsContainment" DataType="System.Boolean" />
+    <Property Id="IsProviderRoot" Label="IsProviderRoot" Description="IsProviderRoot" DataType="System.Boolean" />
+    <Property Id="Label" Label="標籤" Description="可註解物件的可顯示標籤" DataType="System.String" />
+    <Property Id="NavigationActionLabel" Label="NavigationActionLabel" Description="NavigationActionLabel" DataType="System.String" />
+    <Property Id="OutgoingActionLabel" Label="OutgoingActionLabel" Description="OutgoingActionLabel" DataType="System.String" />
+  </Properties>
+  <QualifiedNames>
+    <Name Id="ArrayRank" Label="陣列陣序" ValueType="System.String" />
+    <Name Id="Assembly" Label="組件" ValueType="Uri" />
+    <Name Id="Member" Label="成員" ValueType="System.Object" />
+    <Name Id="Name" Label="名稱" ValueType="System.String" />
+    <Name Id="Namespace" Label="命名空間" ValueType="System.String" />
+    <Name Id="OverloadingParameters" Label="參數" ValueType="Microsoft.VisualStudio.Progression.GraphModel.QualifiedIdentifierArrayCollection" Formatter="NameValueNoEscape" />
+    <Name Id="ParentType" Label="父型別" ValueType="System.Object" />
+    <Name Id="Type" Label="型別" ValueType="System.Object" />
+  </QualifiedNames>
+  <Styles>
+    <Style TargetType="Node" GroupLabel="組件" ValueLabel="有分類">
+      <Condition Expression="HasCategory('CodeSchema_Assembly')" />
+      <Setter Property="Background" Value="#1C3068" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="命名空間" ValueLabel="有分類">
+      <Condition Expression="HasCategory('CodeSchema_Namespace')" />
+      <Setter Property="Background" Value="#4A65A0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="型別" ValueLabel="有分類">
+      <Condition Expression="HasCategory('CodeSchema_Type')" />
+      <Setter Property="Background" Value="#D3DCEF" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="方法" ValueLabel="有分類">
+      <Condition Expression="HasCategory('CodeSchema_Method')" />
+      <Setter Property="Background" Value="#FFE0E0E0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="泛型" ValueLabel="有分類">
+      <Condition Expression="HasCategory('Generics')" />
+      <Setter Property="Background" Value="#FFA080A0" />
+    </Style>
+    <Style TargetType="Node" GroupLabel="外部" ValueLabel="有分類">
+      <Condition Expression="HasCategory('Externals')" />
+      <Setter Property="Background" Value="#FFA08080" />
+    </Style>
+  </Styles>
+  <IdentifierAliases>
+    <Alias n="1" Uri="Assembly=$(972f7789-ca8b-4cf8-9203-b4bff35fb422.OutputPathUri)" />
+    <Alias n="2" Id="(@1)" />
+    <Alias n="3" Id="Namespace=PrivateWorker" />
+    <Alias n="4" Id="(@1 @3)" />
+    <Alias n="5" Id="Namespace=PrivateWorker.FileUploadService" />
+    <Alias n="6" Id="(@1 @5)" />
+    <Alias n="7" Id="Namespace=PrivateWorker.OntologyService" />
+    <Alias n="8" Id="(@1 @7)" />
+    <Alias n="9" Id="Namespace=PrivateWorker.TimeService" />
+    <Alias n="10" Id="(@1 @9)" />
+    <Alias n="11" Id="Namespace=PrivateWorker.VMTServiceForCuttingTool" />
+    <Alias n="12" Id="(@1 @11)" />
+    <Alias n="13" Id="(@1 @7 Type=CreateDomainKnowledgeDataBaseRequest)" />
+    <Alias n="14" Id="(@1 @7 Type=CreateDomainKnowledgeDataBaseResponse)" />
+    <Alias n="15" Id="(@1 @7 Type=CreateDomainKnowledgeRequest)" />
+    <Alias n="16" Id="(@1 @7 Type=CreateDomainKnowledgeResponse)" />
+    <Alias n="17" Id="(@1 @9 Type=DataTimePortType)" />
+    <Alias n="18" Id="(@1 @9 Type=DataTimePortTypeChannel)" />
+    <Alias n="19" Id="Type=DataTimePortTypeClient" />
+    <Alias n="20" Id="(@1 @9 @19)" />
+    <Alias n="21" Id="(@1 @9 Type=DateTimeDisplayRequest)" />
+    <Alias n="22" Id="(@1 @9 Type=DateTimeDisplayResponse)" />
+    <Alias n="23" Id="(@1 @5 Type=FileUploadMessage)" />
+    <Alias n="24" Id="(@1 @7 Type=InferenceForCuttingToolRequest)" />
+    <Alias n="25" Id="(@1 @7 Type=InferenceForCuttingToolResponse)" />
+    <Alias n="26" Id="Type=IService1" />
+    <Alias n="27" Id="(@1 @5 @26)" />
+    <Alias n="28" Id="(@1 @5 Type=IService1Channel)" />
+    <Alias n="29" Id="(@1 @3 Type=MainProgram)" />
+    <Alias n="30" Id="Type=Receive_ModulePortType" />
+    <Alias n="31" Id="(@1 @7 @30)" />
+    <Alias n="32" Id="(@1 @7 Type=Receive_ModulePortTypeChannel)" />
+    <Alias n="33" Id="Type=Receive_ModulePortTypeClient" />
+    <Alias n="34" Id="(@1 @7 @33)" />
+    <Alias n="35" Id="Type=Service1Client" />
+    <Alias n="36" Id="(@1 @5 @35)" />
+    <Alias n="37" Id="(@1 @7 Type=ShowAllOntologyRequest)" />
+    <Alias n="38" Id="(@1 @7 Type=ShowAllOntologyResponse)" />
+    <Alias n="39" Id="(@1 @7 Type=ShowDataBaseTableRequest)" />
+    <Alias n="40" Id="(@1 @7 Type=ShowDataBaseTableResponse)" />
+    <Alias n="41" Id="(@1 @7 Type=ShowDBTableRequest)" />
+    <Alias n="42" Id="(@1 @7 Type=ShowDBTableResponse)" />
+    <Alias n="43" Id="Type=TableDataClass" />
+    <Alias n="44" Id="(@1 @3 @43)" />
+    <Alias n="45" Id="(@1 @9 Type=TimeDisplayRequest)" />
+    <Alias n="46" Id="(@1 @9 Type=TimeDisplayResponse)" />
+    <Alias n="47" Id="Type=UploadFile" />
+    <Alias n="48" Id="(@1 @5 @47)" />
+    <Alias n="49" Id="Type=UploadFileInfo" />
+    <Alias n="50" Id="(@1 @5 @49)" />
+    <Alias n="51" Id="(@1 @11 Type=VMTServiceForCuttingToolRequest)" />
+    <Alias n="52" Id="(@1 @11 Type=VMTServiceForCuttingToolResponse)" />
+    <Alias n="53" Id="(@1 @11 Type=VMTServicePortType)" />
+    <Alias n="54" Id="(@1 @11 Type=VMTServicePortTypeChannel)" />
+    <Alias n="55" Id="Type=VMTServicePortTypeClient" />
+    <Alias n="56" Id="(@1 @11 @55)" />
+    <Alias n="57" Id="Type=WorkerRole" />
+    <Alias n="58" Id="(@1 @3 @57)" />
+    <Alias n="59" Uri="Assembly=$(FxReferenceAssembliesUri)/.NETFramework/v4.0/Profile/Client/mscorlib.dll" />
+    <Alias n="60" Id="Namespace=System" />
+    <Alias n="61" Id="(@1 @5 @47 Member=(Name=set_File OverloadingParameters=[(@59 @60 Type=(Name=Byte ArrayRank=1 ParentType=Byte))]))" />
+    <Alias n="62" Id="(@1 @3 Type=MainProgram Member=(Name=Main OverloadingParameters=[(@59 @60 Type=(Name=String ArrayRank=1 ParentType=String))]))" />
+    <Alias n="63" Id="(@1 @7 @30 Member=(Name=CreateDomainKnowledgeDataBase OverloadingParameters=[@13]))" />
+    <Alias n="64" Id="(@1 @7 @33 Member=(Name=PrivateWorker.OntologyService.Receive_ModulePortType.CreateDomainKnowledgeDataBase OverloadingParameters=[@13]))" />
+    <Alias n="65" Id="(@1 @7 @30 Member=(Name=CreateDomainKnowledge OverloadingParameters=[@15]))" />
+    <Alias n="66" Id="(@1 @7 @33 Member=(Name=PrivateWorker.OntologyService.Receive_ModulePortType.CreateDomainKnowledge OverloadingParameters=[@15]))" />
+    <Alias n="67" Id="(@1 @9 Type=DataTimePortType Member=(Name=DateTimeDisplay OverloadingParameters=[@21]))" />
+    <Alias n="68" Id="(@1 @9 @19 Member=(Name=PrivateWorker.TimeService.DataTimePortType.DateTimeDisplay OverloadingParameters=[@21]))" />
+    <Alias n="69" Uri="Assembly=$(FxReferenceAssembliesUri)/.NETFramework/v4.0/Profile/Client/System.Runtime.Serialization.dll" />
+    <Alias n="70" Id="(@1 @5 @35 Member=(Name=PrivateWorker.FileUploadService.IService1.SaveFile OverloadingParameters=[@23]))" />
+    <Alias n="71" Id="(@1 @5 @26 Member=(Name=SaveFile OverloadingParameters=[@23]))" />
+    <Alias n="72" Id="(@1 @7 @30 Member=(Name=InferenceForCuttingTool OverloadingParameters=[@24]))" />
+    <Alias n="73" Id="(@1 @7 @33 Member=(Name=PrivateWorker.OntologyService.Receive_ModulePortType.InferenceForCuttingTool OverloadingParameters=[@24]))" />
+    <Alias n="74" Id="(@1 @5 @26 Member=(Name=GetData OverloadingParameters=[(@59 @60 Type=Int32)]))" />
+    <Alias n="75" Id="(@1 @5 @35 Member=(Name=GetData OverloadingParameters=[(@59 @60 Type=Int32)]))" />
+    <Alias n="76" Uri="Assembly=$(FxReferenceAssembliesUri)/.NETFramework/v4.0/Profile/Client/System.dll" />
+    <Alias n="77" Id="(@1 @7 @33 Member=(Name=PrivateWorker.OntologyService.Receive_ModulePortType.ShowAllOntology OverloadingParameters=[@37]))" />
+    <Alias n="78" Id="(@1 @7 @30 Member=(Name=ShowAllOntology OverloadingParameters=[@37]))" />
+    <Alias n="79" Id="(@1 @7 @33 Member=(Name=PrivateWorker.OntologyService.Receive_ModulePortType.ShowDataBaseTable OverloadingParameters=[@39]))" />
+    <Alias n="80" Id="(@1 @7 @30 Member=(Name=ShowDataBaseTable OverloadingParameters=[@39]))" />
+    <Alias n="81" Id="(@1 @7 @33 Member=(Name=PrivateWorker.OntologyService.Receive_ModulePortType.ShowDBTable OverloadingParameters=[@41]))" />
+    <Alias n="82" Id="(@1 @7 @30 Member=(Name=ShowDBTable OverloadingParameters=[@41]))" />
+    <Alias n="83" Id="Name=.ctor" />
+    <Alias n="84" Id="(@59 @60 Type=String)" />
+    <Alias n="85" Id="OverloadingParameters=[@84]" />
+    <Alias n="86" Id="Member=(@83 @85)" />
+    <Alias n="87" Id="(@1 @3 @57 Member=(Name=CallOntologyRuleDataBase @85))" />
+    <Alias n="88" Id="(@1 @7 @33 Member=(Name=CreateDomainKnowledgeDataBase @85))" />
+    <Alias n="89" Id="(@1 @3 @57 Member=(Name=InferenceForCuttingTool @85))" />
+    <Alias n="90" Id="(@1 @5 @47 Member=(Name=RaisePropertyChanged @85))" />
+    <Alias n="91" Id="(@1 @5 @49 Member=(Name=RaisePropertyChanged @85))" />
+    <Alias n="92" Id="(@1 @3 @43 Member=(Name=set_CurrentJob @85))" />
+    <Alias n="93" Id="(@1 @5 @47 Member=(Name=set_FileName @85))" />
+    <Alias n="94" Id="(@1 @5 @49 Member=(Name=set_FileStoreUrl @85))" />
+    <Alias n="95" Id="(@1 @3 @43 Member=(Name=set_FunctionCodeIndicator @85))" />
+    <Alias n="96" Id="(@1 @3 @43 Member=(Name=set_FunctionData @85))" />
+    <Alias n="97" Id="(@1 @3 @43 Member=(Name=set_LastJob @85))" />
+    <Alias n="98" Id="(@1 @5 @49 Member=(Name=set_Name @85))" />
+    <Alias n="99" Id="(@1 @3 @43 Member=(Name=set_UserID @85))" />
+    <Alias n="100" Id="(@1 @3 @43 Member=(Name=set_WorkerRoleID @85))" />
+    <Alias n="101" Id="(@1 @7 @33 Member=(Name=ShowDataBaseTable @85))" />
+    <Alias n="102" Id="(@1 @3 @57 Member=(Name=VMTServcie @85))" />
+    <Alias n="103" Id="(@1 @11 @55 Member=(Name=VMTServiceForCuttingTool @85))" />
+    <Alias n="104" Id="(@1 @3 @57 Member=(Name=RegistrationServiceTable OverloadingParameters=[@44]))" />
+    <Alias n="105" Id="(@1 @9 @19 Member=(Name=PrivateWorker.TimeService.DataTimePortType.TimeDisplay OverloadingParameters=[@45]))" />
+    <Alias n="106" Id="(@1 @9 Type=DataTimePortType Member=(Name=TimeDisplay OverloadingParameters=[@45]))" />
+    <Alias n="107" Id="(@1 @5 @26 Member=(Name=GetFileData OverloadingParameters=[@48]))" />
+    <Alias n="108" Id="(@1 @5 @35 Member=(Name=GetFileData OverloadingParameters=[@48]))" />
+    <Alias n="109" Id="(@1 @11 @55 Member=(Name=PrivateWorker.VMTServiceForCuttingTool.VMTServicePortType.VMTServiceForCuttingTool OverloadingParameters=[@51]))" />
+    <Alias n="110" Id="(@1 @11 Type=VMTServicePortType Member=(Name=VMTServiceForCuttingTool OverloadingParameters=[@51]))" />
+    <Alias n="111" Uri="Assembly=$(FxReferenceAssembliesUri)/.NETFramework/v4.0/Profile/Client/System.ServiceModel.dll" />
+    <Alias n="112" Id="Member=(@83 OverloadingParameters=[(@111 Namespace=System.ServiceModel.Channels Type=Binding),(@111 Namespace=System.ServiceModel Type=EndpointAddress)])" />
+    <Alias n="113" Id="Member=(@83 OverloadingParameters=[@84,(@111 Namespace=System.ServiceModel Type=EndpointAddress)])" />
+    <Alias n="114" Id="(@1 @5 @35 Member=(Name=SaveFile OverloadingParameters=[(@59 @60 Type=String&amp;),(@59 Namespace=System.IO Type=Stream&amp;)]))" />
+    <Alias n="115" Id="OverloadingParameters=[@84,@84]" />
+    <Alias n="116" Id="Member=(@83 @115)" />
+    <Alias n="117" Id="(@1 @7 @33 Member=(Name=CreateDomainKnowledge @115))" />
+    <Alias n="118" Id="(@1 @7 @33 Member=(Name=InferenceForCuttingTool @115))" />
+    <Alias n="119" Id="(@1 @3 @57 Member=(Name=OntologyServiceFunction @115))" />
+    <Alias n="120" Id="(@1 @7 @33 Member=(Name=ShowDBTable @115))" />
+    <Alias n="121" Id="(@1 @5 @26 Member=(Name=SaveFile2 OverloadingParameters=[@48,@84]))" />
+    <Alias n="122" Id="(@1 @5 @35 Member=(Name=SaveFile2 OverloadingParameters=[@48,@84]))" />
+    <Alias n="123" Id="(@1 @3 @57 Member=(Name=UploadFile1 OverloadingParameters=[@84,(@59 Namespace=System.IO Type=Stream),@84]))" />
+    <Alias n="124" Id="(@1 @5 @26 Member=(Name=ActionUpload OverloadingParameters=[@84,(@59 @60 Type=(Name=Byte ArrayRank=1 ParentType=Byte)),(@59 @60 Type=Boolean),@84]))" />
+    <Alias n="125" Id="(@1 @5 @35 Member=(Name=ActionUpload OverloadingParameters=[@84,(@59 @60 Type=(Name=Byte ArrayRank=1 ParentType=Byte)),(@59 @60 Type=Boolean),@84]))" />
+    <Alias n="126" Id="(@1 @5 @26 Member=(Name=DoUpload OverloadingParameters=[@84,(@59 @60 Type=(Name=Byte ArrayRank=1 ParentType=Byte)),(@59 @60 Type=Boolean),@84]))" />
+    <Alias n="127" Id="(@1 @5 @35 Member=(Name=DoUpload OverloadingParameters=[@84,(@59 @60 Type=(Name=Byte ArrayRank=1 ParentType=Byte)),(@59 @60 Type=Boolean),@84]))" />
+    <Alias n="128" Id="Member=.ctor" />
+    <Alias n="129" Id="(@1 @7 Type=CreateDomainKnowledgeDataBaseRequest @128)" />
+    <Alias n="130" Id="(@1 @7 Type=CreateDomainKnowledgeRequest @128)" />
+    <Alias n="131" Id="(@1 @9 Type=DateTimeDisplayRequest @128)" />
+    <Alias n="132" Id="(@1 @5 Type=FileUploadMessage @128)" />
+    <Alias n="133" Id="(@1 @7 Type=InferenceForCuttingToolRequest @128)" />
+    <Alias n="134" Id="(@1 @7 Type=ShowAllOntologyRequest @128)" />
+    <Alias n="135" Id="(@1 @7 Type=ShowDataBaseTableRequest @128)" />
+    <Alias n="136" Id="(@1 @7 Type=ShowDBTableRequest @128)" />
+    <Alias n="137" Id="(@1 @3 @43 @128)" />
+    <Alias n="138" Id="(@1 @9 Type=TimeDisplayRequest @128)" />
+    <Alias n="139" Id="(@1 @5 @47 @128)" />
+    <Alias n="140" Id="(@1 @11 Type=VMTServiceForCuttingToolRequest @128)" />
+    <Alias n="141" Id="(@1 @3 @57 @128)" />
+    <Alias n="142" Id="(@1 @3 @57 Member=CallLoadOntologyDB)" />
+    <Alias n="143" Id="(@1 @9 @19 Member=DateTimeDisplay)" />
+    <Alias n="144" Id="(@1 @3 @43 Member=get_CurrentJob)" />
+    <Alias n="145" Id="(@1 @3 @43 Member=get_FunctionCodeIndicator)" />
+    <Alias n="146" Id="(@1 @3 @43 Member=get_FunctionData)" />
+    <Alias n="147" Id="(@1 @3 @43 Member=get_LastJob)" />
+    <Alias n="148" Id="(@1 @3 @43 Member=get_UserID)" />
+    <Alias n="149" Id="(@1 @3 @43 Member=get_WorkerRoleID)" />
+    <Alias n="150" Id="(@1 @3 @57 Member=GetTime)" />
+    <Alias n="151" Id="(@1 @3 @57 Member=MultiplayerArchitecture)" />
+    <Alias n="152" Id="(@1 @7 @33 Member=ShowAllOntology)" />
+    <Alias n="153" Id="(@1 @9 @19 Member=TimeDisplay)" />
+  </IdentifierAliases>
+  <Paths>
+    <Path Id="972f7789-ca8b-4cf8-9203-b4bff35fb422.OutputPath" Value="D:\PrivateWorker\PrivateWorker\bin\Debug\PrivateWorker.exe" />
+    <Path Id="972f7789-ca8b-4cf8-9203-b4bff35fb422.OutputPathUri" Value="file:///D:/PrivateWorker/PrivateWorker/bin/Debug/PrivateWorker.exe" />
+    <Path Id="FxReferenceAssembliesUri" Value="file:///C:/Program Files (x86)/Reference Assemblies/Microsoft/Framework" />
+  </Paths>
+</DirectedGraph>
