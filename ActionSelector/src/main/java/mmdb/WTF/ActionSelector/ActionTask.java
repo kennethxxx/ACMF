@@ -9,7 +9,7 @@ public class ActionTask extends Task {
 	protected String path = "";
 	protected String w_task_id = "";
 	protected String method = "";
-	protected HashMap input_para; 
+	protected HashMap<String, String> input_para; 
 	
 	public ActionTask( String action_info ) {
 		

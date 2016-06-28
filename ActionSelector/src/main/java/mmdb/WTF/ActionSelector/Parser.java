@@ -1,4 +1,3 @@
-
 package mmdb.WTF.ActionSelector;
 
 import javax.ws.rs.GET;
@@ -17,8 +16,8 @@ import java.util.HashMap;
 
 /** Example resource class hosted at the URI path "/myresource"
  */
-@Path("/scheduler/")
-public class Scheduler {
+@Path("/parser/")
+public class Parser {
     
     /** 
      * @param  action_id : the action that will be called.
@@ -35,26 +34,12 @@ public class Scheduler {
     	try{
     		
     		task = this.logToLogger(action_id, w_task_id);
-    			
+        
     	}catch(Exception e){
-    	
+        	
     		// not found action exception
     	
     	}
-    	
-        if ( this.canProcessTask( action_id ) ) {
-        	
-        	HashMap result;
-        	task = this.buildActionPath( task );
-        	result = this.callActionOwner( task );
-        	
-        	// return result
-        	
-        }else {
-        	
-        	return "false";
-        	
-        }
 		return action_id;
         
     }
@@ -63,9 +48,9 @@ public class Scheduler {
     	
     	DBC logger = new DBC();
     	
-    	if( DBC.actionExistedCheck(action_id) ){
+    	if( logger.actionExistedCheck(action_id) ){
     		
-    		ActionTask task = DBC.newActionTask(action_id, w_task_id);
+    		ActionTask task = logger.newActionTask(action_id, w_task_id);
     		return task;
     		
     	}else {

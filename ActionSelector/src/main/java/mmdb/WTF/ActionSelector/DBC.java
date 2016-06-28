@@ -6,6 +6,12 @@ import java.sql.PreparedStatement;
 import java.sql.ResultSet; 
 import java.sql.SQLException; 
 import java.sql.Statement;
+import java.util.HashMap;
+import java.util.Map;
+
+import com.google.gson.Gson;
+import com.google.common.reflect.TypeToken;
+import java.lang.reflect.Type;
 
 import org.json.JSONObject; 
 
@@ -63,7 +69,7 @@ public class DBC {
 	    
 	  }
 	  
-	  public boolean actionEXistedChecked( String action_id ){
+	  public boolean actionExistedCheck( String action_id ){
 		  
 		  try
 		  {
@@ -116,12 +122,11 @@ public class DBC {
 				  task.setWTaskID(rs.getString("w_task_id"));
 				  
 				  JSONObject input_para_json = new JSONObject(rs.getString("input_para"));
-				  
-				  
+				  Type mapType = new TypeToken<Map<String, Map>>(){}.getType();  
+				  HashMap<String, String> input_para = new Gson().fromJson(input_para_json.toString(), mapType);
+				  task.setInputPara(input_para);
 				  
 			  }
-			  
-			  
 		  
 		  }catch(Exception e){
 			  
@@ -132,6 +137,8 @@ public class DBC {
 			  Close();
 			  
 		  }
+		  
+		  return task;
 		  	 
 	  }
 	  
