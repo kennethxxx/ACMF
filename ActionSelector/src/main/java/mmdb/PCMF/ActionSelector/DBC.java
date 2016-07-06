@@ -1,4 +1,4 @@
-package mmdb.WTF.ActionSelector;
+package mmdb.PCMF.ActionSelector;
 
 import java.sql.Connection; 
 import java.sql.DriverManager; 
@@ -18,11 +18,8 @@ import org.json.JSONObject;
 public class DBC {
 	
 	  private Connection con = null; //Database objects 
-	  //連接object 
 	  private Statement stat = null; 
-	  //執行,傳入之sql為完整字串 
 	  private ResultSet rs = null; 
-	  //結果集 
 	  private PreparedStatement pst = null; 
 	  //執行,傳入之sql為預儲之字申,需要傳入變數之位置 
 	  //先利用?來做標示 
@@ -47,27 +44,6 @@ public class DBC {
 	    } 
 	    
 	  } 
-	  
-	  public void insertTable( String name,String passwd) 
-	  { 
-	    try 
-	    { 
-	      pst = con.prepareStatement(""); 
-	   
-	      pst.setString(1, name); 
-	      pst.setString(2, passwd); 
-	      pst.executeUpdate(); 
-	    } 
-	    catch(SQLException e) 
-	    { 
-	      System.out.println("InsertDB Exception :" + e.toString()); 
-	    } 
-	    finally 
-	    { 
-	      Close(); 
-	    } 
-	    
-	  }
 	  
 	  public boolean actionExistedCheck( String action_id ){
 		  
@@ -140,6 +116,113 @@ public class DBC {
 		  
 		  return task;
 		  	 
+	  }
+	  
+	  public boolean checkIdleWorker( String action_id ) throws ActionNotFoundException {
+		  
+		  String sql = "SELECT action_owner FROM action_table WHERE action_id = " + action_id;
+		  String owner;
+		  
+		  try {
+			  
+			  stat = con.createStatement();
+			  rs = stat.executeQuery(sql);
+			  if( rs.next() ){
+				  
+				  owner = rs.getString("action_owner");
+				  
+			  }else {
+				  
+				  throw new ActionNotFoundException();
+				  
+			  }
+			  
+			  sql = "SELECT * FROM worker_table WHERE worker_status = 0 AND worker_type = " + owner;
+			  rs = stat.executeQuery(sql);
+			  if( rs.next() ) {
+				  
+				  return true;
+				  
+			  }else {
+				  
+				  return false;
+				  
+			  }
+			  
+		  }catch(SQLException e) {
+			  
+			  e.getStackTrace();
+			  
+		  }
+		return false;
+		  
+	  }
+	  
+	  public String getWorkerHost(String action_id) throws ActionNotFoundException {
+		  
+		  String sql = "SELECT action_owner FROM action_table WHERE action_id = " + action_id;
+		  String host = null;
+		  String owner = null;
+		  
+		  try {
+			  
+			  stat = con.createStatement();
+			  rs = stat.executeQuery(sql);
+			  if( rs.next() ){
+				  
+				  owner = rs.getString("action_owner");
+				  
+			  }else {
+				  
+				  throw new ActionNotFoundException();
+				  
+			  }
+			  
+			  sql = "SELECT worker_host FROM worker_table WHERE worker_status = 0 AND worker_type = " + owner;
+			  rs = stat.executeQuery(sql);
+			  if( rs.next() ) {
+				  
+				  host = rs.getString("worker_host");
+				  
+			  }
+			  
+		  }catch(SQLException e) {
+			  
+			  e.getStackTrace();
+			  
+		  }
+		  
+		  return host;
+		  
+	  }
+	  
+	  public String getActionName(String action_id) throws ActionNotFoundException {
+		  
+		  String sql = "SELECT action_name FROM action_table WHERE action_id = " + action_id;
+		  String name = null;
+		  
+		  try {
+			  
+			  stat = con.createStatement();
+			  rs = stat.executeQuery(sql);
+			  if( rs.next() ){
+				  
+				  name = rs.getString("action_name");
+				  
+			  }else {
+				  
+				  throw new ActionNotFoundException();
+				  
+			  }
+			  
+		  }catch(SQLException e) {
+			  
+			  e.getStackTrace();
+			  
+		  }
+		  
+		  return name;	  
+		  
 	  }
 	  
 	  private void Close() 
