@@ -8,9 +8,14 @@ import java.sql.SQLException;
 import java.sql.Statement;
 import java.util.HashMap;
 import java.util.Map;
+import java.util.Properties;
 
 import com.google.gson.Gson;
 import com.google.common.reflect.TypeToken;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
 import java.lang.reflect.Type;
 
 import org.json.JSONObject; 
@@ -20,30 +25,58 @@ public class DBC {
 	  private Connection con = null; //Database objects 
 	  private Statement stat = null; 
 	  private ResultSet rs = null; 
-	  private PreparedStatement pst = null; 
-	  //執行,傳入之sql為預儲之字申,需要傳入變數之位置 
-	  //先利用?來做標示 
+	  private PreparedStatement pst = null;
+	  private Properties props;
+	  private String driver = null;
+	  private String url = null;
+	  private String user = null;
+	  private String pwd = null;
 	  	  
 	  public DBC() 
 	  { 
+		this.loadProperties();
+		driver = this.getProperties("driver");
+		url = this.getProperties("url");
+		user = this.getProperties("user");
+		pwd = this.getProperties("password");	
+		  
 	    try { 
-	      Class.forName("com.mysql.jdbc.Driver"); 
-	      //註冊driver 
-	      con = DriverManager.getConnection( 
-	      "jdbc:mysql://localhost/test?useUnicode=true&characterEncoding=utf8", 
-	      "root","12345"); 
-	      //取得connection
+	    	
+	    	Class.forName(driver);
+	    	con = DriverManager.getConnection(url, user, pwd);
 	      
+	    	if(con != null && !con.isClosed()) {
+	    		System.out.println("database hase connected");
+	    	}
+	     
 	    } 
 	    catch(ClassNotFoundException e) 
 	    { 
 	      System.out.println("DriverClassNotFound :"+e.toString()); 
-	    }//有可能會產生sqlexception 
-	    catch(SQLException x) { 
-	      System.out.println("Exception :"+x.toString()); 
+	    }
+	    catch(SQLException e) { 
+	      System.out.println("ExceptionAA :"+e.toString()); 
 	    } 
 	    
 	  } 
+
+	  private void loadProperties() {
+		  props = new Properties();
+		  try {
+			  
+			  props.load(new FileInputStream("DatabaseConf.properties"));
+			  
+		  }catch (FileNotFoundException e) { 
+			  e.printStackTrace();  
+		  }catch (IOException e) {
+			  e.printStackTrace();
+		  }
+		  
+	  }
+	  
+	  private String getProperties(String key) {
+		  return props.getProperty(key);
+	  }
 	  
 	  public boolean actionExistedCheck( String action_id ){
 		  
@@ -251,6 +284,11 @@ public class DBC {
 	    } 
 	  } 
 	  	  
+	  public static void main(String[] args) {
+		
+		  System.out.println("Test Start.");
+		  DBC dbc = new DBC();
+		  dbc.Close();
 	  
-	  
+	  }
 }
