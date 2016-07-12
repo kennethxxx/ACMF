@@ -107,18 +107,27 @@ public class DBC {
 		  
 	  }
 	  
-	  public ActionTask newActionTask( String action_id, String w_task_id ){
+	  public ActionTask newActionTask( String action_id, String w_task_id, HashMap<String, String> task_input ){
 		  
 		  ActionTask task = new ActionTask();
 		  
 		  try{	  
 		  
 			  // create a new action in table
-			  String sql = "INSERT INTO action_logger(action_id, w_task_id)";
+			  String sql = "INSERT INTO action_logger(action_id, process_id, task_input) VALUES (?,?,?)";
 			  pst = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
-			  pst.setString(0, action_id);
-			  pst.setString(1, w_task_id);
-			  int last_id = pst.executeUpdate();
+			  pst.setString(1, action_id);
+			  pst.setString(2, w_task_id);
+			  pst.setString(3, new JSONObject(task_input).toString());
+			  System.out.println("SQL: " + pst.toString());
+			  pst.executeUpdate();
+			  Long last_id = null;
+			  ResultSet genkey = pst.getGeneratedKeys();
+			  if (genkey.next()) {
+				  last_id = genkey.getLong(1);
+			  }else {
+				  throw new SQLException("Creating user failed, no ID obtained.");
+			  }
 			  
 			  // got this action info from table and new a task object
 			  sql = "SELECT * FROM action_logger WHERE task_id = " + last_id;
@@ -128,19 +137,19 @@ public class DBC {
 				  
 				  task.setTaskID(rs.getString("task_id"));
 				  task.setActionID(rs.getString("action_id"));
-				  task.setWTaskID(rs.getString("w_task_id"));
-				  
-				  JSONObject input_para_json = new JSONObject(rs.getString("input_para"));
-				  Type mapType = new TypeToken<Map<String, Map>>(){}.getType();  
+				  task.setWTaskID(rs.getString("process_id"));
+
+				  JSONObject input_para_json = new JSONObject(rs.getString("task_input"));
+				  Type mapType = new TypeToken<HashMap<String, String>>(){}.getType();  
 				  HashMap<String, String> input_para = new Gson().fromJson(input_para_json.toString(), mapType);
 				  task.setInputPara(input_para);
-				  
+		  
 			  }
 		  
 		  }catch(Exception e){
 			  
-			  System.out.println(e.toString());
-			  
+			  e.printStackTrace();
+			 
 		  }finally{
 			  
 			  Close();
@@ -154,6 +163,7 @@ public class DBC {
 	  public boolean checkIdleWorker( String action_id ) throws ActionNotFoundException {
 		  
 		  String sql = "SELECT action_owner FROM action_table WHERE action_id = " + action_id;
+		  System.out.println("Action Check SQL: " + sql);
 		  String owner;
 		  
 		  try {
@@ -170,7 +180,8 @@ public class DBC {
 				  
 			  }
 			  
-			  sql = "SELECT * FROM worker_table WHERE worker_status = 0 AND worker_type = " + owner;
+			  sql = "SELECT * FROM worker_table WHERE worker_status = 0 AND worker_type = '" + owner + "'";
+			  System.out.println("worker Check SQL: " + sql);
 			  rs = stat.executeQuery(sql);
 			  if( rs.next() ) {
 				  
@@ -211,7 +222,7 @@ public class DBC {
 				  
 			  }
 			  
-			  sql = "SELECT worker_host FROM worker_table WHERE worker_status = 0 AND worker_type = " + owner;
+			  sql = "SELECT worker_host FROM worker_table WHERE worker_status = 0 AND worker_type = '" + owner + "'";
 			  rs = stat.executeQuery(sql);
 			  if( rs.next() ) {
 				  
@@ -257,6 +268,35 @@ public class DBC {
 		  return name;	  
 		  
 	  }
+
+	  public String getActionMethod(String action_id) throws ActionNotFoundException {
+		  
+		  String sql = "SELECT action_method FROM action_table WHERE action_id = " + action_id;
+		  String method = null;
+		  
+		  try {
+			  
+			  stat = con.createStatement();
+			  rs = stat.executeQuery(sql);
+			  if( rs.next() ){
+				  
+				  method = rs.getString("action_method");
+				  
+			  }else {
+				  
+				  throw new ActionNotFoundException();
+				  
+			  }
+			  
+		  }catch(SQLException e) {
+			  
+			  e.getStackTrace();
+			  
+		  }
+		  
+		  return method;	  
+		  
+	  }	  	  
 	  
 	  private void Close() 
 	  { 
@@ -285,10 +325,17 @@ public class DBC {
 	  } 
 	  	  
 	  public static void main(String[] args) {
-		
+			
 		  System.out.println("Test Start.");
 		  DBC dbc = new DBC();
+		  HashMap<String, String> input_para = new HashMap<String, String>();
+		  input_para.put("test","1");
+		  ActionTask task = dbc.newActionTask("0", "1", null);	
 		  dbc.Close();
+		  Dispatcher patcher = new Dispatcher(task);
+		  patcher.run();
+		  
+		
 	  
 	  }
 }

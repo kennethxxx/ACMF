@@ -27,13 +27,15 @@ public class Parser {
     @GET 
     @Path("/submit/{action_id}")
     @Produces("text/plain")
-    public String submit( @PathParam("action_id") String action_id, @PathParam("w_task_id") String w_task_id ) {
+    public String submit( @PathParam("action_id") String action_id, 
+    		@PathParam("w_task_id") String w_task_id,
+    		@PathParam("task_input") String task_input ) {
 
     	ActionTask task;
     	
     	try{
     		
-    		task = this.logToLogger(action_id, w_task_id);
+    		task = this.logToLogger(action_id, w_task_id, task_input );
         
     	}catch(Exception e){
         	
@@ -44,20 +46,21 @@ public class Parser {
         
     }
     
-    private ActionTask logToLogger(String action_id, String w_task_id ) throws ActionNotFoundException {
+    private ActionTask logToLogger(String action_id, String w_task_id, String task_input ) throws ActionNotFoundException {
     	
     	DBC logger = new DBC();
     	
     	if( logger.actionExistedCheck(action_id) ){
     		
-    		ActionTask task = logger.newActionTask(action_id, w_task_id);
-    		return task;
+    	//	ActionTask task = logger.newActionTask(action_id, w_task_id, task_input);
+    //		return task;
     		
     	}else {
     	
     		throw new ActionNotFoundException("This action isn't found in Action Table.");
     		
     	}
+		return null;
     	
     }
     

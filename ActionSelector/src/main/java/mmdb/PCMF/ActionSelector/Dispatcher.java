@@ -8,7 +8,7 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.HashMap;
 
-public class Dispatcher extends Thread {
+public class Dispatcher {
 	
 	private DBC dbc;
 	private ActionTask task;
@@ -34,24 +34,29 @@ public class Dispatcher extends Thread {
 		   		connection = (HttpURLConnection) new URL(task.getPath()).openConnection();
 		   		connection.setDoOutput(true);
 		       	connection.setRequestMethod(task.getMethod());
-		       	connection.setRequestProperty("Content-Type", "application/octet-stream");
+		       	connection.setRequestProperty("Content-Type", "text/plain");
 		       	connection.setDoOutput(true);
 		       	
 		        HashMap input_para = task.getInputPara();
-		        String req_para = "";
 		        
-		        for( Object key : input_para.keySet() ){
-		        	
-		        	req_para = req_para + key.toString() + "=" + input_para.get(key) + "&";
-		        	
+			    if( !input_para.isEmpty() ) {
+			    	
+			        String req_para = "";
+			        
+			        for( Object key : input_para.keySet() ){
+			        	
+			        	req_para = req_para + key.toString() + "=" + input_para.get(key) + "&";
+			        	
+			        }
+			       	
+			       	connection.connect();
+			       	System.out.println(req_para);
+			       	DataOutputStream wr = new DataOutputStream(connection.getOutputStream());
+			       	wr.writeBytes(req_para);
+			       	wr.flush();
+			       	wr.close();
+		       	
 		        }
-		       	
-		       	connection.connect();
-		       	
-		       	DataOutputStream wr = new DataOutputStream(connection.getOutputStream());
-		       	wr.writeBytes(req_para);
-		       	wr.flush();
-		       	wr.close();
 		       	
 		       	InputStream is = connection.getInputStream();
 		       	BufferedReader rd = new BufferedReader(new InputStreamReader(is));
@@ -71,6 +76,8 @@ public class Dispatcher extends Thread {
 			   	
 			   	result.put("responseCode", Integer.toString(responseCode));
 			   	result.put("response", response.toString());
+			   	
+			   	System.out.println(result.toString());
 			   	
 	  	    
 		   	} catch(Exception e) {
@@ -102,6 +109,19 @@ public class Dispatcher extends Thread {
 
 	    }
 	    
+	    private ActionTask initTask(ActionTask task) {
+	    	
+	    	task = buildActionPath(task);
+	    	try {
+				task.setMethod(dbc.getActionMethod(task.action_id));
+			} catch (ActionNotFoundException e) {
+				// TODO Auto-generated catch block
+				e.printStackTrace();
+			}
+			return task;
+	    	
+	    }
+	    
 	    private ActionTask buildActionPath(ActionTask task) {
 	    
 	    	String host = null;
@@ -117,7 +137,7 @@ public class Dispatcher extends Thread {
 	    		e.printStackTrace();
 	    		
 	    	}
-	    	task.setPath(host+action);
+	    	task.setPath( "http://" + host + ":7782/MachineToolDataCollector/RESTful-Interface/file/" + action);
 	    	
 	    	return task;
 	    	
@@ -127,8 +147,8 @@ public class Dispatcher extends Thread {
 	    	
 	    	while( !canProcessTask(task.action_id) );
 	    	try{
-	    		
-		    	task = buildActionPath(task);
+
+	    		task  = initTask(task);
 		    	callActionOwner(task);
 		    	
 	    	}catch (Exception e) {
