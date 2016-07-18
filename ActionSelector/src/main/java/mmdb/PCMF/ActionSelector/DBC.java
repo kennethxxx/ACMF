@@ -7,8 +7,10 @@ import java.sql.ResultSet;
 import java.sql.SQLException; 
 import java.sql.Statement;
 import java.util.HashMap;
-import java.util.Map;
+
 import java.util.Properties;
+import org.apache.log4j.PropertyConfigurator;
+import org.apache.log4j.Logger;
 
 import com.google.gson.Gson;
 import com.google.common.reflect.TypeToken;
@@ -64,7 +66,7 @@ public class DBC {
 		  props = new Properties();
 		  try {
 			  
-			  props.load(new FileInputStream("DatabaseConf.properties"));
+			  props.load(new FileInputStream("../../DatabaseConf.properties"));
 			  
 		  }catch (FileNotFoundException e) { 
 			  e.printStackTrace();  
@@ -107,7 +109,7 @@ public class DBC {
 		  
 	  }
 	  
-	  public ActionTask newActionTask( String action_id, String w_task_id, HashMap<String, String> task_input ){
+	  public ActionTask newActionTask( String action_id, String w_task_id, String task_input ){
 		  
 		  ActionTask task = new ActionTask();
 		  
@@ -118,7 +120,7 @@ public class DBC {
 			  pst = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
 			  pst.setString(1, action_id);
 			  pst.setString(2, w_task_id);
-			  pst.setString(3, new JSONObject(task_input).toString());
+			  pst.setString(3, task_input);
 			  System.out.println("SQL: " + pst.toString());
 			  pst.executeUpdate();
 			  Long last_id = null;
@@ -298,6 +300,29 @@ public class DBC {
 		  
 	  }	  	  
 	  
+	  public void logExecutingResult(String task_id, HashMap<String, String> task_result) {
+		  
+		  String sql = "UPDATE action_logger SET `task_result` = ?," +
+				  								"`status` = ? " +
+				  							"WHERE `task_id` = ?";
+		  try {
+			  pst = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+			  pst.setString(1, new JSONObject(task_result).toString());
+			  pst.setInt(2, 2);
+			  pst.setString(3, task_id);
+			  System.out.println(pst.toString());
+			  pst.executeUpdate();
+			  System.out.println("Record is updated to action_logger table");
+
+		  }catch (SQLException e) {
+			  
+			  e.printStackTrace();
+			  
+		  }
+
+		  
+	  }
+	  
 	  private void Close() 
 	  { 
 	    try 
@@ -326,7 +351,10 @@ public class DBC {
 	  	  
 	  public static void main(String[] args) {
 			
-		  System.out.println("Test Start.");
+		  PropertyConfigurator.configure("log4j.properties");
+		  Logger logger = Logger.getLogger(DBC.class);
+		  
+		  logger.info("Test Start.");
 		  DBC dbc = new DBC();
 		  HashMap<String, String> input_para = new HashMap<String, String>();
 		  input_para.put("test","1");
@@ -334,7 +362,7 @@ public class DBC {
 		  dbc.Close();
 		  Dispatcher patcher = new Dispatcher(task);
 		  patcher.run();
-		  
+		  logger.info("Test End");
 		
 	  
 	  }

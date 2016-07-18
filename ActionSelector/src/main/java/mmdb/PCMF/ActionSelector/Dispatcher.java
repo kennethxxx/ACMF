@@ -8,13 +8,19 @@ import java.net.HttpURLConnection;
 import java.net.URL;
 import java.util.HashMap;
 
-public class Dispatcher {
+import org.apache.log4j.Logger;
+import org.apache.log4j.PropertyConfigurator;
+
+public class Dispatcher implements Runnable {
 	
 	private DBC dbc;
 	private ActionTask task;
+	private Logger logger;
 	
 	public Dispatcher( ActionTask _task ) {
 		
+		PropertyConfigurator.configure("../../log4j.properties");
+		logger = Logger.getLogger(Dispatcher.class);
 		this.task = _task;
 		this.dbc = new DBC();
 		
@@ -22,7 +28,7 @@ public class Dispatcher {
 	
 	private HashMap callActionOwner( ActionTask task ) {
 	    	
-		   	System.out.println(task.getPath());
+		   	logger.info("Ready to send request to " + task.getPath());
 		   	String charset = "UTF-8";
 		   	String CRLF = "\r\n"; // Line separator required by multipart/form-data.
 		   	HttpURLConnection connection;
@@ -77,9 +83,11 @@ public class Dispatcher {
 			   	result.put("responseCode", Integer.toString(responseCode));
 			   	result.put("response", response.toString());
 			   	
-			   	System.out.println(result.toString());
+			   	String task_result = response.toString();
 			   	
-	  	    
+			   	dbc.logExecutingResult(task.getTaskID(), result);
+			   	logger.info("Finish the task: " + task.getTaskID());
+    
 		   	} catch(Exception e) {
 		   		
 		   		e.printStackTrace();
