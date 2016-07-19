@@ -14,8 +14,8 @@
                 <artifactId>maven-compiler-plugin</artifactId>
                 <inherited>true</inherited>
                 <configuration>
-                    <source>1.6</source>
-                    <target>1.6</target>
+                    <source>1.7</source>
+                    <target>1.7</target>
                 </configuration>
             </plugin>
             <plugin>
@@ -66,7 +66,7 @@
 		    <groupId>org.glassfish.jersey.containers</groupId>
 		    <artifactId>jersey-container-servlet-core</artifactId>
 		    <version>2.23.1</version>
-		</dependency>
+		</dependency>			
 		
 		<!-- https://mvnrepository.com/artifact/log4j/log4j -->
 		<dependency>

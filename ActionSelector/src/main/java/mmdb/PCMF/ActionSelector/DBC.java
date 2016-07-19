@@ -66,7 +66,7 @@ public class DBC {
 		  props = new Properties();
 		  try {
 			  
-			  props.load(new FileInputStream("../../DatabaseConf.properties"));
+			  props.load(new FileInputStream("DatabaseConf.properties"));
 			  
 		  }catch (FileNotFoundException e) { 
 			  e.printStackTrace();  
@@ -86,6 +86,7 @@ public class DBC {
 		  {
 			  stat = con.createStatement();
 			  rs = stat.executeQuery("SELECT action_id FROM action_table WHERE action_id = "+action_id);
+			  rs.next();
 			  if( rs.getString("action_id") != null ){  // ture if the action is existed.
 				  
 				  return true;
@@ -298,7 +299,65 @@ public class DBC {
 		  
 		  return method;	  
 		  
-	  }	  	  
+	  }	  
+
+	  public String getActionContentType(String action_id) throws ActionNotFoundException {
+		  
+		  String sql = "SELECT content_type FROM action_table WHERE action_id = " + action_id;
+		  String contentType = null;
+		  
+		  try {
+			  
+			  stat = con.createStatement();
+			  rs = stat.executeQuery(sql);
+			  if( rs.next() ){
+				  
+				  contentType = rs.getString("content_type");
+				  
+			  }else {
+				  
+				  throw new ActionNotFoundException();
+				  
+			  }
+			  
+		  }catch(SQLException e) {
+			  
+			  e.getStackTrace();
+			  
+		  }
+		  
+		  return contentType;	  
+		  
+	  }		
+
+	  public String getPrefix(String action_id) throws ActionNotFoundException {
+		  
+		  String sql = "SELECT prefix FROM action_table WHERE action_id = " + action_id;
+		  String prefix = null;
+		  
+		  try {
+			  
+			  stat = con.createStatement();
+			  rs = stat.executeQuery(sql);
+			  if( rs.next() ){
+				  
+				  prefix = rs.getString("prefix");
+				  
+			  }else {
+				  
+				  throw new ActionNotFoundException();
+				  
+			  }
+			  
+		  }catch(SQLException e) {
+			  
+			  e.getStackTrace();
+			  
+		  }
+		  
+		  return prefix;	  
+		  
+	  }		  
 	  
 	  public void logExecutingResult(String task_id, HashMap<String, String> task_result) {
 		  
@@ -357,8 +416,8 @@ public class DBC {
 		  logger.info("Test Start.");
 		  DBC dbc = new DBC();
 		  HashMap<String, String> input_para = new HashMap<String, String>();
-		  input_para.put("test","1");
-		  ActionTask task = dbc.newActionTask("0", "1", null);	
+		  input_para.put("get","1");
+		  ActionTask task = dbc.newActionTask("2", "1", "{\"get\":1}");	
 		  dbc.Close();
 		  Dispatcher patcher = new Dispatcher(task);
 		  patcher.run();

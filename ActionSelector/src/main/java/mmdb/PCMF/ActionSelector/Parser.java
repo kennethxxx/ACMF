@@ -8,7 +8,7 @@ import javax.ws.rs.Produces;
 import javax.ws.rs.QueryParam;
 import javax.ws.rs.PathParam;
 import org.apache.log4j.Logger;
-import org.apache.log4j.PropertyConfigurator;
+import org.apache.log4j.BasicConfigurator;
 
 /** Example resource class hosted at the URI path "/myresource"
  */
@@ -29,7 +29,7 @@ public class Parser {
 
     	ActionTask task;
 
-		PropertyConfigurator.configure("../../log4j.properties");
+		BasicConfigurator.configure();
 		Logger logger = Logger.getLogger(Parser.class);
     	
     	try{
