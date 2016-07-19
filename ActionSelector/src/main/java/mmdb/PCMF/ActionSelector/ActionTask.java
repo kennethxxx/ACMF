@@ -9,6 +9,8 @@ public class ActionTask extends Task {
 	protected String path = "";
 	protected String w_task_id = "";
 	protected String method = "";
+	protected String contentType = "";
+	protected String prefix = "";	
 	protected HashMap<String, String> input_para; 
 	
 	public ActionTask( String action_info ) {
@@ -62,6 +64,28 @@ public class ActionTask extends Task {
 	public void setMethod( String method ) {
 		
 		this.method = method;
+		
+	}
+	
+	public String getPrefix() {
+		
+		return this.prefix;
+	}
+	
+	public void setPrefix( String prefix ) {
+		
+		this.prefix = prefix;
+		
+	}
+	
+	public String getContentType() {
+		
+		return this.contentType;
+	}
+	
+	public void setContentType( String contentType ) {
+		
+		this.contentType = contentType;
 		
 	}	
 	
