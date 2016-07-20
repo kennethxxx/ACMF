@@ -11,6 +11,7 @@ public class ActionTask extends Task {
 	protected String method = "";
 	protected String contentType = "";
 	protected String prefix = "";	
+	protected String worker_id = "";
 	protected HashMap<String, String> input_para; 
 	
 	public ActionTask( String action_info ) {
@@ -38,6 +39,17 @@ public class ActionTask extends Task {
 		this.action_id = action_id;
 		
 	}
+	
+	public String getWorkerID() {
+		
+		return this.worker_id;
+	}
+	
+	public void setWorkerID( String worker_id ) {
+		
+		this.worker_id = worker_id;
+		
+	}	
 
 	public String getPath() {
 		

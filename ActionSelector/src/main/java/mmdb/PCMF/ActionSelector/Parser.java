@@ -22,10 +22,10 @@ public class Parser {
 	
     @POST
     @Path("/submit/{action_id}/{w_task_id}/")
-    @Produces("text/plain")
+    @Produces("application/x-www-form-urlencoded")
     public String submit( @PathParam("action_id") String action_id, 
     		@PathParam("w_task_id") String w_task_id,
-    		@QueryParam("task_input") String task_input ) {
+    		@FormParam("task_input") String task_input ) {
 
     	ActionTask task;
 
@@ -38,7 +38,8 @@ public class Parser {
     		task = this.logToLogger(action_id, w_task_id, task_input );
     		logger.info("log a task. Task_id = " + task.getTaskID());
         	Dispatcher dispatcher = new Dispatcher(task);
-        	dispatcher.run();
+            Thread taskThread = new Thread(dispatcher);
+            taskThread.start();
         	logger.info("Run a task. Task_id = " + task.getTaskID());
         	
     	}catch(Exception e){

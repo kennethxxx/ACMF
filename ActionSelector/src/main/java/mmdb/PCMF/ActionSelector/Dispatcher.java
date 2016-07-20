@@ -61,7 +61,7 @@ public class Dispatcher implements Runnable {
 	   	try
 	   	{
 	   		
-	   		connection = (HttpURLConnection) new URL("http://140.116.234.174:7782/PackageTemplate/services/getItPost").openConnection();
+	   		connection = (HttpURLConnection) new URL(task.getPath()).openConnection();
 	   		
 	       	connection.setRequestMethod("POST");
 	       	connection.setRequestProperty("charset",  "utf-8");
@@ -79,7 +79,7 @@ public class Dispatcher implements Runnable {
 		        	
 		        }
 		        req_para = req_para.substring(0, req_para.length()-1);
-		        
+		        logger.info("Task " + task.getTaskID() + " will send para " + req_para);
 		       	DataOutputStream wr = new DataOutputStream(connection.getOutputStream());
 		       	wr.writeBytes(req_para);
 		       	wr.flush();
@@ -107,7 +107,7 @@ public class Dispatcher implements Runnable {
 		   	result.put("responseCode", Integer.toString(responseCode));
 		   	result.put("response", response.toString());
 		   	
-		   	String task_result = response.toString();
+		   	String task_result = response.toString();	
 		   	
 		   	dbc.logExecutingResult(task.getTaskID(), result);
 		   	logger.info("Finish the task: " + task.getTaskID());
@@ -218,7 +218,7 @@ public class Dispatcher implements Runnable {
 	    
 	    private ActionTask initTask(ActionTask task) {
 	    	
-	    	task = buildActionPath(task);
+	    	task = buildActionPathAndSetWorkerID(task);
 	    	try {
 				task.setMethod(dbc.getActionMethod(task.getActionID()));
 				task.setContentType(dbc.getActionContentType(task.getActionID()));
@@ -230,17 +230,20 @@ public class Dispatcher implements Runnable {
 	    	
 	    }
 	    
-	    private ActionTask buildActionPath(ActionTask task) {
+	    private ActionTask buildActionPathAndSetWorkerID(ActionTask task) {
 	    
 	    	String host = null;
 	    	String action = null;
 	    	String prefix = null;
+	    	HashMap<String, String> hostInfo = null;
 	    	
 	    	try{
 	    		
-		    	host = this.dbc.getWorkerHost(task.getActionID());
+		    	hostInfo = this.dbc.getWorkerHost(task.getActionID());
+		    	host = hostInfo.get("host");
 		    	action = this.dbc.getActionName(task.getActionID());
 		    	prefix = this.dbc.getPrefix(task.getActionID());
+		    	task.setWorkerID(hostInfo.get("worker_id"));
 		    	
 	    	} catch (ActionNotFoundException e ) {
 	    		
@@ -257,9 +260,12 @@ public class Dispatcher implements Runnable {
 	    	
 	    	while( !canProcessTask(task.action_id) );
 	    	try{
-
+	    		
 	    		task  = initTask(task);
+	    		dbc.updateTaskBusyStatus(task.getTaskID());
+	    		dbc.updateWorkerBusyStatus(task.getWorkerID(), 1); // start
 		    	callActionOwner(task);
+		    	dbc.updateWorkerBusyStatus(task.getWorkerID(), 0); // end
 		    	
 	    	}catch (Exception e) {
 	    		

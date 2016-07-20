@@ -66,7 +66,7 @@ public class DBC {
 		  props = new Properties();
 		  try {
 			  
-			  props.load(new FileInputStream("DatabaseConf.properties"));
+			  props.load(new FileInputStream("/home/hduser/pcmf/DatabaseConf.properties"));
 			  
 		  }catch (FileNotFoundException e) { 
 			  e.printStackTrace();  
@@ -205,11 +205,13 @@ public class DBC {
 		  
 	  }
 	  
-	  public String getWorkerHost(String action_id) throws ActionNotFoundException {
+	  public HashMap<String, String> getWorkerHost(String action_id) throws ActionNotFoundException {
 		  
 		  String sql = "SELECT action_owner FROM action_table WHERE action_id = " + action_id;
 		  String host = null;
 		  String owner = null;
+		  String id = null;
+		  HashMap<String, String> result = new HashMap<String, String>();
 		  
 		  try {
 			  
@@ -225,11 +227,12 @@ public class DBC {
 				  
 			  }
 			  
-			  sql = "SELECT worker_host FROM worker_table WHERE worker_status = 0 AND worker_type = '" + owner + "'";
+			  sql = "SELECT worker_id, worker_host FROM worker_table WHERE worker_status = 0 AND worker_type = '" + owner + "'";
 			  rs = stat.executeQuery(sql);
 			  if( rs.next() ) {
 				  
 				  host = rs.getString("worker_host");
+				  id = rs.getString("worker_id");
 				  
 			  }
 			  
@@ -239,7 +242,10 @@ public class DBC {
 			  
 		  }
 		  
-		  return host;
+		  result.put("host", host);
+		  result.put("worker_id", id);
+		  
+		  return result;
 		  
 	  }
 	  
@@ -382,6 +388,46 @@ public class DBC {
 		  
 	  }
 	  
+	  public void updateTaskBusyStatus(String task_id) {
+		  
+		  String sql = "UPDATE action_logger SET `status` = ? " +
+				  							"WHERE `task_id` = ?";
+		  try {
+			  pst = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+			  pst.setInt(1, 1);
+			  pst.setString(2, task_id);
+			  System.out.println(pst.toString());
+			  pst.executeUpdate();
+			  System.out.println("Record is updated status to action_logger table");
+
+		  }catch (SQLException e) {
+			  
+			  e.printStackTrace();
+			  
+		  }
+
+	  }
+	  
+	  public void updateWorkerBusyStatus(String worker_id, int status) {
+		  
+		  String sql = "UPDATE worker_table SET `worker_status` = ? " +
+				  							"WHERE `worker_id` = ?";
+		  try {
+			  pst = con.prepareStatement(sql, Statement.RETURN_GENERATED_KEYS);
+			  pst.setInt(1, status);
+			  pst.setString(2, worker_id);
+			  System.out.println(pst.toString());
+			  pst.executeUpdate();
+			  System.out.println("Worker " + worker_id +" is updated status to worker_logger table");
+
+		  }catch (SQLException e) {
+			  
+			  e.printStackTrace();
+			  
+		  }
+
+	  }	  
+	  
 	  private void Close() 
 	  { 
 	    try 
@@ -417,7 +463,7 @@ public class DBC {
 		  DBC dbc = new DBC();
 		  HashMap<String, String> input_para = new HashMap<String, String>();
 		  input_para.put("get","1");
-		  ActionTask task = dbc.newActionTask("2", "1", "{\"get\":1}");	
+		  ActionTask task = dbc.newActionTask("2", "1", "{\"get\":1, \"get2\":2}");	
 		  dbc.Close();
 		  Dispatcher patcher = new Dispatcher(task);
 		  patcher.run();
