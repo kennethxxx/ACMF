@@ -1,4 +1,4 @@
-package mmdb.PCMF.EncapsulationManager;
+package mmdb.PCMF.EncapsulationManager.PackageDeployer;
 
 import java.sql.Connection; 
 import java.sql.DriverManager; 
@@ -10,18 +10,10 @@ import java.util.ArrayList;
 import java.util.HashMap;
 
 import java.util.Properties;
-import org.apache.log4j.PropertyConfigurator;
-import org.apache.log4j.Logger;
-
-import com.google.gson.Gson;
-import com.google.common.reflect.TypeToken;
 
 import java.io.FileInputStream;
 import java.io.FileNotFoundException;
 import java.io.IOException;
-import java.lang.reflect.Type;
-
-import org.json.JSONObject; 
 
 public class DBC {
 	

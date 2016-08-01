@@ -1,35 +1,19 @@
-package mmdb.PCMF.EncapsulationManager;
+package mmdb.PCMF.EncapsulationManager.PackageDeployer;
 
 import java.io.*;
-import java.lang.reflect.Type;
-
-import com.google.common.reflect.TypeToken;
-import com.google.gson.Gson;
-
 import javax.ws.rs.*;
 import javax.ws.rs.core.*;
 
-import java.math.BigInteger;
-import java.net.HttpURLConnection;
-import java.net.URL;
-import java.security.MessageDigest;
-import java.security.NoSuchAlgorithmException;
-import java.util.ArrayList;
-import java.util.Date;
-import java.util.HashMap;
-
 import org.apache.commons.io.IOUtils;
-import org.glassfish.jersey.message.internal.Utils;
 import org.apache.commons.io.FileUtils;
 
 
 @Path("/operator")
-public class PackageDeployer {
+public class PackageDeployResource {
     
-	private String _AppDir = "/home/hduser/pcmf/package/";
+	private String _AppDir = "/usr/tomcat/webapps/";
 	private String _TomcatHome = "/usr/tomcat";
 	DBC dbc = new DBC();
-	
 	
     @GET 
     @Path("getIt")
@@ -74,23 +58,23 @@ public class PackageDeployer {
     @Path("deploy/{fileName}")
     public Response delpoy(@PathParam("fileName") String fileName, InputStream is ) throws IOException {
  
-    	if(checkJAR(fileName)) {
+    	if(checkWAR(fileName)) {
+    		
     		FileOutputStream os = new FileOutputStream(new File( this._AppDir + fileName));		
     		IOUtils.copy(is,os);
+    		restartTomcat();
             return Response.ok("true")
             		.build();
     	}else {
     		return Response.serverError().build();
     	}
-		
-		
 
     }
     
-    private boolean checkJAR(String name) {
+    private boolean checkWAR(String name) {
     	
     	String uppercase = name.toUpperCase();
-    	return uppercase.endsWith(".JAR");
+    	return uppercase.endsWith(".WAR");
     }
     
     private void restartTomcat() {
@@ -101,6 +85,7 @@ public class PackageDeployer {
     		p = Runtime.getRuntime().exec( "./" + this._TomcatHome + "/bin/shutdown.sh"); // shut down tomcat server
     		p.waitFor();
     		p = Runtime.getRuntime().exec( "./" + this._TomcatHome + "/bin/startup.sh");  // startup the tomcat server 
+    		p.waitFor();
     		
     	} catch (Exception e) {
     		e.printStackTrace();
