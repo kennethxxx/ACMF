@@ -3,9 +3,6 @@ package mmdb.PCMF.EncapsulationManager;
 import java.io.*;
 import java.lang.reflect.Type;
 
-import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
-import org.glassfish.jersey.media.multipart.FormDataParam;
-
 import com.google.common.reflect.TypeToken;
 import com.google.gson.Gson;
 
@@ -22,45 +19,30 @@ import java.util.Date;
 import java.util.HashMap;
 
 import org.apache.commons.io.IOUtils;
+import org.glassfish.jersey.media.multipart.FormDataContentDisposition;
+import org.glassfish.jersey.media.multipart.FormDataParam;
 import org.apache.commons.io.FileUtils;
 
-
 @Path("/operator")
-public class ActionEncapsulation {
-    
+public class ActionResource {
+
 	private String _baseDir = "/tmp/file-accept/";
-	DBC dbc = new DBC();
+//	DBC dbc = new DBC();
 	
 	
     @GET 
     @Path("getIt")
-    @Produces("text/plain")
-    public String getIt(String fileName) throws IOException {
+    public Response getIt() {
     	
-    	return "aaa";
+    	return Response.ok("aaa").build();
     }
     
-    /**
-     * Response the specific file
-     * @param fileName 
-     * @return file content
-     * @throws IOException
-     */
     @GET 
     @Path("retrieve/{fileName}")
-    
     public Response retrieve(@PathParam("fileName") String fileName) throws IOException { 
         File mergedPath = new File(this._baseDir, fileName);
         return Response.ok(mergedPath).build();
     }
-    
-    /**
-     * delete the specific file
-     * @param fileName
-     * @return file deleting status
-     * @return IOException
-     * 
-     */
     
     @DELETE
     @Path("delete/{fileName}")
@@ -70,13 +52,7 @@ public class ActionEncapsulation {
         return Response.ok("OK").build();
     }
 
-    /**
-     * upload the specific file
-     * @param fileName 
-     * @param is
-     * @return file uploading status
-     * @throws IOException
-     */
+
     @PUT
     @Path("insert")
     @Consumes(MediaType.MULTIPART_FORM_DATA) 
@@ -87,7 +63,7 @@ public class ActionEncapsulation {
         OutputStream os = null;
         try {
             
-        	if(checkJAR(fileDetail.getFileName())){
+        	if(checkWAR(fileDetail.getFileName())){
         		
 	        	fileDetail.getType();
 	        	String fileName = fileDetail.getFileName() + new Date().getTime();
@@ -98,11 +74,12 @@ public class ActionEncapsulation {
 	            
 				Type mapType = new TypeToken<HashMap<String, String>>(){}.getType();  
 				HashMap<String, String> input_para = new Gson().fromJson(action_info, mapType);
-	            dbc.newAction(input_para);
-	            ArrayList<String> hosts = dbc.getWorkerHost(input_para.get("action_info"));
-	            for(String host : hosts ){
-	            	copyFileToWorker(host, mergedPath);
-	            }
+	     //       dbc.newAction(input_para);
+	    //        ArrayList<String> hosts = dbc.getWorkerHost(input_para.get("action_info"));
+	        //    for(String host : hosts ){
+	            	
+	       //     	copyFileToWorker("http://" + host + ":8181/operator/deploy/"+fileDetail.getFileName(), mergedPath);
+	       //     }
 	            
 	            
         	}else {
@@ -143,7 +120,7 @@ public class ActionEncapsulation {
         return Response.ok("OK").build();
         
     }
-    
+  
     private String md5(String text) throws NoSuchAlgorithmException {
     	
     	MessageDigest md = MessageDigest.getInstance("MD5");
@@ -156,17 +133,16 @@ public class ActionEncapsulation {
         }
         
         return tmpName;
-    	
-    	
+  	
     }
     
-    private boolean checkJAR(String name) {
+    private boolean checkWAR(String name) {
     	
     	String uppercase = name.toUpperCase();
-    	return uppercase.endsWith(".JAR");
+    	return uppercase.endsWith(".WAR");
     }
 
-    private void copyFileToWorker(String host, File tmpFile) {
+    private static String copyFileToWorker(String host, File tmpFile) {
     	
 	   	String CRLF = "\r\n";
 	   	HttpURLConnection connection = null;
@@ -179,7 +155,7 @@ public class ActionEncapsulation {
 	   		
 	       	connection.setRequestMethod("POST");
 	       	connection.setRequestProperty("charset",  "utf-8");
-	       	connection.setRequestProperty("Content-type", "application/x-www-form-urlencoded");
+	       	connection.setRequestProperty("Content-type", "application/octet-stream");
 	       	
 	        connection.setDoOutput(true);
 	        
@@ -209,7 +185,7 @@ public class ActionEncapsulation {
 		   	result.put("response", response.toString());
 		   	
 		   	String task_result = response.toString();	
-
+		   	return task_result;
 		   	
 	   	} catch(IOException e) {
 
@@ -220,8 +196,9 @@ public class ActionEncapsulation {
 	   		e.printStackTrace();
 	   		
 	   	}
+	   	return "";
 	   	
-    	
-    }
+    }    
     
 }
+
