@@ -38,8 +38,7 @@ public class Parser {
     		task = this.logToLogger(action_id, w_task_id, task_input );
     		logger.info("log a task. Task_id = " + task.getTaskID());
         	Dispatcher dispatcher = new Dispatcher(task);
-            Thread taskThread = new Thread(dispatcher);
-            taskThread.start();
+        	dispatcher.run();
         	logger.info("Run a task. Task_id = " + task.getTaskID());
         	
     	}catch(Exception e){

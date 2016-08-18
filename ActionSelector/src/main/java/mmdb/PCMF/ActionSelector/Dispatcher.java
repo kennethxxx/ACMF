@@ -13,8 +13,9 @@ import java.util.HashMap;
 
 import org.apache.log4j.BasicConfigurator;
 import org.apache.log4j.Logger;
+import org.json.JSONObject;
 
-public class Dispatcher implements Runnable {
+public class Dispatcher {
 	
 	private DBC dbc;
 	private ActionTask task;
@@ -68,11 +69,12 @@ public class Dispatcher implements Runnable {
 	       	connection.setRequestProperty("Content-type", task.getContentType());
 	       	
 	        HashMap<String, String> input_para = task.getInputPara();
+	        System.out.println("Para = " + new JSONObject(input_para).toString());
 	        String req_para = "";
 	        connection.setDoOutput(true);
 	        
-		    if( !input_para.isEmpty() ) {		   
-		        
+	    	if( !input_para.isEmpty() ) {		   
+	        
 		        for( Object key : input_para.keySet() ){
 		        	
 		        	req_para = req_para + key.toString() + "=" + input_para.get(key) + "&";
@@ -84,7 +86,7 @@ public class Dispatcher implements Runnable {
 		       	wr.writeBytes(req_para);
 		       	wr.flush();
 		       	wr.close();
-		       
+	       
 		    }    
 		    
 		    

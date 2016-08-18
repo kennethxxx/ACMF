@@ -62,7 +62,7 @@ public class ActionTask extends Task {
 		
 	}	
 	
-	public HashMap getInputPara() {
+	public HashMap<String, String> getInputPara() {
 		
 		return this.input_para;
 		
@@ -101,7 +101,7 @@ public class ActionTask extends Task {
 		
 	}	
 	
-	public void setInputPara( HashMap input_para ) {
+	public void setInputPara( HashMap<String, String> input_para ) {
 	
 		this.input_para = input_para;
 	}
