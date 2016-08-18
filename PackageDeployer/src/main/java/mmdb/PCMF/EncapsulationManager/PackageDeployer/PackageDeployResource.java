@@ -13,7 +13,7 @@ public class PackageDeployResource {
     
 	private String _AppDir = "/usr/tomcat/webapps/";
 	private String _TomcatHome = "/usr/tomcat";
-	DBC dbc = new DBC();
+//	DBC dbc = new DBC();
 	
     @GET 
     @Path("getIt")
@@ -82,9 +82,9 @@ public class PackageDeployResource {
     	Process p;
     	try {
     		
-    		p = Runtime.getRuntime().exec( "./" + this._TomcatHome + "/bin/shutdown.sh"); // shut down tomcat server
+    		p = Runtime.getRuntime().exec( "sh " + this._TomcatHome + "/bin/shutdown.sh"); // shut down tomcat server
     		p.waitFor();
-    		p = Runtime.getRuntime().exec( "./" + this._TomcatHome + "/bin/startup.sh");  // startup the tomcat server 
+    		p = Runtime.getRuntime().exec( "sh " + this._TomcatHome + "/bin/startup.sh");  // startup the tomcat server 
     		p.waitFor();
     		
     	} catch (Exception e) {
