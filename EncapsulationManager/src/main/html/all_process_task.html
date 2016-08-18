@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Action Table</title>
+</head>
+<script type="text/javascript" src="library/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		$.ajax({
+			url: "http://140.116.234.174:7785/operator/getProcess",
+			type: "GET",
+			dataType: "json",
+			success: function(data) {
+
+				data.result.forEach(function(item) {
+					console.log(item.process_id);
+
+					var status = "ACCEPTED";
+
+					if(item.stauts == '0') {
+						status = "ACCEPTED";
+					}else if(item.status == '1'){
+						status = "RUNNING";
+					}else if(item.status == '2'){
+						status = "FINISHED";
+					}else if(item.status == '3'){
+						status = "ERROR";
+					}
+
+					$("#process_logger").append("<tr>" +
+									"<td>" + item.process_id + "</td>" +
+									"<td>" + status + "</td>" +
+									"<td>" + item.result + "</td>" +
+									"</tr>");
+
+				})
+
+			},
+
+			error: function(xhr) {
+
+				console.log(xhr);
+			}
+
+		})
+
+		$("#submit").click(function() {
+
+			var formData = new FormData($('form')[0]);
+			console.log("aaa");
+
+			$.ajax({
+				url: "http://host:port/operator/processSubmit",
+				type: "POST",
+		        //Ajax events
+		        success: function(data) {
+		        	console.log(data);
+		        },
+		        // Form data
+		        data: formData,
+		        //Options to tell jQuery not to process data or worry about content-type.
+		        cache: false,
+		        contentType: false,
+		        processData: false
+
+			});
+
+			location.reload() 
+		});		
+
+	})
+</script>
+<body>
+	<h1>Process Logger</h1>
+	<table id="process_logger" border=1>
+		<tr>
+			<th width="20%">ID</th>
+			<th width="20%">Status</th>
+			<th>Final Result</th>
+
+		</tr>
+	</table>
+	<h1>Submit new Process</h1>
+	<form enctype="multipart/form-data">
+		<label>Process Script File</label>
+		<input type="file" name="file"><br />
+		<input type="button" id="submit" value="Submit">
+	</form>
+	<br><br><br><br>
+	<a href="index.html">Back</a>
+</body>
+</html>

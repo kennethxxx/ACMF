@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Action Table</title>
+</head>
+<script type="text/javascript" src="library/jquery-3.1.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function() {
+
+		$.ajax({
+			url: "http://140.116.234.174:7785/operator/getAction",
+			type: "GET",
+			dataType: "json",
+			success: function(data) {
+
+				data.result.forEach(function(item) {
+					console.log(item.action_id);
+					$("#action_table").append("<tr>" +
+									"<td>" + item.action_id + "</td>" +
+									"<td>" + item.action_owner + "</td>" +
+									"<td>" + item.action_name + "</td>" +
+									"<td>" + item.action_input + "</td>" +
+									"<td>" + item.action_output + "</td>" +
+									"<td>" + item.action_method + "</td>" +
+									"<td>" + item.content_type + "</td>" +
+									"<td>" + item.prefix + "</td>" +
+									"</tr>");
+
+				})
+
+			},
+
+			error: function(xhr) {
+
+				console.log(xhr);
+			}
+
+		})
+
+	})
+</script>
+<body>
+	<h1>Action Table</h1>
+	<table id="action_table" border=1>
+		<tr>
+			<th width="10%">ID</th>
+			<th width="10%">Owner</th>
+			<th width="10%">Name</th>
+			<th width="10%">Input Parameter</th>
+			<th width="10%">Output Parameter</th>
+			<th width="10%">Http Method</th>
+			<th width="20%">Request Content Type</th>
+			<th width="20%">Resource Prefix</th>
+		</tr>
+	</table>
+	<br><br><br><br>
+	<a href="new_action.html">Add a New Action</a><br>
+	<a href="index.html">Back</a>
+</body>
+</html>
